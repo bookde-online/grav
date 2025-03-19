@@ -81,6 +81,6 @@ class __TwigTemplate_08e75382b363c76513fcc3ce94ae9c9b8fa95e833fcf62ed69e77c81ae3
     </div>
 
 {% endif %}
-", "partials/dashboard-problems.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\dashboard-problems.html.twig");
+", "partials/dashboard-problems.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\dashboard-problems.html.twig");
     }
 }

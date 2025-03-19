@@ -4,7 +4,7 @@ home:
   alias: '/home'
 
 pages:
-  theme: quark
+  theme: mytheme
   markdown:
     extra: false
   process:
@@ -43,3 +43,9 @@ debugger:
     close_connection: true
 gpm:
   verify_peer: true
+
+languages:
+  supported:
+    - vi
+    - en
+  include_default_lang: false

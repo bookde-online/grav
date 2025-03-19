@@ -84,6 +84,6 @@ class __TwigTemplate_a9d070756aefa8b69fbb2f03515ca675adb6bb38c61a8ee972887d90fdc
         <ul></ul>
     </div>
 </div>
-", "partials/dashboard-notifications.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\dashboard-notifications.html.twig");
+", "partials/dashboard-notifications.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\dashboard-notifications.html.twig");
     }
 }

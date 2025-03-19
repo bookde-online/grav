@@ -90,6 +90,6 @@ class __TwigTemplate_3c51f5f76891b88b19eb57946c7128a17e3e818520aed02412e52fe9196
     {% endif %}
 {% else %}
     {% include 'partials/login-form.html.twig' %}
-{% endif %}", "login.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\login.html.twig");
+{% endif %}", "login.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\login.html.twig");
     }
 }

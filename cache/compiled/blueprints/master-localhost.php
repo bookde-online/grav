@@ -1,83 +1,87 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1742373297,
-    'checksum' => '3f6b83a1912af233d4f26d2106be7c9e',
+    'timestamp' => 1741451058,
+    'checksum' => '4409df776df7eafaed6779d807438d21',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
                 'file' => 'user/plugins/admin/blueprints/config/media.yaml',
-                'modified' => 1742373050
+                'modified' => 1741446313
             ]
         ],
         'system/blueprints/config' => [
             'backups' => [
                 'file' => 'system/blueprints/config/backups.yaml',
-                'modified' => 1742373027
+                'modified' => 1741446245
             ],
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1742373027
+                'modified' => 1741446245
             ],
             'scheduler' => [
                 'file' => 'system/blueprints/config/scheduler.yaml',
-                'modified' => 1742373027
+                'modified' => 1741446245
             ],
             'security' => [
                 'file' => 'system/blueprints/config/security.yaml',
-                'modified' => 1742373027
+                'modified' => 1741446245
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1742373027
+                'modified' => 1741446245
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1742373027
+                'modified' => 1741446245
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1742373027
+                'modified' => 1741446245
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1742373049
+                'modified' => 1741446311
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1742373078
+                'modified' => 1741446392
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1742373104
+                'modified' => 1741446470
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/blueprints.yaml',
-                'modified' => 1742373105
+                'modified' => 1741446471
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1742373092
+                'modified' => 1741446435
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/blueprints.yaml',
+                'modified' => 1683678796
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1742373097
+                'modified' => 1741446449
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/blueprints.yaml',
-                'modified' => 1742373096
+                'modified' => 1741446448
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1742373075
+                'modified' => 1741446386
             ]
         ],
         'user/themes' => [
             'themes/quark' => [
                 'file' => 'user/themes/quark/blueprints.yaml',
-                'modified' => 1742373045
+                'modified' => 1741446301
             ]
         ]
     ],
@@ -4603,6 +4607,83 @@ return [
                 'name' => 'plugins.form.basic_captcha.type',
                 'validation' => 'strict'
             ],
+            'plugins.langswitcher' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.langswitcher.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.langswitcher.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_LANGSWITCHER.BUILTIN_CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.langswitcher.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher.translated_urls' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_LANGSWITCHER.TRANSLATED_URLS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.langswitcher.translated_urls',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher.language_display' => [
+                'type' => 'select',
+                'size' => 'small',
+                'label' => 'PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY',
+                'default' => 'long',
+                'options' => [
+                    'long' => 'PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY_LONG',
+                    'short' => 'PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY_SHORT'
+                ],
+                'name' => 'plugins.langswitcher.language_display',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher.untranslated_pages_behavior' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR',
+                'default' => 'none',
+                'options' => [
+                    'none' => 'PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR_OPTION_NONE',
+                    'redirect' => 'PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR_OPTION_REDIRECT',
+                    'hide' => 'PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR_OPTION_HIDE'
+                ],
+                'name' => 'plugins.langswitcher.untranslated_pages_behavior',
+                'validation' => 'strict'
+            ],
             'plugins.login' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5906,6 +5987,13 @@ return [
                             'operators' => 'plugins.form.basic_captcha.math.operators'
                         ]
                     ]
+                ],
+                'langswitcher' => [
+                    'enabled' => 'plugins.langswitcher.enabled',
+                    'built_in_css' => 'plugins.langswitcher.built_in_css',
+                    'translated_urls' => 'plugins.langswitcher.translated_urls',
+                    'language_display' => 'plugins.langswitcher.language_display',
+                    'untranslated_pages_behavior' => 'plugins.langswitcher.untranslated_pages_behavior'
                 ],
                 'login' => [
                     'enabled' => 'plugins.login.enabled',

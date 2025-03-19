@@ -52,6 +52,6 @@ class __TwigTemplate_a9e8098b59373d9ecb9ee13d49f079c82372273920e26ae0bcf2fef5ad3
     public function getSourceContext()
     {
         return new Source("<div class=\"remodal\" data-remodal-id=\"changelog\" data-remodal-options=\"hashTracking: false\"></div>
-", "partials/modal-changelog.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-changelog.html.twig");
+", "partials/modal-changelog.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-changelog.html.twig");
     }
 }

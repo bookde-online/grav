@@ -1,6 +1,6 @@
 state: enabled
 email: dungnguyen19724@gmail.com
-fullname: 'Nguyễn Dung'
+fullname: NguyenDung
 title: Admin
 access:
   admin:
@@ -8,4 +8,4 @@ access:
     super: true
   site:
     login: true
-hashed_password: $2y$10$15Odw1f0OoMMEyP5kIEVi.OzqeG845D1C3BJtBI7WPUMe0uDAx.my
+hashed_password: $2y$10$5Cm52H.kVWP0L7Rs17EGCOHUkpHua8j2K31TujRcA682pqySRsYoC

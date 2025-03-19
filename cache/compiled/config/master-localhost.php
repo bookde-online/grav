@@ -1,106 +1,141 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1742373291,
-    'checksum' => '339281c2dada8efcb82335f37ac9fe41',
+    'timestamp' => 1741451057,
+    'checksum' => 'fc9e47571a986da10132e20a7d1b0c26',
     'files' => [
         'user/config' => [
+            'langswitcher' => [
+                'file' => 'user/config/langswitcher.yaml',
+                'modified' => 1741450484
+            ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1742373288
+                'modified' => 1741447157
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1742373197
+                'modified' => 1741446942
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1742373049
+                'modified' => 1741446311
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1742373049
+                'modified' => 1741450991
+            ],
+            'themes/mytheme' => [
+                'file' => 'user/config/themes/mytheme.yaml',
+                'modified' => 1741448689
+            ],
+            'themes/quark' => [
+                'file' => 'user/config/themes/quark.yaml',
+                'modified' => 1741448523
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
-                'modified' => 1742373200
+                'modified' => 1741446945
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1742373031
+                'modified' => 1741446256
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1742373031
+                'modified' => 1741446256
             ],
             'mime' => [
                 'file' => 'system/config/mime.yaml',
-                'modified' => 1742373031
+                'modified' => 1741446256
             ],
             'permissions' => [
                 'file' => 'system/config/permissions.yaml',
-                'modified' => 1742373031
+                'modified' => 1741446256
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1742373031
+                'modified' => 1741446256
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1742373031
+                'modified' => 1741446256
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1742373031
+                'modified' => 1741446256
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1742373049
+                'modified' => 1741446312
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1742373078
+                'modified' => 1741446393
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1742373104
+                'modified' => 1741446470
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
-                'modified' => 1742373104
+                'modified' => 1741446471
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1742373092
+                'modified' => 1741446435
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/langswitcher.yaml',
+                'modified' => 1683678796
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1742373097
+                'modified' => 1741446449
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1742373096
+                'modified' => 1741446448
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1742373075
+                'modified' => 1741446386
             ]
         ],
         'user/themes' => [
+            'themes/mytheme' => [
+                'file' => 'user/themes/mytheme/mytheme.yaml',
+                'modified' => 1741448762
+            ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1742373046
+                'modified' => 1741446301
             ]
         ]
     ],
     'data' => [
         'themes' => [
+            'mytheme' => [
+                'name' => 'My Theme',
+                'version' => '1.0.0',
+                'description' => 'My custom theme for Grav',
+                'icon' => 'rebel',
+                'author' => [
+                    'name' => 'Your Name',
+                    'email' => 'your@email.com'
+                ],
+                'homepage' => 'https://example.com',
+                'keywords' => 'grav, theme, custom',
+                'bugs' => 'https://example.com/issues',
+                'license' => 'MIT',
+                'enabled' => true
+            ],
             'quark' => [
-                'enabled' => true,
+                'enabled' => false,
                 'production-mode' => true,
                 'grid-size' => 'grid-lg',
                 'header-fixed' => true,
@@ -112,6 +147,12 @@ return [
                 'spectre' => [
                     'exp' => false,
                     'icons' => false
+                ],
+                'custom_logo' => [
+                    
+                ],
+                'custom_logo_mobile' => [
+                    
                 ]
             ]
         ],
@@ -314,6 +355,13 @@ return [
                         ]
                     ]
                 ]
+            ],
+            'langswitcher' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'translated_urls' => true,
+                'untranslated_pages_behavior' => 'none',
+                'language_display' => 'long'
             ],
             'login' => [
                 'enabled' => true,
@@ -3803,7 +3851,7 @@ node_modules'
                 12 => 'exe'
             ],
             'sanitize_svg' => true,
-            'salt' => 'hFqTJIjdWc0rGl'
+            'salt' => 'vOJWclR6GA0dFs'
         ],
         'site' => [
             'title' => 'Grav',
@@ -3852,10 +3900,11 @@ node_modules'
             ],
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'vi',
+                    1 => 'en'
                 ],
                 'default_lang' => NULL,
-                'include_default_lang' => true,
+                'include_default_lang' => false,
                 'include_default_lang_file_extension' => true,
                 'translations' => true,
                 'translations_fallback' => true,
@@ -3877,7 +3926,7 @@ node_modules'
                 'dirs' => [
                     0 => 'page://'
                 ],
-                'theme' => 'quark',
+                'theme' => 'mytheme',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -4119,6 +4168,11 @@ node_modules'
                 'twig_compat' => false,
                 'blueprint_compat' => false
             ]
+        ],
+        'langswitcher' => [
+            'enabled' => true,
+            'built_in_css' => true,
+            'untranslated_pages_behavior' => 'none'
         ],
         'versions' => [
             'core' => [

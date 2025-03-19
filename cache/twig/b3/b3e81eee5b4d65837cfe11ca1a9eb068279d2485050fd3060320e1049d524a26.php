@@ -56,6 +56,6 @@ class __TwigTemplate_998019060b1db5163445418fed1a600b97eac3c009b40712b31c332a16c
         return new Source("<button class=\"lines-button x\" type=\"button\" role=\"button\" aria-label=\"Toggle Navigation\" data-sidebar-mobile-toggle>
     <span class=\"lines\"></span>
 </button>
-", "partials/nav-toggle.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-toggle.html.twig");
+", "partials/nav-toggle.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-toggle.html.twig");
     }
 }

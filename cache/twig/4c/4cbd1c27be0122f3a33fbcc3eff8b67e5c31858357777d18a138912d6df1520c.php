@@ -335,6 +335,6 @@ class __TwigTemplate_3806b4f2ef673b78e335c1e6f169e4a56ffc4ace2f7c90d021b11212cea
     {% endif %}
 
 </table>
-", "partials/plugin-data.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugin-data.html.twig");
+", "partials/plugin-data.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugin-data.html.twig");
     }
 }

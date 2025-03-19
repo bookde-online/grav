@@ -122,6 +122,6 @@ class __TwigTemplate_f5e9022a5a08c814eef78624a298fddae96ab62ae2a3d74dafa96f53267
         </div>
     </a>
 </div>
-", "partials/nav-user-details.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-details.html.twig");
+", "partials/nav-user-details.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-details.html.twig");
     }
 }

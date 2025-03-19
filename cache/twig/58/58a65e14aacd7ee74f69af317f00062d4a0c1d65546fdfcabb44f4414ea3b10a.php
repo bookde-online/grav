@@ -668,7 +668,7 @@ class __TwigTemplate_b0ef66d37fdcabe09c640246cc191252c55b06f4d77892e1d2913f52872
     {% endblock body %}
     </html>
 {% endif %}
-", "partials/base-root.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base-root.html.twig");
+", "partials/base-root.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base-root.html.twig");
     }
     private $deferred;
 }

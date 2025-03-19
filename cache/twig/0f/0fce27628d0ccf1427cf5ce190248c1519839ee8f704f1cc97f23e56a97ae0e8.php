@@ -388,6 +388,6 @@ class __TwigTemplate_6824393182d1568cc71373ab8576a445c69f5367d335753b4303e7910f6
         {%- endif -%}
     </div>
 {% endblock %}
-", "dashboard.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\dashboard.html.twig");
+", "dashboard.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\dashboard.html.twig");
     }
 }

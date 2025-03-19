@@ -174,6 +174,6 @@ class __TwigTemplate_cc9f92ae12ae285adef5546c4dd26dba860b0dbdeb6ffd018324f066fce
     </section>
 </body>
 {% endblock %}
-", "partials/login.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\login.html.twig");
+", "partials/login.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\login.html.twig");
     }
 }

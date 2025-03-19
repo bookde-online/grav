@@ -105,6 +105,6 @@ class __TwigTemplate_43d06c9682c33ac42d40fb23854464541237aee1e0f85997ceed05eab04
         {% endif %}
     </h1>
 {% endif %}
-", "partials/login-logo.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\login-logo.html.twig");
+", "partials/login-logo.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\login-logo.html.twig");
     }
 }

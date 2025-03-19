@@ -81,6 +81,6 @@ class __TwigTemplate_a2f80989fde424ab11f32cd37e9c2a3bf0b2925d8e690aa44ab30cd2dee
         {{ entry.message|raw }}
     </div>
 {% endfor %}
-", "partials/notification-plugins-block.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\notification-plugins-block.html.twig");
+", "partials/notification-plugins-block.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\notification-plugins-block.html.twig");
     }
 }

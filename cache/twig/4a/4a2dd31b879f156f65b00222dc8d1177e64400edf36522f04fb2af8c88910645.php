@@ -285,6 +285,6 @@ class __TwigTemplate_ba51af99a029ae6978b6459588ee2ee649c95e6c879248360efb4969f88
 
     </form>
 </div>
-", "partials/modal-add-package.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-add-package.html.twig");
+", "partials/modal-add-package.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-add-package.html.twig");
     }
 }

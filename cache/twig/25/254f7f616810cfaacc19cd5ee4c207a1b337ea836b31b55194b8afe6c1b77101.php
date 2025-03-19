@@ -109,6 +109,6 @@ class __TwigTemplate_140882007a07526275f8422150a7fdf77a7a5d6a99367d8934b700abab1
     </select>
     <div class=\"sort-icon\"><i class=\"fa fa-fw fa-sort-amount-asc\"></i></div>
 </form>
-", "partials/list-sort.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\list-sort.html.twig");
+", "partials/list-sort.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\list-sort.html.twig");
     }
 }

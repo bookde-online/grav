@@ -83,6 +83,6 @@ class __TwigTemplate_70af0e24500133e004d9104145d1861044e7f14bc740b060f2a96a80b4e
     type=\"password\"
     {{ parent() }}
 {% endblock %}
-", "forms/fields/password/password.html.twig", "C:\\wamp64\\www\\Bookde\\user\\plugins\\form\\templates\\forms\\fields\\password\\password.html.twig");
+", "forms/fields/password/password.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\form\\templates\\forms\\fields\\password\\password.html.twig");
     }
 }
