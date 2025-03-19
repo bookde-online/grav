@@ -94,7 +94,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
   <header id=\"header\" class=\"header d-flex align-items-center sticky-top\">
     <div class=\"container position-relative d-flex align-items-center\">
 
-      <a href=\"index.html\" class=\"logo d-flex align-items-center me-auto\">
+      <a href=\"default.html.twig\" class=\"logo d-flex align-items-center me-auto\">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src=\"";
         // line 46
@@ -105,7 +105,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
       <nav id=\"navmenu\" class=\"navmenu\">
         <ul>
-          <li><a href=\"index.html\" class=\"active\">Trang chủ</a></li>
+          <li><a href=\"";
+        // line 52
+        echo twig_escape_filter($this->env, ($context["base_url"] ?? null), "html", null, true);
+        echo "\" class=\"active\">Trang chủ</a></li>
           <li><a href=\"#about\">Giới thiệu</a></li>
           <li class=\"dropdown\"><a href=\"#services\"><span>Dịch vụ</span> <i class=\"bi bi-chevron-down toggle-dropdown\"></i></a>
             <ul>
@@ -114,7 +117,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
               <li><a href=\"service-details-2.html\">Giải pháp tối ưu hóa đặt phòng</a></li>
             </ul>
           </li>
-          <li><a href=\"pricing.html\">Giá cả</a></li>
+          <li><a href=\"";
+        // line 61
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/pricing"], "method"), "url", []), "html", null, true);
+        echo "\">Giá cả</a></li>
           <li><a href=\"howItWork.html\">Cách hoạt động</a></li>
           <li><a href=\"blog.html\">Blog</a></li>
           <li><a href=\"contact.html\">Liên hệ</a></li>
@@ -563,7 +569,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
     public function getDebugInfo()
     {
-        return array (  546 => 419,  540 => 416,  536 => 415,  532 => 414,  528 => 413,  524 => 412,  520 => 411,  516 => 410,  512 => 409,  445 => 345,  419 => 322,  398 => 304,  386 => 295,  374 => 286,  348 => 263,  338 => 256,  328 => 249,  238 => 162,  187 => 114,  175 => 105,  163 => 96,  135 => 71,  131 => 70,  125 => 67,  101 => 46,  80 => 28,  74 => 25,  70 => 24,  66 => 23,  62 => 22,  58 => 21,  47 => 13,  43 => 12,  30 => 1,);
+        return array (  552 => 419,  546 => 416,  542 => 415,  538 => 414,  534 => 413,  530 => 412,  526 => 411,  522 => 410,  518 => 409,  451 => 345,  425 => 322,  404 => 304,  392 => 295,  380 => 286,  354 => 263,  344 => 256,  334 => 249,  244 => 162,  193 => 114,  181 => 105,  169 => 96,  141 => 71,  137 => 70,  131 => 67,  122 => 61,  110 => 52,  101 => 46,  80 => 28,  74 => 25,  70 => 24,  66 => 23,  62 => 22,  58 => 21,  47 => 13,  43 => 12,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -619,7 +625,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
   <header id=\"header\" class=\"header d-flex align-items-center sticky-top\">
     <div class=\"container position-relative d-flex align-items-center\">
 
-      <a href=\"index.html\" class=\"logo d-flex align-items-center me-auto\">
+      <a href=\"default.html.twig\" class=\"logo d-flex align-items-center me-auto\">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src=\"{{ theme_url }}/assets\\img\\logo.webp\" alt=\"Logo BookDe - Dịch vụ thiết kế website khách sạn\">
         <!-- <h1 class=\"sitename\">Company</h1><span>.</span> -->
@@ -627,7 +633,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
       <nav id=\"navmenu\" class=\"navmenu\">
         <ul>
-          <li><a href=\"index.html\" class=\"active\">Trang chủ</a></li>
+          <li><a href=\"{{ base_url }}\" class=\"active\">Trang chủ</a></li>
           <li><a href=\"#about\">Giới thiệu</a></li>
           <li class=\"dropdown\"><a href=\"#services\"><span>Dịch vụ</span> <i class=\"bi bi-chevron-down toggle-dropdown\"></i></a>
             <ul>
@@ -636,7 +642,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
               <li><a href=\"service-details-2.html\">Giải pháp tối ưu hóa đặt phòng</a></li>
             </ul>
           </li>
-          <li><a href=\"pricing.html\">Giá cả</a></li>
+          <li><a href=\"{{ page.find('/pricing').url }}\">Giá cả</a></li>
           <li><a href=\"howItWork.html\">Cách hoạt động</a></li>
           <li><a href=\"blog.html\">Blog</a></li>
           <li><a href=\"contact.html\">Liên hệ</a></li>
@@ -998,6 +1004,6 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
 </body>
 
-</html>", "default.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\themes\\mytheme\\templates\\vi\\default.html.twig");
+</html>", "default.html.twig", "C:\\wamp64\\www\\grav\\user\\themes\\mytheme\\templates\\vi\\default.html.twig");
     }
 }

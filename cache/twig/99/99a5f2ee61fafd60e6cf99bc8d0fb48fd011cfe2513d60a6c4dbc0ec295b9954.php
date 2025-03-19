@@ -38,22 +38,46 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 <meta name=\"keywords\" content=\"hotel website design, hotel web development, hotel website building, online booking, hotel SEO optimization, hotel website solutions\">
 
   <!-- Favicons -->
-  <link href=\"assets/img/favicon.webp\" rel=\"icon\">
-  <link href=\"assets/img/apple-touch-icon.webp\" rel=\"apple-touch-icon\">
+  <link href=\"";
+        // line 12
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/favicon.webp\" rel=\"icon\">
+  <link href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/apple-touch-icon.webp\" rel=\"apple-touch-icon\">
 
   <!-- Fonts -->
   <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
   <link href=\"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">
   <!-- Vendor CSS Files -->
-  <link href=\"assets/vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">
-  <link href=\"assets/vendor/bootstrap-icons/bootstrap-icons.css\" rel=\"stylesheet\">
-  <link href=\"assets/vendor/aos/aos.css\" rel=\"stylesheet\">
-  <link href=\"assets/vendor/glightbox/css/glightbox.min.css\" rel=\"stylesheet\">
-  <link href=\"assets/vendor/swiper/swiper-bundle.min.css\" rel=\"stylesheet\">
+  <link href=\"";
+        // line 20
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">
+  <link href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/bootstrap-icons/bootstrap-icons.css\" rel=\"stylesheet\">
+  <link href=\"";
+        // line 22
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/aos/aos.css\" rel=\"stylesheet\">
+  <link href=\"";
+        // line 23
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/glightbox/css/glightbox.min.css\" rel=\"stylesheet\">
+  <link href=\"";
+        // line 24
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/swiper/swiper-bundle.min.css\" rel=\"stylesheet\">
 
   <!-- Main CSS File -->
-  <link href=\"assets/css/main.css\" rel=\"stylesheet\">
+  <link href=\"";
+        // line 27
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/css/main.css\" rel=\"stylesheet\">
 
   <!-- =======================================================
   * Template Name: Company
@@ -71,7 +95,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
       <a href=\"index.html\" class=\"logo d-flex align-items-center me-auto\">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src=\"assets/img/logo.webp\" alt=\"Logo BookDe - Dịch vụ thiết kế website khách sạn\">
+        <img src=\"";
+        // line 45
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/logo.webp\" alt=\"Logo BookDe - Dịch vụ thiết kế website khách sạn\">
         <!-- <h1 class=\"sitename\">Company</h1><span>.</span> -->
       </a>
 
@@ -92,11 +119,17 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
           <li><a href=\"contact.html\">Contact</a></li>
           <div class=\"language-dropdown\">
             <button class=\"dropdown-btn\">
-              <img src=\"assets/img/en.webp\" alt=\"English\"><span class=\"textEng\"><u><b>EN</b></u></span><i class=\"bi bi-chevron-down toggle-dropdown\" id=\"lang\"></i></i>
+              <img src=\"";
+        // line 66
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/en.webp\" alt=\"English\"><span class=\"textEng\"><u><b>EN</b></u></span><i class=\"bi bi-chevron-down toggle-dropdown\" id=\"lang\"></i></i>
             </button>
             <div class=\"dropdown-content\">
                 <a href=\"../vi/index.html\" class=\"vi\">
-                  <img src=\"assets/img/vi.webp\" alt=\"Vietnamese\"><span class=\"textVi\">VI</span>
+                  <img src=\"";
+        // line 70
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/vi.webp\" alt=\"Vietnamese\"><span class=\"textVi\">VI</span>
                 </a>
               </div>
           </div>
@@ -121,7 +154,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
       <div id=\"hero-carousel\" class=\"carousel slide carousel-fade\" data-bs-ride=\"carousel\" data-bs-interval=\"5000\">
 
         <div class=\"carousel-item active\">
-          <img src=\"assets/img/hero-carousel/banner1.webp\" alt=\"Build your hotel brand\" loading=\"lazy\">
+          <img src=\"";
+        // line 95
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/hero-carousel/banner1.webp\" alt=\"Build your hotel brand\" loading=\"lazy\">
           <div class=\"container\">
             <h2>Your Brand</h2>
             <p>Create a dedicated booking website for your hotel</p>
@@ -130,7 +166,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         </div><!-- End Carousel Item -->
         
         <div class=\"carousel-item\">
-          <img src=\"assets/img/hero-carousel/banner2.webp\" alt=\"Custom domain for your hotel\" loading=\"lazy\">
+          <img src=\"";
+        // line 104
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/hero-carousel/banner2.webp\" alt=\"Custom domain for your hotel\" loading=\"lazy\">
           <div class=\"container\">
             <h2>Your Domain</h2>
             <p>Full control with a customized website – No shared system</p>
@@ -139,7 +178,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         </div><!-- End Carousel Item -->
         
         <div class=\"carousel-item\">
-          <img src=\"assets/img/hero-carousel/banner3.webp\" alt=\"Direct customer connection\" loading=\"lazy\">
+          <img src=\"";
+        // line 113
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/hero-carousel/banner3.webp\" alt=\"Direct customer connection\" loading=\"lazy\">
           <div class=\"container\">
             <h2>Your Customers</h2>
             <p>Connect directly with your customers – No commission fees</p>
@@ -191,7 +233,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
             <!-- Phần hình ảnh -->
             <div class=\"col-lg-5 col-md-12 about-image text-center\">
-                <img src=\"assets/img/about.webp\" alt=\"Hotel Booking Website\" style=\"width: 100%;\">
+                <img src=\"";
+        // line 165
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/about.webp\" alt=\"Hotel Booking Website\" style=\"width: 100%;\">
             </div>
           </div>
 
@@ -274,21 +319,30 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
             <div class=\"card-wrapper\">
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"assets/img/professional.webp\" alt=\"Save time\">
+                        <img src=\"";
+        // line 248
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/professional.webp\" alt=\"Save time\">
                     </div>
                     <div class=\"text-overlay\">Professional</div>
                 </div>
     
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"assets/img/modern.webp\" alt=\"Save time\">
+                        <img src=\"";
+        // line 255
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/modern.webp\" alt=\"Save time\">
                     </div>
                     <div class=\"text-overlay\">Modern</div>
                 </div>
     
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"assets/img/effective.webp\" alt=\"Save time\">
+                        <img src=\"";
+        // line 262
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/effective.webp\" alt=\"Save time\">
                     </div>
                     <div class=\"text-overlay\">Effective</div>
                 </div>
@@ -311,7 +365,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\" data-aos-delay=\"100\">
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
-              <img src=\"assets/img/about/hotel.webp\" class=\"img-fluid\" alt=\"Image hotel\">
+              <img src=\"";
+        // line 285
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/about/hotel.webp\" class=\"img-fluid\" alt=\"Image hotel\">
               <h4 class=\"text-overlay\">HOTELS</h4> 
             </div>
           </div>
@@ -320,7 +377,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\" data-aos-delay=\"100\">
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
-              <img src=\"assets/img/about/spa.webp\" class=\"img-fluid\" alt=\"Image spa\" style=\"height: fit-content;\">
+              <img src=\"";
+        // line 294
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/about/spa.webp\" class=\"img-fluid\" alt=\"Image spa\" style=\"height: fit-content;\">
               <h4 class=\"text-overlay\">SPA</h4> 
             </div>
           </div>
@@ -329,7 +389,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\" data-aos-delay=\"100\">
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
-              <img src=\"assets/img/about/tours.webp\" class=\"img-fluid\" alt=\"Image tours\">
+              <img src=\"";
+        // line 303
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/about/tours.webp\" class=\"img-fluid\" alt=\"Image tours\">
               <h4 class=\"text-overlay\">TOURS</h4> 
             </div>
           </div>
@@ -346,7 +409,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
       <div class=\"container\">
           <div class=\"row align-items-center flex-md-row flex-column-reverse\">
             <div class=\"col-md-6 text-center\">
-              <img src=\"assets/img/services/demo.webp\" alt=\"Hotel Launch\" class=\"img-fluid w-100 rounded\">
+              <img src=\"";
+        // line 320
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/services/demo.webp\" alt=\"Hotel Launch\" class=\"img-fluid w-100 rounded\">
             </div>
             <div class=\"col-md-1\"></div>
             <div class=\"col-md-5 text-center text-md-start\">
@@ -369,7 +435,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
       <div class=\"row gy-4\">
         <div class=\"col-lg-3 col-md-6 footer-about\">
           <a href=\"index.html\" class=\"logo d-flex align-items-center\">
-            <img src=\"assets/img/logo.webp\" alt=\"BookDe Logo - Hotel Website Design Services\">
+            <img src=\"";
+        // line 343
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/img/logo.webp\" alt=\"BookDe Logo - Hotel Website Design Services\">
           </a>
         </div>
 
@@ -427,17 +496,44 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
   <div id=\"preloader\"></div>
 
   <!-- Vendor JS Files -->
-  <script src=\"assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
-  <script src=\"assets/vendor/php-email-form/validate.js\"></script>
-  <script src=\"assets/vendor/aos/aos.js\"></script>
-  <script src=\"assets/vendor/glightbox/js/glightbox.min.js\"></script>
-  <script src=\"assets/vendor/imagesloaded/imagesloaded.pkgd.min.js\"></script>
-  <script src=\"assets/vendor/isotope-layout/isotope.pkgd.min.js\"></script>
-  <script src=\"assets/vendor/waypoints/noframework.waypoints.js\"></script>
-  <script src=\"assets/vendor/swiper/swiper-bundle.min.js\"></script>
+  <script src=\"";
+        // line 401
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
+  <script src=\"";
+        // line 402
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/php-email-form/validate.js\"></script>
+  <script src=\"";
+        // line 403
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/aos/aos.js\"></script>
+  <script src=\"";
+        // line 404
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/glightbox/js/glightbox.min.js\"></script>
+  <script src=\"";
+        // line 405
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js\"></script>
+  <script src=\"";
+        // line 406
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/isotope-layout/isotope.pkgd.min.js\"></script>
+  <script src=\"";
+        // line 407
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/waypoints/noframework.waypoints.js\"></script>
+  <script src=\"";
+        // line 408
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/vendor/swiper/swiper-bundle.min.js\"></script>
 
   <!-- Main JS File -->
-  <script src=\"assets/js/main.js\"></script>
+  <script src=\"";
+        // line 411
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/assets/js/main.js\"></script>
 
 </body>
 
@@ -449,9 +545,14 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         return "default.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  30 => 1,);
+        return array (  535 => 411,  529 => 408,  525 => 407,  521 => 406,  517 => 405,  513 => 404,  509 => 403,  505 => 402,  501 => 401,  440 => 343,  414 => 320,  394 => 303,  382 => 294,  370 => 285,  344 => 262,  334 => 255,  324 => 248,  238 => 165,  183 => 113,  171 => 104,  159 => 95,  131 => 70,  124 => 66,  100 => 45,  79 => 27,  73 => 24,  69 => 23,  65 => 22,  61 => 21,  57 => 20,  47 => 13,  43 => 12,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -475,22 +576,22 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 <meta name=\"keywords\" content=\"hotel website design, hotel web development, hotel website building, online booking, hotel SEO optimization, hotel website solutions\">
 
   <!-- Favicons -->
-  <link href=\"assets/img/favicon.webp\" rel=\"icon\">
-  <link href=\"assets/img/apple-touch-icon.webp\" rel=\"apple-touch-icon\">
+  <link href=\"{{ theme_url }}/assets/img/favicon.webp\" rel=\"icon\">
+  <link href=\"{{ theme_url }}/assets/img/apple-touch-icon.webp\" rel=\"apple-touch-icon\">
 
   <!-- Fonts -->
   <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
   <link href=\"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">
   <!-- Vendor CSS Files -->
-  <link href=\"assets/vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">
-  <link href=\"assets/vendor/bootstrap-icons/bootstrap-icons.css\" rel=\"stylesheet\">
-  <link href=\"assets/vendor/aos/aos.css\" rel=\"stylesheet\">
-  <link href=\"assets/vendor/glightbox/css/glightbox.min.css\" rel=\"stylesheet\">
-  <link href=\"assets/vendor/swiper/swiper-bundle.min.css\" rel=\"stylesheet\">
+  <link href=\"{{ theme_url }}/assets/vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">
+  <link href=\"{{ theme_url }}/assets/vendor/bootstrap-icons/bootstrap-icons.css\" rel=\"stylesheet\">
+  <link href=\"{{ theme_url }}/assets/vendor/aos/aos.css\" rel=\"stylesheet\">
+  <link href=\"{{ theme_url }}/assets/vendor/glightbox/css/glightbox.min.css\" rel=\"stylesheet\">
+  <link href=\"{{ theme_url }}/assets/vendor/swiper/swiper-bundle.min.css\" rel=\"stylesheet\">
 
   <!-- Main CSS File -->
-  <link href=\"assets/css/main.css\" rel=\"stylesheet\">
+  <link href=\"{{ theme_url }}/assets/css/main.css\" rel=\"stylesheet\">
 
   <!-- =======================================================
   * Template Name: Company
@@ -508,7 +609,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
       <a href=\"index.html\" class=\"logo d-flex align-items-center me-auto\">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src=\"assets/img/logo.webp\" alt=\"Logo BookDe - Dịch vụ thiết kế website khách sạn\">
+        <img src=\"{{ theme_url }}/assets/img/logo.webp\" alt=\"Logo BookDe - Dịch vụ thiết kế website khách sạn\">
         <!-- <h1 class=\"sitename\">Company</h1><span>.</span> -->
       </a>
 
@@ -529,11 +630,11 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
           <li><a href=\"contact.html\">Contact</a></li>
           <div class=\"language-dropdown\">
             <button class=\"dropdown-btn\">
-              <img src=\"assets/img/en.webp\" alt=\"English\"><span class=\"textEng\"><u><b>EN</b></u></span><i class=\"bi bi-chevron-down toggle-dropdown\" id=\"lang\"></i></i>
+              <img src=\"{{ theme_url }}/assets/img/en.webp\" alt=\"English\"><span class=\"textEng\"><u><b>EN</b></u></span><i class=\"bi bi-chevron-down toggle-dropdown\" id=\"lang\"></i></i>
             </button>
             <div class=\"dropdown-content\">
                 <a href=\"../vi/index.html\" class=\"vi\">
-                  <img src=\"assets/img/vi.webp\" alt=\"Vietnamese\"><span class=\"textVi\">VI</span>
+                  <img src=\"{{ theme_url }}/assets/img/vi.webp\" alt=\"Vietnamese\"><span class=\"textVi\">VI</span>
                 </a>
               </div>
           </div>
@@ -558,7 +659,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
       <div id=\"hero-carousel\" class=\"carousel slide carousel-fade\" data-bs-ride=\"carousel\" data-bs-interval=\"5000\">
 
         <div class=\"carousel-item active\">
-          <img src=\"assets/img/hero-carousel/banner1.webp\" alt=\"Build your hotel brand\" loading=\"lazy\">
+          <img src=\"{{ theme_url }}/assets/img/hero-carousel/banner1.webp\" alt=\"Build your hotel brand\" loading=\"lazy\">
           <div class=\"container\">
             <h2>Your Brand</h2>
             <p>Create a dedicated booking website for your hotel</p>
@@ -567,7 +668,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         </div><!-- End Carousel Item -->
         
         <div class=\"carousel-item\">
-          <img src=\"assets/img/hero-carousel/banner2.webp\" alt=\"Custom domain for your hotel\" loading=\"lazy\">
+          <img src=\"{{ theme_url }}/assets/img/hero-carousel/banner2.webp\" alt=\"Custom domain for your hotel\" loading=\"lazy\">
           <div class=\"container\">
             <h2>Your Domain</h2>
             <p>Full control with a customized website – No shared system</p>
@@ -576,7 +677,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         </div><!-- End Carousel Item -->
         
         <div class=\"carousel-item\">
-          <img src=\"assets/img/hero-carousel/banner3.webp\" alt=\"Direct customer connection\" loading=\"lazy\">
+          <img src=\"{{ theme_url }}/assets/img/hero-carousel/banner3.webp\" alt=\"Direct customer connection\" loading=\"lazy\">
           <div class=\"container\">
             <h2>Your Customers</h2>
             <p>Connect directly with your customers – No commission fees</p>
@@ -628,7 +729,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
             <!-- Phần hình ảnh -->
             <div class=\"col-lg-5 col-md-12 about-image text-center\">
-                <img src=\"assets/img/about.webp\" alt=\"Hotel Booking Website\" style=\"width: 100%;\">
+                <img src=\"{{ theme_url }}/assets/img/about.webp\" alt=\"Hotel Booking Website\" style=\"width: 100%;\">
             </div>
           </div>
 
@@ -711,21 +812,21 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
             <div class=\"card-wrapper\">
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"assets/img/professional.webp\" alt=\"Save time\">
+                        <img src=\"{{ theme_url }}/assets/img/professional.webp\" alt=\"Save time\">
                     </div>
                     <div class=\"text-overlay\">Professional</div>
                 </div>
     
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"assets/img/modern.webp\" alt=\"Save time\">
+                        <img src=\"{{ theme_url }}/assets/img/modern.webp\" alt=\"Save time\">
                     </div>
                     <div class=\"text-overlay\">Modern</div>
                 </div>
     
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"assets/img/effective.webp\" alt=\"Save time\">
+                        <img src=\"{{ theme_url }}/assets/img/effective.webp\" alt=\"Save time\">
                     </div>
                     <div class=\"text-overlay\">Effective</div>
                 </div>
@@ -748,7 +849,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\" data-aos-delay=\"100\">
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
-              <img src=\"assets/img/about/hotel.webp\" class=\"img-fluid\" alt=\"Image hotel\">
+              <img src=\"{{ theme_url }}/assets/img/about/hotel.webp\" class=\"img-fluid\" alt=\"Image hotel\">
               <h4 class=\"text-overlay\">HOTELS</h4> 
             </div>
           </div>
@@ -757,7 +858,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\" data-aos-delay=\"100\">
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
-              <img src=\"assets/img/about/spa.webp\" class=\"img-fluid\" alt=\"Image spa\" style=\"height: fit-content;\">
+              <img src=\"{{ theme_url }}/assets/img/about/spa.webp\" class=\"img-fluid\" alt=\"Image spa\" style=\"height: fit-content;\">
               <h4 class=\"text-overlay\">SPA</h4> 
             </div>
           </div>
@@ -766,7 +867,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch\" data-aos=\"fade-up\" data-aos-delay=\"100\">
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
-              <img src=\"assets/img/about/tours.webp\" class=\"img-fluid\" alt=\"Image tours\">
+              <img src=\"{{ theme_url }}/assets/img/about/tours.webp\" class=\"img-fluid\" alt=\"Image tours\">
               <h4 class=\"text-overlay\">TOURS</h4> 
             </div>
           </div>
@@ -783,7 +884,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
       <div class=\"container\">
           <div class=\"row align-items-center flex-md-row flex-column-reverse\">
             <div class=\"col-md-6 text-center\">
-              <img src=\"assets/img/services/demo.webp\" alt=\"Hotel Launch\" class=\"img-fluid w-100 rounded\">
+              <img src=\"{{ theme_url }}/assets/img/services/demo.webp\" alt=\"Hotel Launch\" class=\"img-fluid w-100 rounded\">
             </div>
             <div class=\"col-md-1\"></div>
             <div class=\"col-md-5 text-center text-md-start\">
@@ -806,7 +907,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
       <div class=\"row gy-4\">
         <div class=\"col-lg-3 col-md-6 footer-about\">
           <a href=\"index.html\" class=\"logo d-flex align-items-center\">
-            <img src=\"assets/img/logo.webp\" alt=\"BookDe Logo - Hotel Website Design Services\">
+            <img src=\"{{ theme_url }}/assets/img/logo.webp\" alt=\"BookDe Logo - Hotel Website Design Services\">
           </a>
         </div>
 
@@ -864,20 +965,20 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
   <div id=\"preloader\"></div>
 
   <!-- Vendor JS Files -->
-  <script src=\"assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
-  <script src=\"assets/vendor/php-email-form/validate.js\"></script>
-  <script src=\"assets/vendor/aos/aos.js\"></script>
-  <script src=\"assets/vendor/glightbox/js/glightbox.min.js\"></script>
-  <script src=\"assets/vendor/imagesloaded/imagesloaded.pkgd.min.js\"></script>
-  <script src=\"assets/vendor/isotope-layout/isotope.pkgd.min.js\"></script>
-  <script src=\"assets/vendor/waypoints/noframework.waypoints.js\"></script>
-  <script src=\"assets/vendor/swiper/swiper-bundle.min.js\"></script>
+  <script src=\"{{ theme_url }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
+  <script src=\"{{ theme_url }}/assets/vendor/php-email-form/validate.js\"></script>
+  <script src=\"{{ theme_url }}/assets/vendor/aos/aos.js\"></script>
+  <script src=\"{{ theme_url }}/assets/vendor/glightbox/js/glightbox.min.js\"></script>
+  <script src=\"{{ theme_url }}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js\"></script>
+  <script src=\"{{ theme_url }}/assets/vendor/isotope-layout/isotope.pkgd.min.js\"></script>
+  <script src=\"{{ theme_url }}/assets/vendor/waypoints/noframework.waypoints.js\"></script>
+  <script src=\"{{ theme_url }}/assets/vendor/swiper/swiper-bundle.min.js\"></script>
 
   <!-- Main JS File -->
-  <script src=\"assets/js/main.js\"></script>
+  <script src=\"{{ theme_url }}/assets/js/main.js\"></script>
 
 </body>
 
-</html>", "default.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\themes\\mytheme\\templates\\en\\default.html.twig");
+</html>", "default.html.twig", "C:\\wamp64\\www\\grav\\user\\themes\\mytheme\\templates\\en\\default.html.twig");
     }
 }

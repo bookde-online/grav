@@ -41,7 +41,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="default.html.twig" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{{ theme_url }}/assets\img\logo.webp" alt="Logo BookDe - Dịch vụ thiết kế website khách sạn">
         <!-- <h1 class="sitename">Company</h1><span>.</span> -->
@@ -49,7 +49,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Trang chủ</a></li>
+          <li><a href="{{ base_url }}" class="active">Trang chủ</a></li>
           <li><a href="#about">Giới thiệu</a></li>
           <li class="dropdown"><a href="#services"><span>Dịch vụ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -58,7 +58,7 @@
               <li><a href="service-details-2.html">Giải pháp tối ưu hóa đặt phòng</a></li>
             </ul>
           </li>
-          <li><a href="pricing.html">Giá cả</a></li>
+          <li><a href="{{ page.find('/pricing').url }}">Giá cả</a></li>
           <li><a href="howItWork.html">Cách hoạt động</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Liên hệ</a></li>
