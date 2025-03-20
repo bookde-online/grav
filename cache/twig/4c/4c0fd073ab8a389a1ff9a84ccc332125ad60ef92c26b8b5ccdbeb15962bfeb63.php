@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* default.html.twig */
+/* vi/default.html.twig */
 class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b5606fe1 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -94,7 +94,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
   <header id=\"header\" class=\"header d-flex align-items-center sticky-top\">
     <div class=\"container position-relative d-flex align-items-center\">
 
-      <a href=\"default.html.twig\" class=\"logo d-flex align-items-center me-auto\">
+      <a href=\"";
+        // line 44
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"logo d-flex align-items-center me-auto\">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src=\"";
         // line 46
@@ -107,23 +110,41 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
         <ul>
           <li><a href=\"";
         // line 52
-        echo twig_escape_filter($this->env, ($context["base_url"] ?? null), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
         echo "\" class=\"active\">Trang chủ</a></li>
           <li><a href=\"#about\">Giới thiệu</a></li>
           <li class=\"dropdown\"><a href=\"#services\"><span>Dịch vụ</span> <i class=\"bi bi-chevron-down toggle-dropdown\"></i></a>
             <ul>
-              <li><a href=\"service-details.html\">Trang web khách sạn tùy chỉnh</a></li>
-              <li><a href=\"service-details-1.html\">Hỗ trợ đặt phòng trực tuyến</a></li>
-              <li><a href=\"service-details-2.html\">Giải pháp tối ưu hóa đặt phòng</a></li>
+              <li><a href=\"";
+        // line 56
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details"], "method"), "url", []), "html", null, true);
+        echo "\">Trang web khách sạn tùy chỉnh</a></li>
+              <li><a href=\"";
+        // line 57
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-1"], "method"), "url", []), "html", null, true);
+        echo "\">Hỗ trợ đặt phòng trực tuyến</a></li>
+              <li><a href=\"";
+        // line 58
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-2"], "method"), "url", []), "html", null, true);
+        echo "\">Giải pháp tối ưu hóa đặt phòng</a></li>
             </ul>
           </li>
           <li><a href=\"";
         // line 61
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/pricing"], "method"), "url", []), "html", null, true);
         echo "\">Giá cả</a></li>
-          <li><a href=\"howItWork.html\">Cách hoạt động</a></li>
-          <li><a href=\"blog.html\">Blog</a></li>
-          <li><a href=\"contact.html\">Liên hệ</a></li>
+          <li><a href=\"";
+        // line 62
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/howitwork"], "method"), "url", []), "html", null, true);
+        echo "\">Cách hoạt động</a></li>
+          <li><a href=\"";
+        // line 63
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/blog"], "method"), "url", []), "html", null, true);
+        echo "\">Blog</a></li>
+          <li><a href=\"";
+        // line 64
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
+        echo "\">Liên hệ</a></li>
           <div class=\"language-dropdown\">
             <button class=\"dropdown-btn\">
               <img src=\"";
@@ -135,7 +156,9 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                 <a href=\"";
         // line 70
         echo twig_escape_filter($this->env, ($context["base_url"] ?? null), "html", null, true);
-        echo "/en\" class=\"vi\">
+        echo "/en";
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "route", []), "html", null, true);
+        echo "\" class=\"vi\">
                   <img src=\"";
         // line 71
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
@@ -171,7 +194,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
           <div class=\"container\">
             <h2>Thương Hiệu Của Bạn</h2>
             <p>Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn</p>
-            <a href=\"services.html\" class=\"btn-get-started\">Dịch vụ</a>
+            <a href=\"";
+        // line 100
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#services\" class=\"btn-get-started\">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -183,7 +209,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
           <div class=\"container\">
             <h2>Tên Miền Của Bạn</h2>
             <p>Kiểm Soát Hoàn Toàn Với Trang Web Tùy Chỉnh – Không Chia Sẻ Hệ Thống</p>
-            <a href=\"services.html\" class=\"btn-get-started\">Dịch vụ</a>
+            <a href=\"";
+        // line 109
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#services\" class=\"btn-get-started\">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -195,7 +224,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
           <div class=\"container\">
             <h2>Khách Hàng Của Bạn</h2>
             <p>Kết Nối Trực Tiếp Với Khách Hàng – Không Phí Hoa Hồng</p>
-            <a href=\"services.html\" class=\"btn-get-started\">Dịch vụ</a>
+            <a href=\"";
+        // line 118
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#services\" class=\"btn-get-started\">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -224,7 +256,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
           <div class=\"row align-items-center\">
             <!-- Phần văn bản -->
-            <div class=\"col-lg-6 col-md-12 about-text\">
+            <div class=\"col-lg-6 col-md-12 about-text\" style=\"margin-top: 30px;\">
                 <h2>Về chúng tôi!</h2>
                 <h5 style=\"font-weight: 700;\">Tăng cường đặt phòng bằng trang web khách sạn của riêng bạn</h4>
                 <p>
@@ -270,7 +302,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                 <i class=\"bi bi-easel\"></i>
                 
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"";
+        // line 190
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"stretched-link\">
                 <h3>Trang web khách sạn tùy chỉnh</h3>
               </a>
               <p>Tạo một nhận diện trực tuyến độc đáo với trang web tùy chỉnh.</p>
@@ -286,7 +321,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                 <i class=\"bi bi-broadcast\"></i>
                 
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"";
+        // line 206
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-1"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"stretched-link\">
                 <h3>Hỗ trợ đặt phòng trực tuyến</h3>
               </a>
               <p>Đơn giản hóa quy trình đặt phòng trực tuyến của khách sạn bạn một cách dễ dàng.</p>
@@ -301,7 +339,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                 </svg>
                 <i class=\"bi bi-activity\"></i>
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"";
+        // line 221
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-2"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"stretched-link\">
                 <h3>Giải pháp tối ưu hóa đặt phòng</h3>
               </a>
               <p>Tối đa hóa số lượng đặt phòng của bạn với các công cụ tối ưu hóa của chúng tôi.</p>
@@ -332,7 +373,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                         <img src=\"";
         // line 249
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
-        echo "/assets/img/professional.webp\" alt=\"Save time\">
+        echo "/assets/img/professional.webp\" alt=\"Chuyên nghiệp\">
                     </div>
                     <div class=\"text-overlay\">Chuyên nghiệp</div>
                 </div>
@@ -342,7 +383,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                         <img src=\"";
         // line 256
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
-        echo "/assets/img/modern.webp\" alt=\"Save time\">
+        echo "/assets/img/modern.webp\" alt=\"Hiện đại\">
                     </div>
                     <div class=\"text-overlay\">Hiện đại</div>
                 </div>
@@ -352,7 +393,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                         <img src=\"";
         // line 263
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
-        echo "/assets/img/effective.webp\" alt=\"Save time\">
+        echo "/assets/img/effective.webp\" alt=\"Hiệu quả\">
                     </div>
                     <div class=\"text-overlay\">Hiệu quả</div>
                 </div>
@@ -427,7 +468,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
             </div>
             <div class=\"col-md-1\"></div>
             <div class=\"col-md-5 text-center text-md-start\">
-                <h2>Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?</h2>
+                <h2 id=\"launch\">Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?</h2>
                 <a href=\"#\" class=\"demo-btn\">Xem bản demo!</a>
             </div>
           </div>
@@ -436,7 +477,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
   </section>
 
   <div class=\"text-center mt-4\" style=\"margin-bottom: 40px; margin-top: 5px;\" >
-    <a href=\"contact.html\" class=\"btn btn-contact\">Liên hệ ngay</a>
+    <a href=\"";
+        // line 335
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
+        echo "#services\" class=\"btn btn-contact\">Liên hệ ngay</a>
   </div>
 
   </main>
@@ -445,7 +489,10 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
     <div class=\"container footer-top\">
       <div class=\"row gy-4\">
         <div class=\"col-lg-3 col-md-6 footer-about\">
-          <a href=\"index.html\" class=\"logo d-flex align-items-center\">
+          <a href=\"";
+        // line 344
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"logo d-flex align-items-center\">
             <img src=\"";
         // line 345
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
@@ -457,24 +504,48 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
         <div class=\"col-lg-3 col-md-3 footer-links\">
           <h4>Our Services</h4>
           <ul>
-            <li><a href=\"service-details.html\">Trang web khách sạn tùy chỉnh</a></li>
-            <li><a href=\"service-details-1.html\">Hỗ trợ đặt phòng trực tuyến</a></li>
-            <li><a href=\"service-details-2.html\">Giải pháp tối ưu hóa đặt phòng</a></li>
+            <li><a href=\"";
+        // line 353
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details"], "method"), "url", []), "html", null, true);
+        echo "\">Trang web khách sạn tùy chỉnh</a></li>
+            <li><a href=\"";
+        // line 354
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-1"], "method"), "url", []), "html", null, true);
+        echo "\">Hỗ trợ đặt phòng trực tuyến</a></li>
+            <li><a href=\"";
+        // line 355
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-2"], "method"), "url", []), "html", null, true);
+        echo "\">Giải pháp tối ưu hóa đặt phòng</a></li>
           </ul>
         </div>
 
         <div class=\"col-lg-2 col-md-3 footer-links\">
           <h4>Liên kết hữu ích</h4>
           <ul>
-            <li><a href=\"index.html\">Trang chủ</a></li>
-            <li><a href=\"about.html\">Giới thiệu</a></li>
-            <li><a href=\"services.html\">Dịch vụ</a></li>
-            <li><a href=\"contact.html\">Liên hệ</a></li>
+            <li><a href=\"";
+        // line 362
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\">Trang chủ</a></li>
+            <li><a href=\"";
+        // line 363
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#about\">Giới thiệu</a></li>
+            <li><a href=\"";
+        // line 364
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#services\">Dịch vụ</a></li>
+            <li><a href=\"";
+        // line 365
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
+        echo "#services\">Liên hệ</a></li>
           </ul>
         </div>
 
         <div class=\"col-lg-4 col-md-12 footer-newsletter\">
-          <a href=\"index.html\" class=\"logo d-flex align-items-center\">
+          <a href=\"";
+        // line 370
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"logo d-flex align-items-center\">
             <span class=\"sitename\">ALLXONE</span>
           </a>
           <div class=\"footer-contact pt-3\">
@@ -559,7 +630,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
     public function getTemplateName()
     {
-        return "default.html.twig";
+        return "vi/default.html.twig";
     }
 
     public function isTraitable()
@@ -569,7 +640,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
     public function getDebugInfo()
     {
-        return array (  552 => 419,  546 => 416,  542 => 415,  538 => 414,  534 => 413,  530 => 412,  526 => 411,  522 => 410,  518 => 409,  451 => 345,  425 => 322,  404 => 304,  392 => 295,  380 => 286,  354 => 263,  344 => 256,  334 => 249,  244 => 162,  193 => 114,  181 => 105,  169 => 96,  141 => 71,  137 => 70,  131 => 67,  122 => 61,  110 => 52,  101 => 46,  80 => 28,  74 => 25,  70 => 24,  66 => 23,  62 => 22,  58 => 21,  47 => 13,  43 => 12,  30 => 1,);
+        return array (  623 => 419,  617 => 416,  613 => 415,  609 => 414,  605 => 413,  601 => 412,  597 => 411,  593 => 410,  589 => 409,  547 => 370,  539 => 365,  535 => 364,  531 => 363,  527 => 362,  517 => 355,  513 => 354,  509 => 353,  498 => 345,  494 => 344,  482 => 335,  466 => 322,  445 => 304,  433 => 295,  421 => 286,  395 => 263,  385 => 256,  375 => 249,  344 => 221,  326 => 206,  307 => 190,  276 => 162,  229 => 118,  222 => 114,  214 => 109,  207 => 105,  199 => 100,  192 => 96,  164 => 71,  158 => 70,  152 => 67,  146 => 64,  142 => 63,  138 => 62,  134 => 61,  128 => 58,  124 => 57,  120 => 56,  113 => 52,  104 => 46,  99 => 44,  80 => 28,  74 => 25,  70 => 24,  66 => 23,  62 => 22,  58 => 21,  47 => 13,  43 => 12,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -625,7 +696,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
   <header id=\"header\" class=\"header d-flex align-items-center sticky-top\">
     <div class=\"container position-relative d-flex align-items-center\">
 
-      <a href=\"default.html.twig\" class=\"logo d-flex align-items-center me-auto\">
+      <a href=\"{{ page.find('/home').url }}\" class=\"logo d-flex align-items-center me-auto\">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src=\"{{ theme_url }}/assets\\img\\logo.webp\" alt=\"Logo BookDe - Dịch vụ thiết kế website khách sạn\">
         <!-- <h1 class=\"sitename\">Company</h1><span>.</span> -->
@@ -633,25 +704,25 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
       <nav id=\"navmenu\" class=\"navmenu\">
         <ul>
-          <li><a href=\"{{ base_url }}\" class=\"active\">Trang chủ</a></li>
+          <li><a href=\"{{ page.find('/home').url }}\" class=\"active\">Trang chủ</a></li>
           <li><a href=\"#about\">Giới thiệu</a></li>
           <li class=\"dropdown\"><a href=\"#services\"><span>Dịch vụ</span> <i class=\"bi bi-chevron-down toggle-dropdown\"></i></a>
             <ul>
-              <li><a href=\"service-details.html\">Trang web khách sạn tùy chỉnh</a></li>
-              <li><a href=\"service-details-1.html\">Hỗ trợ đặt phòng trực tuyến</a></li>
-              <li><a href=\"service-details-2.html\">Giải pháp tối ưu hóa đặt phòng</a></li>
+              <li><a href=\"{{ page.find('/service-details').url }}\">Trang web khách sạn tùy chỉnh</a></li>
+              <li><a href=\"{{ page.find('/service-details-1').url }}\">Hỗ trợ đặt phòng trực tuyến</a></li>
+              <li><a href=\"{{ page.find('/service-details-2').url }}\">Giải pháp tối ưu hóa đặt phòng</a></li>
             </ul>
           </li>
           <li><a href=\"{{ page.find('/pricing').url }}\">Giá cả</a></li>
-          <li><a href=\"howItWork.html\">Cách hoạt động</a></li>
-          <li><a href=\"blog.html\">Blog</a></li>
-          <li><a href=\"contact.html\">Liên hệ</a></li>
+          <li><a href=\"{{ page.find('/howitwork').url }}\">Cách hoạt động</a></li>
+          <li><a href=\"{{ page.find('/blog').url }}\">Blog</a></li>
+          <li><a href=\"{{ page.find('/contact').url }}\">Liên hệ</a></li>
           <div class=\"language-dropdown\">
             <button class=\"dropdown-btn\">
               <img src=\"{{ theme_url }}/assets/img/vi.webp\" alt=\"Vietnamese\"><span class=\"textEng\"><u><b>VI</b></u></span><i class=\"bi bi-chevron-down toggle-dropdown\"  id=\"lang\"></i>
             </button>
             <div class=\"dropdown-content\">
-                <a href=\"{{ base_url }}/en\" class=\"vi\">
+                <a href=\"{{ base_url }}/en{{ page.route }}\" class=\"vi\">
                   <img src=\"{{ theme_url }}/assets/img/en.webp\" alt=\"English\"><span class=\"textVi\" style=\"left:-12px;\">EN</span>
                 </a>
               </div>
@@ -681,7 +752,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
           <div class=\"container\">
             <h2>Thương Hiệu Của Bạn</h2>
             <p>Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn</p>
-            <a href=\"services.html\" class=\"btn-get-started\">Dịch vụ</a>
+            <a href=\"{{ page.find('/home').url }}#services\" class=\"btn-get-started\">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -690,7 +761,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
           <div class=\"container\">
             <h2>Tên Miền Của Bạn</h2>
             <p>Kiểm Soát Hoàn Toàn Với Trang Web Tùy Chỉnh – Không Chia Sẻ Hệ Thống</p>
-            <a href=\"services.html\" class=\"btn-get-started\">Dịch vụ</a>
+            <a href=\"{{ page.find('/home').url }}#services\" class=\"btn-get-started\">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -699,7 +770,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
           <div class=\"container\">
             <h2>Khách Hàng Của Bạn</h2>
             <p>Kết Nối Trực Tiếp Với Khách Hàng – Không Phí Hoa Hồng</p>
-            <a href=\"services.html\" class=\"btn-get-started\">Dịch vụ</a>
+            <a href=\"{{ page.find('/home').url }}#services\" class=\"btn-get-started\">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -728,7 +799,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
           <div class=\"row align-items-center\">
             <!-- Phần văn bản -->
-            <div class=\"col-lg-6 col-md-12 about-text\">
+            <div class=\"col-lg-6 col-md-12 about-text\" style=\"margin-top: 30px;\">
                 <h2>Về chúng tôi!</h2>
                 <h5 style=\"font-weight: 700;\">Tăng cường đặt phòng bằng trang web khách sạn của riêng bạn</h4>
                 <p>
@@ -771,7 +842,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                 <i class=\"bi bi-easel\"></i>
                 
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"{{ page.find('/service-details').url }}\" class=\"stretched-link\">
                 <h3>Trang web khách sạn tùy chỉnh</h3>
               </a>
               <p>Tạo một nhận diện trực tuyến độc đáo với trang web tùy chỉnh.</p>
@@ -787,7 +858,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                 <i class=\"bi bi-broadcast\"></i>
                 
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"{{ page.find('/service-details-1').url }}\" class=\"stretched-link\">
                 <h3>Hỗ trợ đặt phòng trực tuyến</h3>
               </a>
               <p>Đơn giản hóa quy trình đặt phòng trực tuyến của khách sạn bạn một cách dễ dàng.</p>
@@ -802,7 +873,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
                 </svg>
                 <i class=\"bi bi-activity\"></i>
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"{{ page.find('/service-details-2').url }}\" class=\"stretched-link\">
                 <h3>Giải pháp tối ưu hóa đặt phòng</h3>
               </a>
               <p>Tối đa hóa số lượng đặt phòng của bạn với các công cụ tối ưu hóa của chúng tôi.</p>
@@ -830,21 +901,21 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
             <div class=\"card-wrapper\">
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"{{ theme_url }}/assets/img/professional.webp\" alt=\"Save time\">
+                        <img src=\"{{ theme_url }}/assets/img/professional.webp\" alt=\"Chuyên nghiệp\">
                     </div>
                     <div class=\"text-overlay\">Chuyên nghiệp</div>
                 </div>
     
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"{{ theme_url }}/assets/img/modern.webp\" alt=\"Save time\">
+                        <img src=\"{{ theme_url }}/assets/img/modern.webp\" alt=\"Hiện đại\">
                     </div>
                     <div class=\"text-overlay\">Hiện đại</div>
                 </div>
     
                 <div class=\"card-container\">
                     <div class=\"card\">
-                        <img src=\"{{ theme_url }}/assets/img/effective.webp\" alt=\"Save time\">
+                        <img src=\"{{ theme_url }}/assets/img/effective.webp\" alt=\"Hiệu quả\">
                     </div>
                     <div class=\"text-overlay\">Hiệu quả</div>
                 </div>
@@ -907,7 +978,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
             </div>
             <div class=\"col-md-1\"></div>
             <div class=\"col-md-5 text-center text-md-start\">
-                <h2>Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?</h2>
+                <h2 id=\"launch\">Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?</h2>
                 <a href=\"#\" class=\"demo-btn\">Xem bản demo!</a>
             </div>
           </div>
@@ -916,7 +987,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
   </section>
 
   <div class=\"text-center mt-4\" style=\"margin-bottom: 40px; margin-top: 5px;\" >
-    <a href=\"contact.html\" class=\"btn btn-contact\">Liên hệ ngay</a>
+    <a href=\"{{ page.find('/contact').url }}#services\" class=\"btn btn-contact\">Liên hệ ngay</a>
   </div>
 
   </main>
@@ -925,7 +996,7 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
     <div class=\"container footer-top\">
       <div class=\"row gy-4\">
         <div class=\"col-lg-3 col-md-6 footer-about\">
-          <a href=\"index.html\" class=\"logo d-flex align-items-center\">
+          <a href=\"{{ page.find('/home').url }}\" class=\"logo d-flex align-items-center\">
             <img src=\"{{ theme_url }}/assets/img/logo.webp\" alt=\"Logo BookDe - Dịch vụ thiết kế website khách sạn\" >
           </a>
           
@@ -934,24 +1005,24 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
         <div class=\"col-lg-3 col-md-3 footer-links\">
           <h4>Our Services</h4>
           <ul>
-            <li><a href=\"service-details.html\">Trang web khách sạn tùy chỉnh</a></li>
-            <li><a href=\"service-details-1.html\">Hỗ trợ đặt phòng trực tuyến</a></li>
-            <li><a href=\"service-details-2.html\">Giải pháp tối ưu hóa đặt phòng</a></li>
+            <li><a href=\"{{ page.find('/service-details').url }}\">Trang web khách sạn tùy chỉnh</a></li>
+            <li><a href=\"{{ page.find('/service-details-1').url }}\">Hỗ trợ đặt phòng trực tuyến</a></li>
+            <li><a href=\"{{ page.find('/service-details-2').url }}\">Giải pháp tối ưu hóa đặt phòng</a></li>
           </ul>
         </div>
 
         <div class=\"col-lg-2 col-md-3 footer-links\">
           <h4>Liên kết hữu ích</h4>
           <ul>
-            <li><a href=\"index.html\">Trang chủ</a></li>
-            <li><a href=\"about.html\">Giới thiệu</a></li>
-            <li><a href=\"services.html\">Dịch vụ</a></li>
-            <li><a href=\"contact.html\">Liên hệ</a></li>
+            <li><a href=\"{{ page.find('/home').url }}\">Trang chủ</a></li>
+            <li><a href=\"{{ page.find('/home').url }}#about\">Giới thiệu</a></li>
+            <li><a href=\"{{ page.find('/home').url }}#services\">Dịch vụ</a></li>
+            <li><a href=\"{{ page.find('/contact').url }}#services\">Liên hệ</a></li>
           </ul>
         </div>
 
         <div class=\"col-lg-4 col-md-12 footer-newsletter\">
-          <a href=\"index.html\" class=\"logo d-flex align-items-center\">
+          <a href=\"{{ page.find('/home').url }}\" class=\"logo d-flex align-items-center\">
             <span class=\"sitename\">ALLXONE</span>
           </a>
           <div class=\"footer-contact pt-3\">
@@ -1004,6 +1075,6 @@ class __TwigTemplate_3c006c0319e952d02447c8449dc04667904c0f5cb9cdec59bac90f10b56
 
 </body>
 
-</html>", "default.html.twig", "C:\\wamp64\\www\\grav\\user\\themes\\mytheme\\templates\\vi\\default.html.twig");
+</html>", "vi/default.html.twig", "C:\\wamp64\\www\\grav\\user\\themes\\mytheme\\templates\\vi\\default.html.twig");
     }
 }

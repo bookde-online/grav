@@ -59,7 +59,7 @@ body {
     margin-right: auto;
     text-align: center;
 }
-img{
+.main img{
     border-radius: 10px;
 }
 @media (max-width: 768px) { /* Chỉ áp dụng cho mobile */

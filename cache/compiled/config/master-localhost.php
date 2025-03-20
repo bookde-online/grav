@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1741451057,
-    'checksum' => 'fc9e47571a986da10132e20a7d1b0c26',
+    'timestamp' => 1742463628,
+    'checksum' => '28db6523efcf132303f1abd28d3a5e50',
     'files' => [
         'user/config' => [
             'langswitcher' => [
@@ -27,7 +27,7 @@ return [
             ],
             'themes/mytheme' => [
                 'file' => 'user/config/themes/mytheme.yaml',
-                'modified' => 1741448689
+                'modified' => 1742462915
             ],
             'themes/quark' => [
                 'file' => 'user/config/themes/quark.yaml',
@@ -71,7 +71,7 @@ return [
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1741446312
+                'modified' => 1742463624
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
@@ -132,7 +132,25 @@ return [
                 'keywords' => 'grav, theme, custom',
                 'bugs' => 'https://example.com/issues',
                 'license' => 'MIT',
-                'enabled' => true
+                'enabled' => true,
+                'production-mode' => true,
+                'grid-size' => 'grid-lg',
+                'header-fixed' => true,
+                'header-animated' => true,
+                'header-dark' => false,
+                'header-transparent' => false,
+                'sticky-footer' => true,
+                'blog-page' => '/blog',
+                'spectre' => [
+                    'exp' => false,
+                    'icons' => false
+                ],
+                'custom_logo' => [
+                    
+                ],
+                'custom_logo_mobile' => [
+                    
+                ]
             ],
             'quark' => [
                 'enabled' => false,

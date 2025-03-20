@@ -41,7 +41,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center">
 
-      <a href="default.html.twig" class="logo d-flex align-items-center me-auto">
+      <a href="{{ page.find('/home').url }}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{{ theme_url }}/assets\img\logo.webp" alt="Logo BookDe - Dịch vụ thiết kế website khách sạn">
         <!-- <h1 class="sitename">Company</h1><span>.</span> -->
@@ -49,25 +49,25 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{{ base_url }}" class="active">Trang chủ</a></li>
+          <li><a href="{{ page.find('/home').url }}" class="active">Trang chủ</a></li>
           <li><a href="#about">Giới thiệu</a></li>
           <li class="dropdown"><a href="#services"><span>Dịch vụ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="service-details.html">Trang web khách sạn tùy chỉnh</a></li>
-              <li><a href="service-details-1.html">Hỗ trợ đặt phòng trực tuyến</a></li>
-              <li><a href="service-details-2.html">Giải pháp tối ưu hóa đặt phòng</a></li>
+              <li><a href="{{ page.find('/service-details').url }}">Trang web khách sạn tùy chỉnh</a></li>
+              <li><a href="{{ page.find('/service-details-1').url }}">Hỗ trợ đặt phòng trực tuyến</a></li>
+              <li><a href="{{ page.find('/service-details-2').url }}">Giải pháp tối ưu hóa đặt phòng</a></li>
             </ul>
           </li>
           <li><a href="{{ page.find('/pricing').url }}">Giá cả</a></li>
-          <li><a href="howItWork.html">Cách hoạt động</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="{{ page.find('/howitwork').url }}">Cách hoạt động</a></li>
+          <li><a href="{{ page.find('/blog').url }}">Blog</a></li>
+          <li><a href="{{ page.find('/contact').url }}">Liên hệ</a></li>
           <div class="language-dropdown">
             <button class="dropdown-btn">
               <img src="{{ theme_url }}/assets/img/vi.webp" alt="Vietnamese"><span class="textEng"><u><b>VI</b></u></span><i class="bi bi-chevron-down toggle-dropdown"  id="lang"></i>
             </button>
             <div class="dropdown-content">
-                <a href="{{ base_url }}/en" class="vi">
+                <a href="{{ base_url }}/en{{ page.route }}" class="vi">
                   <img src="{{ theme_url }}/assets/img/en.webp" alt="English"><span class="textVi" style="left:-12px;">EN</span>
                 </a>
               </div>
@@ -97,7 +97,7 @@
           <div class="container">
             <h2>Thương Hiệu Của Bạn</h2>
             <p>Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn</p>
-            <a href="services.html" class="btn-get-started">Dịch vụ</a>
+            <a href="{{ page.find('/home').url }}#services" class="btn-get-started">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -106,7 +106,7 @@
           <div class="container">
             <h2>Tên Miền Của Bạn</h2>
             <p>Kiểm Soát Hoàn Toàn Với Trang Web Tùy Chỉnh – Không Chia Sẻ Hệ Thống</p>
-            <a href="services.html" class="btn-get-started">Dịch vụ</a>
+            <a href="{{ page.find('/home').url }}#services" class="btn-get-started">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -115,7 +115,7 @@
           <div class="container">
             <h2>Khách Hàng Của Bạn</h2>
             <p>Kết Nối Trực Tiếp Với Khách Hàng – Không Phí Hoa Hồng</p>
-            <a href="services.html" class="btn-get-started">Dịch vụ</a>
+            <a href="{{ page.find('/home').url }}#services" class="btn-get-started">Dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -144,7 +144,7 @@
 
           <div class="row align-items-center">
             <!-- Phần văn bản -->
-            <div class="col-lg-6 col-md-12 about-text">
+            <div class="col-lg-6 col-md-12 about-text" style="margin-top: 30px;">
                 <h2>Về chúng tôi!</h2>
                 <h5 style="font-weight: 700;">Tăng cường đặt phòng bằng trang web khách sạn của riêng bạn</h4>
                 <p>
@@ -187,7 +187,7 @@
                 <i class="bi bi-easel"></i>
                 
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="{{ page.find('/service-details').url }}" class="stretched-link">
                 <h3>Trang web khách sạn tùy chỉnh</h3>
               </a>
               <p>Tạo một nhận diện trực tuyến độc đáo với trang web tùy chỉnh.</p>
@@ -203,7 +203,7 @@
                 <i class="bi bi-broadcast"></i>
                 
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="{{ page.find('/service-details-1').url }}" class="stretched-link">
                 <h3>Hỗ trợ đặt phòng trực tuyến</h3>
               </a>
               <p>Đơn giản hóa quy trình đặt phòng trực tuyến của khách sạn bạn một cách dễ dàng.</p>
@@ -218,7 +218,7 @@
                 </svg>
                 <i class="bi bi-activity"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="{{ page.find('/service-details-2').url }}" class="stretched-link">
                 <h3>Giải pháp tối ưu hóa đặt phòng</h3>
               </a>
               <p>Tối đa hóa số lượng đặt phòng của bạn với các công cụ tối ưu hóa của chúng tôi.</p>
@@ -246,21 +246,21 @@
             <div class="card-wrapper">
                 <div class="card-container">
                     <div class="card">
-                        <img src="{{ theme_url }}/assets/img/professional.webp" alt="Save time">
+                        <img src="{{ theme_url }}/assets/img/professional.webp" alt="Chuyên nghiệp">
                     </div>
                     <div class="text-overlay">Chuyên nghiệp</div>
                 </div>
     
                 <div class="card-container">
                     <div class="card">
-                        <img src="{{ theme_url }}/assets/img/modern.webp" alt="Save time">
+                        <img src="{{ theme_url }}/assets/img/modern.webp" alt="Hiện đại">
                     </div>
                     <div class="text-overlay">Hiện đại</div>
                 </div>
     
                 <div class="card-container">
                     <div class="card">
-                        <img src="{{ theme_url }}/assets/img/effective.webp" alt="Save time">
+                        <img src="{{ theme_url }}/assets/img/effective.webp" alt="Hiệu quả">
                     </div>
                     <div class="text-overlay">Hiệu quả</div>
                 </div>
@@ -323,7 +323,7 @@
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-5 text-center text-md-start">
-                <h2>Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?</h2>
+                <h2 id="launch">Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?</h2>
                 <a href="#" class="demo-btn">Xem bản demo!</a>
             </div>
           </div>
@@ -332,7 +332,7 @@
   </section>
 
   <div class="text-center mt-4" style="margin-bottom: 40px; margin-top: 5px;" >
-    <a href="contact.html" class="btn btn-contact">Liên hệ ngay</a>
+    <a href="{{ page.find('/contact').url }}#services" class="btn btn-contact">Liên hệ ngay</a>
   </div>
 
   </main>
@@ -341,7 +341,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="{{ page.find('/home').url }}" class="logo d-flex align-items-center">
             <img src="{{ theme_url }}/assets/img/logo.webp" alt="Logo BookDe - Dịch vụ thiết kế website khách sạn" >
           </a>
           
@@ -350,24 +350,24 @@
         <div class="col-lg-3 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="service-details.html">Trang web khách sạn tùy chỉnh</a></li>
-            <li><a href="service-details-1.html">Hỗ trợ đặt phòng trực tuyến</a></li>
-            <li><a href="service-details-2.html">Giải pháp tối ưu hóa đặt phòng</a></li>
+            <li><a href="{{ page.find('/service-details').url }}">Trang web khách sạn tùy chỉnh</a></li>
+            <li><a href="{{ page.find('/service-details-1').url }}">Hỗ trợ đặt phòng trực tuyến</a></li>
+            <li><a href="{{ page.find('/service-details-2').url }}">Giải pháp tối ưu hóa đặt phòng</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Liên kết hữu ích</h4>
           <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="services.html">Dịch vụ</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="{{ page.find('/home').url }}">Trang chủ</a></li>
+            <li><a href="{{ page.find('/home').url }}#about">Giới thiệu</a></li>
+            <li><a href="{{ page.find('/home').url }}#services">Dịch vụ</a></li>
+            <li><a href="{{ page.find('/contact').url }}#services">Liên hệ</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="{{ page.find('/home').url }}" class="logo d-flex align-items-center">
             <span class="sitename">ALLXONE</span>
           </a>
           <div class="footer-contact pt-3">

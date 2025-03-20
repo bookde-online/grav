@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* default.html.twig */
+/* en/default.html.twig */
 class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9d37ea extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -93,7 +93,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
   <header id=\"header\" class=\"header d-flex align-items-center sticky-top\">
     <div class=\"container position-relative d-flex align-items-center\">
 
-      <a href=\"index.html\" class=\"logo d-flex align-items-center me-auto\">
+      <a href=\"";
+        // line 43
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"logo d-flex align-items-center me-auto\">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src=\"";
         // line 45
@@ -104,19 +107,43 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
       <nav id=\"navmenu\" class=\"navmenu\">
         <ul>
-          <li><a href=\"index.html\" class=\"active\">Home</a></li>
+          <li><a href=\"";
+        // line 51
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"active\">Home</a></li>
           <li><a href=\"#about\">About</a></li>
           <li class=\"dropdown\"><a href=\"#services\"><span>Services</span> <i class=\"bi bi-chevron-down toggle-dropdown\"></i></a>
             <ul>
-              <li><a href=\"service-details.html\">Website customization</a></li>
-              <li><a href=\"service-details-1.html\">Online booking support</a></li>
-              <li><a href=\"service-details-2.html\">Booking optimization solution</a></li>
+              <li><a href=\"";
+        // line 55
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details"], "method"), "url", []), "html", null, true);
+        echo "\">Website customization</a></li>
+              <li><a href=\"";
+        // line 56
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-1"], "method"), "url", []), "html", null, true);
+        echo "\">Online booking support</a></li>
+              <li><a href=\"";
+        // line 57
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-2"], "method"), "url", []), "html", null, true);
+        echo "\">Booking optimization solution</a></li>
             </ul>
           </li>
-          <li><a href=\"pricing.html\">Price</a></li>
-          <li><a href=\"howItWork.html\">How it works</a></li>
-          <li><a href=\"blog.html\">Blog</a></li>
-          <li><a href=\"contact.html\">Contact</a></li>
+          <li><a href=\"";
+        // line 60
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/pricing"], "method"), "url", []), "html", null, true);
+        echo "\">Price</a></li>
+          <li><a href=\"";
+        // line 61
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/howitwork"], "method"), "url", []), "html", null, true);
+        echo "\">How it works</a></li>
+          <li><a href=\"";
+        // line 62
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/blog"], "method"), "url", []), "html", null, true);
+        echo "\">Blog</a></li>
+          <li><a href=\"";
+        // line 63
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
+        echo "\">Contact</a></li>
           <div class=\"language-dropdown\">
             <button class=\"dropdown-btn\">
               <img src=\"";
@@ -125,7 +152,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         echo "/assets/img/en.webp\" alt=\"English\"><span class=\"textEng\"><u><b>EN</b></u></span><i class=\"bi bi-chevron-down toggle-dropdown\" id=\"lang\"></i></i>
             </button>
             <div class=\"dropdown-content\">
-                <a href=\"../vi/index.html\" class=\"vi\">
+                <a href=\"";
+        // line 69
+        echo twig_escape_filter($this->env, twig_replace_filter($this->getAttribute(($context["page"] ?? null), "url", []), ["/en" => "/vi"]), "html", null, true);
+        echo "\" class=\"vi\">
                   <img src=\"";
         // line 70
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
@@ -161,7 +191,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
           <div class=\"container\">
             <h2>Your Brand</h2>
             <p>Create a dedicated booking website for your hotel</p>
-            <a href=\"services.html\" class=\"btn-get-started\">View Services</a>
+            <a href=\"";
+        // line 99
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#services\" class=\"btn-get-started\">View Services</a>
           </div>
         </div><!-- End Carousel Item -->
         
@@ -173,7 +206,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
           <div class=\"container\">
             <h2>Your Domain</h2>
             <p>Full control with a customized website – No shared system</p>
-            <a href=\"services.html\" class=\"btn-get-started\">View Services</a>
+            <a href=\"";
+        // line 108
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#services\" class=\"btn-get-started\">View Services</a>
           </div>
         </div><!-- End Carousel Item -->
         
@@ -185,7 +221,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
           <div class=\"container\">
             <h2>Your Customers</h2>
             <p>Connect directly with your customers – No commission fees</p>
-            <a href=\"services.html\" class=\"btn-get-started\">View Services</a>
+            <a href=\"";
+        // line 117
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#services\" class=\"btn-get-started\">View Services</a>
           </div>
         </div>
         <!-- End Carousel Item -->
@@ -215,7 +254,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
           <div class=\"row align-items-center\">
             <!-- Phần văn bản -->
-            <div class=\"col-lg-7 col-md-12 about-text\">
+            <div class=\"col-lg-7 col-md-12 about-text\" style=\"margin-top: 30px;\">
                 <h2>About Us!</h2>
                 <h5 style=\"font-weight: 700;\">Boost Bookings with Your Own Hotel Website</h4>
                 <p>
@@ -251,7 +290,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
       <div class=\"container\">
         <div class=\"row gy-4\">
-          <h2 class=\"inner-title\"><b>Enhance Your Hotel Online</b></h2>
+          <h2 class=\"inner-title\" ><b>Enhance Your Hotel Online</b></h2>
       
           <div class=\"col-lg-4 col-md-6\" data-aos=\"fade-up\" data-aos-delay=\"200\">
             <div class=\"service-item item-orange position-relative\" style=\"text-align: center;\">
@@ -261,7 +300,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
                 </svg>
                 <i class=\"bi bi-easel\"></i>
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"";
+        // line 190
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"stretched-link\">
                 <h3>Custom Hotel Website</h3>
               </a>
               <p>Create a unique online identity with a customized website.</p>
@@ -276,7 +318,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
                 </svg>
                 <i class=\"bi bi-broadcast\"></i>
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"";
+        // line 205
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-1"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"stretched-link\">
                 <h3>Online Booking Support</h3>
               </a>
               <p>Simplify your hotel’s online booking process with ease.</p>
@@ -291,7 +336,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
                 </svg>
                 <i class=\"bi bi-activity\"></i>
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"";
+        // line 220
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-2"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"stretched-link\">
                 <h3>Booking Optimization Solutions</h3>
               </a>
               <p>Maximize your bookings with our advanced optimization tools.</p>
@@ -416,7 +464,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
             </div>
             <div class=\"col-md-1\"></div>
             <div class=\"col-md-5 text-center text-md-start\">
-                <h2>Ready to launch your hotel to the web?</h2>
+                <h2 id=\"launch\">Ready to launch your hotel to the web?</h2>
                 <a href=\"#\" class=\"demo-btn\">Try our free demo!</a>
             </div>
           </div>
@@ -425,7 +473,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
   </section>
 
   <div class=\"text-center mt-4\" style=\"margin-bottom: 40px; margin-top: 5px;\" >
-    <a href=\"contact.html\" class=\"btn btn-contact\">Contact Us Now</a>
+    <a href=\"";
+        // line 333
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
+        echo "#services\" class=\"btn btn-contact\">Contact Us Now</a>
   </div>
 
   </main>
@@ -434,7 +485,10 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
     <div class=\"container footer-top\">
       <div class=\"row gy-4\">
         <div class=\"col-lg-3 col-md-6 footer-about\">
-          <a href=\"index.html\" class=\"logo d-flex align-items-center\">
+          <a href=\"";
+        // line 342
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"logo d-flex align-items-center\">
             <img src=\"";
         // line 343
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
@@ -445,24 +499,48 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         <div class=\"col-lg-3 col-md-3 footer-links\">
           <h4>Our Services</h4>
           <ul>
-            <li><a href=\"service-details.html\">Custom Hotel Website</a></li>
-            <li><a href=\"service-details-1.html\">Online Booking Support</a></li>
-            <li><a href=\"service-details-2.html\">Booking Optimization Solutions</a></li>
+            <li><a href=\"";
+        // line 350
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details"], "method"), "url", []), "html", null, true);
+        echo "\">Custom Hotel Website</a></li>
+            <li><a href=\"";
+        // line 351
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-1"], "method"), "url", []), "html", null, true);
+        echo "\">Online Booking Support</a></li>
+            <li><a href=\"";
+        // line 352
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-2"], "method"), "url", []), "html", null, true);
+        echo "\">Booking Optimization Solutions</a></li>
           </ul>
         </div>
 
         <div class=\"col-lg-2 col-md-3 footer-links\">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href=\"index.html\">Home</a></li>
-            <li><a href=\"about.html\">About Us</a></li>
-            <li><a href=\"services.html\">Services</a></li>
-            <li><a href=\"contact.html\">Contact</a></li>
+            <li><a href=\"";
+        // line 359
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\">Home</a></li>
+            <li><a href=\"";
+        // line 360
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#about\">About Us</a></li>
+            <li><a href=\"";
+        // line 361
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "#services\">Services</a></li>
+            <li><a href=\"";
+        // line 362
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
+        echo "#services\">Contact</a></li>
           </ul>
         </div>
 
         <div class=\"col-lg-4 col-md-12 footer-newsletter\">
-          <a href=\"index.html\" class=\"logo d-flex align-items-center\">
+          <a href=\"";
+        // line 367
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home"], "method"), "url", []), "html", null, true);
+        echo "\" class=\"logo d-flex align-items-center\">
             <span class=\"sitename\">ALLXONE</span>
           </a>
           <div class=\"footer-contact pt-3\">
@@ -542,7 +620,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
     public function getTemplateName()
     {
-        return "default.html.twig";
+        return "en/default.html.twig";
     }
 
     public function isTraitable()
@@ -552,7 +630,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
     public function getDebugInfo()
     {
-        return array (  535 => 411,  529 => 408,  525 => 407,  521 => 406,  517 => 405,  513 => 404,  509 => 403,  505 => 402,  501 => 401,  440 => 343,  414 => 320,  394 => 303,  382 => 294,  370 => 285,  344 => 262,  334 => 255,  324 => 248,  238 => 165,  183 => 113,  171 => 104,  159 => 95,  131 => 70,  124 => 66,  100 => 45,  79 => 27,  73 => 24,  69 => 23,  65 => 22,  61 => 21,  57 => 20,  47 => 13,  43 => 12,  30 => 1,);
+        return array (  613 => 411,  607 => 408,  603 => 407,  599 => 406,  595 => 405,  591 => 404,  587 => 403,  583 => 402,  579 => 401,  542 => 367,  534 => 362,  530 => 361,  526 => 360,  522 => 359,  512 => 352,  508 => 351,  504 => 350,  494 => 343,  490 => 342,  478 => 333,  462 => 320,  442 => 303,  430 => 294,  418 => 285,  392 => 262,  382 => 255,  372 => 248,  341 => 220,  323 => 205,  305 => 190,  277 => 165,  226 => 117,  219 => 113,  211 => 108,  204 => 104,  196 => 99,  189 => 95,  161 => 70,  157 => 69,  151 => 66,  145 => 63,  141 => 62,  137 => 61,  133 => 60,  127 => 57,  123 => 56,  119 => 55,  112 => 51,  103 => 45,  98 => 43,  79 => 27,  73 => 24,  69 => 23,  65 => 22,  61 => 21,  57 => 20,  47 => 13,  43 => 12,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -607,7 +685,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
   <header id=\"header\" class=\"header d-flex align-items-center sticky-top\">
     <div class=\"container position-relative d-flex align-items-center\">
 
-      <a href=\"index.html\" class=\"logo d-flex align-items-center me-auto\">
+      <a href=\"{{ page.find('/home').url }}\" class=\"logo d-flex align-items-center me-auto\">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src=\"{{ theme_url }}/assets/img/logo.webp\" alt=\"Logo BookDe - Dịch vụ thiết kế website khách sạn\">
         <!-- <h1 class=\"sitename\">Company</h1><span>.</span> -->
@@ -615,25 +693,25 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
       <nav id=\"navmenu\" class=\"navmenu\">
         <ul>
-          <li><a href=\"index.html\" class=\"active\">Home</a></li>
+          <li><a href=\"{{ page.find('/home').url }}\" class=\"active\">Home</a></li>
           <li><a href=\"#about\">About</a></li>
           <li class=\"dropdown\"><a href=\"#services\"><span>Services</span> <i class=\"bi bi-chevron-down toggle-dropdown\"></i></a>
             <ul>
-              <li><a href=\"service-details.html\">Website customization</a></li>
-              <li><a href=\"service-details-1.html\">Online booking support</a></li>
-              <li><a href=\"service-details-2.html\">Booking optimization solution</a></li>
+              <li><a href=\"{{ page.find('/service-details').url }}\">Website customization</a></li>
+              <li><a href=\"{{ page.find('/service-details-1').url }}\">Online booking support</a></li>
+              <li><a href=\"{{ page.find('/service-details-2').url }}\">Booking optimization solution</a></li>
             </ul>
           </li>
-          <li><a href=\"pricing.html\">Price</a></li>
-          <li><a href=\"howItWork.html\">How it works</a></li>
-          <li><a href=\"blog.html\">Blog</a></li>
-          <li><a href=\"contact.html\">Contact</a></li>
+          <li><a href=\"{{ page.find('/pricing').url }}\">Price</a></li>
+          <li><a href=\"{{ page.find('/howitwork').url }}\">How it works</a></li>
+          <li><a href=\"{{ page.find('/blog').url }}\">Blog</a></li>
+          <li><a href=\"{{ page.find('/contact').url }}\">Contact</a></li>
           <div class=\"language-dropdown\">
             <button class=\"dropdown-btn\">
               <img src=\"{{ theme_url }}/assets/img/en.webp\" alt=\"English\"><span class=\"textEng\"><u><b>EN</b></u></span><i class=\"bi bi-chevron-down toggle-dropdown\" id=\"lang\"></i></i>
             </button>
             <div class=\"dropdown-content\">
-                <a href=\"../vi/index.html\" class=\"vi\">
+                <a href=\"{{ page.url|replace({'/en': '/vi'}) }}\" class=\"vi\">
                   <img src=\"{{ theme_url }}/assets/img/vi.webp\" alt=\"Vietnamese\"><span class=\"textVi\">VI</span>
                 </a>
               </div>
@@ -663,7 +741,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
           <div class=\"container\">
             <h2>Your Brand</h2>
             <p>Create a dedicated booking website for your hotel</p>
-            <a href=\"services.html\" class=\"btn-get-started\">View Services</a>
+            <a href=\"{{ page.find('/home').url }}#services\" class=\"btn-get-started\">View Services</a>
           </div>
         </div><!-- End Carousel Item -->
         
@@ -672,7 +750,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
           <div class=\"container\">
             <h2>Your Domain</h2>
             <p>Full control with a customized website – No shared system</p>
-            <a href=\"services.html\" class=\"btn-get-started\">View Services</a>
+            <a href=\"{{ page.find('/home').url }}#services\" class=\"btn-get-started\">View Services</a>
           </div>
         </div><!-- End Carousel Item -->
         
@@ -681,7 +759,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
           <div class=\"container\">
             <h2>Your Customers</h2>
             <p>Connect directly with your customers – No commission fees</p>
-            <a href=\"services.html\" class=\"btn-get-started\">View Services</a>
+            <a href=\"{{ page.find('/home').url }}#services\" class=\"btn-get-started\">View Services</a>
           </div>
         </div>
         <!-- End Carousel Item -->
@@ -711,7 +789,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
           <div class=\"row align-items-center\">
             <!-- Phần văn bản -->
-            <div class=\"col-lg-7 col-md-12 about-text\">
+            <div class=\"col-lg-7 col-md-12 about-text\" style=\"margin-top: 30px;\">
                 <h2>About Us!</h2>
                 <h5 style=\"font-weight: 700;\">Boost Bookings with Your Own Hotel Website</h4>
                 <p>
@@ -744,7 +822,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
       <div class=\"container\">
         <div class=\"row gy-4\">
-          <h2 class=\"inner-title\"><b>Enhance Your Hotel Online</b></h2>
+          <h2 class=\"inner-title\" ><b>Enhance Your Hotel Online</b></h2>
       
           <div class=\"col-lg-4 col-md-6\" data-aos=\"fade-up\" data-aos-delay=\"200\">
             <div class=\"service-item item-orange position-relative\" style=\"text-align: center;\">
@@ -754,7 +832,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
                 </svg>
                 <i class=\"bi bi-easel\"></i>
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"{{ page.find('/service-details').url }}\" class=\"stretched-link\">
                 <h3>Custom Hotel Website</h3>
               </a>
               <p>Create a unique online identity with a customized website.</p>
@@ -769,7 +847,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
                 </svg>
                 <i class=\"bi bi-broadcast\"></i>
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"{{ page.find('/service-details-1').url }}\" class=\"stretched-link\">
                 <h3>Online Booking Support</h3>
               </a>
               <p>Simplify your hotel’s online booking process with ease.</p>
@@ -784,7 +862,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
                 </svg>
                 <i class=\"bi bi-activity\"></i>
               </div>
-              <a href=\"service-details.html\" class=\"stretched-link\">
+              <a href=\"{{ page.find('/service-details-2').url }}\" class=\"stretched-link\">
                 <h3>Booking Optimization Solutions</h3>
               </a>
               <p>Maximize your bookings with our advanced optimization tools.</p>
@@ -888,7 +966,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
             </div>
             <div class=\"col-md-1\"></div>
             <div class=\"col-md-5 text-center text-md-start\">
-                <h2>Ready to launch your hotel to the web?</h2>
+                <h2 id=\"launch\">Ready to launch your hotel to the web?</h2>
                 <a href=\"#\" class=\"demo-btn\">Try our free demo!</a>
             </div>
           </div>
@@ -897,7 +975,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
   </section>
 
   <div class=\"text-center mt-4\" style=\"margin-bottom: 40px; margin-top: 5px;\" >
-    <a href=\"contact.html\" class=\"btn btn-contact\">Contact Us Now</a>
+    <a href=\"{{ page.find('/contact').url }}#services\" class=\"btn btn-contact\">Contact Us Now</a>
   </div>
 
   </main>
@@ -906,7 +984,7 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
     <div class=\"container footer-top\">
       <div class=\"row gy-4\">
         <div class=\"col-lg-3 col-md-6 footer-about\">
-          <a href=\"index.html\" class=\"logo d-flex align-items-center\">
+          <a href=\"{{ page.find('/home').url }}\" class=\"logo d-flex align-items-center\">
             <img src=\"{{ theme_url }}/assets/img/logo.webp\" alt=\"BookDe Logo - Hotel Website Design Services\">
           </a>
         </div>
@@ -914,24 +992,24 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
         <div class=\"col-lg-3 col-md-3 footer-links\">
           <h4>Our Services</h4>
           <ul>
-            <li><a href=\"service-details.html\">Custom Hotel Website</a></li>
-            <li><a href=\"service-details-1.html\">Online Booking Support</a></li>
-            <li><a href=\"service-details-2.html\">Booking Optimization Solutions</a></li>
+            <li><a href=\"{{ page.find('/service-details').url }}\">Custom Hotel Website</a></li>
+            <li><a href=\"{{ page.find('/service-details-1').url }}\">Online Booking Support</a></li>
+            <li><a href=\"{{ page.find('/service-details-2').url }}\">Booking Optimization Solutions</a></li>
           </ul>
         </div>
 
         <div class=\"col-lg-2 col-md-3 footer-links\">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href=\"index.html\">Home</a></li>
-            <li><a href=\"about.html\">About Us</a></li>
-            <li><a href=\"services.html\">Services</a></li>
-            <li><a href=\"contact.html\">Contact</a></li>
+            <li><a href=\"{{ page.find('/home').url }}\">Home</a></li>
+            <li><a href=\"{{ page.find('/home').url }}#about\">About Us</a></li>
+            <li><a href=\"{{ page.find('/home').url }}#services\">Services</a></li>
+            <li><a href=\"{{ page.find('/contact').url }}#services\">Contact</a></li>
           </ul>
         </div>
 
         <div class=\"col-lg-4 col-md-12 footer-newsletter\">
-          <a href=\"index.html\" class=\"logo d-flex align-items-center\">
+          <a href=\"{{ page.find('/home').url }}\" class=\"logo d-flex align-items-center\">
             <span class=\"sitename\">ALLXONE</span>
           </a>
           <div class=\"footer-contact pt-3\">
@@ -979,6 +1057,6 @@ class __TwigTemplate_dbcd70d1f059986a4b0fb6e93a6424386e8de106f57ad451006dd3a7ef9
 
 </body>
 
-</html>", "default.html.twig", "C:\\wamp64\\www\\grav\\user\\themes\\mytheme\\templates\\en\\default.html.twig");
+</html>", "en/default.html.twig", "C:\\wamp64\\www\\grav\\user\\themes\\mytheme\\templates\\en\\default.html.twig");
     }
 }

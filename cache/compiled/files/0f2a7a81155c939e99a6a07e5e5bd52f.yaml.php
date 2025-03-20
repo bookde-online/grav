@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://admin/admin.yaml',
-    'modified' => 1741446312,
-    'size' => 1900,
+    'modified' => 1742463624,
+    'size' => 1901,
     'data' => [
         'enabled' => true,
         'route' => '/admin',

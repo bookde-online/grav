@@ -2952,6 +2952,12 @@ body {
   .card-container:hover .card {
       transform: skewX(0deg) scale(1.05);
   }
+  #launch{
+    margin-bottom: 40px;
+  }
+  .footer .footer-about .logo img {
+    width: 70%;
+  }
 }
 
 /* Responsive trên màn hình nhỏ */
@@ -2965,4 +2971,16 @@ body {
       flex-direction: column;
       align-items: center;
   }
+  .g-4, .gy-4 {
+    display: flex; 
+    flex-direction: column;
+  }
+  .inner-title{
+    order: -1;
+  }
+
+  .footer .footer-about .logo img {
+    width: 40%;
+  }
+  
 }
