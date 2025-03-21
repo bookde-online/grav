@@ -96,6 +96,6 @@ class __TwigTemplate_9ec2a964b96aaff032b566892e36cea740aeb79f151b63951a72280ab03
     {% if field.disabled or isDisabledToggleable %}disabled=\"disabled\"{% endif %}
     name=\"{{ (scope ~ field.name)|fieldName }}\"
     value=\"{{ blueprints.name }}\" />
-{% endblock %}", "forms/fields/blueprint/blueprint.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\blueprint\\blueprint.html.twig");
+{% endblock %}", "forms/fields/blueprint/blueprint.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\blueprint\\blueprint.html.twig");
     }
 }

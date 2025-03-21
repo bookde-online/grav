@@ -62,6 +62,6 @@ class __TwigTemplate_2d2b7795b2dbd5f84e1e719174ebd53dde466b5843505a0e9c98304c47c
     {
         return new Source("{% set user_avatar = admin.user.getAvatarUrl() %}
 <img src=\"{{ user_avatar ~ '?s=80' }}\" />
-", "partials/nav-user-avatar.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-avatar.html.twig");
+", "partials/nav-user-avatar.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-avatar.html.twig");
     }
 }

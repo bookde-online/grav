@@ -235,6 +235,6 @@ class __TwigTemplate_42ae4f25de35b05e8f242dadf18699b5b63f0d9a92e6565be95b5481451
             {% endfor %}
         </div>
     
-{% endblock %}", "forms/fields/checkboxes/checkboxes.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\form\\templates\\forms\\fields\\checkboxes\\checkboxes.html.twig");
+{% endblock %}", "forms/fields/checkboxes/checkboxes.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\form\\templates\\forms\\fields\\checkboxes\\checkboxes.html.twig");
     }
 }

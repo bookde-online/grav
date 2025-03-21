@@ -70,6 +70,6 @@ class __TwigTemplate_7a37fe6876e2c867dad690dba891c376b2b207c2f59efd0fda0c2a99692
     <i class=\"fa fa-eye\"></i>
 </a>
 {% endif %}
-", "flex-objects/types/pages/buttons/preview.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\preview.html.twig");
+", "flex-objects/types/pages/buttons/preview.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\preview.html.twig");
     }
 }

@@ -79,6 +79,6 @@ class __TwigTemplate_5328b09d9da7bfba037eae9001f2488b5bec9f387dd762b9464a01daecd
 <span class=\"button disabled\">
     <i class=\"fa fa-chevron-left\"></i>
 </span>
-{% endif %}", "flex-objects/types/pages/buttons/nav-prev.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\nav-prev.html.twig");
+{% endif %}", "flex-objects/types/pages/buttons/nav-prev.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\nav-prev.html.twig");
     }
 }

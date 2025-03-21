@@ -255,6 +255,6 @@ class __TwigTemplate_5268902654d846eb365c8e23d89fd7eeb6a90e50eae565bda88aef867b8
     </h1>
     {% endblock titlebar_title %}
 {% endblock %}
-", "flex-objects/types/default/titlebar/list.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\default\\titlebar\\list.html.twig");
+", "flex-objects/types/default/titlebar/list.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\default\\titlebar\\list.html.twig");
     }
 }

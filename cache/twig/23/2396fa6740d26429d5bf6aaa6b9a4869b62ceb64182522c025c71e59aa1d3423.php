@@ -881,6 +881,6 @@ class __TwigTemplate_3b26e7a9688194f18d308a1ba2ca8242d7c725e33d490f48fd05f18cdf2
         \$('.admin-pages .form-tabs .tabs-nav').css('margin-right', (\$('#admin-topbar').width() + 20) + 'px');
     </script>
 {% endblock bottom %}
-", "flex-objects/types/pages/edit.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\edit.html.twig");
+", "flex-objects/types/pages/edit.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\edit.html.twig");
     }
 }

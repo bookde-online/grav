@@ -360,6 +360,6 @@ class __TwigTemplate_d85797c3dd1ff4c8ece9cc78bb59c9310ce98ba37fd02aac221d1adc061
     </div>
 {% endif %}
 {% endblock %}
-", "flex-objects/types/default/list.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\default\\list.html.twig");
+", "flex-objects/types/default/list.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\default\\list.html.twig");
     }
 }

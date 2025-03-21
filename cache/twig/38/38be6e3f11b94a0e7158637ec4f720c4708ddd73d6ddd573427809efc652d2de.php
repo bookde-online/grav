@@ -81,6 +81,6 @@ class __TwigTemplate_c3c05f8cb1d6ee42bb381321ff644e89ce5a89a023904308222338d8ada
     {% set codemirrorOptions = codemirrorOptions|merge({'ignore': []}) %}
 {% endif %}
 {# end backward compatibility #}
-", "forms/fields/codemirror/codemirror.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\codemirror\\codemirror.html.twig");
+", "forms/fields/codemirror/codemirror.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\codemirror\\codemirror.html.twig");
     }
 }

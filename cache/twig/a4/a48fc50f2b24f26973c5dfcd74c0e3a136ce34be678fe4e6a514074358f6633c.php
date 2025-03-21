@@ -126,6 +126,6 @@ class __TwigTemplate_448cc5b28866d96dc2c7bcebcb8aa5c18cb37329396f9083ee8a49562ea
         </li>
     </ul>
 </div>
-", "partials/backups-button.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\backups-button.html.twig");
+", "partials/backups-button.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\backups-button.html.twig");
     }
 }

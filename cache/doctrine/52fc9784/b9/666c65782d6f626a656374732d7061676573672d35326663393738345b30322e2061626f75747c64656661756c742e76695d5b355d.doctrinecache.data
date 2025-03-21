@@ -1,0 +1,6 @@
+1742550935
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:6:" about";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:14:"Giới thiệu";s:7:"visible";b:1;s:9:"published";b:1;s:4:"slug";s:5:"about";}s:11:"frontmatter";s:66:"title: "Giới thiệu"
+visible: true
+published: true
+slug: about
+";s:8:"markdown";s:0:"";}s:7:"storage";a:8:{s:3:"key";s:6:" about";s:11:"storage_key";s:20:"02. about|default.vi";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1742549930;s:8:"markdown";a:2:{s:2:"en";a:1:{s:7:"default";i:1742549925;}s:2:"vi";a:1:{s:7:"default";i:1742549930;}}s:8:"checksum";s:32:"b8e548cc0785fa821a37390441518f3a";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

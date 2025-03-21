@@ -446,6 +446,6 @@ class __TwigTemplate_e5163d748e77ae077e80240ade5cc89f7ed0d06d3733b883e8a1ab31d45
         {%- endif %}
     </div>
 {% endblock %}
-", "forms/fields/array/array.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\array\\array.html.twig");
+", "forms/fields/array/array.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\array\\array.html.twig");
     }
 }

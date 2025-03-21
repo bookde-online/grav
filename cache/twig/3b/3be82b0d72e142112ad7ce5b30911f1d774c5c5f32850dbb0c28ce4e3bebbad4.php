@@ -52,7 +52,7 @@ class __TwigTemplate_95a6e59dcb13f8a8de82daa0de845301cbf4d961f52e7f3d57430fa9fd7
         echo " data-grav-keepalive=\"true\">
     ";
         // line 6
-        $this->loadTemplate("partials/blueprints-copy.html.twig", "partials/blueprints-copy.html.twig", 6, "1927002460")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
+        $this->loadTemplate("partials/blueprints-copy.html.twig", "partials/blueprints-copy.html.twig", 6, "585315888")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
         // line 10
         echo "
     <input type=\"hidden\" name=\"task\" value=\"copy\" />
@@ -121,13 +121,13 @@ class __TwigTemplate_95a6e59dcb13f8a8de82daa0de845301cbf4d961f52e7f3d57430fa9fd7
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 
 </form>
-", "partials/blueprints-copy.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-copy.html.twig");
+", "partials/blueprints-copy.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-copy.html.twig");
     }
 }
 
 
 /* partials/blueprints-copy.html.twig */
-class __TwigTemplate_95a6e59dcb13f8a8de82daa0de845301cbf4d961f52e7f3d57430fa9fd7816a7___1927002460 extends \Twig\Template
+class __TwigTemplate_95a6e59dcb13f8a8de82daa0de845301cbf4d961f52e7f3d57430fa9fd7816a7___585315888 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -209,6 +209,6 @@ class __TwigTemplate_95a6e59dcb13f8a8de82daa0de845301cbf4d961f52e7f3d57430fa9fd7
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 
 </form>
-", "partials/blueprints-copy.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-copy.html.twig");
+", "partials/blueprints-copy.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-copy.html.twig");
     }
 }

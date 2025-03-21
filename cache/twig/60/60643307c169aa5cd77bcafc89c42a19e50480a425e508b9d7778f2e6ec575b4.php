@@ -52,7 +52,7 @@ class __TwigTemplate_2433832e44068067434c5aa9cfea372c4ce18b1851694db07e49f2c13aa
         echo " data-grav-keepalive=\"true\">
     ";
         // line 6
-        $this->loadTemplate("partials/blueprints-new.html.twig", "partials/blueprints-new.html.twig", 6, "498971246")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
+        $this->loadTemplate("partials/blueprints-new.html.twig", "partials/blueprints-new.html.twig", 6, "1371599044")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
         // line 10
         echo "
     <input type=\"hidden\" name=\"task\" value=\"continue\" />
@@ -120,13 +120,13 @@ class __TwigTemplate_2433832e44068067434c5aa9cfea372c4ce18b1851694db07e49f2c13aa
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 
 </form>
-", "partials/blueprints-new.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-new.html.twig");
+", "partials/blueprints-new.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-new.html.twig");
     }
 }
 
 
 /* partials/blueprints-new.html.twig */
-class __TwigTemplate_2433832e44068067434c5aa9cfea372c4ce18b1851694db07e49f2c13aa217fe___498971246 extends \Twig\Template
+class __TwigTemplate_2433832e44068067434c5aa9cfea372c4ce18b1851694db07e49f2c13aa217fe___1371599044 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -208,6 +208,6 @@ class __TwigTemplate_2433832e44068067434c5aa9cfea372c4ce18b1851694db07e49f2c13aa
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 
 </form>
-", "partials/blueprints-new.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-new.html.twig");
+", "partials/blueprints-new.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints-new.html.twig");
     }
 }

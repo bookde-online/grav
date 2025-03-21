@@ -75,6 +75,6 @@ class __TwigTemplate_f390fadedfee5be56e5f3a8a066429b5643a8c79830a5908838e651ed80
     <i class=\"fa fa-cog\"></i> {{ 'PLUGIN_ADMIN.CONFIGURATION'|tu }}
 </a>
 {% endif %}
-", "flex-objects/types/default/buttons/configuration.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\default\\buttons\\configuration.html.twig");
+", "flex-objects/types/default/buttons/configuration.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\default\\buttons\\configuration.html.twig");
     }
 }

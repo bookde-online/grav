@@ -71,6 +71,6 @@ class __TwigTemplate_8c50ef5a555e2e0a50968bca1476fd43e666876d7983c11eb423788b105
 </a>
 <div class=\"remodal parents-container\" data-remodal-id=\"move\" data-remodal-options=\"hashTracking: false\">
     {% include 'partials/page-move.html.twig' with { blueprints: admin.blueprints('admin/pages/move'), data: context } %}
-</div>", "flex-objects/types/pages/buttons/move.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\move.html.twig");
+</div>", "flex-objects/types/pages/buttons/move.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\move.html.twig");
     }
 }

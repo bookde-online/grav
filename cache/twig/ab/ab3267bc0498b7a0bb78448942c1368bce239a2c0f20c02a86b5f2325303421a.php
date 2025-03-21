@@ -134,6 +134,6 @@ class __TwigTemplate_ed3d770fface5e7d8e171714fc5ef28376f7be85477a0ece2c93f0cdea9
         <a class=\"front-end hint--left\" data-hint=\"{{ \"PLUGIN_ADMIN.VIEW_SITE_TIP\"|t }}\" target=\"_blank\" href=\"{{ base_url_relative_frontend }}\"> <i class=\"fa fa-external-link\"></i></a>
     </div>
 {% endif %}
-", "partials/logo.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\logo.html.twig");
+", "partials/logo.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\logo.html.twig");
     }
 }

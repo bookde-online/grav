@@ -67,7 +67,7 @@ class __TwigTemplate_50865332f7024e961754923a8b87831099eb00b48ad8152ff0ad8808677
         echo ">
     ";
         // line 12
-        $this->loadTemplate("partials/blueprints.html.twig", "partials/blueprints.html.twig", 12, "970918027")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
+        $this->loadTemplate("partials/blueprints.html.twig", "partials/blueprints.html.twig", 12, "566364046")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
         // line 16
         echo "
     ";
@@ -210,13 +210,13 @@ class __TwigTemplate_50865332f7024e961754923a8b87831099eb00b48ad8152ff0ad8808677
         {{ nonce_field('admin-form', 'admin-nonce')|raw }}
     {% endif %}
 </form>
-", "partials/blueprints.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints.html.twig");
+", "partials/blueprints.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints.html.twig");
     }
 }
 
 
 /* partials/blueprints.html.twig */
-class __TwigTemplate_50865332f7024e961754923a8b87831099eb00b48ad8152ff0ad8808677c3391___970918027 extends \Twig\Template
+class __TwigTemplate_50865332f7024e961754923a8b87831099eb00b48ad8152ff0ad8808677c3391___566364046 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -313,6 +313,6 @@ class __TwigTemplate_50865332f7024e961754923a8b87831099eb00b48ad8152ff0ad8808677
         {{ nonce_field('admin-form', 'admin-nonce')|raw }}
     {% endif %}
 </form>
-", "partials/blueprints.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints.html.twig");
+", "partials/blueprints.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\blueprints.html.twig");
     }
 }

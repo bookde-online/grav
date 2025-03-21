@@ -238,6 +238,6 @@ class __TwigTemplate_ede30e730b797c94d9e05b29fc712913f89bfdc78107302644ba2dca98c
         </div>
     </nav>
 {% endif %}
-", "partials/nav.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav.html.twig");
+", "partials/nav.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav.html.twig");
     }
 }

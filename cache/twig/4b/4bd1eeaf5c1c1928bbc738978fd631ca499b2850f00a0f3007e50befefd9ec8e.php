@@ -262,6 +262,6 @@ class __TwigTemplate_88a7c0ee2fc93321a9a8139b3f495bff259a34d13cefe9409c794657df3
 </div>
 {% endif %}
 {% endblock %}
-", "forms/fields/pagemedia/pagemedia.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\pagemedia\\pagemedia.html.twig");
+", "forms/fields/pagemedia/pagemedia.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\pagemedia\\pagemedia.html.twig");
     }
 }

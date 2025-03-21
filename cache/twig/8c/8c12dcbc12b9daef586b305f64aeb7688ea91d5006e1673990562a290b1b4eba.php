@@ -119,6 +119,6 @@ class __TwigTemplate_c02c70c6f0ef66d538c383e73b15e701aab6af81eb2c4adc375f58ea172
         'flex-objects/types/default/' ~ template ~ '.html.twig',
         'flex-objects/layouts/404.html.twig'
     ] -%}
-", "flex-objects.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects.html.twig");
+", "flex-objects.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects.html.twig");
     }
 }

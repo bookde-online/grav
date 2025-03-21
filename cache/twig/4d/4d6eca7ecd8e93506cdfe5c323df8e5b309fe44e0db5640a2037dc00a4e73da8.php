@@ -70,7 +70,7 @@ class __TwigTemplate_a2a74ce606fe0b7fc6f9268e3245048793183e9b8d8c5fe1e9b3e83bc42
             echo "
     ";
             // line 14
-            $this->loadTemplate("forms/fields/section/section.html.twig", "forms/fields/section/section.html.twig", 14, "2020614765")->display(twig_array_merge($context, ["name" => $this->getAttribute(($context["field"] ?? null), "name", []), "fields" => $this->getAttribute(($context["field"] ?? null), "fields", [])]));
+            $this->loadTemplate("forms/fields/section/section.html.twig", "forms/fields/section/section.html.twig", 14, "344309415")->display(twig_array_merge($context, ["name" => $this->getAttribute(($context["field"] ?? null), "name", []), "fields" => $this->getAttribute(($context["field"] ?? null), "fields", [])]));
             // line 22
             echo "
 ";
@@ -126,13 +126,13 @@ class __TwigTemplate_a2a74ce606fe0b7fc6f9268e3245048793183e9b8d8c5fe1e9b3e83bc42
 
 {% endif %}
 {% endblock %}
-", "forms/fields/section/section.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\section\\section.html.twig");
+", "forms/fields/section/section.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\section\\section.html.twig");
     }
 }
 
 
 /* forms/fields/section/section.html.twig */
-class __TwigTemplate_a2a74ce606fe0b7fc6f9268e3245048793183e9b8d8c5fe1e9b3e83bc42c0e79___2020614765 extends \Twig\Template
+class __TwigTemplate_a2a74ce606fe0b7fc6f9268e3245048793183e9b8d8c5fe1e9b3e83bc42c0e79___344309415 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -225,6 +225,6 @@ class __TwigTemplate_a2a74ce606fe0b7fc6f9268e3245048793183e9b8d8c5fe1e9b3e83bc42
 
 {% endif %}
 {% endblock %}
-", "forms/fields/section/section.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\section\\section.html.twig");
+", "forms/fields/section/section.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\section\\section.html.twig");
     }
 }

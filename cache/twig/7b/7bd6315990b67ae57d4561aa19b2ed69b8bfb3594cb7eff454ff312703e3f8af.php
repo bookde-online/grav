@@ -66,6 +66,6 @@ class __TwigTemplate_07401034a152cf6ed7675e14fb48dc63ca7aa5eb4b28fa7fd0bdd79ecbe
         return new Source("<a id=\"titlebar-button-delete\" href=\"#delete\" data-remodal-target=\"delete\" data-delete-url=\"{{ uri.addNonce(route.withoutParams().withGravParam('task', 'delete').getUri(), 'admin-form', 'admin-nonce') }}\" class=\"button danger\">
     <i class=\"fa fa-fw fa-trash-o\"></i> {{ \"PLUGIN_ADMIN.DELETE\"|tu }}
 </a>
-", "flex-objects/types/pages/buttons/delete.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\delete.html.twig");
+", "flex-objects/types/pages/buttons/delete.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\delete.html.twig");
     }
 }

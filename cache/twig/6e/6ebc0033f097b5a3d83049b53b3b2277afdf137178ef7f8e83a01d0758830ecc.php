@@ -111,6 +111,6 @@ class __TwigTemplate_609a51da0e94403382925584c104fd86c628264dc14a06f8681a3c4091a
 
 <input data-grav-field=\"hidden\" data-grav-disabled=\"false\" {% if field.id is defined %}id=\"{{ field.id|e }}\" {% endif %}type=\"hidden\" class=\"input\" name=\"{{ (scope ~ field.name)|fieldName }}\" value=\"{{ input_value|e('html_attr') }}\" />
 {% endblock %}
-", "forms/fields/hidden/hidden.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\form\\templates\\forms\\fields\\hidden\\hidden.html.twig");
+", "forms/fields/hidden/hidden.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\form\\templates\\forms\\fields\\hidden\\hidden.html.twig");
     }
 }

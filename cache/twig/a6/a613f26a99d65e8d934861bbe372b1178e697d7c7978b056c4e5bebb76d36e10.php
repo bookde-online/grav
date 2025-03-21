@@ -93,6 +93,6 @@ class __TwigTemplate_c1cef11ac5828421b5ea783eb8e3330c4972ec3bcd685848de0ecdfee79
         </div>
     </form>
 </div>
-", "partials/modal-changes-detected.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-changes-detected.html.twig");
+", "partials/modal-changes-detected.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-changes-detected.html.twig");
     }
 }

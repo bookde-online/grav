@@ -220,7 +220,7 @@ class __TwigTemplate_caddd175cfadee7e8f8003c49e14ca8d6d1472e601d3dc9a74d1b0d97c7
         <div class=\"tabs-content\">
             ";
                 // line 48
-                $this->loadTemplate("forms/fields/tabs/tabs.html.twig", "forms/fields/tabs/tabs.html.twig", 48, "1087303500")->display(twig_array_merge($context, ["name" => $this->getAttribute(($context["field"] ?? null), "name", []), "fields" => ($context["fields"] ?? null)]));
+                $this->loadTemplate("forms/fields/tabs/tabs.html.twig", "forms/fields/tabs/tabs.html.twig", 48, "920463308")->display(twig_array_merge($context, ["name" => $this->getAttribute(($context["field"] ?? null), "name", []), "fields" => ($context["fields"] ?? null)]));
                 // line 56
                 echo "        </div>
     ";
@@ -316,13 +316,13 @@ class __TwigTemplate_caddd175cfadee7e8f8003c49e14ca8d6d1472e601d3dc9a74d1b0d97c7
 {% endif %}
 </div>
 {% endblock %}
-", "forms/fields/tabs/tabs.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\form\\templates\\forms\\fields\\tabs\\tabs.html.twig");
+", "forms/fields/tabs/tabs.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\form\\templates\\forms\\fields\\tabs\\tabs.html.twig");
     }
 }
 
 
 /* forms/fields/tabs/tabs.html.twig */
-class __TwigTemplate_caddd175cfadee7e8f8003c49e14ca8d6d1472e601d3dc9a74d1b0d97c759f52___1087303500 extends \Twig\Template
+class __TwigTemplate_caddd175cfadee7e8f8003c49e14ca8d6d1472e601d3dc9a74d1b0d97c759f52___920463308 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -451,6 +451,6 @@ class __TwigTemplate_caddd175cfadee7e8f8003c49e14ca8d6d1472e601d3dc9a74d1b0d97c7
 {% endif %}
 </div>
 {% endblock %}
-", "forms/fields/tabs/tabs.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\form\\templates\\forms\\fields\\tabs\\tabs.html.twig");
+", "forms/fields/tabs/tabs.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\form\\templates\\forms\\fields\\tabs\\tabs.html.twig");
     }
 }

@@ -285,6 +285,6 @@ class __TwigTemplate_e26f09636a33d707d6ab8824eeb124711bf2a66750cf79397bb9623cdd1
 
     </form>
 </div>
-", "partials/modal-update-packages.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-update-packages.html.twig");
+", "partials/modal-update-packages.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-update-packages.html.twig");
     }
 }

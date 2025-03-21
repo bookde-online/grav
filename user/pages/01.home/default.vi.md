@@ -1,4 +1,4 @@
 ---
 title: Trang chủ
-template: vi/default
+template: vi/home
 ---

@@ -95,6 +95,6 @@ class __TwigTemplate_2369439369356e2f9438d8f1f855c168561ea6d276e00e5a719e3d49212
         </div>
     </form>
 </div>
-", "flex-objects/types/default/modals/remove.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\default\\modals\\remove.html.twig");
+", "flex-objects/types/default/modals/remove.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\default\\modals\\remove.html.twig");
     }
 }

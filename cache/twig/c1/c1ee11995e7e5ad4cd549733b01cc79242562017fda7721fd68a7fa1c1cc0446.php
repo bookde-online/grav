@@ -65,6 +65,6 @@ class __TwigTemplate_db3c344931046fe6f431f8c453f4fd67b55b58af0753783f21509e56f34
 <a id=\"titlebar-button-copy\" href=\"#modal-page-copy\" data-remodal-target=\"modal-page-copy\" class=\"button page-copy\">
     <i class=\"fa fa-copy\"></i> {{ \"PLUGIN_ADMIN.COPY\"|tu }}
 </a>
-", "flex-objects/types/pages/buttons/copy.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\copy.html.twig");
+", "flex-objects/types/pages/buttons/copy.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\copy.html.twig");
     }
 }

@@ -80,6 +80,6 @@ class __TwigTemplate_3e28848c84db468384727bd651e494d471ffdff9467fa5e1b087e76de71
         <i class=\"fa fa-chevron-right\"></i>
     </span>
 {% endif %}
-", "flex-objects/types/pages/buttons/nav-next.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\nav-next.html.twig");
+", "flex-objects/types/pages/buttons/nav-next.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\nav-next.html.twig");
     }
 }

@@ -85,6 +85,6 @@ class __TwigTemplate_f88a9c9ffbf1223ece1fccc503b617c68181b79e8ae4daa1620871ad8fa
         <i class=\"fa fa-refresh\"></i>
     </div>
 {% endblock %}
-", "forms/fields/folder-slug/folder-slug.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\folder-slug\\folder-slug.html.twig");
+", "forms/fields/folder-slug/folder-slug.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\folder-slug\\folder-slug.html.twig");
     }
 }

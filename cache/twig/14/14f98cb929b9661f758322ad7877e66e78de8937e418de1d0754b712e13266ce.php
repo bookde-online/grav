@@ -46,7 +46,7 @@ class __TwigTemplate_334b5a91504cfc462a1afd999a03e7cc91b859ed9ee9d38ac1246b4a719
 
     ";
         // line 10
-        $this->loadTemplate("partials/page-move.html.twig", "partials/page-move.html.twig", 10, "1747083903")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
+        $this->loadTemplate("partials/page-move.html.twig", "partials/page-move.html.twig", 10, "176883963")->display(twig_array_merge($context, ["name" => null, "fields" => $this->getAttribute(($context["blueprints"] ?? null), "fields", [])]));
         // line 14
         echo "
     ";
@@ -114,13 +114,13 @@ class __TwigTemplate_334b5a91504cfc462a1afd999a03e7cc91b859ed9ee9d38ac1246b4a719
         <button class=\"button primary\" name=\"task\" value=\"save\" form=\"blueprints\">{{ \"PLUGIN_ADMIN.CONTINUE\"|t }}</button>
     </div>
 </form>
-", "partials/page-move.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\page-move.html.twig");
+", "partials/page-move.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\page-move.html.twig");
     }
 }
 
 
 /* partials/page-move.html.twig */
-class __TwigTemplate_334b5a91504cfc462a1afd999a03e7cc91b859ed9ee9d38ac1246b4a719a9e46___1747083903 extends \Twig\Template
+class __TwigTemplate_334b5a91504cfc462a1afd999a03e7cc91b859ed9ee9d38ac1246b4a719a9e46___176883963 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -204,6 +204,6 @@ class __TwigTemplate_334b5a91504cfc462a1afd999a03e7cc91b859ed9ee9d38ac1246b4a719
         <button class=\"button primary\" name=\"task\" value=\"save\" form=\"blueprints\">{{ \"PLUGIN_ADMIN.CONTINUE\"|t }}</button>
     </div>
 </form>
-", "partials/page-move.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\page-move.html.twig");
+", "partials/page-move.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\page-move.html.twig");
     }
 }

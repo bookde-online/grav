@@ -80,6 +80,6 @@ class __TwigTemplate_924087dabaf2e840af58bf3850e3a58c5c3df0c218db1c05906a21548e2
     <i class=\"fa fa-chevron-down\"></i>
 </span>
 {% endif %}
-", "flex-objects/types/pages/buttons/nav-child.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\nav-child.html.twig");
+", "flex-objects/types/pages/buttons/nav-child.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\nav-child.html.twig");
     }
 }

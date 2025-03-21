@@ -79,6 +79,6 @@ class __TwigTemplate_8553dc615b0e39585c66780a16f055ee06fe592043ceb70c00b7776ac5a
         return new Source("{% for entry in notifications %}
 <li class=\"single-notification {{ entry.type }}-notification\"><span class=\"badge alert {{ entry.type }}\">{{ entry.type|capitalize }}</span><a target=\"_blank\" href=\"{{ entry.link }}\" title=\"{{ entry.message|striptags|e('html_attr') }}\">{{ entry.message|raw }}</a></li>
 {% endfor %}
-", "partials/notification-feed-block.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\notification-feed-block.html.twig");
+", "partials/notification-feed-block.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\notification-feed-block.html.twig");
     }
 }

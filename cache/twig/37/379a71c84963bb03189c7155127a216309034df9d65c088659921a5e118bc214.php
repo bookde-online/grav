@@ -318,6 +318,6 @@ class __TwigTemplate_21137e84663f9b862f70797859717a38f4324442f5362c8a7929d09e776
         </div>
     </div>
 {% endblock %}
-", "forms/fields/editor/editor.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\editor\\editor.html.twig");
+", "forms/fields/editor/editor.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\editor\\editor.html.twig");
     }
 }

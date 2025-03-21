@@ -196,6 +196,6 @@ $context["name"]), "name" =>             // line 28
     {% include 'forms/fields/select/select.html.twig' %}
 {% endfor %}
 {% endblock %}
-", "forms/fields/taxonomy/taxonomy.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\taxonomy\\taxonomy.html.twig");
+", "forms/fields/taxonomy/taxonomy.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\taxonomy\\taxonomy.html.twig");
     }
 }

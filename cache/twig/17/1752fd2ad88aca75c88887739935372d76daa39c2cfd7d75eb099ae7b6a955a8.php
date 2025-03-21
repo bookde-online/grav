@@ -65,6 +65,6 @@ class __TwigTemplate_43296acafb9e709548b169be473b8e6b78fe8b0f518125d65877667af81
         return new Source("<a id=\"titlebar-button-back\" class=\"button\" href=\"{{ back_url }}\" title=\"{{ \"PLUGIN_ADMIN.BACK\"|tu }}\">
     <i class=\"fa fa-reply\"></i>
 </a>
-", "flex-objects/types/pages/buttons/back.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\back.html.twig");
+", "flex-objects/types/pages/buttons/back.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\back.html.twig");
     }
 }

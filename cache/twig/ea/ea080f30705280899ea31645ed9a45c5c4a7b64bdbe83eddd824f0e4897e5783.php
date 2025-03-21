@@ -68,6 +68,6 @@ class __TwigTemplate_65154a8c3861be34f7491eb8a53c3474bc96fb869482d96e1386c38cc63
         return new Source("<h1>{{ 'PLUGIN_ERROR.ERROR'|t }} {{ header.http_response_code }}</h1>
 
 <p>{{ page.content|raw }}</p>
-", "error.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\error\\templates\\error.html.twig");
+", "error.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\error\\templates\\error.html.twig");
     }
 }

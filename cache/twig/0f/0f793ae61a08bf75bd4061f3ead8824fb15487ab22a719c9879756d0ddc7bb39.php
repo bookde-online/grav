@@ -132,6 +132,6 @@ class __TwigTemplate_04b2091c65f6b53fe42f24478c893966442bdcaefd4c4bac1dfe15003ab
         {% endfor %}
     </ul>
 </div>
-", "flex-objects/types/pages/buttons/add.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\add.html.twig");
+", "flex-objects/types/pages/buttons/add.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\buttons\\add.html.twig");
     }
 }

@@ -634,6 +634,6 @@ $context["add_modal"], "with", []), []))));
         </form>
     </div>
 {% endblock %}
-", "flex-objects/types/pages/list/columns.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\list\\columns.html.twig");
+", "flex-objects/types/pages/list/columns.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\list\\columns.html.twig");
     }
 }

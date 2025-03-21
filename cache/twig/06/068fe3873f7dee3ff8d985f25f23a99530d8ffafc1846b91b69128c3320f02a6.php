@@ -158,6 +158,6 @@ class __TwigTemplate_bed683f9ee437e0242a84d579628417b0d57bc17136eaa7e73c77fec965
         'flex-objects/types/pages/list/list.html.twig'
         ] %}
 {% endblock %}
-", "flex-objects/types/pages/list.html.twig", "C:\\wamp64\\www\\grav-admin\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\list.html.twig");
+", "flex-objects/types/pages/list.html.twig", "C:\\wamp64\\www\\grav\\user\\plugins\\flex-objects\\admin\\templates\\flex-objects\\types\\pages\\list.html.twig");
     }
 }
