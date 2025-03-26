@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/themes/bootstrap/blueprints.yaml',
-    'modified' => 1742886733,
-    'size' => 780,
+    'modified' => 1742970463,
+    'size' => 813,
     'data' => [
         'name' => 'Bootstrap',
         'slug' => 'bootstrap',

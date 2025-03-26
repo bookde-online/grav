@@ -1,0 +1,15 @@
+1743588656
+a:2:{s:7:"content";s:803:"
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item item-orange position-relative" style="text-align: center;">
+            <div class="icon">
+              <img src="/grav/user/pages/01.home/03._services/01._custom-hotel-website/ser1.webp" alt="&lt;img alt=&quot;&quot; src=&quot;/grav/user/pages/01.home/03._services/01._custom-hotel-website/ser1.webp?name&quot; /&gt;" style="width: 100%; height: 140px; border-radius: 50%;" loading="lazy">
+            </div>
+            <a href="/grav/en/home/_services/_custom-hotel-website" class="stretched-link">
+                <h3>Custom Hotel Website</h3>
+            </a>
+                <p>Create a unique online identity with a customized website.</p>
+        </div>
+</div><!-- End Service Item -->
+
+ ";s:12:"content_meta";N;}

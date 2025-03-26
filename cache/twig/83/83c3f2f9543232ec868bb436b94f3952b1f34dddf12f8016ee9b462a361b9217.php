@@ -52,7 +52,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["page"] ?? null), "collection", [], "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["module"]) {
             // line 12
-            echo "    ";
+            echo "      ";
             echo $this->getAttribute($context["module"], "content", []);
             echo "
     ";
@@ -63,11 +63,6 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
         // line 14
         echo "
     <!-- Services Section -->
-        ";
-        // line 16
-        $this->loadTemplate("modular/services.html.twig", "vi/home.html.twig", 16)->display($context);
-        // line 17
-        echo "
     <!-- benefit -->
     <section class=\"benefits-section text-center\">
       <div class=\"container\">
@@ -83,7 +78,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
                 <div class=\"card-container\">
                     <div class=\"card\">
                         <img src=\"";
-        // line 32
+        // line 30
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/professional.webp\" alt=\"Professional\">
                     </div>
@@ -93,7 +88,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
                 <div class=\"card-container\">
                     <div class=\"card\">
                         <img src=\"";
-        // line 39
+        // line 37
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/modern.webp\" alt=\"Modern\">
                     </div>
@@ -103,7 +98,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
                 <div class=\"card-container\">
                     <div class=\"card\">
                         <img src=\"";
-        // line 46
+        // line 44
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/effective.webp\" alt=\"Effective\">
                     </div>
@@ -129,7 +124,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
               <img src=\"";
-        // line 69
+        // line 67
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/about/hotel.webp\" class=\"img-fluid\" alt=\"Image hotel\">
               <h4 class=\"text-overlay\">HOTELS</h4> 
@@ -141,7 +136,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
               <img src=\"";
-        // line 78
+        // line 76
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/about/spa.webp\" class=\"img-fluid\" alt=\"Image spa\" style=\"height: fit-content;\">
               <h4 class=\"text-overlay\">SPA</h4> 
@@ -153,7 +148,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
               <img src=\"";
-        // line 87
+        // line 85
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/about/tours.webp\" class=\"img-fluid\" alt=\"Image tours\">
               <h4 class=\"text-overlay\">TOURS</h4> 
@@ -173,7 +168,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
           <div class=\"row align-items-center flex-md-row flex-column-reverse\">
             <div class=\"col-md-6 text-center\">
               <img src=\"";
-        // line 104
+        // line 102
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/services/demo.webp\" alt=\"Hotel Launch\" class=\"img-fluid w-100 rounded\">
             </div>
@@ -189,7 +184,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
 
   <div class=\"text-center mt-4\" style=\"margin-bottom: 40px; margin-top: 5px;\" >
     <a href=\"";
-        // line 117
+        // line 115
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
         echo "#services\" class=\"btn btn-contact\">Contact Us Now</a>
   </div>
@@ -198,9 +193,9 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
 
   <footer id=\"footer\" class=\"footer dark-background\">
            ";
-        // line 123
-        $this->loadTemplate("partials/footer_en.html.twig", "vi/home.html.twig", 123)->display($context);
-        // line 124
+        // line 121
+        $this->loadTemplate("partials/footer_en.html.twig", "vi/home.html.twig", 121)->display($context);
+        // line 122
         echo "</footer>
 
 </body>
@@ -223,7 +218,7 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
 
     public function getDebugInfo()
     {
-        return array (  204 => 124,  202 => 123,  193 => 117,  177 => 104,  157 => 87,  145 => 78,  133 => 69,  107 => 46,  97 => 39,  87 => 32,  70 => 17,  68 => 16,  64 => 14,  55 => 12,  51 => 11,  47 => 9,  44 => 8,  39 => 4,  37 => 3,  33 => 1,);
+        return array (  199 => 122,  197 => 121,  188 => 115,  172 => 102,  152 => 85,  140 => 76,  128 => 67,  102 => 44,  92 => 37,  82 => 30,  64 => 14,  55 => 12,  51 => 11,  47 => 9,  44 => 8,  39 => 4,  37 => 3,  33 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -247,12 +242,10 @@ class __TwigTemplate_dc6167586f40e961f69c02050f57aa0a9fc5d71ffb37b5858d7ff4f5ead
 
   <main class=\"main\">
     {% for module in page.collection() %}
-    {{module.content|raw}}
+      {{module.content|raw}}
     {% endfor %}
 
     <!-- Services Section -->
-        {% include 'modular/services.html.twig' %}
-
     <!-- benefit -->
     <section class=\"benefits-section text-center\">
       <div class=\"container\">

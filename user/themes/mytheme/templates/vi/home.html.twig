@@ -9,12 +9,10 @@
 
   <main class="main">
     {% for module in page.collection() %}
-    {{module.content|raw}}
+      {{module.content|raw}}
     {% endfor %}
 
     <!-- Services Section -->
-        {% include 'modular/services.html.twig' %}
-
     <!-- benefit -->
     <section class="benefits-section text-center">
       <div class="container">

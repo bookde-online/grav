@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/config/versions.yaml',
-    'modified' => 1741446945,
-    'size' => 65,
+    'modified' => 1742970366,
+    'size' => 69,
     'data' => [
         'core' => [
             'grav' => [

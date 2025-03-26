@@ -1,0 +1,15 @@
+1743588613
+a:2:{s:7:"content";s:866:"
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item item-orange position-relative" style="text-align: center;">
+            <div class="icon">
+              <img src="/grav/user/pages/01.home/03._services/02._online-booking-support/ser2.webp" alt="&lt;img alt=&quot;&quot; src=&quot;/grav/user/pages/01.home/03._services/02._online-booking-support/ser2.webp?name&quot; /&gt;" style="width: 100%; height: 140px; border-radius: 50%;" loading="lazy">
+            </div>
+            <a href="/grav/home/_services/_online-booking-support" class="stretched-link">
+                <h3>Hỗ trợ đặt chỗ trực tuyến</h3>
+            </a>
+                <p>Đơn giản hóa quy trình đặt phòng trực tuyến của khách sạn một cách dễ dàng.</p>
+        </div>
+</div><!-- End Service Item -->
+
+ ";s:12:"content_meta";N;}

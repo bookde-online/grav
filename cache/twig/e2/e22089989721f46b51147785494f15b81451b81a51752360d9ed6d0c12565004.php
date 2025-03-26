@@ -30,93 +30,48 @@ class __TwigTemplate_5d170e3cae0d4179556b52bc07a1d9010c205ff2547d0dbca8d7d56ee41
         $__internal_57054b9517dd8b3da0f938a595b841d745c7d753e57333ce87e0f394208342f4->enter($__internal_57054b9517dd8b3da0f938a595b841d745c7d753e57333ce87e0f394208342f4_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "modular/services.html.twig"));
 
         // line 1
-        $context["service_page"] = $this->getAttribute(($context["page"] ?? null), "find", [0 => "/home/_services/"], "method");
+        $context["services"] = $this->getAttribute(($context["page"] ?? null), "children", []);
         // line 2
-        $context["services"] = $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/home/_services"], "method"), "children", []);
-        // line 3
-        echo "
-<section id=\"services\" class=\"services section light-background\">
+        echo "<section id=\"services\" class=\"services section light-background\">
       <div class=\"container\">
         <div class=\"row gy-4\">
-          <h2 class=\"inner-title\" ><b>";
-        // line 7
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["service_page"] ?? null), "header", []), "title", []), "html", null, true);
+          <h2 class=\"inner-title\"><b>";
+        // line 5
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "title", []), "html", null, true);
         echo "</b></h2>
-        ";
-        // line 8
+          ";
+        // line 6
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["services"] ?? null));
-        $context['loop'] = [
-          'parent' => $context['_parent'],
-          'index0' => 0,
-          'index'  => 1,
-          'first'  => true,
-        ];
-        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
-            $length = count($context['_seq']);
-            $context['loop']['revindex0'] = $length - 1;
-            $context['loop']['revindex'] = $length;
-            $context['loop']['length'] = $length;
-            $context['loop']['last'] = 1 === $length;
-        }
         foreach ($context['_seq'] as $context["_key"] => $context["service"]) {
-            // line 9
-            echo "
-          <div class=\"col-lg-4 col-md-6\" data-aos=\"fade-up\" data-aos-delay=\"";
-            // line 10
-            echo twig_escape_filter($this->env, ($this->getAttribute($context["loop"], "index", []) * 100), "html", null, true);
-            echo "\">
-            <div class=\"service-item item-orange position-relative\" style=\"text-align: center;\">
-              <div class=\"icon\">
-                <svg width=\"100\" height=\"100\" viewBox=\"0 0 600 600\" xmlns=\"http://www.w3.org/2000/svg\">
-                  <path stroke=\"none\" stroke-width=\"0\" fill=\"#f5f5f5\" d=\"M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781\"></path>
-                </svg>
-                <i class=\"bi bi-easel\"></i>
-              </div>
-              <a href=\"";
-            // line 18
-            echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "url", []), "html", null, true);
-            echo "\" class=\"stretched-link\">
-                <h3>";
-            // line 19
-            echo twig_escape_filter($this->env, $this->getAttribute($context["service"], "title", []), "html", null, true);
-            echo "</h3>
-              </a>
-              <p>";
-            // line 21
+            // line 7
+            echo "              ";
             echo $this->getAttribute($context["service"], "content", []);
-            echo "</p>
-            </div>
-          </div><!-- End Service Item -->
-          ";
-            ++$context['loop']['index0'];
-            ++$context['loop']['index'];
-            $context['loop']['first'] = false;
-            if (isset($context['loop']['length'])) {
-                --$context['loop']['revindex0'];
-                --$context['loop']['revindex'];
-                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
-            }
+            echo "
+            ";
+            // line 9
+            echo "          ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['service'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
-        echo "          </div>
+        // line 10
+        echo "        </div>
         <hr>
-        <h3 style=\"font-size: 20px; font-family: 'Poppins-light', sans-serif;; display: flex; justify-content: center; margin-top: 50px; text-align: center;\">
-          <p>";
-        // line 28
-        echo $this->getAttribute(($context["service_page"] ?? null), "content", []);
-        echo "</p>
+        <h3 style=\"font-size: 20px; font-family: 'Poppins-light', sans-serif; display: flex; justify-content: center; margin-top: 50px; text-align: center;\">
+          ";
+        // line 13
+        echo $this->getAttribute(($context["page"] ?? null), "content", []);
+        echo "
         </h3>
-      </div>   
+      </div>
+</section><!-- /Services Section -->
 
       
           ";
-        // line 68
+        // line 54
         echo "
-    </section><!-- /Services Section -->";
+    ";
         
         $__internal_57054b9517dd8b3da0f938a595b841d745c7d753e57333ce87e0f394208342f4->leave($__internal_57054b9517dd8b3da0f938a595b841d745c7d753e57333ce87e0f394208342f4_prof);
 
@@ -134,7 +89,7 @@ class __TwigTemplate_5d170e3cae0d4179556b52bc07a1d9010c205ff2547d0dbca8d7d56ee41
 
     public function getDebugInfo()
     {
-        return array (  118 => 68,  110 => 28,  105 => 25,  87 => 21,  82 => 19,  78 => 18,  67 => 10,  64 => 9,  47 => 8,  43 => 7,  37 => 3,  35 => 2,  33 => 1,);
+        return array (  73 => 54,  64 => 13,  59 => 10,  53 => 9,  48 => 7,  44 => 6,  40 => 5,  35 => 2,  33 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -147,36 +102,22 @@ class __TwigTemplate_5d170e3cae0d4179556b52bc07a1d9010c205ff2547d0dbca8d7d56ee41
 
     public function getSourceContext()
     {
-        return new Source("{% set service_page = page.find('/home/_services/') %}
-{% set services = page.find('/home/_services').children %}
-
+        return new Source("{% set services = page.children %}
 <section id=\"services\" class=\"services section light-background\">
       <div class=\"container\">
         <div class=\"row gy-4\">
-          <h2 class=\"inner-title\" ><b>{{service_page.header.title}}</b></h2>
-        {% for service in services %}
-
-          <div class=\"col-lg-4 col-md-6\" data-aos=\"fade-up\" data-aos-delay=\"{{ loop.index * 100 }}\">
-            <div class=\"service-item item-orange position-relative\" style=\"text-align: center;\">
-              <div class=\"icon\">
-                <svg width=\"100\" height=\"100\" viewBox=\"0 0 600 600\" xmlns=\"http://www.w3.org/2000/svg\">
-                  <path stroke=\"none\" stroke-width=\"0\" fill=\"#f5f5f5\" d=\"M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781\"></path>
-                </svg>
-                <i class=\"bi bi-easel\"></i>
-              </div>
-              <a href=\"{{ service.url }}\" class=\"stretched-link\">
-                <h3>{{ service.title }}</h3>
-              </a>
-              <p>{{ service.content|raw }}</p>
-            </div>
-          </div><!-- End Service Item -->
+          <h2 class=\"inner-title\"><b>{{ page.header.title }}</b></h2>
+          {% for service in services %}
+              {{ service.content|raw }}
+            {# {% include 'modular/service-detail.html.twig' with { 'service': service, 'svg_path': svg_paths[loop.index0 % svg_paths|length] } %} #}
           {% endfor %}
-          </div>
+        </div>
         <hr>
-        <h3 style=\"font-size: 20px; font-family: 'Poppins-light', sans-serif;; display: flex; justify-content: center; margin-top: 50px; text-align: center;\">
-          <p>{{ service_page.content|raw }}</p>
+        <h3 style=\"font-size: 20px; font-family: 'Poppins-light', sans-serif; display: flex; justify-content: center; margin-top: 50px; text-align: center;\">
+          {{ page.content|raw }}
         </h3>
-      </div>   
+      </div>
+</section><!-- /Services Section -->
 
       
           {# <div class=\"col-lg-4 col-md-6\" data-aos=\"fade-up\" data-aos-delay=\"100\">
@@ -215,6 +156,6 @@ class __TwigTemplate_5d170e3cae0d4179556b52bc07a1d9010c205ff2547d0dbca8d7d56ee41
         </h3>
       </div>       #}
 
-    </section><!-- /Services Section -->", "modular/services.html.twig", "C:\\wamp64\\www\\grav\\user\\themes\\mytheme\\templates\\modular\\services.html.twig");
+    {# </section><!-- /Services Section --> #}", "modular/services.html.twig", "C:\\wamp64\\www\\grav\\user\\themes\\mytheme\\templates\\modular\\services.html.twig");
     }
 }

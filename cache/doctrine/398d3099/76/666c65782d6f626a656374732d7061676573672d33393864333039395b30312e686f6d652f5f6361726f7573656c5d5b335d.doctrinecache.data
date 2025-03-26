@@ -1,2 +1,0 @@
-1742963447
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:14:"home/_carousel";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:0:{}s:11:"frontmatter";s:0:"";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:14:"home/_carousel";s:11:"storage_key";s:17:"01.home/_carousel";s:8:"template";s:4:"hero";s:17:"storage_timestamp";i:1742960264;s:8:"markdown";a:1:{s:2:"vi";a:1:{s:4:"hero";i:1742960264;}}s:8:"checksum";s:32:"cc237b2953bbd574b9d6185bbf69ea6e";}}

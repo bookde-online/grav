@@ -1,0 +1,31 @@
+1743588613
+a:2:{s:7:"content";s:1696:"<section class="benefits-section text-center">
+  <div class="container">
+    <div class="benefits-section">
+      <!-- Phần văn bản -->
+      <div class="benefits-text">
+        <h2><strong>Lợi ích khi sử dụng dịch vụ của chúng tôi</strong></h2>
+        <p>Giúp khách sạn của bạn hoạt động trơn tru hơn, tiết kiệm thời gian và tối ưu hóa doanh thu với nền tảng thiết kế website hiện đại, chuyên nghiệp.</p>
+      </div>
+
+      <!-- Card hình ảnh -->
+      <div class="card-wrapper">
+                            <div class="card-container">
+                    <div class="card">
+                        <img src="/grav/user/pages/01.home/04._benefit/professional.jpg" alt="&lt;img alt=&quot;&quot; src=&quot;/grav/user/pages/01.home/04._benefit/professional.jpg?title&quot; /&gt;">
+                    </div>
+                                    </div>
+                            <div class="card-container">
+                    <div class="card">
+                        <img src="/grav/user/pages/01.home/04._benefit/modern.webp" alt="&lt;img alt=&quot;&quot; src=&quot;/grav/user/pages/01.home/04._benefit/modern.webp?title&quot; /&gt;">
+                    </div>
+                                    </div>
+                            <div class="card-container">
+                    <div class="card">
+                        <img src="/grav/user/pages/01.home/04._benefit/effective.jpg" alt="&lt;img alt=&quot;&quot; src=&quot;/grav/user/pages/01.home/04._benefit/effective.jpg?title&quot; /&gt;">
+                    </div>
+                                    </div>
+                  </div>
+    </div>
+  </div>
+</section>";s:12:"content_meta";N;}

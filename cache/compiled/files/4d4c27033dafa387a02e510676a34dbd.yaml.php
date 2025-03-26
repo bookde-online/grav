@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/config/site.yaml',
-    'modified' => 1741446256,
-    'size' => 1509,
+    'modified' => 1742970365,
+    'size' => 1544,
     'data' => [
         'title' => 'Grav',
         'default_lang' => 'en',

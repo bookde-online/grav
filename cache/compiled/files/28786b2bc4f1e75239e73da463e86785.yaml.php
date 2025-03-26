@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/themes/mytheme/blueprints.yaml',
-    'modified' => 1742871848,
+    'modified' => 1742970463,
     'size' => 290,
     'data' => [
         'title' => 'Default Page',

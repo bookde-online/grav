@@ -1,135 +1,135 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1742962801,
-    'checksum' => '87fa50f5946d52a1c5a9cb8c83642e0d',
+    'timestamp' => 1742983811,
+    'checksum' => '97abdfdfabd1744bedb5a8d263b092b3',
     'files' => [
         'user/config' => [
             'langswitcher' => [
                 'file' => 'user/config/langswitcher.yaml',
-                'modified' => 1741450484
+                'modified' => 1742970463
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1741447157
+                'modified' => 1742970366
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1742801973
+                'modified' => 1742970463
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/config/plugins/flex-objects.yaml',
-                'modified' => 1742885192
+                'modified' => 1742970463
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1741446942
+                'modified' => 1742970463
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1741446311
+                'modified' => 1742970366
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1742962790
+                'modified' => 1742983804
             ],
             'themes/mytheme' => [
                 'file' => 'user/config/themes/mytheme.yaml',
-                'modified' => 1742462915
+                'modified' => 1742970463
             ],
             'themes/quark' => [
                 'file' => 'user/config/themes/quark.yaml',
-                'modified' => 1741448523
+                'modified' => 1742970463
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
-                'modified' => 1741446945
+                'modified' => 1742970366
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1741446256
+                'modified' => 1742970365
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1741446256
+                'modified' => 1742970365
             ],
             'mime' => [
                 'file' => 'system/config/mime.yaml',
-                'modified' => 1741446256
+                'modified' => 1742970365
             ],
             'permissions' => [
                 'file' => 'system/config/permissions.yaml',
-                'modified' => 1741446256
+                'modified' => 1742970365
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1741446256
+                'modified' => 1742970365
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1741446256
+                'modified' => 1742970365
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1741446256
+                'modified' => 1742970365
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1742463624
+                'modified' => 1742970463
             ],
             'plugins/bootstrapper' => [
                 'file' => 'user/plugins/bootstrapper/bootstrapper.yaml',
-                'modified' => 1742886665
+                'modified' => 1742970463
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1741446393
+                'modified' => 1742970367
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1741446470
+                'modified' => 1742970368
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
-                'modified' => 1742877553
+                'modified' => 1742970463
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1742803251
+                'modified' => 1742970463
             ],
             'plugins/langswitcher' => [
                 'file' => 'user/plugins/langswitcher/langswitcher.yaml',
-                'modified' => 1683678796
+                'modified' => 1742970463
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1741446449
+                'modified' => 1742970369
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1741446448
+                'modified' => 1742970369
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1741446386
+                'modified' => 1742970369
             ]
         ],
         'user/themes' => [
             'themes/bootstrap' => [
                 'file' => 'user/themes/bootstrap/bootstrap.yaml',
-                'modified' => 1742886733
+                'modified' => 1742970463
             ],
             'themes/mytheme' => [
                 'file' => 'user/themes/mytheme/mytheme.yaml',
-                'modified' => 1741448762
+                'modified' => 1742970463
             ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1741446301
+                'modified' => 1742970369
             ]
         ]
     ],

@@ -63,8 +63,6 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 15
         echo "
-    
-
     <!-- Services Section -->
     <section id=\"services\" class=\"services section light-background\">
 
@@ -81,7 +79,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
                 <i class=\"bi bi-easel\"></i>
               </div>
               <a href=\"";
-        // line 33
+        // line 31
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details"], "method"), "url", []), "html", null, true);
         echo "\" class=\"stretched-link\">
                 <h3>Custom Hotel Website</h3>
@@ -99,7 +97,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
                 <i class=\"bi bi-broadcast\"></i>
               </div>
               <a href=\"";
-        // line 48
+        // line 46
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-1"], "method"), "url", []), "html", null, true);
         echo "\" class=\"stretched-link\">
                 <h3>Online Booking Support</h3>
@@ -117,7 +115,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
                 <i class=\"bi bi-activity\"></i>
               </div>
               <a href=\"";
-        // line 63
+        // line 61
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/service-details-2"], "method"), "url", []), "html", null, true);
         echo "\" class=\"stretched-link\">
                 <h3>Booking Optimization Solutions</h3>
@@ -148,7 +146,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
                 <div class=\"card-container\">
                     <div class=\"card\">
                         <img src=\"";
-        // line 91
+        // line 89
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/professional.webp\" alt=\"Professional\">
                     </div>
@@ -158,7 +156,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
                 <div class=\"card-container\">
                     <div class=\"card\">
                         <img src=\"";
-        // line 98
+        // line 96
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/modern.webp\" alt=\"Modern\">
                     </div>
@@ -168,7 +166,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
                 <div class=\"card-container\">
                     <div class=\"card\">
                         <img src=\"";
-        // line 105
+        // line 103
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/effective.webp\" alt=\"Effective\">
                     </div>
@@ -194,7 +192,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
               <img src=\"";
-        // line 128
+        // line 126
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/about/hotel.webp\" class=\"img-fluid\" alt=\"Image hotel\">
               <h4 class=\"text-overlay\">HOTELS</h4> 
@@ -206,7 +204,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
               <img src=\"";
-        // line 137
+        // line 135
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/about/spa.webp\" class=\"img-fluid\" alt=\"Image spa\" style=\"height: fit-content;\">
               <h4 class=\"text-overlay\">SPA</h4> 
@@ -218,7 +216,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
           <div class=\"team-member\">
             <div class=\"member-img position-relative\">
               <img src=\"";
-        // line 146
+        // line 144
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/about/tours.webp\" class=\"img-fluid\" alt=\"Image tours\">
               <h4 class=\"text-overlay\">TOURS</h4> 
@@ -238,7 +236,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
           <div class=\"row align-items-center flex-md-row flex-column-reverse\">
             <div class=\"col-md-6 text-center\">
               <img src=\"";
-        // line 163
+        // line 161
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/services/demo.webp\" alt=\"Hotel Launch\" class=\"img-fluid w-100 rounded\">
             </div>
@@ -254,7 +252,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
 
   <div class=\"text-center mt-4\" style=\"margin-bottom: 40px; margin-top: 5px;\" >
     <a href=\"";
-        // line 176
+        // line 174
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
         echo "#services\" class=\"btn btn-contact\">Contact Us Now</a>
   </div>
@@ -263,9 +261,9 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
 
   <footer id=\"footer\" class=\"footer dark-background\">
            ";
-        // line 182
-        $this->loadTemplate("partials/footer_en.html.twig", "en/home.html.twig", 182)->display($context);
-        // line 183
+        // line 180
+        $this->loadTemplate("partials/footer_en.html.twig", "en/home.html.twig", 180)->display($context);
+        // line 181
         echo "</footer>
 
 </body>
@@ -288,7 +286,7 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
 
     public function getDebugInfo()
     {
-        return array (  269 => 183,  267 => 182,  258 => 176,  242 => 163,  222 => 146,  210 => 137,  198 => 128,  172 => 105,  162 => 98,  152 => 91,  121 => 63,  103 => 48,  85 => 33,  65 => 15,  56 => 13,  52 => 12,  47 => 9,  44 => 8,  39 => 4,  37 => 3,  33 => 1,);
+        return array (  267 => 181,  265 => 180,  256 => 174,  240 => 161,  220 => 144,  208 => 135,  196 => 126,  170 => 103,  160 => 96,  150 => 89,  119 => 61,  101 => 46,  83 => 31,  65 => 15,  56 => 13,  52 => 12,  47 => 9,  44 => 8,  39 => 4,  37 => 3,  33 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -315,8 +313,6 @@ class __TwigTemplate_ac8026b19b5ee9ebdf9dfb16d1811953702adfff4cc0243e095ef023d2c
       {% for module in page.collection() %}
         {{module.content|raw}}
       {% endfor %}
-
-    
 
     <!-- Services Section -->
     <section id=\"services\" class=\"services section light-background\">

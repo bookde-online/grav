@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/plugins/admin/admin.yaml',
-    'modified' => 1742463624,
-    'size' => 1901,
+    'modified' => 1742970463,
+    'size' => 1986,
     'data' => [
         'enabled' => true,
         'route' => '/admin',

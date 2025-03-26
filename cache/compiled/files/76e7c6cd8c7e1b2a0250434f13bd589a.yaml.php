@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/plugins/markdown-notices/blueprints.yaml',
-    'modified' => 1741446448,
-    'size' => 1459,
+    'modified' => 1742970369,
+    'size' => 1518,
     'data' => [
         'name' => 'Markdown Notices',
         'type' => 'plugin',

@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/config/security.yaml',
-    'modified' => 1741446256,
-    'size' => 749,
+    'modified' => 1742970365,
+    'size' => 796,
     'data' => [
         'xss_whitelist' => [
             0 => 'admin.super'

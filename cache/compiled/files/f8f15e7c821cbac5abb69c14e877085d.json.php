@@ -2,177 +2,217 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/grav/user/data/flex/indexes/pages.json',
-    'modified' => 1742962847,
-    'size' => 2785,
+    'modified' => 1742983799,
+    'size' => 3764,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1742962847,
-        'count' => 11,
+        'timestamp' => 1742983799,
+        'count' => 13,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1742956029,
+                'storage_timestamp' => 1742970463,
                 'children' => [
-                    '01.home' => 1742956107,
-                    '04.pricing' => 1742453947,
-                    '05.howitwork' => 1742545872,
-                    '06.blog' => 1742887077,
-                    '07.contact' => 1742870088
+                    '01.home' => 1742970463,
+                    '04.pricing' => 1742970463,
+                    '05.howitwork' => 1742970463,
+                    '06.blog' => 1742970463,
+                    '07.contact' => 1742970463
                 ],
-                'checksum' => 'b1cebc2b59fdf09cd2bd33e124a9a276'
+                'checksum' => '6dd878c46628a01d5e4d5205d56d49ab'
             ],
             '01.home' => [
                 'key' => 'home',
                 'storage_key' => '01.home',
-                'template' => 'modular',
-                'storage_timestamp' => 1742962847,
+                'template' => 'default',
+                'storage_timestamp' => 1742983799,
                 'markdown' => [
                     'en' => [
-                        'modular' => 1742956107
+                        'default' => 1742981258
                     ],
                     'vi' => [
-                        'modular' => 1742897693
+                        'default' => 1742981241
                     ]
                 ],
                 'children' => [
-                    '_about' => 1742962847,
-                    '_benefit' => 1742952976,
-                    '_carousel' => 1742960264,
-                    '_services' => 1742958860
+                    '01._about' => 1742983757,
+                    '02._benefit' => 1742983765,
+                    '03._carousel' => 1742983776,
+                    '03._services' => 1742983799
                 ],
-                'checksum' => '9a93e9fea40ddf7b1d8762bd7ecfa98d'
+                'checksum' => '1d432ca9edb00bd7603718bae4e4bef9'
             ],
-            '01.home/_about' => [
-                'key' => 'home/_about',
-                'storage_key' => '01.home/_about',
-                'template' => 'about',
-                'storage_timestamp' => 1742962847,
-                'markdown' => [
-                    'en' => [
-                        'about' => 1742961132
-                    ],
-                    'vi' => [
-                        'about' => 1742961887
-                    ]
-                ],
-                'checksum' => '087da7f8cc29b24a376abe541d2e4991'
-            ],
-            '01.home/_benefit' => [
-                'key' => 'home/_benefit',
-                'storage_key' => '01.home/_benefit',
-                'template' => NULL,
-                'storage_timestamp' => 1742952976,
-                'checksum' => 'cc6843ad1c3d6f326b0803ed1813f353'
-            ],
-            '01.home/_carousel' => [
+            '01.home/01._carousel' => [
                 'key' => 'home/_carousel',
-                'storage_key' => '01.home/_carousel',
+                'storage_key' => '01.home/01._carousel',
                 'template' => 'hero',
-                'storage_timestamp' => 1742960264,
+                'storage_timestamp' => 1742983799,
                 'markdown' => [
                     'vi' => [
-                        'hero' => 1742960264
+                        'hero' => 1742979683
                     ]
                 ],
-                'checksum' => 'cc237b2953bbd574b9d6185bbf69ea6e'
+                'checksum' => '0da9243758d0c5b38ea5d9b43f909026'
             ],
-            '01.home/_services' => [
-                'key' => 'home/_services',
-                'storage_key' => '01.home/_services',
-                'template' => 'default',
-                'storage_timestamp' => 1742958860,
+            '01.home/02._about' => [
+                'key' => 'home/_about',
+                'storage_key' => '01.home/02._about',
+                'template' => 'about',
+                'storage_timestamp' => 1742983799,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742958816
+                        'about' => 1742970463
                     ],
                     'vi' => [
-                        'default' => 1742958860
+                        'about' => 1742979574
+                    ]
+                ],
+                'checksum' => 'c79a0ad897d0d16a7b4482f2f41a8324'
+            ],
+            '01.home/03._services' => [
+                'key' => 'home/_services',
+                'storage_key' => '01.home/03._services',
+                'template' => 'services',
+                'storage_timestamp' => 1742983799,
+                'markdown' => [
+                    'en' => [
+                        'services' => 1742974280
+                    ],
+                    'vi' => [
+                        'services' => 1742974288
                     ]
                 ],
                 'children' => [
-                    'custom-hotel-website' => 1742957657
+                    '01._custom-hotel-website' => 1742978408,
+                    '02._online-booking-support' => 1742978367,
+                    '03._booking-optimization-solutions' => 1742979207
                 ],
-                'checksum' => 'a932c3c501bdd1b4441192950f52178c'
+                'checksum' => '2131ee32d839f638f712d71a4795b9da'
             ],
-            '01.home/_services/custom-hotel-website' => [
-                'key' => 'home/_services/custom-hotel-website',
-                'storage_key' => '01.home/_services/custom-hotel-website',
-                'template' => 'default',
-                'storage_timestamp' => 1742957657,
+            '01.home/03._services/01._custom-hotel-website' => [
+                'key' => 'home/_services/_custom-hotel-website',
+                'storage_key' => '01.home/03._services/01._custom-hotel-website',
+                'template' => 'service-detail',
+                'storage_timestamp' => 1742978408,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742957577
+                        'service-detail' => 1742974767
                     ],
                     'vi' => [
-                        'default' => 1742957657
+                        'service-detail' => 1742976616
                     ]
                 ],
-                'checksum' => 'e07856d85d318d24e3ec07c836ba867d'
+                'checksum' => '6c441e0e7fc40868a964641ec3eac6d5'
+            ],
+            '01.home/03._services/02._online-booking-support' => [
+                'key' => 'home/_services/_online-booking-support',
+                'storage_key' => '01.home/03._services/02._online-booking-support',
+                'template' => 'service-detail',
+                'storage_timestamp' => 1742978367,
+                'markdown' => [
+                    'en' => [
+                        'service-detail' => 1742977604
+                    ],
+                    'vi' => [
+                        'service-detail' => 1742977843
+                    ]
+                ],
+                'checksum' => '51b63858ce52fc98995b1484d6705c14'
+            ],
+            '01.home/03._services/03._booking-optimization-solutions' => [
+                'key' => 'home/_services/_booking-optimization-solutions',
+                'storage_key' => '01.home/03._services/03._booking-optimization-solutions',
+                'template' => 'service-detail',
+                'storage_timestamp' => 1742979207,
+                'markdown' => [
+                    'en' => [
+                        'service-detail' => 1742978258
+                    ],
+                    'vi' => [
+                        'service-detail' => 1742979207
+                    ]
+                ],
+                'checksum' => 'be698f1d108059dbf72979f189f4e137'
+            ],
+            '01.home/04._benefit' => [
+                'key' => 'home/_benefit',
+                'storage_key' => '01.home/04._benefit',
+                'template' => 'benefit',
+                'storage_timestamp' => 1742983799,
+                'markdown' => [
+                    'en' => [
+                        'benefit' => 1742981916
+                    ],
+                    'vi' => [
+                        'benefit' => 1742983610
+                    ]
+                ],
+                'checksum' => '0e1c29860b248f2bf4b7982d0b61cdfa'
             ],
             '04.pricing' => [
                 'key' => 'pricing',
                 'storage_key' => '04.pricing',
                 'template' => 'default',
-                'storage_timestamp' => 1742453947,
+                'storage_timestamp' => 1742970463,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742453947
+                        'default' => 1742970463
                     ],
                     'vi' => [
-                        'default' => 1742452848
+                        'default' => 1742970463
                     ]
                 ],
-                'checksum' => '5e309bb594a5ca80f4170934e63e3ef5'
+                'checksum' => 'e5dc461c6a7f09a2cece52383e631236'
             ],
             '05.howitwork' => [
                 'key' => 'howitwork',
                 'storage_key' => '05.howitwork',
                 'template' => 'default',
-                'storage_timestamp' => 1742545872,
+                'storage_timestamp' => 1742970463,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742454536
+                        'default' => 1742970463
                     ],
                     'vi' => [
-                        'default' => 1742454534
+                        'default' => 1742970463
                     ]
                 ],
-                'checksum' => '5544723545e3c3145584beb831c05289'
+                'checksum' => 'fe150d6cf655d83cfe5d10d36e9fb900'
             ],
             '06.blog' => [
                 'key' => 'blog',
                 'storage_key' => '06.blog',
                 'template' => 'default',
-                'storage_timestamp' => 1742887077,
+                'storage_timestamp' => 1742970463,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742453855
+                        'default' => 1742970463
                     ],
                     'vi' => [
-                        'blog' => 1742887077
+                        'blog' => 1742970463
                     ]
                 ],
-                'checksum' => '4b25cecce8cfaf8742890fbf68d8f824'
+                'checksum' => '33ec8c87a8024032340fb8867eaaa8e2'
             ],
             '07.contact' => [
                 'key' => 'contact',
                 'storage_key' => '07.contact',
                 'template' => 'formdata',
-                'storage_timestamp' => 1742957748,
+                'storage_timestamp' => 1742970463,
                 'markdown' => [
                     '' => [
-                        'formdata' => 1742870088
+                        'formdata' => 1742970463
                     ],
                     'en' => [
-                        'default' => 1742812924
+                        'default' => 1742970463
                     ],
                     'vi' => [
-                        'default' => 1742803310
+                        'default' => 1742970463
                     ]
                 ],
-                'checksum' => '4a7ad513227830857d292c38bfcf6f73'
+                'checksum' => '4031b3167122d34953842aed047b9729'
             ]
         ]
     ]

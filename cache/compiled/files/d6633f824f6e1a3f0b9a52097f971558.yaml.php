@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/config/themes/mytheme.yaml',
-    'modified' => 1742462915,
+    'modified' => 1742970463,
     'size' => 272,
     'data' => [
         'enabled' => true,

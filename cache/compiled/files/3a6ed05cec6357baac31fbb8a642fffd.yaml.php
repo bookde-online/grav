@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/accounts/dungnguyen.yaml',
-    'modified' => 1742464432,
-    'size' => 287,
+    'modified' => 1742970463,
+    'size' => 299,
     'data' => [
         'state' => 'enabled',
         'email' => 'dungnguyen19724@gmail.com',
