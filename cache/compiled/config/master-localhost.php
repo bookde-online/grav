@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1742549449,
-    'checksum' => '691fb5fe89302ec377318851f1fb8a01',
+    'timestamp' => 1742962801,
+    'checksum' => '87fa50f5946d52a1c5a9cb8c83642e0d',
     'files' => [
         'user/config' => [
             'langswitcher' => [
@@ -12,6 +12,14 @@ return [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1741447157
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1742801973
+            ],
+            'plugins/flex-objects' => [
+                'file' => 'user/config/plugins/flex-objects.yaml',
+                'modified' => 1742885192
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -23,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1742549436
+                'modified' => 1742962790
             ],
             'themes/mytheme' => [
                 'file' => 'user/config/themes/mytheme.yaml',
@@ -73,6 +81,10 @@ return [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1742463624
             ],
+            'plugins/bootstrapper' => [
+                'file' => 'user/plugins/bootstrapper/bootstrapper.yaml',
+                'modified' => 1742886665
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
                 'modified' => 1741446393
@@ -83,11 +95,11 @@ return [
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
-                'modified' => 1741446471
+                'modified' => 1742877553
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1741446435
+                'modified' => 1742803251
             ],
             'plugins/langswitcher' => [
                 'file' => 'user/plugins/langswitcher/langswitcher.yaml',
@@ -107,6 +119,10 @@ return [
             ]
         ],
         'user/themes' => [
+            'themes/bootstrap' => [
+                'file' => 'user/themes/bootstrap/bootstrap.yaml',
+                'modified' => 1742886733
+            ],
             'themes/mytheme' => [
                 'file' => 'user/themes/mytheme/mytheme.yaml',
                 'modified' => 1741448762
@@ -119,6 +135,11 @@ return [
     ],
     'data' => [
         'themes' => [
+            'bootstrap' => [
+                'dropdown' => [
+                    'enabled' => false
+                ]
+            ],
             'mytheme' => [
                 'name' => 'My Theme',
                 'version' => '1.0.0',
@@ -276,25 +297,40 @@ return [
                     ]
                 ]
             ],
+            'bootstrapper' => [
+                'enabled' => true,
+                'version' => 'v3',
+                'always_load' => false,
+                'use_cdn' => false,
+                'mode' => 'production',
+                'load_core_css' => true,
+                'load_theme_css' => true,
+                'load_popper_js' => true,
+                'load_core_js' => true
+            ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'to' => NULL,
+                'from' => 'dungnguyen19724@gmail.com',
+                'to' => '22520288@gm.uit.edu.vn',
                 'mailer' => [
-                    'engine' => 'sendmail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => NULL,
-                        'password' => NULL
+                        'server' => 'smtp.gmail.com',
+                        'port' => 587,
+                        'encryption' => 'ssl',
+                        'user' => 'Dungnguyen19724@gmail.com',
+                        'password' => 'lkyzmvgkamqixbqs'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail -bs'
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => true,
+                'cc' => NULL,
+                'bcc' => NULL,
+                'reply_to' => NULL,
+                'body' => NULL
             ],
             'error' => [
                 'enabled' => true,
@@ -314,9 +350,11 @@ return [
                     ]
                 ],
                 'directories' => [
-                    0 => 'blueprints://flex-objects/pages.yaml',
-                    1 => 'blueprints://flex-objects/user-accounts.yaml',
-                    2 => 'blueprints://flex-objects/user-groups.yaml'
+                    0 => 'blueprints://flex-objects/contacts.yaml',
+                    1 => 'blueprints://flex-objects/hero-carousel.yaml',
+                    2 => 'blueprints://flex-objects/pages.yaml',
+                    3 => 'blueprints://flex-objects/user-accounts.yaml',
+                    4 => 'blueprints://flex-objects/user-groups.yaml'
                 ]
             ],
             'form' => [
@@ -325,7 +363,7 @@ return [
                 'inline_css' => true,
                 'refresh_prevention' => false,
                 'client_side_validation' => true,
-                'debug' => false,
+                'debug' => true,
                 'inline_errors' => false,
                 'modular_form_fix' => true,
                 'files' => [
@@ -4099,7 +4137,7 @@ node_modules'
                 ]
             ],
             'debugger' => [
-                'enabled' => false,
+                'enabled' => true,
                 'provider' => 'clockwork',
                 'censored' => false,
                 'shutdown' => [

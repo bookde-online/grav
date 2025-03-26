@@ -1,0 +1,8 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        {{ content|raw }}
+        {% include "forms/form.html.twig" %}
+    </div>
+{% endblock %}

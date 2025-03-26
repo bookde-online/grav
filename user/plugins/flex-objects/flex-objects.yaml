@@ -12,3 +12,11 @@ directories:
   - 'blueprints://flex-objects/pages.yaml'
   - 'blueprints://flex-objects/user-accounts.yaml'
   - 'blueprints://flex-objects/user-groups.yaml'
+enabled: true
+directories:
+  hero-carousel:
+    enabled: true
+    data:
+      storage: user-data://hero-carousel
+    admin:
+      route: /hero-carousel

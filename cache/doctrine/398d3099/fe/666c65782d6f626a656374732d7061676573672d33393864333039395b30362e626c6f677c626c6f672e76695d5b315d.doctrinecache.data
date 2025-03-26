@@ -1,0 +1,9 @@
+1742963441
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"blog";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:4:"Blog";s:8:"template";s:7:"vi/blog";s:11:"media_order";s:32:"Screenshot 2024-10-17 220438.png";}s:11:"frontmatter";s:77:"title: Blog
+template: vi/blog
+media_order: 'Screenshot 2024-10-17 220438.png'";s:8:"markdown";s:562:"![Screenshot%202024-10-17%20220438](Screenshot%202024-10-17%20220438.png "Screenshot%202024-10-17%20220438")
+One platform, manage all your hotels, customers, and transactions.
+Control all your hotels and data with just one website. Manage your customer's data, booking, rooms, hotels,... Create events, vouchers within the web.
+
+Having your own hotel website not only helps customers find you easily on the internet, but also optimizes the online booking experience, making management simpler, more efficient, saving time and optimizing revenue in the best way.
+";}s:7:"storage";a:8:{s:3:"key";s:4:"blog";s:11:"storage_key";s:15:"06.blog|blog.vi";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1742887077;s:8:"markdown";a:2:{s:2:"en";a:1:{s:7:"default";i:1742453855;}s:2:"vi";a:1:{s:4:"blog";i:1742887077;}}s:8:"checksum";s:32:"4b25cecce8cfaf8742890fbf68d8f824";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

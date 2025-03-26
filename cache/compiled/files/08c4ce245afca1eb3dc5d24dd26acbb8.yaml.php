@@ -2,11 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/config/system.yaml',
-    'modified' => 1742549436,
-    'size' => 4574,
+    'modified' => 1742962790,
+    'size' => 4619,
     'data' => [
         'absolute_urls' => false,
         'timezone' => NULL,
+        'default_locale' => NULL,
         'param_sep' => ':',
         'wrapped_site' => false,
         'reverse_proxy_setup' => false,
@@ -35,6 +36,9 @@ return [
             'session_store_active' => false,
             'http_accept_language' => false,
             'override_locale' => false,
+            'content_fallback' => [
+                
+            ],
             'pages_fallback_only' => false,
             'debug' => true
         ],
@@ -202,7 +206,7 @@ return [
             ]
         ],
         'debugger' => [
-            'enabled' => false,
+            'enabled' => true,
             'provider' => 'clockwork',
             'censored' => false,
             'shutdown' => [

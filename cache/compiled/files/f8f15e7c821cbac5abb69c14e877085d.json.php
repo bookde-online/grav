@@ -2,123 +2,114 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/grav/user/data/flex/indexes/pages.json',
-    'modified' => 1742550432,
-    'size' => 2878,
+    'modified' => 1742962847,
+    'size' => 2785,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1742550432,
+        'timestamp' => 1742962847,
         'count' => 11,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1742550432,
+                'storage_timestamp' => 1742956029,
                 'children' => [
-                    '01.home' => 1742530218,
-                    '02. about' => 1742549930,
-                    '03.services' => 1742549504,
+                    '01.home' => 1742956107,
                     '04.pricing' => 1742453947,
                     '05.howitwork' => 1742545872,
-                    '06.blog' => 1742453855,
-                    '07.contact' => 1742454761
+                    '06.blog' => 1742887077,
+                    '07.contact' => 1742870088
                 ],
-                'checksum' => '67aa833588c20fd236a650f0a0672365'
+                'checksum' => 'b1cebc2b59fdf09cd2bd33e124a9a276'
             ],
             '01.home' => [
                 'key' => 'home',
                 'storage_key' => '01.home',
-                'template' => 'default',
-                'storage_timestamp' => 1742530218,
+                'template' => 'modular',
+                'storage_timestamp' => 1742962847,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742530218
+                        'modular' => 1742956107
                     ],
                     'vi' => [
-                        'default' => 1742530214
-                    ]
-                ],
-                'checksum' => 'd930e503567b4fd6002e949a9ba81958'
-            ],
-            '02. about' => [
-                'key' => ' about',
-                'storage_key' => '02. about',
-                'template' => 'default',
-                'storage_timestamp' => 1742549930,
-                'markdown' => [
-                    'en' => [
-                        'default' => 1742549925
-                    ],
-                    'vi' => [
-                        'default' => 1742549930
-                    ]
-                ],
-                'checksum' => 'b8e548cc0785fa821a37390441518f3a'
-            ],
-            '03.services' => [
-                'key' => 'services',
-                'storage_key' => '03.services',
-                'template' => 'default',
-                'storage_timestamp' => 1742549504,
-                'markdown' => [
-                    'en' => [
-                        'default' => 1742549494
-                    ],
-                    'vi' => [
-                        'default' => 1742549504
+                        'modular' => 1742897693
                     ]
                 ],
                 'children' => [
-                    'service-details' => 1742549188,
-                    'service-details-1' => 1742549207,
-                    'service-details-2' => 1742549229
+                    '_about' => 1742962847,
+                    '_benefit' => 1742952976,
+                    '_carousel' => 1742960264,
+                    '_services' => 1742958860
                 ],
-                'checksum' => '809c3f947d79381924ee2e0ca48107e2'
+                'checksum' => '9a93e9fea40ddf7b1d8762bd7ecfa98d'
             ],
-            '03.services/service-details' => [
-                'key' => 'services/service-details',
-                'storage_key' => '03.services/service-details',
-                'template' => 'default',
-                'storage_timestamp' => 1742549188,
+            '01.home/_about' => [
+                'key' => 'home/_about',
+                'storage_key' => '01.home/_about',
+                'template' => 'about',
+                'storage_timestamp' => 1742962847,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742549188
+                        'about' => 1742961132
                     ],
                     'vi' => [
-                        'default' => 1742549159
+                        'about' => 1742961887
                     ]
                 ],
-                'checksum' => 'ca500539c75c24661896de3ee0e95c7a'
+                'checksum' => '087da7f8cc29b24a376abe541d2e4991'
             ],
-            '03.services/service-details-1' => [
-                'key' => 'services/service-details-1',
-                'storage_key' => '03.services/service-details-1',
+            '01.home/_benefit' => [
+                'key' => 'home/_benefit',
+                'storage_key' => '01.home/_benefit',
+                'template' => NULL,
+                'storage_timestamp' => 1742952976,
+                'checksum' => 'cc6843ad1c3d6f326b0803ed1813f353'
+            ],
+            '01.home/_carousel' => [
+                'key' => 'home/_carousel',
+                'storage_key' => '01.home/_carousel',
+                'template' => 'hero',
+                'storage_timestamp' => 1742960264,
+                'markdown' => [
+                    'vi' => [
+                        'hero' => 1742960264
+                    ]
+                ],
+                'checksum' => 'cc237b2953bbd574b9d6185bbf69ea6e'
+            ],
+            '01.home/_services' => [
+                'key' => 'home/_services',
+                'storage_key' => '01.home/_services',
                 'template' => 'default',
-                'storage_timestamp' => 1742549207,
+                'storage_timestamp' => 1742958860,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742549207
+                        'default' => 1742958816
                     ],
                     'vi' => [
-                        'default' => 1742549155
+                        'default' => 1742958860
                     ]
                 ],
-                'checksum' => '7a5c37bd8b48c4f15d32241136c78adc'
+                'children' => [
+                    'custom-hotel-website' => 1742957657
+                ],
+                'checksum' => 'a932c3c501bdd1b4441192950f52178c'
             ],
-            '03.services/service-details-2' => [
-                'key' => 'services/service-details-2',
-                'storage_key' => '03.services/service-details-2',
+            '01.home/_services/custom-hotel-website' => [
+                'key' => 'home/_services/custom-hotel-website',
+                'storage_key' => '01.home/_services/custom-hotel-website',
                 'template' => 'default',
-                'storage_timestamp' => 1742549229,
+                'storage_timestamp' => 1742957657,
                 'markdown' => [
                     'en' => [
-                        'default' => 1742549229
+                        'default' => 1742957577
                     ],
                     'vi' => [
-                        'default' => 1742549150
+                        'default' => 1742957657
                     ]
                 ],
-                'checksum' => '9ed348a980df25f053caa87558f3f151'
+                'checksum' => 'e07856d85d318d24e3ec07c836ba867d'
             ],
             '04.pricing' => [
                 'key' => 'pricing',
@@ -154,31 +145,34 @@ return [
                 'key' => 'blog',
                 'storage_key' => '06.blog',
                 'template' => 'default',
-                'storage_timestamp' => 1742453855,
+                'storage_timestamp' => 1742887077,
                 'markdown' => [
                     'en' => [
                         'default' => 1742453855
                     ],
                     'vi' => [
-                        'default' => 1742453849
+                        'blog' => 1742887077
                     ]
                 ],
-                'checksum' => '8312fe3396ed23fc7d355ebbe46729cf'
+                'checksum' => '4b25cecce8cfaf8742890fbf68d8f824'
             ],
             '07.contact' => [
                 'key' => 'contact',
                 'storage_key' => '07.contact',
-                'template' => 'default',
-                'storage_timestamp' => 1742454761,
+                'template' => 'formdata',
+                'storage_timestamp' => 1742957748,
                 'markdown' => [
+                    '' => [
+                        'formdata' => 1742870088
+                    ],
                     'en' => [
-                        'default' => 1742453737
+                        'default' => 1742812924
                     ],
                     'vi' => [
-                        'default' => 1742454761
+                        'default' => 1742803310
                     ]
                 ],
-                'checksum' => 'e664fc72a4b87d498b53a7de7caa98f9'
+                'checksum' => '4a7ad513227830857d292c38bfcf6f73'
             ]
         ]
     ]

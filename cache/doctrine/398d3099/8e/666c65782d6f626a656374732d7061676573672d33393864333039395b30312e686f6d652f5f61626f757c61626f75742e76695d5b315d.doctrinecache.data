@@ -1,0 +1,13 @@
+1742963447
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:10:"home/_abou";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:16:"Về chúng tôi";s:11:"media_order";s:10:"about.webp";s:4:"menu";s:14:"Giới thiệu";s:8:"template";s:13:"modular/about";}s:11:"frontmatter";s:96:"title: 'Về chúng tôi'
+media_order: about.webp
+menu: 'Giới thiệu'
+template: modular/about";s:8:"markdown";s:1100:"#####**Tăng lượng đặt phòng với trang web khách sạn của riêng bạn**
+
+Tại BookDe.vn, chúng tôi trao quyền cho các khách sạn tại Việt Nam để kiểm soát hoàn toàn sự hiện diện trực tuyến của họ. Dịch vụ của chúng tôi cho phép bạn tạo một trang web tùy chỉnh với tên miền của riêng bạn, cho phép bạn tương tác trực tiếp với khách hàng.
+
+#####**Một nền tảng quản lý tất cả các khách sạn, khách hàng và giao dịch của bạn.**
+Kiểm soát tất cả các khách sạn và dữ liệu của bạn chỉ bằng một trang web. Quản lý dữ liệu của khách hàng, đặt phòng, phòng, khách sạn,... Tạo sự kiện, phiếu giảm giá trong web.
+
+Có trang web khách sạn của riêng bạn không chỉ giúp khách hàng dễ dàng tìm thấy bạn trên internet mà còn tối ưu hóa trải nghiệm đặt phòng trực tuyến, giúp quản lý đơn giản hơn, hiệu quả hơn, tiết kiệm thời gian và tối ưu hóa doanh thu theo cách tốt nhất.
+";}s:7:"storage";a:8:{s:3:"key";s:10:"home/_abou";s:11:"storage_key";s:22:"01.home/_abou|about.vi";s:8:"template";s:5:"about";s:17:"storage_timestamp";i:1742962771;s:8:"markdown";a:2:{s:2:"en";a:1:{s:5:"about";i:1742961132;}s:2:"vi";a:1:{s:5:"about";i:1742961887;}}s:8:"checksum";s:32:"593eefda4c670d2ccd83957e42fd8b24";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

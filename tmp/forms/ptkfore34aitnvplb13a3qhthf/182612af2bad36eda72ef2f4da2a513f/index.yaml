@@ -1,0 +1,95 @@
+form: flex-pages
+id: 'tmp://forms/session/182612af2bad36eda72ef2f4da2a513f'
+unique_id: 182612af2bad36eda72ef2f4da2a513f
+url: 'http://localhost:8080/grav/admin/pages/%20about'
+user:
+  username: dungnguyen
+  email: dungnguyen19724@gmail.com
+timestamps:
+  created: 1742870314
+  updated: 1742870389
+data:
+  header:
+    title: 'Giới thiệu'
+    media_order: null
+    published: true
+    body_classes: null
+    visible: true
+    order_by: null
+    order_manual: null
+    date: null
+    publish_date: null
+    unpublish_date: null
+    metadata: null
+    taxonomy: null
+    dateformat: null
+    menu: null
+    slug: null
+    redirect: null
+    process: null
+    twig_first: null
+    never_cache_twig: null
+    child_type: null
+    routable: null
+    cache_enable: null
+    debugger: null
+    template: null
+    append_url_extension: null
+    redirect_default_route: null
+    routes:
+      default: null
+      canonical: null
+      aliases: null
+    admin:
+      children_display_order: null
+    login:
+      visibility_requires_access: null
+    access: null
+    permissions:
+      inherit: null
+      authors: null
+      groups: null
+  content: null
+  folder: ' about'
+  route: null
+  name: default
+  ordering: true
+  order: null
+  blueprint: null
+  lang: vi
+  xss_check: null
+  _post_entries_save: null
+files: {  }
+object:
+  type: pages
+  key: ' about'
+  storage_key: '02. about|default.vi'
+  timestamp: 1742549930
+  serialized:
+    __META:
+      key: ' about'
+      storage_key: '02. about|default.vi'
+      template: default
+      storage_timestamp: 1742549930
+      markdown:
+        en: { default: 1742549925 }
+        vi: { default: 1742549930 }
+      checksum: b8e548cc0785fa821a37390441518f3a
+      exists: true
+      lang: vi
+    storage_key: '02. about|default.vi'
+    parent_key: ''
+    order: '02.'
+    folder: ' about'
+    template: default
+    lang: vi
+    header:
+      title: 'Giới thiệu'
+      visible: true
+      published: true
+      slug: about
+    root: false
+    frontmatter: "title: \"Giới thiệu\"\nvisible: true\npublished: true\nslug: about\n"
+    markdown: ''
+    slug: about
+    name: default.vi.md

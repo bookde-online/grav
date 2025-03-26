@@ -1,3 +1,4 @@
+{% import 'macros/macros.html.twig' as macros %}
 
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center">
@@ -7,48 +8,23 @@
       </a>
 
         <nav id="navmenu" class="navmenu">
-            <ul>
 
-                {% for page in pages.children.visible %}
-                    {% set url = page.url %}
-                    
-                    {# Xử lý cuộn về Home rồi cuộn xuống ID mong muốn #}
-                    {% if page.slug == 'about' %}
-                        {% set url = page.home ? '#about' : base_url_absolute ~ '/#about' %}
-                    {% elseif page.slug == 'services' %}
-                        {% set url = page.home ? '#services' : base_url_absolute ~ '/#services' %}
-                    {% endif %}
+            <ul {{ tree ? 'class="tree"' : '' }}>
+            {{ macros.nav_loop(pages) }}
 
-                    <li class="{% if page.children.count > 0 %}dropdown{% endif %}">
-                        {% if page.children.count > 0 %}
-                            <a href="{{ url }}"><span>{{ page.menu }}</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                {% for child in page.children.visible %}
-                                    <li><a href="{{ child.url }}">{{ child.menu }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        {% else %}
-                            <a href="{{ url }}">{{ page.menu }}</a>
-                        {% endif %}
-
-                    </li>
-                {% endfor %}
-
-
-                <div class="language-dropdown">
-                    <button class="dropdown-btn">
-                    <img src="{{ theme_url }}/assets/img/en.webp" alt="English">
-                    <span class="textEng"><u><b>EN</b></u></span>
-                    <i class="bi bi-chevron-down toggle-dropdown" id="lang"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="{{ page.url|replace({'/en': '/vi'}) }}" class="vi">
-                        <img src="{{ theme_url }}/assets/img/vi.webp" alt="Vietnamese">
-                        <span class="textVi">VI</span>
-                        </a>
-                    </div>
-                </div>
-
+              <div class="language-dropdown">
+                  <button class="dropdown-btn">
+                  <img src="{{ theme_url }}/assets/img/en.webp" alt="English">
+                  <span class="textEng"><u><b>EN</b></u></span>
+                  <i class="bi bi-chevron-down toggle-dropdown" id="lang"></i>
+                  </button>
+                  <div class="dropdown-content">
+                      <a href="{{ page.url|replace({'/en': '/vi'}) }}" class="vi">
+                      <img src="{{ theme_url }}/assets/img/vi.webp" alt="Vietnamese">
+                      <span class="textVi">VI</span>
+                      </a>
+                  </div>
+              </div>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

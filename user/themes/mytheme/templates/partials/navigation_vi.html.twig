@@ -1,3 +1,4 @@
+{% import 'macros/macros.html.twig' as macros %}
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center">
 
@@ -5,32 +6,9 @@
         <img src="{{ theme_url }}/assets/img/logo.webp" alt="Logo BookDe - Hotel Website Design Services">
       </a>
         <nav id="navmenu" class="navmenu">
-            <ul>
 
-                {% for page in pages.children.visible %}
-                    {% set url = page.url %}
-                    
-                    {# Xử lý cuộn về Home rồi cuộn xuống ID mong muốn #}
-                    {% if page.slug == 'about' %}
-                        {% set url = page.home ? '#about' : base_url_absolute ~ '/#about' %}
-                    {% elseif page.slug == 'services' %}
-                        {% set url = page.home ? '#services' : base_url_absolute ~ '/#services' %}
-                    {% endif %}
-
-                    <li class="{% if page.children.count > 0 %}dropdown{% endif %}">
-                        {% if page.children.count > 0 %}
-                            <a href="{{ url }}"><span>{{ page.menu }}</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                {% for child in page.children.visible %}
-                                    <li><a href="{{ child.url }}">{{ child.menu }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        {% else %}
-                            <a href="{{ url }}">{{ page.menu }}</a>
-                        {% endif %}
-
-                    </li>
-                {% endfor %}
+            <ul {{ tree ? 'class="tree"' : '' }}>
+                {{ macros.nav_loop(pages) }}
 
             <div class="language-dropdown">
                     <button class="dropdown-btn">

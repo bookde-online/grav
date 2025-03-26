@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1742549455,
-    'checksum' => '4409df776df7eafaed6779d807438d21',
+    'timestamp' => 1742962830,
+    'checksum' => '09d153b988382f5cfb9e576c3f5650da',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -45,6 +45,10 @@ return [
                 'file' => 'user/plugins/admin/blueprints.yaml',
                 'modified' => 1741446311
             ],
+            'plugins/bootstrapper' => [
+                'file' => 'user/plugins/bootstrapper/blueprints.yaml',
+                'modified' => 1742886665
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
                 'modified' => 1741446392
@@ -59,7 +63,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1741446435
+                'modified' => 1730063534
             ],
             'plugins/langswitcher' => [
                 'file' => 'user/plugins/langswitcher/blueprints.yaml',
@@ -79,6 +83,14 @@ return [
             ]
         ],
         'user/themes' => [
+            'themes/bootstrap' => [
+                'file' => 'user/themes/bootstrap/blueprints.yaml',
+                'modified' => 1742886733
+            ],
+            'themes/mytheme' => [
+                'file' => 'user/themes/mytheme/blueprints.yaml',
+                'modified' => 1742871848
+            ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/blueprints.yaml',
                 'modified' => 1741446301
@@ -3856,6 +3868,143 @@ return [
                 'name' => 'plugins.admin.pagemedia.resize_quality',
                 'validation' => 'loose'
             ],
+            'plugins.bootstrapper' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.bootstrapper.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.bootstrapper.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.bootstrapper.version' => [
+                'type' => 'select',
+                'size' => 'small',
+                'label' => 'PLUGIN_BOOTSTRAPPER.VERSION',
+                'default' => 'v3',
+                'options' => [
+                    'v3' => 'Bootstrap v3',
+                    'v4' => 'Bootstrap v4',
+                    'v5' => 'Bootstrap v5'
+                ],
+                'name' => 'plugins.bootstrapper.version',
+                'validation' => 'strict'
+            ],
+            'plugins.bootstrapper.always_load' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_BOOTSTRAPPER.ALWAYS_LOAD',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.bootstrapper.always_load',
+                'validation' => 'strict'
+            ],
+            'plugins.bootstrapper.use_cdn' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_BOOTSTRAPPER.USE_CDN',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.bootstrapper.use_cdn',
+                'validation' => 'strict'
+            ],
+            'plugins.bootstrapper.mode' => [
+                'type' => 'select',
+                'size' => 'small',
+                'label' => 'PLUGIN_BOOTSTRAPPER.MODE',
+                'default' => 'production',
+                'options' => [
+                    'development' => 'Development',
+                    'production' => 'Production'
+                ],
+                'name' => 'plugins.bootstrapper.mode',
+                'validation' => 'strict'
+            ],
+            'plugins.bootstrapper.load_core_css' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_BOOTSTRAPPER.LOAD_CORE_CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.bootstrapper.load_core_css',
+                'validation' => 'strict'
+            ],
+            'plugins.bootstrapper.load_theme_css' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_BOOTSTRAPPER.LOAD_THEME_CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.bootstrapper.load_theme_css',
+                'validation' => 'strict'
+            ],
+            'plugins.bootstrapper.load_popper_js' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_BOOTSTRAPPER.LOAD_POPPER_JS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.bootstrapper.load_popper_js',
+                'validation' => 'strict'
+            ],
+            'plugins.bootstrapper.load_core_js' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_BOOTSTRAPPER.LOAD_CORE_JS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.bootstrapper.load_core_js',
+                'validation' => 'strict'
+            ],
             'plugins.email' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5277,17 +5426,66 @@ return [
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
             ],
-            'themes.quark' => [
+            'themes.bootstrap' => [
                 'type' => '_root',
                 'form_field' => false,
                 'form' => [
-                    'validation' => 'loose'
+                    'validation' => 'strict'
                 ]
             ],
             'themes' => [
                 'type' => '_parent',
                 'name' => 'themes',
                 'form_field' => false
+            ],
+            'themes.bootstrap.dropdown' => [
+                'type' => '_parent',
+                'name' => 'themes.bootstrap.dropdown',
+                'form_field' => false
+            ],
+            'themes.bootstrap.dropdown.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Dropdown in navbar',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'themes.bootstrap.dropdown.enabled',
+                'validation' => 'strict'
+            ],
+            'themes.mytheme' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    
+                ]
+            ],
+            'themes.mytheme.header' => [
+                'type' => '_parent',
+                'name' => 'themes.mytheme.header',
+                'form_field' => false
+            ],
+            'themes.mytheme.header.media_order' => [
+                'array' => true,
+                'media_field' => true,
+                'validate' => [
+                    'type' => 'ignore'
+                ],
+                'type' => 'pagemedia',
+                'label' => 'Upload Images',
+                'name' => 'themes.mytheme.header.media_order'
+            ],
+            'themes.quark' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'loose'
+                ]
             ],
             'themes.quark.production-mode' => [
                 'type' => 'toggle',
@@ -5903,6 +6101,17 @@ return [
                         'resize_quality' => 'plugins.admin.pagemedia.resize_quality'
                     ]
                 ],
+                'bootstrapper' => [
+                    'enabled' => 'plugins.bootstrapper.enabled',
+                    'version' => 'plugins.bootstrapper.version',
+                    'always_load' => 'plugins.bootstrapper.always_load',
+                    'use_cdn' => 'plugins.bootstrapper.use_cdn',
+                    'mode' => 'plugins.bootstrapper.mode',
+                    'load_core_css' => 'plugins.bootstrapper.load_core_css',
+                    'load_theme_css' => 'plugins.bootstrapper.load_theme_css',
+                    'load_popper_js' => 'plugins.bootstrapper.load_popper_js',
+                    'load_core_js' => 'plugins.bootstrapper.load_core_js'
+                ],
                 'email' => [
                     'enabled' => 'plugins.email.enabled',
                     'mailer' => [
@@ -6058,6 +6267,16 @@ return [
                 ]
             ],
             'themes' => [
+                'bootstrap' => [
+                    'dropdown' => [
+                        'enabled' => 'themes.bootstrap.dropdown.enabled'
+                    ]
+                ],
+                'mytheme' => [
+                    'header' => [
+                        'media_order' => 'themes.mytheme.header.media_order'
+                    ]
+                ],
                 'quark' => [
                     'production-mode' => 'themes.quark.production-mode',
                     'grid-size' => 'themes.quark.grid-size',

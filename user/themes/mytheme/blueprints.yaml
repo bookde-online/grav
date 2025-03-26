@@ -1,0 +1,17 @@
+title: Default Page
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Content
+
+          fields:
+            header.media_order:
+              type: pagemedia
+              label: Upload Images

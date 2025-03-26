@@ -1,0 +1,35 @@
+{% macro nav_loop(page) %}
+  {% import _self as macros %}
+  {% for p in page.children.visible %}
+    {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+    {% set dropdown_class = (p.url in ['/grav/services', '/grav/en/services']) ? 'dropdown' : '' %}
+    {% set about_page = page.find('/home/_about') %}
+    {% set service_page = page.find('/home/_services') %}
+
+    <li class="{{ dropdown_class }}">
+      <a href="{{ p.url }}" class="{{ active_page }}">
+        {{ p.menu }}
+        {% if dropdown_class %}
+          <i class="bi bi-chevron-down toggle-dropdown"></i>
+        {% endif %}
+      </a>
+      {% if p.children.visible.count > 0 %}
+      <ul>
+        {{ macros.nav_loop(p) }}
+      </ul>
+      {% endif %}
+    </li>
+    {% if p.slug == 'home' %}
+        <li>
+          <a href="{{ base_url_absolute }}home#about" class="{{ page.activeChildOf('/home') ? 'active' : '' }}">
+            {{ about_page.menu }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ base_url_absolute }}home#services" class="{{ page.activeChildOf('/home') ? 'active' : '' }}">
+            {{ service_page.menu }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+{% endmacro %}

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1742549485,
-    'checksum' => '6805ebd9f732f967975ebc801ac4fded',
+    'timestamp' => 1742962830,
+    'checksum' => 'c69bcb87cf6e2498211164e2dab4b84d',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -199,6 +199,10 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/bootstrapper' => [
+                'file' => 'user/plugins/bootstrapper/languages.yaml',
+                'modified' => 1742886666
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
                 'modified' => 1741446393
@@ -209,7 +213,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1741446435
+                'modified' => 1730063534
             ],
             'plugins/langswitcher' => [
                 'file' => 'user/plugins/langswitcher/languages.yaml',
@@ -1879,6 +1883,18 @@ Sie haben **2FA** für dieses Konto aktiviert. Bitte benutzen Sie Ihre **2FA** A
                 'LEGACY_MEDIA_MUTATION_HELP' => 'Aktivieren Sie diese Einstellung nur, wenn die Bildbearbeitung nach einer Grav-Aktualisierung fehlgeschlagen ist.',
                 'BACKWARD_COMPATIBILITY' => 'Abwärtskompatibilität'
             ],
+            'PLUGIN_BOOTSTRAPPER' => [
+                'STATUS' => 'Plugin Status',
+                'ALWAYS_LOAD' => 'Immer laden',
+                'ALWAYS_LOAD_HELP' => 'Falls deaktivert, lass das Theme entscheiden ob das Bootstrap Plugin geladen wird',
+                'USE_CDN' => 'Bootstrap CDN verwenden',
+                'USE_CDN_HELP' => 'Bootstrap CSS und JavaScript vom CDN laden',
+                'MODE' => 'Modus',
+                'LOAD_CORE_CSS' => 'Core CSS laden',
+                'LOAD_THEME_CSS' => 'Theme CSS laden (v3)',
+                'LOAD_POPPER_JS' => 'Popper JS laden (v4, v5)',
+                'LOAD_CORE_JS' => 'Core JS laden'
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'E-Mail ist nicht konfiguriert',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Bitte konfigurieren sie eine \'An\' (\'to\') Adresse in den Email-Plugin-Einstellungen oder im Formular.',
@@ -3498,6 +3514,19 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'LEGACY_MEDIA_MUTATION' => 'Legacy Media Manipulation Compatibility',
                 'LEGACY_MEDIA_MUTATION_HELP' => 'Enable this setting only if image manipulation broke after Grav update.',
                 'BACKWARD_COMPATIBILITY' => 'Backward Compatibility'
+            ],
+            'PLUGIN_BOOTSTRAPPER' => [
+                'VERSION' => 'Bootstrap version',
+                'STATUS' => 'Plugin status',
+                'ALWAYS_LOAD' => 'Always load',
+                'ALWAYS_LOAD_HELP' => 'If disabled, let the theme decide to load the bootstrap plugin',
+                'USE_CDN' => 'Use Bootstrap CDN',
+                'USE_CDN_HELP' => 'Load Bootstrap\'s CSS and JavaScript from CDN',
+                'MODE' => 'Mode',
+                'LOAD_CORE_CSS' => 'Load Core CSS',
+                'LOAD_THEME_CSS' => 'Load Theme CSS (v3)',
+                'LOAD_POPPER_JS' => 'Load Popper JS (v4, v5)',
+                'LOAD_CORE_JS' => 'Load Core JS'
             ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Mail Engine',
@@ -6697,6 +6726,18 @@ L\'**authentification à deux facteurs** est activée sur ce compte. Veuillez ut
                 'AVATAR' => 'Générateur d\'Avatar',
                 'AVATAR_HELP' => 'Multiavatar est un avatar généré localement. Gravatar est un service externe qui utilise votre adresse e-mail pour extraire un avatar préconfiguré à distance',
                 'AVATAR_HASH' => 'NOTE : Chaîne de hachage personnalisée facultative pour l\'Avatar'
+            ],
+            'PLUGIN_BOOTSTRAPPER' => [
+                'STATUS' => 'Statut du plugin',
+                'ALWAYS_LOAD' => 'Toujours charger',
+                'ALWAYS_LOAD_HELP' => 'Si désactivé, laisser le thème décider de charger le plugin bootstrap',
+                'USE_CDN' => 'Utiliser le CDN Bootstrap',
+                'USE_CDN_HELP' => 'Charger les CSS Bootstrap et les JavaScript depuis le CDN',
+                'MODE' => 'Mode',
+                'LOAD_CORE_CSS' => 'Charger les CSS du core',
+                'LOAD_THEME_CSS' => 'Charger les CSS du thème (v3)',
+                'LOAD_POPPER_JS' => 'Charger les JS du Popper (v4, v5)',
+                'LOAD_CORE_JS' => 'Charger les JS du core'
             ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Moteur de messagerie',
@@ -11822,6 +11863,18 @@ Aveți **2FA** activată pentru acest cont. Vă rugăm folosiți aplicația pent
                 'AVATAR_HELP' => 'Multiavatar este un avatar generat local. Gravatar este un serviciu extern care folosește adresa dvs. de e-mail pentru a trage de la distanță un avatar preconfigurat',
                 'AVATAR_HASH' => 'NOTĂ: Șirul \'hash\' personalizat al avatarului opțional'
             ],
+            'PLUGIN_BOOTSTRAPPER' => [
+                'STATUS' => 'Statut modul',
+                'ALWAYS_LOAD' => 'Încarcă mereu',
+                'ALWAYS_LOAD_HELP' => 'Dacă este dezactivat, lăsați tema să decidă încărcarea modulului.',
+                'USE_CDN' => 'Folosiți Bootstrap CDN',
+                'USE_CDN_HELP' => 'Încarcă Bootstrap\'s CSS și JavaScript din locația CDN',
+                'MODE' => 'Mod',
+                'LOAD_CORE_CSS' => 'Încarcă CSS de bază',
+                'LOAD_THEME_CSS' => 'Încarcă CSS-ul temei (v3)',
+                'LOAD_POPPER_JS' => 'Încarcă JS de Popper (v4, v5)',
+                'LOAD_CORE_JS' => 'Încarcă JS de bază'
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Adresa de email nu este configurată',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Vă rugam setați o adresă \'către\' în setările modulului Email sau în formular',
@@ -13276,6 +13329,18 @@ Calea: `%2$s`
                 'IMAGES_TITLE' => 'Изображения',
                 'LEGACY_MEDIA_MUTATION_HELP' => 'Включите эту настройку, только если работа с изображениями сломалась после обновления Grav.',
                 'BACKWARD_COMPATIBILITY' => 'Обратная совместимость'
+            ],
+            'PLUGIN_BOOTSTRAPPER' => [
+                'STATUS' => 'Состояние плагина',
+                'ALWAYS_LOAD' => 'Загружать всегда',
+                'ALWAYS_LOAD_HELP' => 'Если отключено, загрузка плагина определяется темой оформления',
+                'USE_CDN' => 'Использовать Bootstrap CDN',
+                'USE_CDN_HELP' => 'Загружать Bootstrap CSS и JavaScript из CDN',
+                'MODE' => 'Режим',
+                'LOAD_CORE_CSS' => 'Загружать основной CSS',
+                'LOAD_THEME_CSS' => 'Загружать CSS темы оформления (v3)',
+                'LOAD_POPPER_JS' => 'Загружать Popper JS (v4, v5)',
+                'LOAD_CORE_JS' => 'Загружать основной JS'
             ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Почтовая система',

@@ -1,8 +1,12 @@
+{% extends 'email/base.html.twig' %}
+            {% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     {% include 'partials/header_en.html.twig' %}
+    {# <link href="{{ theme_url }}/assets/css/contact.css" rel="stylesheet"> #}
 </head>
 
 <body class="contact-page">
@@ -65,29 +69,46 @@
 
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="form col-lg-8">
+            <form action="{{form.action}}" method="post" role="form" name="{{form.name}}" class="php-email-form">
+              {% for field in form.fields %}
+                  <div class="form-group mt-3">
+                      <input 
+                          type="{{ field.type|e }}" 
+                          name="{{ field.name|e }}" 
+                          class="form-control" 
+                          id="{{ field.name|e }}" 
+                          placeholder="{{ field.placeholder|e }}" 
+                          {% if field.validate.required %} required {% endif %}
+                      >
+                  </div>
+                {% endfor %}
+                <div class="text-center">
+                    <button type="{{ form.buttons.submit.type|e }}" value="{{ form.buttons.submit.value|e }} id="send">{{ form.buttons.submit.value|e }}</button>
+                </div> 
+              </form>           
+            {# <form action="{{ page.url }}" method="post" role="form" class="php-email-form" name="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn" required="">
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Số điện thoại của bạn" required="">
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email của bạn" required="">
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" id="message" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" placeholder="Lời nhắn" required=""></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Sending</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent! Thank you</div>
+                <div class="loading">Đang gửi</div>
+                <div class="error-message">Lỗi</div>
+                <div class="sent-message">Tin nhắn của bạn đã được gửi! Xin cảm ơn</div>
               </div>
-              <div class="text-center"><button type="submit">Send</button></div>
-            </form>
+              <div class="text-center"><button type="submit">Gửi</button></div>
+            </form> #}
           </div>
         </div>
       </div>
@@ -102,3 +123,5 @@
 </body>
 
 </html>
+            {% endblock %}
+
