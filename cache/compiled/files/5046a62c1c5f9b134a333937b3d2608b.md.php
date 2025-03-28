@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/wamp64/www/grav/user/pages/02.typography/default.md',
-    'modified' => 1742373049,
-    'size' => 3959,
+    'modified' => 1743126820,
+    'size' => 4114,
     'data' => [
         'header' => [
             'title' => 'Typography'

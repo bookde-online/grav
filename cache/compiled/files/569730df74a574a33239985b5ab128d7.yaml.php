@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/blueprints/flex/user-groups.yaml',
-    'modified' => 1742373027,
-    'size' => 3100,
+    'modified' => 1742970365,
+    'size' => 3224,
     'data' => [
         'title' => 'User Groups',
         'description' => 'Manage your User Groups in Flex.',

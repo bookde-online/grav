@@ -1,0 +1,5 @@
+1743157632
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:37:"home/_services/online-booking-support";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:38:"Hỗ trợ đặt chỗ trực tuyến";s:4:"menu";s:38:"Hỗ trợ đặt chỗ trực tuyến";s:8:"template";s:22:"modular/service-detail";s:11:"media_order";s:9:"ser2.webp";}s:11:"frontmatter";s:150:"title: 'Hỗ trợ đặt chỗ trực tuyến'
+menu: 'Hỗ trợ đặt chỗ trực tuyến'
+template: modular/service-detail
+media_order: ser2.webp";s:8:"markdown";s:100:"Đơn giản hóa quy trình đặt phòng trực tuyến của khách sạn một cách dễ dàng.";}s:7:"storage";a:6:{s:3:"key";s:37:"home/_services/online-booking-support";s:11:"storage_key";s:46:"01.home/03._services/02.online-booking-support";s:8:"template";s:14:"service-detail";s:17:"storage_timestamp";i:1743147358;s:8:"markdown";a:1:{s:0:"";a:1:{s:14:"service-detail";i:1743147358;}}s:8:"checksum";s:32:"4411bfb7cb589a58a652d461d8dd71ea";}}

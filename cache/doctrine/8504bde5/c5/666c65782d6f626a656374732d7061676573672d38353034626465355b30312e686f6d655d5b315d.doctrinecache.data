@@ -1,0 +1,7 @@
+1743157632
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"home";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:11:"Trang Chủ";s:7:"content";a:2:{s:5:"items";s:13:"@self.modular";s:5:"order";a:2:{s:2:"by";s:7:"default";s:3:"dir";s:3:"asc";}}}s:11:"frontmatter";s:104:"title: 'Trang Chủ'
+content:
+    items: '@self.modular'
+    order:
+        by: default
+        dir: asc";s:8:"markdown";s:0:"";}s:7:"storage";a:7:{s:3:"key";s:4:"home";s:11:"storage_key";s:7:"01.home";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1743156955;s:8:"markdown";a:1:{s:0:"";a:1:{s:7:"default";i:1743156572;}}s:8:"children";a:4:{s:8:"01._hero";b:0;s:9:"02._about";b:0;s:12:"03._services";b:0;s:11:"04._benefit";b:0;}s:8:"checksum";s:32:"73fffe7672d2a90a33b1b8f1ca75dd12";}}

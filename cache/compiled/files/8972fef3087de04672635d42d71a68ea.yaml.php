@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/blueprints/flex/user-accounts.yaml',
-    'modified' => 1742373027,
-    'size' => 3709,
+    'modified' => 1742970365,
+    'size' => 3864,
     'data' => [
         'title' => 'User Accounts',
         'description' => 'Manage your User Accounts in Flex.',

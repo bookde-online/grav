@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/blueprints/config/scheduler.yaml',
-    'modified' => 1742373027,
-    'size' => 2229,
+    'modified' => 1742970365,
+    'size' => 2307,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SCHEDULER',
         'form' => [

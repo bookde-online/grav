@@ -1,4 +1,7 @@
-{% set grid_size = theme_var('grid-size') %}
-{% set hero_image = page.header.hero_image ? page.media[page.header.hero_image] : page.media.images|first %}
+{% block hero %}
 
-{% include 'partials/hero.html.twig' %}
+{% include 'partials/hero.html.twig' with { 'banners': page.header.banners }%} 
+{% endblock %}
+
+
+

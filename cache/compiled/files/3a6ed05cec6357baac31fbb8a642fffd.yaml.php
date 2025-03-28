@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/accounts/dungnguyen.yaml',
-    'modified' => 1742373288,
-    'size' => 238,
+    'modified' => 1743127214,
+    'size' => 233,
     'data' => [
         'state' => 'enabled',
         'email' => 'dungnguyen19724@gmail.com',
-        'fullname' => 'Nguyễn Dung',
+        'fullname' => 'NguyenDung',
         'title' => 'Admin',
         'access' => [
             'admin' => [
@@ -18,6 +18,6 @@ return [
                 'login' => true
             ]
         ],
-        'hashed_password' => '$2y$10$15Odw1f0OoMMEyP5kIEVi.OzqeG845D1C3BJtBI7WPUMe0uDAx.my'
+        'hashed_password' => '$2y$10$kyE0gx8Ig.JIaxcr0S/zvewH7DnvU0B03t7G0F3x7s4DVpb1rTxju'
     ]
 ];

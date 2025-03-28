@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/plugins/admin/themes/grav/templates/forms/fields/iconpicker/icons.yaml',
-    'modified' => 1742373060,
-    'size' => 121378,
+    'modified' => 1742970367,
+    'size' => 127947,
     'data' => [
         'icons' => [
             0 => [

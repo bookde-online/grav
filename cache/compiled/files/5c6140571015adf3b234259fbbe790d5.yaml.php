@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/blueprints/config/security.yaml',
-    'modified' => 1742373027,
-    'size' => 3236,
+    'modified' => 1742970365,
+    'size' => 3355,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SECURITY',
         'form' => [

@@ -1,23 +1,65 @@
-title: Hero
+title: Hero Section
 '@extends': default
 
 form:
   fields:
     tabs:
+      type: tabs
+      active: 1  # Mặc định mở tab đầu tiên
+
       fields:
-        buttons:
+        content:
           type: tab
-          title: Hero
+          title: Nội dung chính
           fields:
-            header.hero_classes:
-              type: text
-              label: Hero Classes
-              markdown: true
-              description: 'There are several Hero class options that can be listed here (space separated):<br />`text-light`, `text-dark`, `title-h1h2`, `parallax`, `overlay-dark-gradient`, `overlay-light-gradient`, `overlay-dark`, `overlay-light`, `hero-fullscreen`, `hero-large`, `hero-medium`, `hero-small`, `hero-tiny`<br />Please consult the [Quark documentation](https://github.com/getgrav/grav-theme-quark#hero-options) for more details.'
-            header.hero_image:
-              type: filepicker
-              label: Hero Image
-              preview_images: true
-              description: 'If not specified, this defaults to the first image found in the page''s folder'
+            header.banners:
+              type: list
+              label: Danh sách Banner
+              style: vertical
+              validate:
+                required: false
 
+              fields:
+                .title:
+                  type: text
+                  label: Tiêu đề
+                  validate:
+                    required: false
 
+                .subtitle:
+                  type: text
+                  label: Phụ đề
+                  validate:
+                    required: false
+
+                .button_text:
+                  type: text
+                  label: Văn bản nút
+                  placeholder: 'Xem thêm'
+                  validate:
+                    required: false
+
+                .button_link:
+                  type: text
+                  label: Liên kết nút
+                  placeholder: '#'
+                  validate:
+                    required: false
+
+                .image:
+                  type: file
+                  label: Hình ảnh
+                  multiple: false
+                  destination: 'self@'
+                  validate:
+                    required: false
+                  accept:
+                    - image/*
+
+        # advanced:
+        #   type: tab
+        #   title: Cài đặt nâng cao
+        #   fields:
+        #     header.custom_css:
+        #       type: textarea
+        #       label: Tùy chỉnh CSS
