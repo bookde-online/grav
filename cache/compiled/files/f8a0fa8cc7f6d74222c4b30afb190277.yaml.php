@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/plugins/flex-objects/blueprints.yaml',
-    'modified' => 1742970368,
-    'size' => 1449,
+    'modified' => 1730063700,
+    'size' => 1394,
     'data' => [
         'name' => 'Flex Objects',
         'slug' => 'flex-objects',

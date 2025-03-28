@@ -1,0 +1,13 @@
+1743088614
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:14:"home/_services";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:37:"Nâng cao khách sạn trực tuyến";s:4:"menu";s:11:"Dịch vụ";s:7:"visible";b:0;s:7:"content";a:1:{s:5:"items";s:14:"@self.children";}}s:11:"frontmatter";s:118:"title: 'Nâng cao khách sạn trực tuyến'
+menu: 'Dịch vụ'
+visible: false
+content:
+    items: '@self.children'";s:8:"markdown";s:305:"<div class="row gy-4">
+<h2 class="inner-title"><b>Nâng cao dịch vụ trực tuyến của khách sạn</b></h2>
+{% set services = page.children %}
+{% for service in services %}
+{{ service.content|raw }}
+{% endfor %}
+</div><hr>
+<h3>Ra mắt trang web đặt phòng của riêng bạn ngay hôm nay!</h3>";}s:7:"storage";a:9:{s:3:"key";s:14:"home/_services";s:11:"storage_key";s:32:"01.home/03._services|services.vi";s:8:"template";s:8:"services";s:17:"storage_timestamp";i:1743048294;s:8:"markdown";a:2:{s:2:"en";a:1:{s:8:"services";i:1743048203;}s:2:"vi";a:1:{s:8:"services";i:1743048294;}}s:8:"children";a:3:{s:24:"01._custom-hotel-website";b:0;s:26:"02._online-booking-support";b:0;s:34:"03._booking-optimization-solutions";b:0;}s:8:"checksum";s:32:"dce256f49be5bf0a04e9f799a16203dd";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

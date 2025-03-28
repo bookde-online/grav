@@ -1,0 +1,14 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => 'C:/wamp64/www/grav/user/plugins/admin/languages/km.yaml',
+    'modified' => 1742970366,
+    'size' => 228,
+    'data' => [
+        'PLUGIN_ADMIN' => [
+            'ADMIN_REPORT_ISSUE' => 'ឃើញមានបញ្ហាមែនទេ? សូមរាយការណ៍នៅលើ GitHub។',
+            'LOGIN_BTN' => 'ចូល',
+            'LOGIN_BTN_FORGOT' => 'ភ្លេចគណនី'
+        ]
+    ]
+];

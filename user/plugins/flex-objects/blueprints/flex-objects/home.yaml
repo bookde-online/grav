@@ -1,0 +1,26 @@
+title: Home Settings
+description: Chỉnh sửa nội dung trang chủ
+type: flex-objects
+enabled: true
+
+# Đường dẫn lưu dữ liệu
+data:
+  storage: file
+  folder: user/data/flex/home
+
+# Trường tùy chỉnh
+form:
+  fields:
+    header.hero_title:
+      type: text
+      label: Tiêu đề Hero
+    header.hero_description:
+      type: textarea
+      label: Mô tả Hero
+    header.hero_image:
+      type: file
+      label: Ảnh Hero
+      destination: 'user/pages/images'
+      multiple: false
+      accept:
+        - image/*

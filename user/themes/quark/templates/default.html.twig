@@ -2,4 +2,7 @@
 
 {% block content %}
     {{ page.content|raw }}
+
+    <h1>{{ page.header.custom_title ?: 'Tiêu đề mặc định' }}</h1>
+    <p>{{ page.header.custom_description ?: 'Mô tả mặc định' }}</p>
 {% endblock %}

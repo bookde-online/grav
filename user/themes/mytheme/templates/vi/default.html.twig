@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="vi">
+{% extends 'partials/base.html.twig' %}
 
-<head>
-        {% include 'partials/header_vi.html.twig' %}
-</head>
+{% block content %}
+    <h1>{{ page.header.custom_title }}</h1>
+    <p>{{ page.header.custom_description }}</p>
 
-<body class="index-page">
-
-      {% include 'partials/navigation_vi.html.twig' %}
-
-  <main class="main">
-      {{ page.content|raw }}
-      {{ dump(pages) }}
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-        {% include 'partials/footer_vi.html.twig' %}
-
-  </footer>
-
-</body>
-
-</html>
+    {% if page.header.show_banner %}
+        <div class="banner">
+            <img src="{{ page.media['banner.jpg'].url }}" alt="Banner">
+        </div>
+    {% else %}
+        <p>Banner không được hiển thị.</p>
+    {% endif %}
+{% endblock %}

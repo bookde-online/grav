@@ -1,62 +1,27 @@
-<!DOCTYPE html>
+{# <!DOCTYPE html>
 <html lang="vi">
     {% include 'partials/header_vi.html.twig' %}
 
 <body class="index-page">
 
- {# Menu #}
    {% include 'partials/navigation_vi.html.twig' %}
 
   <main class="main">
+{% set home = grav.flex.getObject('home', 'home') %}
+
+  <section id="hero">
+      <h1>{{ home.header.hero_title }}</h1>
+      <p>{{ home.header.hero_description }}</p>
+      <img src="{{ home.header.hero_image.path }}" alt="Hero Image">
+  </section>
     {% for module in page.collection() %}
       {{module.content|raw}}
     {% endfor %}
-
-    <!-- Services Section -->
-    <!-- benefit -->
-    <section class="benefits-section text-center">
-      <div class="container">
-        <div class="benefits-section">
-            <!-- Phần văn bản -->
-            <div class="benefits-text">
-                <h2><strong>Benefits of Using Our Services</strong></h2>
-                <p>Helps your hotel operate more smoothly, saves time, and optimizes revenue with a modern, professional website design platform.</p>
-            </div>
-    
-            <!-- Card hình ảnh -->
-            <div class="card-wrapper">
-                <div class="card-container">
-                    <div class="card">
-                        <img src="{{ theme_url }}/assets/img/professional.webp" alt="Professional">
-                    </div>
-                    <div class="text-overlay">Professional</div>
-                </div>
-    
-                <div class="card-container">
-                    <div class="card">
-                        <img src="{{ theme_url }}/assets/img/modern.webp" alt="Modern">
-                    </div>
-                    <div class="text-overlay">Modern</div>
-                </div>
-    
-                <div class="card-container">
-                    <div class="card">
-                        <img src="{{ theme_url }}/assets/img/effective.webp" alt="Effective">
-                    </div>
-                    <div class="text-overlay">Effective</div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>  
-  <!-- Team Section -->
   <section id="team" class="team section light-background">
 
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Who Uses Our Services?</h2>
-    </div><!-- End Section Title -->
-
+    </div>
     <div class="container">
 
       <div class="row gy-4">
@@ -68,7 +33,7 @@
               <h4 class="text-overlay">HOTELS</h4> 
             </div>
           </div>
-        </div><!-- End Team Member -->
+        </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="team-member">
@@ -77,7 +42,7 @@
               <h4 class="text-overlay">SPA</h4> 
             </div>
           </div>
-        </div><!-- End Team Member -->
+        </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="team-member">
@@ -86,13 +51,13 @@
               <h4 class="text-overlay">TOURS</h4> 
             </div>
           </div>
-        </div><!-- End Team Member -->
+        </div>
 
       </div>
 
     </div>
 
-  </section><!-- /Team Section -->
+  </section>
   
   <section>
     <div class="container-fluid custom-section">
@@ -123,4 +88,18 @@
 
 </body>
 
-</html>
+</html> #}
+{# {% extends 'partials/base.html.twig' %} #}
+
+{% block content %}
+    <h1>{{ page.header.custom_title }}</h1>
+    <p>{{ page.header.custom_description }}</p>
+
+    {% if page.header.show_banner %}
+        <div class="banner">
+            <img src="{{ page.media['banner.jpg'].url }}" alt="Banner">
+        </div>
+    {% else %}
+        <p>Banner không được hiển thị.</p>
+    {% endif %}
+{% endblock %}

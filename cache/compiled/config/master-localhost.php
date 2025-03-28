@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1742983811,
-    'checksum' => '97abdfdfabd1744bedb5a8d263b092b3',
+    'timestamp' => 1743087971,
+    'checksum' => '35c7f1caef5a103c4b7a215808e62f60',
     'files' => [
         'user/config' => [
             'langswitcher' => [
@@ -19,7 +19,7 @@ return [
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/config/plugins/flex-objects.yaml',
-                'modified' => 1742970463
+                'modified' => 1743066561
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1742983804
+                'modified' => 1743087965
             ],
             'themes/mytheme' => [
                 'file' => 'user/config/themes/mytheme.yaml',
@@ -95,7 +95,7 @@ return [
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
-                'modified' => 1742970463
+                'modified' => 1743068073
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
@@ -351,7 +351,7 @@ return [
                 ],
                 'directories' => [
                     0 => 'blueprints://flex-objects/contacts.yaml',
-                    1 => 'blueprints://flex-objects/hero-carousel.yaml',
+                    1 => 'blueprints://flex-objects/home.yaml',
                     2 => 'blueprints://flex-objects/pages.yaml',
                     3 => 'blueprints://flex-objects/user-accounts.yaml',
                     4 => 'blueprints://flex-objects/user-groups.yaml'
@@ -3982,7 +3982,7 @@ node_modules'
                 'dirs' => [
                     0 => 'page://'
                 ],
-                'theme' => 'mytheme',
+                'theme' => 'quark',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -3998,7 +3998,7 @@ node_modules'
                 'publish_dates' => true,
                 'process' => [
                     'markdown' => true,
-                    'twig' => false
+                    'twig' => true
                 ],
                 'twig_first' => false,
                 'never_cache_twig' => false,

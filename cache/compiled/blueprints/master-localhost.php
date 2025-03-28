@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1742983855,
-    'checksum' => 'b1e02dcfac663491dd4908562f4c1cc6',
+    'timestamp' => 1743087987,
+    'checksum' => 'ab1004c4a010e8c5e129bc4d1d076f65',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -59,7 +59,7 @@ return [
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/blueprints.yaml',
-                'modified' => 1742970368
+                'modified' => 1730063700
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
@@ -85,10 +85,6 @@ return [
         'user/themes' => [
             'themes/bootstrap' => [
                 'file' => 'user/themes/bootstrap/blueprints.yaml',
-                'modified' => 1742970463
-            ],
-            'themes/mytheme' => [
-                'file' => 'user/themes/mytheme/blueprints.yaml',
                 'modified' => 1742970463
             ],
             'themes/quark' => [
@@ -5458,28 +5454,6 @@ return [
                 'name' => 'themes.bootstrap.dropdown.enabled',
                 'validation' => 'strict'
             ],
-            'themes.mytheme' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    
-                ]
-            ],
-            'themes.mytheme.header' => [
-                'type' => '_parent',
-                'name' => 'themes.mytheme.header',
-                'form_field' => false
-            ],
-            'themes.mytheme.header.media_order' => [
-                'array' => true,
-                'media_field' => true,
-                'validate' => [
-                    'type' => 'ignore'
-                ],
-                'type' => 'pagemedia',
-                'label' => 'Upload Images',
-                'name' => 'themes.mytheme.header.media_order'
-            ],
             'themes.quark' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -6270,11 +6244,6 @@ return [
                 'bootstrap' => [
                     'dropdown' => [
                         'enabled' => 'themes.bootstrap.dropdown.enabled'
-                    ]
-                ],
-                'mytheme' => [
-                    'header' => [
-                        'media_order' => 'themes.mytheme.header.media_order'
                     ]
                 ],
                 'quark' => [

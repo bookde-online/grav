@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/config/system.yaml',
-    'modified' => 1742983804,
-    'size' => 4861,
+    'modified' => 1743087965,
+    'size' => 4616,
     'data' => [
         'absolute_urls' => false,
         'timezone' => NULL,
@@ -51,7 +51,7 @@ return [
             'dirs' => [
                 0 => 'page://'
             ],
-            'theme' => 'mytheme',
+            'theme' => 'quark',
             'order' => [
                 'by' => 'default',
                 'dir' => 'asc'
@@ -67,7 +67,7 @@ return [
             'publish_dates' => true,
             'process' => [
                 'markdown' => true,
-                'twig' => false
+                'twig' => true
             ],
             'twig_first' => false,
             'never_cache_twig' => false,

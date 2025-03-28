@@ -1,0 +1,8 @@
+<div class="carousel-item active">
+    <img src="{{ page.media.images|first.url }}" alt="{{ page.media.images|first.url.name }}" loading="lazy">
+    <div class="container">
+        <h2>{{page.header.title}}</h2>
+        <p>{{ page.content|raw }}</p>
+    </div>
+</div>
+{# {% if loop.first %}{% endif %} #}

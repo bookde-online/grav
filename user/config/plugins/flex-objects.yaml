@@ -8,14 +8,7 @@ admin_list:
     dir: desc
 directories:
   - 'blueprints://flex-objects/contacts.yaml'
-  - 'blueprints://flex-objects/hero-carousel.yaml'
+  - 'blueprints://flex-objects/home.yaml'
   - 'blueprints://flex-objects/pages.yaml'
   - 'blueprints://flex-objects/user-accounts.yaml'
   - 'blueprints://flex-objects/user-groups.yaml'
-# objects:
-#   hero-carousel:
-#     enabled: true
-#     label: Hero Carousel
-#     blueprint: themes://mytheme/blueprints/flex-objects/hero-carousel
-#     folder: 'user/data/flex-objects/hero-carousel'
-#     directory: user-data://flex-objects/hero-carousel

@@ -2,6 +2,7 @@ enabled: true
 
 built_in_css: true
 extra_admin_twig_path: 'theme://admin/templates'
+
 admin_list:
   per_page: 15
   order:
@@ -9,14 +10,12 @@ admin_list:
     dir: desc
 
 directories:
-  - 'blueprints://flex-objects/pages.yaml'
-  - 'blueprints://flex-objects/user-accounts.yaml'
-  - 'blueprints://flex-objects/user-groups.yaml'
-enabled: true
-directories:
-  hero-carousel:
-    enabled: true
-    data:
-      storage: user-data://hero-carousel
-    admin:
-      route: /hero-carousel
+  pages: 'blueprints://flex-objects/pages.yaml'
+  user-accounts: 'blueprints://flex-objects/user-accounts.yaml'
+  user-groups: 'blueprints://flex-objects/user-groups.yaml'
+  home:
+    title: Home Settings
+    description: Quản lý nội dung trang chủ
+    type: user
+    folder: 'home'
+    blueprint: 'flex-objects/home.yaml'

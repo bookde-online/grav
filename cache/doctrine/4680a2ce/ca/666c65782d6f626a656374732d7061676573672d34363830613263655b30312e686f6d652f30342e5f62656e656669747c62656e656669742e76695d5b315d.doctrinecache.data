@@ -1,0 +1,42 @@
+1743088614
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:13:"home/_benefit";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:5:{s:5:"title";s:56:"Lợi ích khi sử dụng dịch vụ của chúng tôi";s:7:"content";a:1:{s:5:"items";s:13:"@self.modular";}s:4:"menu";s:10:"Lợi ích";s:8:"metadata";a:1:{s:11:"description";s:189:"Giúp khách sạn của bạn hoạt động trơn tru hơn, tiết kiệm thời gian và tối ưu hóa doanh thu với nền tảng thiết kế website hiện đại, chuyên nghiệp.";}s:11:"media_order";s:42:"professional.jpg,modern.webp,effective.jpg";}s:11:"frontmatter";s:397:"title: 'Lợi ích khi sử dụng dịch vụ của chúng tôi'
+content:
+    items: '@self.modular'
+menu: 'Lợi ích'
+metadata:
+    description: 'Giúp khách sạn của bạn hoạt động trơn tru hơn, tiết kiệm thời gian và tối ưu hóa doanh thu với nền tảng thiết kế website hiện đại, chuyên nghiệp.'
+media_order: 'professional.jpg,modern.webp,effective.jpg'";s:8:"markdown";s:1348:"<!-- Phần văn bản -->
+<div class="benefits-text">
+	<h2><strong>Lợi ích khi sử dụng dịch vụ của chúng tôi</strong></h2>
+	<p>Giúp khách sạn của bạn hoạt động trơn tru hơn, tiết kiệm thời gian và tối ưu hóa doanh thu với nền tảng thiết kế website hiện đại, chuyên nghiệp.</p>
+</div>
+
+<!-- Card hình ảnh -->
+<div class="card-wrapper">
+    <!-- Start card hình ảnh 1-->
+        <div class="card-container">
+            <div class="card">
+                <img src="{{ page.media['professional.jpg'].url }}" alt="professional">
+            </div>
+            <div class="text-overlay">Professional</div>
+        </div>
+     <!-- End card hình ảnh 1-->
+
+    <!-- Start card hình ảnh 2-->
+        <div class="card-container">
+            <div class="card">
+                <img src="{{ page.media['modern.webp'].url }}" alt="modern">
+            </div>
+            <div class="text-overlay">Modern</div>
+        </div>
+     <!-- End card hình ảnh 2-->
+        
+    <!-- Start card hình ảnh 3-->
+        <div class="card-container">
+            <div class="card">
+                <img src="{{ page.media['effective.jpg'].url }}" alt="effective">
+            </div>
+            <div class="text-overlay">Effective</div>
+        </div>
+     <!-- End card hình ảnh 3-->
+</div>";}s:7:"storage";a:8:{s:3:"key";s:13:"home/_benefit";s:11:"storage_key";s:30:"01.home/04._benefit|benefit.vi";s:8:"template";s:7:"benefit";s:17:"storage_timestamp";i:1743052275;s:8:"markdown";a:2:{s:2:"en";a:1:{s:7:"benefit";i:1743052275;}s:2:"vi";a:1:{s:7:"benefit";i:1743051490;}}s:8:"checksum";s:32:"c7fcc1d604b3c3de060ec1153c6d8aab";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

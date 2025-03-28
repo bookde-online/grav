@@ -1,23 +1,7 @@
 <section class="benefits-section text-center">
   <div class="container">
     <div class="benefits-section">
-      <!-- Phần văn bản -->
-      <div class="benefits-text">
-        <h2><strong>{{ page.header.title }}</strong></h2>
-        <p>{{ page.header.metadata.description }}</p>
-      </div>
-
-      <!-- Card hình ảnh -->
-      <div class="card-wrapper">
-            {% for image, media in page.media.images %}
-                <div class="card-container">
-                    <div class="card">
-                        <img src="{{ media.url }}" alt="{{ media.title }}">
-                    </div>
-                    {# <div class="text-overlay">{{ media.title ?: 'No title' }}</div> #}
-                </div>
-            {% endfor %}
-      </div>
+      {{page.content|raw}}
     </div>
   </div>
 </section>

@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/grav/user/data/flex/indexes/pages.json',
-    'modified' => 1742983799,
-    'size' => 3764,
+    'modified' => 1743088986,
+    'size' => 4401,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1742983799,
-        'count' => 13,
+        'timestamp' => 1743088986,
+        'count' => 15,
         'index' => [
             '' => [
                 'key' => '',
@@ -27,7 +27,7 @@ return [
                 'key' => 'home',
                 'storage_key' => '01.home',
                 'template' => 'default',
-                'storage_timestamp' => 1742983799,
+                'storage_timestamp' => 1743088553,
                 'markdown' => [
                     'en' => [
                         'default' => 1742981258
@@ -37,51 +37,73 @@ return [
                     ]
                 ],
                 'children' => [
-                    '01._about' => 1742983757,
-                    '02._benefit' => 1742983765,
-                    '03._carousel' => 1742983776,
-                    '03._services' => 1742983799
+                    '01._carousel' => 1743063141,
+                    '02._about' => 1743059329,
+                    '03._services' => 1743048294,
+                    '04._benefit' => 1743052275,
+                    '05._who-use-service' => 1743057681
                 ],
-                'checksum' => '1d432ca9edb00bd7603718bae4e4bef9'
+                'checksum' => '7fb01afd091a03f567ca64a6094a4bcc'
             ],
             '01.home/01._carousel' => [
                 'key' => 'home/_carousel',
                 'storage_key' => '01.home/01._carousel',
                 'template' => 'hero',
-                'storage_timestamp' => 1742983799,
+                'storage_timestamp' => 1743063141,
                 'markdown' => [
+                    'en' => [
+                        'hero' => 1743062005
+                    ],
                     'vi' => [
-                        'hero' => 1742979683
+                        'hero' => 1743061971
                     ]
                 ],
-                'checksum' => '0da9243758d0c5b38ea5d9b43f909026'
+                'children' => [
+                    '01._hero-1' => 1743061764
+                ],
+                'checksum' => '15864461c157ad256743e1177b5ebcf4'
+            ],
+            '01.home/01._carousel/01._hero-1' => [
+                'key' => 'home/_carousel/_hero-1',
+                'storage_key' => '01.home/01._carousel/01._hero-1',
+                'template' => 'hero-item',
+                'storage_timestamp' => 1743061764,
+                'markdown' => [
+                    'en' => [
+                        'hero-item' => 1743060542
+                    ],
+                    'vi' => [
+                        'hero-item' => 1743060569
+                    ]
+                ],
+                'checksum' => '7320662057dc478f119ddded3b67a2aa'
             ],
             '01.home/02._about' => [
                 'key' => 'home/_about',
                 'storage_key' => '01.home/02._about',
                 'template' => 'about',
-                'storage_timestamp' => 1742983799,
+                'storage_timestamp' => 1743059329,
                 'markdown' => [
                     'en' => [
-                        'about' => 1742970463
+                        'about' => 1743059198
                     ],
                     'vi' => [
-                        'about' => 1742979574
+                        'about' => 1743059329
                     ]
                 ],
-                'checksum' => 'c79a0ad897d0d16a7b4482f2f41a8324'
+                'checksum' => '7fcc568faef7f3c6873cd7facd93ec5a'
             ],
             '01.home/03._services' => [
                 'key' => 'home/_services',
                 'storage_key' => '01.home/03._services',
                 'template' => 'services',
-                'storage_timestamp' => 1742983799,
+                'storage_timestamp' => 1743048294,
                 'markdown' => [
                     'en' => [
-                        'services' => 1742974280
+                        'services' => 1743048203
                     ],
                     'vi' => [
-                        'services' => 1742974288
+                        'services' => 1743048294
                     ]
                 ],
                 'children' => [
@@ -89,7 +111,7 @@ return [
                     '02._online-booking-support' => 1742978367,
                     '03._booking-optimization-solutions' => 1742979207
                 ],
-                'checksum' => '2131ee32d839f638f712d71a4795b9da'
+                'checksum' => 'dce256f49be5bf0a04e9f799a16203dd'
             ],
             '01.home/03._services/01._custom-hotel-website' => [
                 'key' => 'home/_services/_custom-hotel-website',
@@ -140,16 +162,28 @@ return [
                 'key' => 'home/_benefit',
                 'storage_key' => '01.home/04._benefit',
                 'template' => 'benefit',
-                'storage_timestamp' => 1742983799,
+                'storage_timestamp' => 1743052275,
                 'markdown' => [
                     'en' => [
-                        'benefit' => 1742981916
+                        'benefit' => 1743052275
                     ],
                     'vi' => [
-                        'benefit' => 1742983610
+                        'benefit' => 1743051490
                     ]
                 ],
-                'checksum' => '0e1c29860b248f2bf4b7982d0b61cdfa'
+                'checksum' => 'c7fcc1d604b3c3de060ec1153c6d8aab'
+            ],
+            '01.home/05._who-use-service' => [
+                'key' => 'home/_who-use-service',
+                'storage_key' => '01.home/05._who-use-service',
+                'template' => 'default',
+                'storage_timestamp' => 1743057681,
+                'markdown' => [
+                    'en' => [
+                        'default' => 1743057681
+                    ]
+                ],
+                'checksum' => 'd1a1b77bbfa29b7c00c76dcdf87634dd'
             ],
             '04.pricing' => [
                 'key' => 'pricing',

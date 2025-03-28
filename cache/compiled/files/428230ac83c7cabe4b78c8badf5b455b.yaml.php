@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/config/plugins/flex-objects.yaml',
-    'modified' => 1742970463,
-    'size' => 690,
+    'modified' => 1743066561,
+    'size' => 402,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,
@@ -17,7 +17,7 @@ return [
         ],
         'directories' => [
             0 => 'blueprints://flex-objects/contacts.yaml',
-            1 => 'blueprints://flex-objects/hero-carousel.yaml',
+            1 => 'blueprints://flex-objects/home.yaml',
             2 => 'blueprints://flex-objects/pages.yaml',
             3 => 'blueprints://flex-objects/user-accounts.yaml',
             4 => 'blueprints://flex-objects/user-groups.yaml'
