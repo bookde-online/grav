@@ -1,0 +1,52 @@
+title: Cách hoạt động
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1  
+
+      fields:
+        content:
+          type: tab
+          title: Content
+          fields:
+            header.subtitle:
+              type: text
+              label: Tiêu đề trang
+              
+            header.items:
+              type: list
+              label: Các bước hoạt động
+              style: vertical
+              validate:
+                required: false
+
+              fields:
+                .title:
+                  type: text
+                  label: Tiêu đề
+                  validate:
+                    required: false
+
+                .subtitle:
+                  type: text
+                  label: Phụ đề
+                  validate:
+                    required: false
+
+                .image:
+                  type: file
+                  label: Hình ảnh
+                  multiple: false
+                  destination: 'self@'
+                  validate:
+                    required: false
+                  accept:
+                    - image/jpeg
+                    - image/png
+                    - image/webp
+                    - image/avif
+                    - image/gif
+                    - image/svg+xml

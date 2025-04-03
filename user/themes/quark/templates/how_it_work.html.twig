@@ -1,0 +1,28 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block hero %}
+{% include 'partials/place.html.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    {% if page.header.title %}
+        <h2 class="text-center fw-bold">{{page.header.subtitle}}</h2>
+    {% endif %}
+
+  <div class="timeline">
+    {% for step in page.header.items %}
+      <div class="timeline-step">
+        <div class="step-content">
+          <h4 style="color: #379777;"><b>{{ step.title }}</b></h4>
+          <p>{{ step.subtitle }}</p>
+            {% if step.image %}
+                {% set image = step.image|first %}
+                <img src="{{ page.media[image.name].url }}" alt="{{ step.title|e }}">
+            {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

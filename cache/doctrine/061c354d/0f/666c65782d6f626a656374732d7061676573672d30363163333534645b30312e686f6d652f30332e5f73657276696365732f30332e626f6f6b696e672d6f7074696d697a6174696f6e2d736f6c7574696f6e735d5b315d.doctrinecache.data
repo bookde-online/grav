@@ -1,5 +1,0 @@
-1743157647
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:45:"home/_services/booking-optimization-solutions";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:41:"Giải pháp tối ưu hóa đặt phòng";s:8:"template";s:22:"modular/service-detail";s:11:"media_order";s:9:"ser3.webp";s:4:"menu";s:41:"Giải pháp tối ưu hóa đặt phòng";}s:11:"frontmatter";s:156:"title: 'Giải pháp tối ưu hóa đặt phòng'
-template: modular/service-detail
-media_order: ser3.webp
-menu: 'Giải pháp tối ưu hóa đặt phòng'";s:8:"markdown";s:119:"Tối đa hóa lượng đặt phòng của bạn bằng các công cụ tối ưu hóa tiên tiến của chúng tôi.";}s:7:"storage";a:6:{s:3:"key";s:45:"home/_services/booking-optimization-solutions";s:11:"storage_key";s:54:"01.home/03._services/03.booking-optimization-solutions";s:8:"template";s:14:"service-detail";s:17:"storage_timestamp";i:1743147365;s:8:"markdown";a:1:{s:0:"";a:1:{s:14:"service-detail";i:1743147365;}}s:8:"checksum";s:32:"cf5fa2a4eacef77071a0ddaef9eb3be0";}}

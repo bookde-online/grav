@@ -1,0 +1,18 @@
+1743677564
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"blog/blog-2";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:6:"blog-2";s:11:"media_order";s:12:"banner3.webp";}s:11:"frontmatter";s:39:"title: blog-2
+media_order: banner3.webp";s:8:"markdown";s:1094:"**Grav thường sử dụng tên của các thư mục để tạo ra một tuyến URL cho một trang cụ thể. Điều này cho phép kiến ​​trúc trang web dễ hiểu và triển khai như một tập hợp các thư mục lồng nhau. Tuy nhiên, với một trang web đa ngôn ngữ, bạn có thể muốn sử dụng một URL có ý nghĩa hơn trong ngôn ngữ cụ thể đó.**
+
+Nếu chúng ta có cấu trúc thư mục sau:
+
+- 01.animals
+  - 01.mammals
+    - 01.bats
+    - 02.bears
+    - 03.foxes
+    - 04.cats
+  - 02.reptiles
+  - 03.birds
+  - 04.insets
+  - 05.aquatic
+Điều này sẽ tạo ra các URL như http://yoursite.com/animals/mammals/bears. Điều này rất tuyệt đối với một trang web tiếng Anh, nhưng nếu bạn muốn có phiên bản tiếng Pháp, bạn sẽ muốn chúng được dịch một cách phù hợp. Cách dễ nhất để đạt được điều này là thêm một slug tùy chỉnh cho mỗi tệp fr.mdtrang. Ví dụ, trang động vật có vú có thể trông giống như sau:
+![banner3](banner3.webp "banner3")";}s:7:"storage";a:8:{s:3:"key";s:11:"blog/blog-2";s:11:"storage_key";s:25:"05.blog/02.blog-2|item.vi";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1743671673;s:8:"markdown";a:2:{s:2:"en";a:1:{s:4:"item";i:1743671673;}s:2:"vi";a:1:{s:4:"item";i:1743495916;}}s:8:"checksum";s:32:"4326d7cb86a90074564b228ca673d2dc";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

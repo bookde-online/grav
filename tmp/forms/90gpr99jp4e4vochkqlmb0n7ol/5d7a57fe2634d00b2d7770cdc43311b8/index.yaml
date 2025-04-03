@@ -1,0 +1,20 @@
+form: flex-pages
+id: ''
+unique_id: 5d7a57fe2634d00b2d7770cdc43311b8
+url: 'http://localhost:8080/grav/admin/pages/_logo-header-footer'
+user:
+  username: dungnguyen
+  email: dungnguyen19724@gmail.com
+timestamps:
+  created: 1743504205
+  updated: 1743504205
+data: {  }
+files:
+  logo:
+    logo.webp:
+      name: logo.webp
+      type: image/webp
+      size: 11650
+      tmp_name: gRqkIzvj8nNm
+  logo/original:
+    logo.webp: null

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/plugins/login/languages/hr.yaml',
-    'modified' => 1742970369,
+    'modified' => 1743158564,
     'size' => 3514,
     'data' => [
         'PLUGIN_LOGIN' => [

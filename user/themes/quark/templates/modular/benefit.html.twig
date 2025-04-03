@@ -1,0 +1,33 @@
+<section class="benefits-section text-center" id="benefits">
+    <div class="container">
+        <div class="row gy-4">
+            {% if page.header.title %}
+                <h2 class="inner-title"><b>{{ page.header.title }}</b></h2>
+            {% endif %}
+        </div>
+        <div class="row gy-4" style="margin-bottom: 30px;">
+            {% if page.header.subtitle %}
+                <p>{{ page.header.subtitle }}</p>
+            {% endif %}
+        </div>
+
+        <!-- Image card -->
+        <div class="card-wrapper">
+            {% for item in page.header.items %}
+                <div class="card-container">
+                    <div class="card">
+                        {% if item.image %}
+                            {% set image = item.image|first.name %}
+                            {% if page.media[image] %}
+                                <img src="{{ page.media[image].url }}" alt="{{ item.title|e }}">
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    {% if item.title %}
+                        <div class="text-overlay">{{ item.title }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div> 
+</section>

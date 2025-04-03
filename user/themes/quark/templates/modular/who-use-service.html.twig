@@ -1,0 +1,30 @@
+<!-- Team Section -->
+  <section id="team" class="team section light-background">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        {% if page.header.title %}
+            <h2 class="inner-title">{{ page.header.title }}</h2>
+        {% endif %}
+    </div><!-- End Section Title -->
+
+    <div class="container">
+      <div class="row gy-4">
+          {% for item in page.header.items %}
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                  <div class="team-member">
+                      <div class="member-img position-relative">
+                          {% set image = item.image|keys|first %}
+                          {% if page.media[image] %}
+                              <img src="{{ page.media[image].url }}" class="img-fluid" alt="Image {{ item.title|e }}">
+                          {% else %}
+                              <img src="{{ theme_url }}/assets/img/default.jpg" class="img-fluid" alt="Default Image">
+                          {% endif %}
+                          <h4 class="text-overlay">{{ item.title|upper }}</h4> 
+                      </div>
+                  </div>
+              </div>
+          {% endfor %}
+      </div>
+  </div>
+  </section><!-- /Team Section -->

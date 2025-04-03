@@ -167,7 +167,8 @@
   }
   
   .header .logo img {
-    max-height: 36px;
+    height: 50px;
+    width: auto;
     margin-right: 8px;
   }
   
@@ -229,6 +230,7 @@
   --------------------------------------------------------------*/
   /* Navmenu - Desktop */
   @media (min-width: 1200px) {
+  
     .navmenu {
       padding: 0;
     }
@@ -256,7 +258,7 @@
       /* font-weight: 600; */
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       white-space: nowrap;
       transition: 0.3s;
     }
@@ -381,11 +383,11 @@
       padding: 10px 20px;
       /* font-family: var(--nav-font); */
       font-family: 'Poppins', sans-serif;;
-      font-size: 17px;
+      font-size: small;
       /* font-weight: 500; */
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       white-space: nowrap;
       transition: 0.3s;
     }
@@ -402,14 +404,14 @@
       justify-content: center;
       border-radius: 50%;
       transition: 0.3s;
-      background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+      /* background-color: color-mix(in srgb, var(--accent-color), transparent 90%); */
     }
   
-    .navmenu a i:hover,
+    /* .navmenu a i:hover,
     .navmenu a:focus i:hover {
       background-color: var(--accent-color);
       color: var(--contrast-color);
-    }
+    } */
   
     .navmenu a:hover,
     .navmenu .active,
@@ -417,10 +419,8 @@
       color: var(--nav-dropdown-hover-color);
     }
   
-    .navmenu .active i,
-    .navmenu .active:focus i {
-      background-color: var(--accent-color);
-      color: var(--contrast-color);
+    .dropdown .active i,
+    .dropdown .active:focus i {
       transform: rotate(180deg);
     }
   
@@ -432,7 +432,7 @@
       margin: 10px 20px;
       background-color: var(--nav-dropdown-background-color);
       border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-      box-shadow: none;
+      /* box-shadow: none; */
       transition: all 0.5s ease-in-out;
     }
   
@@ -442,7 +442,7 @@
   
     .navmenu .dropdown>.dropdown-active {
       display: block;
-      background-color: rgba(33, 37, 41, 0.03);
+      /* background-color: rgba(33, 37, 41, 0.03); */
     }
   
     .mobile-nav-active {
@@ -509,7 +509,7 @@
   
   .footer .footer-top {
     padding-top: 50px;
-    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    /* border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
   }
   
   .footer .footer-about .logo {
@@ -801,7 +801,7 @@
   --------------------------------------------------------------*/
   .section-title {
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     position: relative;
   }
   
@@ -809,7 +809,7 @@
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: relative;
   }
   
@@ -819,7 +819,6 @@
     display: block;
     width: 50px;
     height: 3px;
-    background: var(--accent-color);
     left: 0;
     right: 0;
     bottom: 0;
@@ -1447,9 +1446,9 @@
     line-height: 0;
   }
   
-  .team .team-member .social a:hover {
+  /* .team .team-member .social a:hover {
     color: var(--accent-color);
-  }
+  } */
   
   .team .team-member .social i {
     font-size: 18px;
@@ -1904,7 +1903,7 @@
   }
   
   .pricing ul li {
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
     align-items: center;
   }
@@ -2673,6 +2672,7 @@
     font-size: 14px;
   }
   .benefits-section {
+    margin: 40px 0;
     padding: 60px 0;
     background-color: #f8f9fa;
   }
@@ -2720,26 +2720,34 @@
     transform: translateY(-3px);
   }
   /* Language */
+    .language-dropdown a,
+    .language-dropdown a:focus {
+      padding: 0px;
+    }
   
   .language-dropdown {
     position: relative;
     display: inline-block;
-  } 
-  
-  .dropdown-btn {
+    margin-left: 10px;
+  }  
+  .dropdown-btn, .dropdown-content {
     background-color: #fff;
     border: 0;
     min-width: 80px;
-    padding: 8px 12px;
+    padding: 10px;
     cursor: pointer;
     display: flex;
     gap: 7px;
     align-items: center;
+    font-size: small;
+    color: #494848;
+    font-weight: 600;
   }
   
   .dropdown-btn img, .dropdown-content img {
     width: 20px;
     height: 14px;
+    vertical-align: middle;
   }
   
   .dropdown-content {
@@ -2754,8 +2762,10 @@
   
   .dropdown-content a {
     display: flex;
-    padding: 8px 12px; 
+    padding: 0; 
     text-decoration: none;
+    align-items: center;
+    gap: 7px;
   }
   
   .dropdown-btn i {
@@ -2765,28 +2775,18 @@
     line-height: 0;
   }
   
-  /* Hover để mở menu */
   .language-dropdown:hover .dropdown-content {
     display: block;
   }
   
-  .language-dropdown:hover .dropdown-btn i {
-    transform: rotate(180deg); 
-  }
   
   .language-dropdown button img,
   .language-dropdown .dropdown-content a img {
       margin-left: 0;
       vertical-align: left;
   }
-  .textEng, .textVi{
-    font-size: 13px;
-    color: #434343;
-  }
-  .textVi{
-    position: relative;
-    left: -15px;
-  }
+
+  /* ANOTHER */
   html {
     scroll-behavior: smooth;
   }
@@ -2794,7 +2794,7 @@
     width: 50%;
     height: auto;
     position: relative;
-    top: -0.5rem;
+    top: -1rem;
   }
   .services .service-item{
     display: grid;
@@ -2863,6 +2863,7 @@
   .custom-section {
     background: linear-gradient(to bottom, white 50%, #379777 50%);
     padding: 50px 0;
+    margin-top: -30px;
   }
   .demo-btn {
     background-color: #000;
@@ -2886,80 +2887,6 @@
         padding-top: 20px;
     }
   }
-  /* Benefit */
-  .benefits-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Dàn layout của card */
-  .card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-  }
-  
-  /* Container chính của từng card */
-  .card-container {
-    position: relative;
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-    margin: 7px;
-    transform: skewX(-10deg);
-    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động */
-  }
-  .card-container:hover {
-    transform: rotateY(10deg); /* Chỉ xoay khung */
-  }
-  
-  /* Thiết kế card */
-  .card {
-    width: 100%; /* Phóng to card để lấp đầy */
-    height: 100%;
-    position: relative;
-    overflow: hidden; /* Ẩn phần thừa */
-    /* transform: skewX(-10deg); */
-    background: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 12px; /* Bo góc mềm mại */
-  }
-  
-  .card img {
-    width: 130%;
-    height: 130%;
-    top: -5%; /* Đẩy lên trên để lấp khoảng trắng */
-    left: -10%; /* Đẩy sang trái */
-    object-fit: cover;
-    position: absolute; /* Tách biệt ảnh khỏi góc nghiêng */
-    transform: skewX(10deg); /* Đảo ngược lại góc */
-  }
-  .card img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Chữ "Save time" */
-  .benefits-section .text-overlay {
-    position: absolute;
-    top: 10px;
-    left: -20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px 10px;
-    border-radius: 5px;
-    transform: skewX(10deg);
-  }
-  .benefits-section{
-    background-color: #f0fcf6;
-  }
   
   /* Hover Effect (Chỉ áp dụng trên Desktop) */
   @media (min-width: 768px) {
@@ -2967,7 +2894,7 @@
         transform: skewX(0deg) scale(1.05);
     }
     #launch{
-      margin-bottom: 40px;
+      padding: 50px 0px;
     }
     .footer .footer-about .logo img {
       width: 70%;
@@ -3007,3 +2934,34 @@
       margin-top: 50px;
       text-align: center;
   }
+
+  .custom-section img{
+    width: 100%;
+  }
+  
+  hr{
+    color:#17a075
+  }
+
+  #footer_section{
+    padding-bottom: 0;
+  }
+
+  .custom-section .text-md-start{
+    margin-bottom: 40px;
+    /* margin-top: -80px; */
+  }
+  .pricing-item p{
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+/* Màu khi hover */
+.dropdown-content:hover {
+  background-color: #d3f7eb; /* Màu xanh nhạt */
+}
+
+/* Màu khi click */
+.dropdown-content:active {
+  background-color: #48b08d; /* Màu xanh đậm */
+  color: white; /* Chuyển màu chữ sang trắng khi click */
+} 

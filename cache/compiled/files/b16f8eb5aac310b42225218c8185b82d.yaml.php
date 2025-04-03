@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/plugins/admin/languages/tlh.yaml',
-    'modified' => 1742970366,
+    'modified' => 1743158562,
     'size' => 136,
     'data' => [
         'PLUGIN_ADMIN' => [

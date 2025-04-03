@@ -13,8 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+    {% include 'partials/favicon.html.twig' %}
+
     <link rel="canonical" href="{{ page.url(true, true) }}" />
+
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -29,18 +31,22 @@
 {% endblock head %}
 
 {% block stylesheets %}
-    {# {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
+
+    {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
     {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
     {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
-    {% do assets.addCss('theme://css-compiled/theme'~compress) %} #}
+    {% do assets.addCss('theme://css-compiled/theme'~compress) %}
+    {% do assets.addCss('theme://css/line-awesome.min.css') %} 
     {% do assets.addCss('theme://css/custom.css') %}
-    {# {% do assets.addCss('theme://css/line-awesome.min.css') %} #}
+    {% do assets.addCss('theme://css/howitwork.css') %}
+    {% do assets.addCss('theme://css/form.css') %}
+ 
 {% endblock %}
 
 {% block javascripts %}
-    {# {% do assets.addJs('jquery', 101) %}
+    {% do assets.addJs('jquery', 101) %}
     {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
-    {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %} #}
+    {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
 {% endblock %}
 
 {% block assets deferred %}
@@ -64,18 +70,17 @@
             {% if config.plugins.login.enabled and grav.user.username %}
                 <span class="login-status-wrapper"><i class="fa fa-user"></i> {% include 'partials/login-status.html.twig' %}</span>
             {% endif %}
-            <div class="header-social-links">
+            {# <div class="header-social-links">
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>    
+            </div>     #}
         </div>
     </header>
   <main class="main">
-  {% block content %}{% endblock %}
+    {# {% block content %}{% endblock %} #}
+     {% block hero %}{% endblock %}
 
-     {# {% block hero %}{% endblock %} #}
-{#
         <section id="start">
         {% block body %}
             <section id="body-wrapper" class="section">
@@ -88,14 +93,9 @@
             </section>
         {% endblock %}
         </section>
+   
 
-    </div>
-
-    {% block footer %}
-        {% include 'partials/footer.html.twig' %}
-    {% endblock %}
-
-    {% block mobile %}
+    {# {% block mobile %}
     <div class="mobile-container">
         <div class="overlay" id="overlay">
             <div class="mobile-logo">
@@ -106,12 +106,15 @@
             </nav>
         </div>
     </div>
-    {% endblock %}
+    {% endblock %} #}
 
 {% block bottom %}
     {{ assets.js('bottom')|raw }}
 {% endblock %}
-#}
+
+     {% block footer %}
+        {% include 'partials/footer.html.twig' %}
+    {% endblock %}
   </main>
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

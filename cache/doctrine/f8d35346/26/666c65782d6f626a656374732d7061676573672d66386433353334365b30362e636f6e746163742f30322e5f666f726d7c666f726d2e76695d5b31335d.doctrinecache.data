@@ -1,0 +1,68 @@
+1743677534
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:13:"contact/_form";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:12:"Contact form";s:4:"form";a:4:{s:4:"name";s:7:"contact";s:6:"fields";a:5:{s:4:"name";a:5:{s:5:"label";s:4:"Tên";s:11:"placeholder";s:16:"Tên của bạn";s:12:"autocomplete";s:2:"on";s:4:"type";s:4:"text";s:8:"validate";a:1:{s:8:"required";b:1;}}s:5:"phone";a:4:{s:5:"label";s:20:"Số điện thoại";s:11:"placeholder";s:32:"Số điện thoại của bạn";s:4:"type";s:3:"tel";s:8:"validate";a:1:{s:8:"required";b:1;}}s:5:"email";a:4:{s:5:"label";s:5:"Email";s:11:"placeholder";s:17:"Email của bạn";s:4:"type";s:5:"email";s:8:"validate";a:1:{s:8:"required";b:1;}}s:7:"message";a:4:{s:5:"label";s:12:"Lời nhắn";s:11:"placeholder";s:36:"Để lại lời nhắn của bạn";s:4:"type";s:8:"textarea";s:8:"validate";a:1:{s:8:"required";b:1;}}s:20:"g-recaptcha-response";a:3:{s:5:"label";s:7:"Captcha";s:4:"type";s:7:"captcha";s:23:"recaptcha_not_validated";s:18:"Captcha not valid!";}}s:7:"buttons";a:1:{s:6:"submit";a:3:{s:4:"type";s:6:"submit";s:5:"label";s:5:"Gửi";s:7:"classes";s:15:"btn btn-primary";}}s:7:"process";a:4:{s:4:"save";b:0;s:5:"email";a:3:{s:2:"to";s:31:"{{ config.plugins.email.from }}";s:7:"subject";s:33:"[Contact] {{ form.value.name|e }}";s:4:"body";s:36:"{% include 'forms/data.html.twig' %}";}s:7:"message";s:32:"Cảm ơn bạn đã liên hệ!";s:5:"reset";b:1;}}}s:11:"frontmatter";s:1536:"title: Contact form
+
+form:
+    name: contact
+
+    fields:
+        name:
+          label: Tên
+          placeholder: Tên của bạn
+          autocomplete: on
+          type: text
+          validate:
+            required: true
+        
+        phone:
+          label: Số điện thoại
+          placeholder: Số điện thoại của bạn
+          type: tel
+          validate:
+            required: true
+
+        email:
+          label: Email
+          placeholder: Email của bạn
+          type: email
+          validate:
+            required: true
+
+        message:
+          label: Lời nhắn
+          placeholder: Để lại lời nhắn của bạn
+          type: textarea
+          validate:
+            required: true
+
+        g-recaptcha-response:
+          label: Captcha
+          type: captcha
+          recaptcha_not_validated: 'Captcha not valid!'
+
+    buttons:
+        
+        # reset:
+        #   type: reset
+        #   value: Reset
+
+        submit:
+            type: submit
+            label: Gửi
+            classes: btn btn-primary
+
+    process:
+        # captcha: true
+        save: false
+            # fileprefix: contact-
+            # dateformat: Ymd-His-u
+            # extension: txt
+            # body: "{% include 'forms/data.txt.twig' %}"
+        email:
+            to: '{{ config.plugins.email.from }}'
+            subject: "[Contact] {{ form.value.name|e }}"
+            body: "{% include 'forms/data.html.twig' %}"
+        message: Cảm ơn bạn đã liên hệ!
+        reset: true";s:8:"markdown";s:41:"# Contact form
+
+Some sample page content
+";}s:7:"storage";a:9:{s:3:"key";s:13:"contact/_form";s:11:"storage_key";s:27:"06.contact/02._form|form.vi";s:8:"template";s:4:"form";s:17:"storage_timestamp";i:1743675271;s:8:"markdown";a:2:{s:2:"en";a:1:{s:4:"form";i:1743674083;}s:2:"vi";a:1:{s:4:"form";i:1743675271;}}s:8:"children";a:1:{s:8:"thankyou";b:0;}s:8:"checksum";s:32:"c1b988f5c4d71a93baee9e7a7ef5b5a0";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

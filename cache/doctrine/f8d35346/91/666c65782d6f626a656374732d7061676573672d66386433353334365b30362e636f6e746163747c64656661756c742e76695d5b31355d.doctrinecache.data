@@ -1,0 +1,4 @@
+1743677564
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:7:"contact";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:10:"Liên hệ";s:7:"content";a:1:{s:5:"items";s:13:"@self.modular";}}s:11:"frontmatter";s:55:"title: 'Liên hệ'
+content:
+    items: '@self.modular'";s:8:"markdown";s:0:"";}s:7:"storage";a:9:{s:3:"key";s:7:"contact";s:11:"storage_key";s:21:"06.contact|default.vi";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1743667566;s:8:"markdown";a:2:{s:2:"en";a:1:{s:7:"default";i:1743667566;}s:2:"vi";a:1:{s:7:"default";i:1743557219;}}s:8:"children";a:2:{s:9:"01._infor";b:0;s:8:"02._form";b:0;}s:8:"checksum";s:32:"2adae0f7ce1be22cc5899dcf44597c24";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

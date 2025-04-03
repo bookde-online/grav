@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/blueprints/user/group.yaml',
-    'modified' => 1742970365,
+    'modified' => 1743158561,
     'size' => 1047,
     'data' => [
         'title' => 'Group',

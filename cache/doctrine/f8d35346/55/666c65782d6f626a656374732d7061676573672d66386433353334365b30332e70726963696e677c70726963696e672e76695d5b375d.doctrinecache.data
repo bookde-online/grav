@@ -1,0 +1,81 @@
+1743676971
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:7:"pricing";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:9:"Giá cả";s:13:"pricing_plans";a:3:{i:0;a:6:{s:4:"name";s:11:"Dùng thử";s:5:"price";s:1:"0";s:13:"currency_unit";s:1:"$";s:8:"duration";s:55:"Trên mỗi tài khoản/tháng, thanh toán hàng năm";s:14:"features_title";s:44:"Trải nghiệm trang web của riêng bạn";s:8:"features";a:6:{i:0;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:24:"Miễn phí tên miền.";}i:1;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:40:"Hình ảnh, thông tin khách sạn,...";}i:2;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:43:"Tích hợp với dịch vụ bên thứ ba";}i:3;a:2:{s:4:"icon";s:7:"bi bi-x";s:4:"text";s:39:"Không có đặt phòng trực tuyến";}i:4;a:2:{s:4:"icon";s:7:"bi bi-x";s:4:"text";s:45:"Không có thanh toán trực tuyến qua web";}i:5;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:18:"Một khách sạn";}}}i:1;a:6:{s:4:"name";s:14:"Gói Cơ Bản";s:5:"price";s:4:"1.99";s:13:"currency_unit";s:1:"$";s:8:"duration";s:55:"Trên mỗi tài khoản/tháng, thanh toán hàng năm";s:14:"features_title";s:44:"Trải nghiệm trang web của riêng bạn";s:8:"features";a:6:{i:0;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:24:"Miễn phí tên miền.";}i:1;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:40:"Hình ảnh, thông tin khách sạn,...";}i:2;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:43:"Tích hợp với dịch vụ bên thứ ba";}i:3;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:28:"Đặt phòng trực tuyến";}i:4;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:34:"Thanh toán trực tuyến qua web";}i:5;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:18:"Một khách sạn";}}}i:2;a:6:{s:4:"name";s:14:"Gói Cao Cấp";s:5:"price";s:4:"2.99";s:13:"currency_unit";s:1:"$";s:8:"duration";s:55:"Trên mỗi tài khoản/tháng, thanh toán hàng năm";s:14:"features_title";s:44:"Trải nghiệm trang web của riêng bạn";s:8:"features";a:6:{i:0;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:24:"Miễn phí tên miền.";}i:1;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:40:"Hình ảnh, thông tin khách sạn,...";}i:2;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:43:"Tích hợp với dịch vụ bên thứ ba";}i:3;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:28:"Đặt phòng trực tuyến";}i:4;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:34:"Thanh toán trực tuyến qua web";}i:5;a:2:{s:4:"icon";s:11:"bi bi-check";s:4:"text";s:31:"Hai hoặc nhiều khách sạn";}}}}s:7:"process";a:2:{s:8:"markdown";b:1;s:4:"twig";b:0;}}s:11:"frontmatter";s:2756:"title: 'Giá cả'
+pricing_plans:
+    -
+        name: 'Dùng thử'
+        price: '0'
+        currency_unit: $
+        duration: 'Trên mỗi tài khoản/tháng, thanh toán hàng năm'
+        features_title: 'Trải nghiệm trang web của riêng bạn'
+        features:
+            -
+                icon: 'bi bi-check'
+                text: 'Miễn phí tên miền.'
+            -
+                icon: 'bi bi-check'
+                text: 'Hình ảnh, thông tin khách sạn,...'
+            -
+                icon: 'bi bi-check'
+                text: 'Tích hợp với dịch vụ bên thứ ba'
+            -
+                icon: 'bi bi-x'
+                text: 'Không có đặt phòng trực tuyến'
+            -
+                icon: 'bi bi-x'
+                text: 'Không có thanh toán trực tuyến qua web'
+            -
+                icon: 'bi bi-check'
+                text: 'Một khách sạn'
+    -
+        name: 'Gói Cơ Bản'
+        price: '1.99'
+        currency_unit: $
+        duration: 'Trên mỗi tài khoản/tháng, thanh toán hàng năm'
+        features_title: 'Trải nghiệm trang web của riêng bạn'
+        features:
+            -
+                icon: 'bi bi-check'
+                text: 'Miễn phí tên miền.'
+            -
+                icon: 'bi bi-check'
+                text: 'Hình ảnh, thông tin khách sạn,...'
+            -
+                icon: 'bi bi-check'
+                text: 'Tích hợp với dịch vụ bên thứ ba'
+            -
+                icon: 'bi bi-check'
+                text: 'Đặt phòng trực tuyến'
+            -
+                icon: 'bi bi-check'
+                text: 'Thanh toán trực tuyến qua web'
+            -
+                icon: 'bi bi-check'
+                text: 'Một khách sạn'
+    -
+        name: 'Gói Cao Cấp'
+        price: '2.99'
+        currency_unit: $
+        duration: 'Trên mỗi tài khoản/tháng, thanh toán hàng năm'
+        features_title: 'Trải nghiệm trang web của riêng bạn'
+        features:
+            -
+                icon: 'bi bi-check'
+                text: 'Miễn phí tên miền.'
+            -
+                icon: 'bi bi-check'
+                text: 'Hình ảnh, thông tin khách sạn,...'
+            -
+                icon: 'bi bi-check'
+                text: 'Tích hợp với dịch vụ bên thứ ba'
+            -
+                icon: 'bi bi-check'
+                text: 'Đặt phòng trực tuyến'
+            -
+                icon: 'bi bi-check'
+                text: 'Thanh toán trực tuyến qua web'
+            -
+                icon: 'bi bi-check'
+                text: 'Hai hoặc nhiều khách sạn'
+process:
+    markdown: true
+    twig: false";s:8:"markdown";s:0:"";}s:7:"storage";a:8:{s:3:"key";s:7:"pricing";s:11:"storage_key";s:21:"03.pricing|pricing.vi";s:8:"template";s:7:"pricing";s:17:"storage_timestamp";i:1743670515;s:8:"markdown";a:2:{s:2:"en";a:1:{s:7:"pricing";i:1743670515;}s:2:"vi";a:1:{s:7:"pricing";i:1743500991;}}s:8:"checksum";s:32:"af2c1b57fc0d35238ebbd6ad2552e560";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

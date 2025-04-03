@@ -1,0 +1,31 @@
+1743676667
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"how_it_work";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:11:"How it work";s:8:"subtitle";s:41:"Simple steps to launch your hotel website";s:5:"items";a:3:{i:0;a:3:{s:5:"title";s:26:"Custom Website Development";s:8:"subtitle";s:77:"Create a custom website with your own domain name to attract direct bookings.";s:5:"image";a:1:{s:10:"work1.webp";a:4:{s:4:"name";s:10:"work1.webp";s:4:"type";s:10:"image/webp";s:4:"size";i:827004;s:4:"path";s:10:"work1.webp";}}}i:1;a:3:{s:5:"title";s:24:"Optimize direct bookings";s:8:"subtitle";s:77:"Optimize your website to increase direct bookings and reduce commission fees.";s:5:"image";a:1:{s:10:"work2.webp";a:4:{s:4:"name";s:10:"work2.webp";s:4:"type";s:10:"image/webp";s:4:"size";i:1787420;s:4:"path";s:10:"work2.webp";}}}i:2;a:3:{s:5:"title";s:36:"Maximize Online Visibility & Revenue";s:8:"subtitle";s:63:"Increase visibility and maximize bookings with smart analytics.";s:5:"image";a:1:{s:9:"work3.jpg";a:4:{s:4:"name";s:9:"work3.jpg";s:4:"type";s:10:"image/jpeg";s:4:"size";i:1793059;s:4:"path";s:9:"work3.jpg";}}}}}s:11:"frontmatter";s:1019:"title: 'How it work'
+subtitle: 'Simple steps to launch your hotel website'
+items:
+    -
+        title: 'Custom Website Development'
+        subtitle: 'Create a custom website with your own domain name to attract direct bookings.'
+        image:
+            work1.webp:
+                name: work1.webp
+                type: image/webp
+                size: 827004
+                path: work1.webp
+    -
+        title: 'Optimize direct bookings'
+        subtitle: 'Optimize your website to increase direct bookings and reduce commission fees.'
+        image:
+            work2.webp:
+                name: work2.webp
+                type: image/webp
+                size: 1787420
+                path: work2.webp
+    -
+        title: 'Maximize Online Visibility & Revenue'
+        subtitle: 'Increase visibility and maximize bookings with smart analytics.'
+        image:
+            work3.jpg:
+                name: work3.jpg
+                type: image/jpeg
+                size: 1793059
+                path: work3.jpg";s:8:"markdown";s:0:"";}s:7:"storage";a:8:{s:3:"key";s:11:"how_it_work";s:11:"storage_key";s:29:"04.how_it_work|how_it_work.en";s:8:"template";s:11:"how_it_work";s:17:"storage_timestamp";i:1743671176;s:8:"markdown";a:2:{s:2:"en";a:1:{s:11:"how_it_work";i:1743671176;}s:2:"vi";a:1:{s:11:"how_it_work";i:1743478867;}}s:8:"checksum";s:32:"28f27f0e854b76fa89f53af828794d0f";s:6:"exists";b:1;s:4:"lang";s:2:"en";}}

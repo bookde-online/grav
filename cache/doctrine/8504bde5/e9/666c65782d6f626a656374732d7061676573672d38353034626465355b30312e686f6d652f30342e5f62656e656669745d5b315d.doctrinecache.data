@@ -1,5 +1,0 @@
-1743157632
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:13:"home/_benefit";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:7:"benefit";s:7:"content";a:1:{s:5:"items";s:13:"@self.modular";}s:4:"menu";s:10:"Lợi ích";}s:11:"frontmatter";s:69:"title: benefit
-content:
-    items: '@self.modular'
-menu: 'Lợi ích'";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:13:"home/_benefit";s:11:"storage_key";s:19:"01.home/04._benefit";s:8:"template";s:5:"about";s:17:"storage_timestamp";i:1743157011;s:8:"markdown";a:1:{s:0:"";a:1:{s:5:"about";i:1743157011;}}s:8:"checksum";s:32:"facddcb4fc7101479bfc6ca6eb0f9c4b";}}

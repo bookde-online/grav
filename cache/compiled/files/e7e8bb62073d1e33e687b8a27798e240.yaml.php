@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/user/themes/quark/languages.yaml',
-    'modified' => 1742970369,
-    'size' => 7546,
+    'modified' => 1743496448,
+    'size' => 8162,
     'data' => [
         'en' => [
             'THEME_QUARK' => [
@@ -15,6 +15,44 @@ return [
                         'CONTINUE_READING' => 'Continue reading...',
                         'NEXT_POST' => 'Next Post',
                         'PREV_POST' => 'Previous Post'
+                    ]
+                ],
+                'SIDEBAR' => [
+                    'SIMPLE_SEARCH' => [
+                        'HEADLINE' => 'Search'
+                    ],
+                    'RELATED_POSTS' => [
+                        'HEADLINE' => 'Related Posts'
+                    ],
+                    'RANDOM_ARTICLE' => [
+                        'HEADLINE' => 'Random Article',
+                        'FEELING_LUCKY' => 'I\'m Feeling Lucky!'
+                    ],
+                    'SOME_TEXT_WIDGET' => [
+                        'HEADLINE' => 'Some Text Widget'
+                    ],
+                    'POPULAR_TAGS' => [
+                        'HEADLINE' => 'Popular Tags'
+                    ],
+                    'ARCHIVES' => [
+                        'HEADLINE' => 'Archives'
+                    ],
+                    'SYNDICATE' => [
+                        'HEADLINE' => 'Syndicate'
+                    ]
+                ]
+            ]
+        ],
+        'vi' => [
+            'THEME_QUARK' => [
+                'ADMIN' => [
+                    'GRID_SIZE' => 'Grid size'
+                ],
+                'BLOG' => [
+                    'ITEM' => [
+                        'CONTINUE_READING' => 'Tiếp tục...',
+                        'NEXT_POST' => 'Bài sau',
+                        'PREV_POST' => 'Bài trước'
                     ]
                 ],
                 'SIDEBAR' => [

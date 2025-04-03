@@ -1,16 +1,32 @@
+
 {% macro nav_loop(page) %}
   {% import _self as macros %}
+
+  {% set service_page = page.find('/home/_services') %}
+
   {% for p in page.children.visible %}
     {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
     <li>
       <a href="{{ p.url }}" class="{{ active_page }}">
         {{ p.menu }}
       </a>
-      {% if p.children.visible.count > 0 %}
-      <ul>
-        {{ macros.nav_loop(p) }}
-      </ul>
-      {% endif %}
     </li>
+
+    {# Chèn mục "Services" ngay sau "home" #}
+    {% if p.slug == 'home' %}
+        {% if service_page.children.visible.count > 0 %}
+        <li class="dropdown">
+          {% set is_service_active = page.activeChildOf('/home/_services') ? 'active' : '' %}
+
+          <a href="{{ base_url_absolute }}home#services" class="{{ is_service_active }}">
+            <span>{{ service_page.menu }}</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i>
+          </a>
+          <ul>
+            {{ macros.nav_loop(service_page) }}
+          </ul>
+        </li>
+        {% endif %}
+    {% endif %}
   {% endfor %}
 {% endmacro %}

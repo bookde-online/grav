@@ -1,0 +1,25 @@
+title: Contact infor
+'@extends':
+    type: default
+    context: blueprints://pages
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Thông tin công ty
+
+          fields:
+            header.text:
+              type: text
+              label: "Thông điệp"
+
+            header.iframe:
+              type: textarea
+              label: "Google Maps Iframe"
+              validate:
+                type: textarea

@@ -5,7 +5,7 @@ form:
   fields:
     tabs:
       type: tabs
-      active: 1  # Mặc định mở tab đầu tiên
+      active: 1  
 
       fields:
         content:
@@ -54,12 +54,9 @@ form:
                   validate:
                     required: false
                   accept:
-                    - image/*
-
-        # advanced:
-        #   type: tab
-        #   title: Cài đặt nâng cao
-        #   fields:
-        #     header.custom_css:
-        #       type: textarea
-        #       label: Tùy chỉnh CSS
+                    - image/jpeg
+                    - image/png
+                    - image/webp
+                    - image/avif
+                    - image/gif
+                    - image/svg+xml

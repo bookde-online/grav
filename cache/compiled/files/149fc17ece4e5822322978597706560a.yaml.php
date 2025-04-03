@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/config/permissions.yaml',
-    'modified' => 1742970365,
+    'modified' => 1743158561,
     'size' => 863,
     'data' => [
         'actions' => [

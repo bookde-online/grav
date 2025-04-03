@@ -1,0 +1,102 @@
+/* Định dạng chung cho form */
+form {
+    max-width: 700px;
+    margin: 15px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Các trường form */
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  .form-label-wrapper {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-input:focus,
+  textarea:focus {
+    border-color: #79d9b9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(6, 71, 62, 0.5);
+  }
+  
+  /* Nút bấm */
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .btn {
+    background: #379777;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #379777;
+  }
+  
+  .btn[type="reset"] {
+    background: #dc3545;
+  }
+  
+  .btn[type="reset"]:hover {
+    background: #a71d2a;
+  }
+  
+  /* Định dạng textarea */
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  /* Định dạng cho khoảng cách của my-3 */
+.my-3 {
+    margin: 1rem auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  ::placeholder { 
+    color: #bbb;  /* Màu placeholder nhạt hơn */
+    opacity: 1;   /* Giữ nguyên độ rõ của màu */
+  }
+  
+  :-ms-input-placeholder { /* Cho trình duyệt IE */
+    color: #bbb;
+  }
+  
+  ::-ms-input-placeholder { /* Cho trình duyệt Edge */
+    color: #bbb;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Đưa nút về bên trái */
+    gap: 10px; /* Tạo khoảng cách giữa hai nút */
+  }
+  .form-label{
+    font-size: 18px;
+    color: #333;
+  }
+
+  

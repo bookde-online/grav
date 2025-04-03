@@ -1,0 +1,2 @@
+1743676655
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"blog/blog-2";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:0:{}s:11:"frontmatter";s:0:"";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:11:"blog/blog-2";s:11:"storage_key";s:17:"05.blog/02.blog-2";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1743671673;s:8:"markdown";a:2:{s:2:"en";a:1:{s:4:"item";i:1743671673;}s:2:"vi";a:1:{s:4:"item";i:1743495916;}}s:8:"checksum";s:32:"4326d7cb86a90074564b228ca673d2dc";}}

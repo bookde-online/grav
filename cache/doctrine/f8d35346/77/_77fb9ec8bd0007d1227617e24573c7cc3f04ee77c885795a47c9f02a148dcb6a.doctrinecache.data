@@ -1,0 +1,17 @@
+1743677534
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:45:"home/_services/booking-optimization-solutions";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:7:{s:5:"title";s:41:"Giải pháp tối ưu hóa đặt phòng";s:11:"media_order";s:9:"ser3.webp";s:4:"menu";s:41:"Giải pháp tối ưu hóa đặt phòng";s:8:"subtitle";s:110:"Tối đa hóa số lượng đặt phòng của bạn với các công cụ tối ưu hóa của chúng tôi.";s:17:"short_description";s:358:"Gia tăng số lượng đặt phòng và tối ưu doanh thu với các công cụ mạnh mẽ của chúng tôi. Từ tối ưu giao diện đặt phòng, cải thiện trải nghiệm người dùng đến tích hợp chiến lược giá thông minh, chúng tôi giúp bạn thu hút nhiều khách hàng hơn và tối đa hóa hiệu suất kinh doanh.";s:11:"description";s:943:"Khám phá toàn bộ tiềm năng đặt phòng của khách sạn với các giải pháp tối ưu hóa tiên tiến. Chúng tôi cung cấp các công cụ và chiến lược giúp nâng cao khả năng hiển thị, thu hút nhiều khách hàng tiềm năng hơn và tối ưu hóa quy trình đặt phòng.
+
+Bằng cách phân tích xu hướng thị trường và hành vi khách hàng, hệ thống của chúng tôi hỗ trợ bạn đặt giá cạnh tranh và triển khai các chương trình khuyến mãi hiệu quả. Nhờ đó, khách sạn có thể cải thiện tỷ lệ lấp đầy và gia tăng doanh thu trên mỗi phòng có sẵn (RevPAR) thông qua các chiến dịch tiếp thị mục tiêu và quản lý đặt phòng thông minh.
+
+Luôn dẫn đầu trong ngành khách sạn với công nghệ hiện đại, giúp bạn đạt công suất đặt phòng tối đa một cách dễ dàng và hiệu quả.";s:5:"image";a:1:{s:9:"ser3.webp";a:4:{s:4:"name";s:9:"ser3.webp";s:4:"type";s:10:"image/webp";s:4:"size";i:198234;s:4:"path";s:9:"ser3.webp";}}}s:11:"frontmatter";s:1705:"title: 'Giải pháp tối ưu hóa đặt phòng'
+media_order: ser3.webp
+menu: 'Giải pháp tối ưu hóa đặt phòng'
+subtitle: 'Tối đa hóa số lượng đặt phòng của bạn với các công cụ tối ưu hóa của chúng tôi.'
+short_description: 'Gia tăng số lượng đặt phòng và tối ưu doanh thu với các công cụ mạnh mẽ của chúng tôi. Từ tối ưu giao diện đặt phòng, cải thiện trải nghiệm người dùng đến tích hợp chiến lược giá thông minh, chúng tôi giúp bạn thu hút nhiều khách hàng hơn và tối đa hóa hiệu suất kinh doanh.'
+description: "Khám phá toàn bộ tiềm năng đặt phòng của khách sạn với các giải pháp tối ưu hóa tiên tiến. Chúng tôi cung cấp các công cụ và chiến lược giúp nâng cao khả năng hiển thị, thu hút nhiều khách hàng tiềm năng hơn và tối ưu hóa quy trình đặt phòng.\n\nBằng cách phân tích xu hướng thị trường và hành vi khách hàng, hệ thống của chúng tôi hỗ trợ bạn đặt giá cạnh tranh và triển khai các chương trình khuyến mãi hiệu quả. Nhờ đó, khách sạn có thể cải thiện tỷ lệ lấp đầy và gia tăng doanh thu trên mỗi phòng có sẵn (RevPAR) thông qua các chiến dịch tiếp thị mục tiêu và quản lý đặt phòng thông minh.\n\nLuôn dẫn đầu trong ngành khách sạn với công nghệ hiện đại, giúp bạn đạt công suất đặt phòng tối đa một cách dễ dàng và hiệu quả."
+image:
+    ser3.webp:
+        name: ser3.webp
+        type: image/webp
+        size: 198234
+        path: ser3.webp";s:8:"markdown";s:0:"";}s:7:"storage";a:8:{s:3:"key";s:45:"home/_services/booking-optimization-solutions";s:11:"storage_key";s:72:"01.home/03._services/03.booking-optimization-solutions|service-detail.vi";s:8:"template";s:14:"service-detail";s:17:"storage_timestamp";i:1743669746;s:8:"markdown";a:2:{s:2:"en";a:1:{s:14:"service-detail";i:1743669746;}s:2:"vi";a:1:{s:14:"service-detail";i:1743656644;}}s:8:"checksum";s:32:"9460498832cb297b49fba66180d2b6f3";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

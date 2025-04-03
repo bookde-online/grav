@@ -1,0 +1,75 @@
+/* Benefit */
+.benefits-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Dàn layout của card */
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  /* Container chính của từng card */
+  .card-container {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 7px;
+    transform: skewX(-10deg);
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động */
+  }
+  .card-container:hover {
+    transform: rotateY(10deg); /* Chỉ xoay khung */
+  }
+  
+  /* Thiết kế card */
+  .card {
+    width: 100%; /* Phóng to card để lấp đầy */
+    height: 100%;
+    position: relative;
+    overflow: hidden; /* Ẩn phần thừa */
+    /* transform: skewX(-10deg); */
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px; /* Bo góc mềm mại */
+  }
+  
+  .card img {
+    width: 130%;
+    height: 130%;
+    top: -5%; /* Đẩy lên trên để lấp khoảng trắng */
+    left: -10%; /* Đẩy sang trái */
+    object-fit: cover;
+    position: absolute; /* Tách biệt ảnh khỏi góc nghiêng */
+    transform: skewX(10deg); /* Đảo ngược lại góc */
+  }
+  .card img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Chữ "Save time" */
+  .benefits-section .text-overlay {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transform: skewX(10deg);
+  }
+  .benefits-section{
+    background-color: #f0fcf6;
+  }
+  

@@ -1,0 +1,7 @@
+1743676840
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"blog/blog-3";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:6:"blog-3";s:11:"media_order";s:12:"banner3.webp";}s:11:"frontmatter";s:39:"title: blog-3
+media_order: banner3.webp";s:8:"markdown";s:583:"Theo mặc định, mã ngôn ngữ mặc định được thêm tiền tố vào tất cả các URL.
+
+Ví dụ, nếu bạn hỗ trợ tiếng Anh và tiếng Pháp ( envà fr), và mặc định là tiếng Anh. Một tuyến trang có thể trông giống như /en/my-pagetiếng Anh và /fr/ma-pagetiếng Pháp. Tuy nhiên, thường thì tốt hơn là có ngôn ngữ mặc định mà không có tiền tố, vì vậy bạn chỉ cần đặt tùy chọn này thành falsevà trang tiếng Anh sẽ xuất hiện dưới dạng /my-page.
+
+![banner3](banner3.webp "banner3")";}s:7:"storage";a:8:{s:3:"key";s:11:"blog/blog-3";s:11:"storage_key";s:25:"05.blog/03.blog-3|item.vi";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1743671288;s:8:"markdown";a:2:{s:2:"en";a:1:{s:4:"item";i:1743671288;}s:2:"vi";a:1:{s:4:"item";i:1743501169;}}s:8:"checksum";s:32:"e4dfa0a03aee78f001fcabdfc924eb77";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

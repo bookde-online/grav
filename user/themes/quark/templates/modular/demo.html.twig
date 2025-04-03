@@ -1,0 +1,27 @@
+<section>
+    <div class="container-fluid custom-section">
+      <div class="container">
+          <div class="row align-items-center flex-md-row flex-column-reverse">
+            <div class="col-md-6 text-center">
+            {% if page.header.image %}
+                {% set image = page.header.image|first.name %}
+                {% if page.media[image] %}
+                    <img src="{{ page.media[image].url }}" alt="{{ page.header.title|e }}">
+                {% endif %}
+            {% endif %}
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 text-center text-md-start">
+                {% if page.header.title %}
+                    <h2 id="launch">{{ page.header.title }}</h2>
+                {% endif %}
+                {% if page.header.link and page.header.button_name %}
+                    <a href="{{ page.header.link }}" class="demo-btn">
+                        {{ page.header.button_name }}
+                    </a>
+                {% endif %}
+            </div>
+          </div>
+      </div>
+    </div>
+</section>

@@ -1,6 +1,28 @@
 {% import 'macros/macros.html.twig' as macros %}
+{% set page = page.find('/_config') %}
 
 <ul {{ tree ? 'class="tree"' : '' }}>
     {{ macros.nav_loop(pages) }}
+
+    {% set current_lang = '/' ~ grav.language.getActive() %}
+    {% set lang_url = base_url_absolute|replace({(current_lang): ''}) %}
+
+    <div class="language-dropdown">
+        <button class="dropdown-btn" id="lang-toggle">
+            <img src="{{ theme_url }}/assets/img/{{ current_lang }}.webp" alt="{{ current_lang }}">
+            <span>{{ grav.language.getActive()|upper }}</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i>
+        </button>
+        <div class="dropdown-content">
+            {% for language in grav.language.getLanguages() if language != grav.language.getActive() %}
+                <a href="{{ lang_url ~ '/' ~ language }}">
+                    <img src="{{ theme_url }}/assets/img/{{ language }}.webp" alt="{{ language }}">
+                    <span>{{ language|upper }}</span>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
 </ul>
+
+
 

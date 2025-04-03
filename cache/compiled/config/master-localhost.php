@@ -1,103 +1,115 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1743157034,
-    'checksum' => '8a5da97155e4ac5606c2025f0eb28779',
+    'timestamp' => 1743677488,
+    'checksum' => '0cf5fb5be919f4e6dc544667093064c3',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1742970366
+                'modified' => 1743158561
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1743266831
+            ],
+            'plugins/form' => [
+                'file' => 'user/config/plugins/form.yaml',
+                'modified' => 1743223213
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1743126820
+                'modified' => 1743158561
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1742970366
+                'modified' => 1743158561
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1743157031
+                'modified' => 1743677488
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
-                'modified' => 1742970366
+                'modified' => 1743158561
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1742970365
+                'modified' => 1743158561
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1742970365
+                'modified' => 1743158561
             ],
             'mime' => [
                 'file' => 'system/config/mime.yaml',
-                'modified' => 1742970365
+                'modified' => 1743158561
             ],
             'permissions' => [
                 'file' => 'system/config/permissions.yaml',
-                'modified' => 1742970365
+                'modified' => 1743158561
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1742970365
+                'modified' => 1743158561
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1742970365
+                'modified' => 1743158561
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1742970365
+                'modified' => 1743158561
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1743126820
+                'modified' => 1743158561
             ],
             'plugins/custom' => [
                 'file' => 'user/plugins/custom/custom.yaml',
-                'modified' => 1743153317
+                'modified' => 1743158651
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1742970367
+                'modified' => 1743158563
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1742970368
+                'modified' => 1743158563
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
-                'modified' => 1743126820
+                'modified' => 1743158564
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1743126820
+                'modified' => 1743158564
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/langswitcher.yaml',
+                'modified' => 1683678796
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1742970369
+                'modified' => 1743158564
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1742970369
+                'modified' => 1743158564
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1742970369
+                'modified' => 1743158564
             ]
         ],
         'user/themes' => [
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1742970369
+                'modified' => 1743158565
             ]
         ]
     ],
@@ -226,23 +238,27 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'to' => NULL,
+                'from' => 'dungnguyen19724@gmail.com',
+                'to' => '22520288@gm.uit.edu.vn',
                 'mailer' => [
-                    'engine' => 'sendmail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => NULL,
-                        'password' => NULL
+                        'server' => 'smtp.gmail.com',
+                        'port' => 587,
+                        'encryption' => 'tls',
+                        'user' => 'dungnguyen19724@gmail.com',
+                        'password' => 'fqmzbchibszzugvx'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail -bs'
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => true,
+                'cc' => NULL,
+                'bcc' => NULL,
+                'reply_to' => NULL,
+                'body' => 'helo'
             ],
             'error' => [
                 'enabled' => true,
@@ -273,8 +289,8 @@ return [
                 'inline_css' => true,
                 'refresh_prevention' => false,
                 'client_side_validation' => true,
-                'debug' => false,
-                'inline_errors' => false,
+                'debug' => true,
+                'inline_errors' => true,
                 'modular_form_fix' => true,
                 'files' => [
                     'multiple' => false,
@@ -302,10 +318,10 @@ return [
                     'type' => 'characters',
                     'chars' => [
                         'length' => 6,
-                        'font' => 'zxx-noise.ttf',
-                        'bg' => '#cccccc',
+                        'font' => 'zxx-sans.ttf',
+                        'bg' => '#DEF8E9',
                         'text' => '#333333',
-                        'size' => 24,
+                        'size' => 20,
                         'start_x' => 5,
                         'start_y' => 30,
                         'box_width' => 135,
@@ -321,6 +337,13 @@ return [
                         ]
                     ]
                 ]
+            ],
+            'langswitcher' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'translated_urls' => true,
+                'untranslated_pages_behavior' => 'none',
+                'language_display' => 'long'
             ],
             'login' => [
                 'enabled' => true,
@@ -3840,14 +3863,14 @@ node_modules'
         ],
         'system' => [
             'absolute_urls' => false,
-            'timezone' => '',
+            'timezone' => NULL,
             'default_locale' => NULL,
             'param_sep' => ':',
             'wrapped_site' => false,
             'reverse_proxy_setup' => false,
             'force_ssl' => false,
             'force_lowercase_urls' => true,
-            'custom_base_url' => '',
+            'custom_base_url' => NULL,
             'username_regex' => '^[a-z0-9_-]{3,16}$',
             'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
             'intl_enabled' => true,
@@ -3859,21 +3882,22 @@ node_modules'
             ],
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'vi',
+                    1 => 'en'
                 ],
                 'default_lang' => NULL,
-                'include_default_lang' => true,
+                'include_default_lang' => false,
                 'include_default_lang_file_extension' => true,
                 'translations' => true,
                 'translations_fallback' => true,
-                'session_store_active' => false,
-                'http_accept_language' => false,
+                'session_store_active' => true,
+                'http_accept_language' => true,
                 'override_locale' => false,
                 'content_fallback' => [
                     
                 ],
                 'pages_fallback_only' => false,
-                'debug' => false
+                'debug' => true
             ],
             'home' => [
                 'alias' => '/home',
@@ -3894,8 +3918,8 @@ node_modules'
                 ],
                 'dateformat' => [
                     'default' => NULL,
-                    'short' => 'jS M Y',
-                    'long' => 'F jS \\a\\t g:ia'
+                    'short' => 'd-m-y G:i',
+                    'long' => 'd-m-y G:i'
                 ],
                 'publish_dates' => true,
                 'process' => [
@@ -3934,13 +3958,13 @@ node_modules'
                     5 => 'rss',
                     6 => 'atom'
                 ],
-                'append_url_extension' => '',
+                'append_url_extension' => NULL,
                 'expires' => 604800,
                 'cache_control' => NULL,
                 'last_modified' => false,
                 'etag' => true,
                 'vary_accept_encoding' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => 1,
                 'redirect_default_route' => 0,
                 'ignore_files' => [
@@ -3977,9 +4001,19 @@ node_modules'
                 'gzip' => false,
                 'allow_webserver_gzip' => false,
                 'redis' => [
-                    'socket' => false,
+                    'socket' => '0',
                     'password' => NULL,
-                    'database' => NULL
+                    'database' => NULL,
+                    'server' => NULL,
+                    'port' => NULL
+                ],
+                'memcache' => [
+                    'server' => NULL,
+                    'port' => NULL
+                ],
+                'memcached' => [
+                    'server' => NULL,
+                    'port' => NULL
                 ]
             ],
             'twig' => [
@@ -4018,7 +4052,7 @@ node_modules'
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 1,
                 'log' => true
             ],
             'log' => [
@@ -4030,7 +4064,7 @@ node_modules'
             ],
             'debugger' => [
                 'enabled' => true,
-                'provider' => 'clockwork',
+                'provider' => 'debugbar',
                 'censored' => false,
                 'shutdown' => [
                     'close_connection' => true
@@ -4047,7 +4081,7 @@ node_modules'
                 'cls' => [
                     'auto_sizes' => false,
                     'aspect_ratio' => false,
-                    'retina_scale' => 1
+                    'retina_scale' => '1'
                 ],
                 'defaults' => [
                     'loading' => 'auto',
@@ -4064,13 +4098,10 @@ node_modules'
             ],
             'media' => [
                 'enable_media_timestamp' => false,
-                'unsupported_inline_types' => [
-                    
-                ],
-                'allowed_fallback_types' => [
-                    
-                ],
-                'auto_metadata_exif' => false
+                'unsupported_inline_types' => NULL,
+                'allowed_fallback_types' => NULL,
+                'auto_metadata_exif' => false,
+                'upload_limit' => 2097152
             ],
             'session' => [
                 'enabled' => true,
@@ -4089,7 +4120,7 @@ node_modules'
             'gpm' => [
                 'releases' => 'stable',
                 'official_gpm_only' => true,
-                'verify_peer' => true
+                'verify_peer' => false
             ],
             'http' => [
                 'method' => 'auto',

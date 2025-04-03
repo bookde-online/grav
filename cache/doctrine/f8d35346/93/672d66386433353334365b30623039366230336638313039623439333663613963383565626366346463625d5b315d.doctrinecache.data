@@ -1,0 +1,33 @@
+1744280494
+a:2:{s:7:"content";s:2199:"<section class="benefits-section text-center" id="benefits">
+    <div class="container">
+        <div class="row gy-4">
+                            <h2 class="inner-title"><b>Lợi ích khi sử dụng dịch vụ của chúng tôi</b></h2>
+                    </div>
+        <div class="row gy-4" style="margin-bottom: 30px;">
+                            <p>Giúp khách sạn của bạn vận hành trơn tru hơn, tiết kiệm thời gian và tối ưu doanh thu với nền tảng thiết kế website hiện đại, chuyên nghiệp.</p>
+                    </div>
+
+        <!-- Image card -->
+        <div class="card-wrapper">
+                            <div class="card-container">
+                    <div class="card">
+                                                                                                                <img src="/grav/user/pages/01.home/04._benefit/professional.jpg" alt="Chuyên nghiệp">
+                                                                        </div>
+                                            <div class="text-overlay">Chuyên nghiệp</div>
+                                    </div>
+                            <div class="card-container">
+                    <div class="card">
+                                                                                                                <img src="/grav/user/pages/01.home/04._benefit/modern.webp" alt="Hiện đại">
+                                                                        </div>
+                                            <div class="text-overlay">Hiện đại</div>
+                                    </div>
+                            <div class="card-container">
+                    <div class="card">
+                                                                                                                <img src="/grav/user/pages/01.home/04._benefit/effective.jpg" alt="Hiệu quả">
+                                                                        </div>
+                                            <div class="text-overlay">Hiệu quả</div>
+                                    </div>
+                    </div>
+    </div> 
+</section>";s:12:"content_meta";N;}

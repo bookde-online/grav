@@ -1,0 +1,11 @@
+1743677440
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"home/_about";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:8:"About Us";s:4:"menu";s:9:"Introduce";}s:11:"frontmatter";s:33:"title: 'About Us'
+menu: Introduce";s:8:"markdown";s:745:"#####**Increase bookings with your own hotel website**
+
+At BookDe.vn, we empower hotels in Vietnam to take full control of their online presence. Our service allows you to create a custom website with your own domain name, allowing you to interact directly with your customers.
+
+#####**One platform to manage all your hotels, customers and transactions**
+
+Control all your hotels and data with just one website. Manage customer data, reservations, rooms, hotels, ... Create events, coupons on the web.
+
+Having your own hotel website not only makes it easier for customers to find you on the internet, but also optimizes the online booking experience, making management simpler, more efficient, saving time and optimizing revenue in the best way.";}s:7:"storage";a:8:{s:3:"key";s:11:"home/_about";s:11:"storage_key";s:26:"01.home/02._about|about.en";s:8:"template";s:5:"about";s:17:"storage_timestamp";i:1743669282;s:8:"markdown";a:2:{s:2:"en";a:1:{s:5:"about";i:1743669282;}s:2:"vi";a:1:{s:5:"about";i:1743158651;}}s:8:"checksum";s:32:"3b091ad9022908b06ee61689a0873374";s:6:"exists";b:1;s:4:"lang";s:2:"en";}}

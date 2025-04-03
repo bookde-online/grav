@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/grav/system/languages/gl.yaml',
-    'modified' => 1742970365,
+    'modified' => 1743158561,
     'size' => 3805,
     'data' => [
         'GRAV' => [

@@ -1,0 +1,39 @@
+1744280494
+a:2:{s:7:"content";s:2198:"<!-- Team Section -->
+  <section id="team" class="team section light-background">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+                    <h2 class="inner-title">Ai sử dụng dịch vụ của chúng tôi?</h2>
+            </div><!-- End Section Title -->
+
+    <div class="container">
+      <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                  <div class="team-member">
+                      <div class="member-img position-relative">
+                                                                                  <img src="/grav/user/pages/01.home/05._who-use-service/hotel.webp" class="img-fluid" alt="Image KHÁCH SẠN">
+                                                    <h4 class="text-overlay">KHÁCH SẠN</h4> 
+                      </div>
+                  </div>
+              </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                  <div class="team-member">
+                      <div class="member-img position-relative">
+                                                                                  <img src="/grav/user/pages/01.home/05._who-use-service/spa.webp" class="img-fluid" alt="Image SPA">
+                                                    <h4 class="text-overlay">SPA</h4> 
+                      </div>
+                  </div>
+              </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                  <div class="team-member">
+                      <div class="member-img position-relative">
+                                                                                  <img src="/grav/user/pages/01.home/05._who-use-service/tours.webp" class="img-fluid" alt="Image DU LỊCH">
+                                                    <h4 class="text-overlay">DU LỊCH</h4> 
+                      </div>
+                  </div>
+              </div>
+                </div>
+  </div>
+  </section><!-- /Team Section -->
+";s:12:"content_meta";N;}
