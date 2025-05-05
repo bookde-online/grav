@@ -1,5 +1,6 @@
 ---
 title: 'Hỗ trợ đặt phòng trực tuyến'
+slug: ho-tro-dat-truc-tuyen
 menu: 'Hỗ trợ đặt chỗ trực tuyến'
 media_order: ser2.webp
 subtitle: 'Đơn giản hóa quy trình đặt phòng trực tuyến của khách sạn bạn một cách dễ dàng.'

@@ -1,5 +1,6 @@
 ---
 title: 'Bài viết đầu tiên'
+slug: bai-viet-dau-tien
 date: '01-03-2024 00:00'
 media_order: banner1.webp
 ---

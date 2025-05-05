@@ -1,5 +1,6 @@
 ---
 title: Price
+slug: price
 pricing_plans:
     -
         name: Free

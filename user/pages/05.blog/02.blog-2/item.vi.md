@@ -1,5 +1,6 @@
 ---
 title: blog-2
+slug: bai-viet-thu-hai
 media_order: banner3.webp
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: 'Cách hoạt động'
+slug: cach-hoat-dong
 items:
     -
         title: 'Phát triển trang web tùy chỉnh'

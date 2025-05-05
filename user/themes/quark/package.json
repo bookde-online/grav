@@ -44,6 +44,7 @@
     "build": "gulp build"
   },
   "dependencies": {
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "spectre.css": "file:"
   }
 }

@@ -1,6 +1,6 @@
 ---
 menu: 'Ai sử dụng dịch vụ'
-title: 'Ai sử dụng dịch vụ của chúng tôi?'
+title: 'ai sử dụng dịch vụ của chúng tôi?'
 items:
     -
         title: 'KHÁCH SẠN'

@@ -5,8 +5,8 @@ banners:
     -
         title: 'Thương hiệu của bạn'
         subtitle: 'Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn'
-        button_text: null
-        button_link: '#'
+        button_text: 'Liên hệ'
+        button_link: 'http://localhost/grav/lien-he'
         image:
             banner1.webp:
                 name: banner1.webp
@@ -17,7 +17,7 @@ banners:
         title: 'Tên Miền Của Bạn'
         subtitle: 'Kiểm Soát Hoàn Toàn Với Trang Web Tùy Chỉnh – Không Chia Sẻ Hệ Thống'
         button_text: 'Dịch vụ'
-        button_link: 'http://localhost:8080/grav/contact'
+        button_link: 'http://localhost/grav/dich-vu'
         image:
             banner2.webp:
                 name: banner2.webp

@@ -1,5 +1,6 @@
 ---
 title: 'Về chúng tôi!'
+slug: ve-chung-toi
 template: modular/about
 media_order: about.webp
 ---

@@ -1,5 +1,6 @@
 ---
 title: 'Giải pháp tối ưu hóa đặt phòng'
+slug: giai-phap-toi-uu-hoa-dat-phong
 media_order: ser3.webp
 menu: 'Giải pháp tối ưu hóa đặt phòng'
 subtitle: 'Tối đa hóa số lượng đặt phòng của bạn với các công cụ tối ưu hóa của chúng tôi.'

@@ -1,5 +1,6 @@
 ---
 menu: 'Tùy chỉnh trang web khách sạn'
+slug: tuy-chinh-trang-khach-san
 media_order: ser1.webp
 title: 'Trang web khách sạn tùy chỉnh'
 subtitle: 'Tạo một nhận diện trực tuyến độc đáo với trang web tùy chỉnh.'

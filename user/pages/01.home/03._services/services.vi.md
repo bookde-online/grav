@@ -1,5 +1,6 @@
 ---
 title: 'Nâng cao khách sạn của bạn trực tuyến'
+slug: dich-vu
 template: modular/services
 services:
     -

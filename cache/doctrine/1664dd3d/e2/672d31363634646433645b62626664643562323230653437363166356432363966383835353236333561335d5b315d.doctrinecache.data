@@ -1,0 +1,33 @@
+1747023595
+a:2:{s:7:"content";s:2082:"<section class="benefits-section text-center" id="benefits">
+    <div class="container">
+        <div class="row gy-4">
+                            <h2 class="inner-title"><b>Benefits of using our services</b></h2>
+                    </div>
+        <div class="row gy-4" style="margin-bottom: 30px;">
+                            <p>Help your hotel run more smoothly, save time and optimize revenue with a modern, professional website design platform.</p>
+                    </div>
+
+        <!-- Image card -->
+        <div class="card-wrapper">
+                            <div class="card-container">
+                    <div class="card">
+                                                                                                                <img src="/grav/user/pages/01.home/04._benefit/professional.jpg" alt="Professional">
+                                                                        </div>
+                                            <div class="text-overlay">Professional</div>
+                                    </div>
+                            <div class="card-container">
+                    <div class="card">
+                                                                                                                <img src="/grav/user/pages/01.home/04._benefit/modern.webp" alt="Modern">
+                                                                        </div>
+                                            <div class="text-overlay">Modern</div>
+                                    </div>
+                            <div class="card-container">
+                    <div class="card">
+                                                                                                                <img src="/grav/user/pages/01.home/04._benefit/effective.jpg" alt="Effective">
+                                                                        </div>
+                                            <div class="text-overlay">Effective</div>
+                                    </div>
+                    </div>
+    </div> 
+</section>";s:12:"content_meta";N;}

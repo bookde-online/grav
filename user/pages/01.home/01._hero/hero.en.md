@@ -6,7 +6,7 @@ banners:
         title: 'Your Brand'
         subtitle: 'Create Your Own Hotel Booking Website'
         button_text: Contact
-        button_link: 'http://localhost:8080/grav/contact'
+        button_link: 'http://localhost/grav/contact'
         image:
             banner1.webp:
                 name: banner1.webp

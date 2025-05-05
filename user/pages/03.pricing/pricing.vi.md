@@ -1,5 +1,6 @@
 ---
 title: 'Giá cả'
+slug: gia-ca
 pricing_plans:
     -
         name: 'Dùng thử'
