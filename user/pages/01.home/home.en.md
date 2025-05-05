@@ -1,5 +1,6 @@
 ---
 title: 'Home'
+slug : home
 slug: home
 content:
     items: '@self.modular'

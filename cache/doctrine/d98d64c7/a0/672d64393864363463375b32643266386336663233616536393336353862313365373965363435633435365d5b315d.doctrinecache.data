@@ -1,0 +1,3 @@
+1747040130
+a:2:{s:7:"content";s:407:"<p>By default, the default language code is prefixed to all URLs.</p>
+<p>For example, if you support English and French ( en and fr ), and the default is English. A page route might look like /en/my-page for English and /fr/ma-page for French. However, it is often better to have a default language without a prefix, so you can just set this option to false and the English page will appear as /my-page.</p>";s:12:"content_meta";N;}

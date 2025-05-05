@@ -58,34 +58,3 @@ jQuery(document).ready(function($){
 
 });
 
-if (typeof window !== 'undefined') {
-    function scrollToSectionOnLoad(hash, path, sectionId) {
-        const currentPath = window.location.pathname.replace('/grav', ''); // Remove '/grav' prefix if present
-        if (window.location.hash === hash && currentPath === path) {
-            const targetSection = document.querySelector(sectionId);
-            if (targetSection) {
-                setTimeout(() => {
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
-                }, 300); // Slight delay to ensure DOM is fully loaded
-            }
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-        // Handle specific URL for trang-chu#dich-vu
-        scrollToSectionOnLoad('#dich-vu', '/trang-chu', '#services');
-
-        // Smooth scroll when clicking on links with #services or #dich-vu
-        const serviceLinks = document.querySelectorAll('a[href$="#services"], a[href$="#dich-vu"]');
-
-        serviceLinks.forEach(link => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault(); // Prevent page reload
-                const targetSection = document.querySelector('#services');
-                if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    });
-}

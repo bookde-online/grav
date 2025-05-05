@@ -1,4 +1,0 @@
-1744282296
-a:2:{s:7:"content";s:688:"<p>Theo mặc định, mã ngôn ngữ mặc định được thêm tiền tố vào tất cả các URL.</p>
-<p>Ví dụ, nếu bạn hỗ trợ tiếng Anh và tiếng Pháp ( envà fr), và mặc định là tiếng Anh. Một tuyến trang có thể trông giống như /en/my-pagetiếng Anh và /fr/ma-pagetiếng Pháp. Tuy nhiên, thường thì tốt hơn là có ngôn ngữ mặc định mà không có tiền tố, vì vậy bạn chỉ cần đặt tùy chọn này thành falsevà trang tiếng Anh sẽ xuất hiện dưới dạng /my-page.</p>
-<p><img title="banner3" alt="banner3" src="/grav/images/9/a/9/1/a/9a91aa4bd7e87fce7a809254363bd55fd8b5d928-banner3.webp" /></p>";s:12:"content_meta";N;}

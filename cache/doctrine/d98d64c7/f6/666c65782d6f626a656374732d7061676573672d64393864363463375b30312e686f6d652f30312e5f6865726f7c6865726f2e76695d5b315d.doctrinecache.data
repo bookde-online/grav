@@ -1,0 +1,37 @@
+1746438331
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:10:"home/_hero";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:12:"Hero Section";s:8:"template";s:12:"modular/hero";s:7:"banners";a:3:{i:0;a:5:{s:5:"title";s:27:"Thương hiệu của bạn";s:8:"subtitle";s:65:"Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn";s:11:"button_text";s:10:"Liên hệ";s:11:"button_link";s:29:"http://localhost/grav/lien-he";s:5:"image";a:1:{s:12:"banner1.webp";a:4:{s:4:"name";s:12:"banner1.webp";s:4:"type";s:10:"image/webp";s:4:"size";i:189152;s:4:"path";s:12:"banner1.webp";}}}i:1;a:5:{s:5:"title";s:23:"Tên Miền Của Bạn";s:8:"subtitle";s:87:"Kiểm Soát Hoàn Toàn Với Trang Web Tùy Chỉnh – Không Chia Sẻ Hệ Thống";s:11:"button_text";s:11:"Dịch vụ";s:11:"button_link";s:29:"http://localhost/grav/dich-vu";s:5:"image";a:1:{s:12:"banner2.webp";a:4:{s:4:"name";s:12:"banner2.webp";s:4:"type";s:10:"image/webp";s:4:"size";i:777834;s:4:"path";s:12:"banner2.webp";}}}i:2;a:5:{s:5:"title";N;s:8:"subtitle";N;s:11:"button_text";N;s:11:"button_link";N;s:5:"image";a:1:{s:12:"banner3.webp";a:4:{s:4:"name";s:12:"banner3.webp";s:4:"type";s:10:"image/webp";s:4:"size";i:234584;s:4:"path";s:12:"banner3.webp";}}}}}s:11:"frontmatter";s:1140:"title: 'Hero Section'
+template: modular/hero
+banners:
+    -
+        title: 'Thương hiệu của bạn'
+        subtitle: 'Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn'
+        button_text: 'Liên hệ'
+        button_link: 'http://localhost/grav/lien-he'
+        image:
+            banner1.webp:
+                name: banner1.webp
+                type: image/webp
+                size: 189152
+                path: banner1.webp
+    -
+        title: 'Tên Miền Của Bạn'
+        subtitle: 'Kiểm Soát Hoàn Toàn Với Trang Web Tùy Chỉnh – Không Chia Sẻ Hệ Thống'
+        button_text: 'Dịch vụ'
+        button_link: 'http://localhost/grav/dich-vu'
+        image:
+            banner2.webp:
+                name: banner2.webp
+                type: image/webp
+                size: 777834
+                path: banner2.webp
+    -
+        title: null
+        subtitle: null
+        button_text: null
+        button_link: null
+        image:
+            banner3.webp:
+                name: banner3.webp
+                type: image/webp
+                size: 234584
+                path: banner3.webp";s:8:"markdown";s:0:"";}s:7:"storage";a:8:{s:3:"key";s:10:"home/_hero";s:11:"storage_key";s:24:"01.home/01._hero|hero.vi";s:8:"template";s:4:"hero";s:17:"storage_timestamp";i:1746426885;s:8:"markdown";a:2:{s:2:"en";a:1:{s:4:"hero";i:1746426776;}s:2:"vi";a:1:{s:4:"hero";i:1746426885;}}s:8:"checksum";s:32:"f1386cf09cb48e9b53ba89916afefd3e";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

@@ -1,8 +1,0 @@
-1743676810
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"home";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:4:"Home";s:7:"content";a:2:{s:5:"items";s:13:"@self.modular";s:5:"order";a:2:{s:2:"by";s:7:"default";s:3:"dir";s:3:"asc";}}s:5:"image";a:0:{}}s:11:"frontmatter";s:109:"title: 'Home'
-content:
-    items: '@self.modular'
-    order:
-        by: default
-        dir: asc
-image: {  }";s:8:"markdown";s:0:"";}s:7:"storage";a:9:{s:3:"key";s:4:"home";s:11:"storage_key";s:15:"01.home|home.en";s:8:"template";s:4:"home";s:17:"storage_timestamp";i:1743672347;s:8:"markdown";a:2:{s:2:"en";a:1:{s:4:"home";i:1743672347;}s:2:"vi";a:1:{s:4:"home";i:1743472379;}}s:8:"children";a:6:{s:8:"01._hero";b:0;s:9:"02._about";b:0;s:12:"03._services";b:0;s:11:"04._benefit";b:0;s:19:"05._who-use-service";b:0;s:8:"06._demo";b:0;}s:8:"checksum";s:32:"b36277340e68edec980faae808a0f464";s:6:"exists";b:1;s:4:"lang";s:2:"en";}}

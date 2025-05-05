@@ -1,6 +1,0 @@
-1743676688
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"blog/post-1";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:10:"Post Eng 1";s:12:"hero_classes";s:21:"overlay-dark-gradient";s:10:"hero_image";s:12:"banner1.webp";}s:11:"frontmatter";s:80:"title: 'Post Eng 1'
-hero_classes: overlay-dark-gradient
-hero_image: banner1.webp";s:8:"markdown";s:394:"By default, the default language code is prefixed to all URLs.
-
-For example, if you support English and French ( en and fr ), and the default is English. A page route might look like /en/my-page for English and /fr/ma-page for French. However, it is often better to have a default language without a prefix, so you can just set this option to false and the English page will appear as /my-page.";}s:7:"storage";a:8:{s:3:"key";s:11:"blog/post-1";s:11:"storage_key";s:25:"05.blog/01.post-1|item.en";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1743671562;s:8:"markdown";a:2:{s:2:"en";a:1:{s:4:"item";i:1743671562;}s:2:"vi";a:1:{s:4:"item";i:1743496600;}}s:8:"checksum";s:32:"586e82e2f6a296a77c2cb6204d721d9f";s:6:"exists";b:1;s:4:"lang";s:2:"en";}}

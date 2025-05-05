@@ -1,0 +1,48 @@
+1747036630
+a:2:{s:7:"content";s:4715:"<section id="service" class="services section light-background">
+    <div class="container">
+        <div class="row gy-4">
+                            <h2 class="inner-title"><b>Enhance your hotel online</b></h2>
+            
+                            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item item-orange position-relative" style="text-align: center;">
+                        <a href="/grav/en/home/_services/custom-hotel-website">
+                                                                                                <div class="icon">
+                                                                                                                                                                                                                                                                                                <img src="/grav/user/pages/01.home/03._services/01.custom-hotel-website/ser1.webp" alt="Custom hotel website" style="width: 100%; height: 140px; border-radius: 50%;" loading="lazy">
+                                                                            </div>
+                                                                                        <a href="/grav/en/home/_services/custom-hotel-website"><h3>Custom hotel website</h3></a>
+                                                            <p>Create a unique online identity with a custom website.</p>
+                                                    </a>
+                    </div>
+                </div><!-- End Service Item -->
+                            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item item-orange position-relative" style="text-align: center;">
+                        <a href="/grav/en/home/_services/online-booking-support">
+                                                                                                <div class="icon">
+                                                                                                                                                                                                                                                                                                <img src="/grav/user/pages/01.home/03._services/02.online-booking-support/ser2.webp" alt="Online booking support" style="width: 100%; height: 140px; border-radius: 50%;" loading="lazy">
+                                                                            </div>
+                                                                                        <a href="/grav/en/home/_services/online-booking-support"><h3>Online booking support</h3></a>
+                                                            <p>Simplify your hotel&#039;s online booking process with ease.</p>
+                                                    </a>
+                    </div>
+                </div><!-- End Service Item -->
+                            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item item-orange position-relative" style="text-align: center;">
+                        <a href="/grav/en/home/_services/booking-optimization-solutions">
+                                                                                                <div class="icon">
+                                                                                                                                                                                                                                                                                                <img src="/grav/user/pages/01.home/03._services/03.booking-optimization-solutions/ser3.webp" alt="Booking optimization solutions" style="width: 100%; height: 140px; border-radius: 50%;" loading="lazy">
+                                                                            </div>
+                                                                                        <a href="/grav/en/home/_services/booking-optimization-solutions"><h3>Booking optimization solutions</h3></a>
+                                                            <p>Maximize your bookings with our optimization tools.</p>
+                                                    </a>
+                    </div>
+                </div><!-- End Service Item -->
+                    </div>
+        <hr>
+                    <div style="display: flex; justify-content: center; margin-top: 50px; text-align: center; font-size: larger;">
+                <p><em>Start your own website today!</em></p>
+            </div>
+            </div>
+
+
+";s:12:"content_meta";N;}

@@ -19,3 +19,6 @@ Allow: /
 Allow: *.css$
 Allow: *.js$
 Allow: /system/*.js$
+
+# Added sitemap reference for SEO
+Sitemap: http://localhost/sitemap.xml

@@ -75,7 +75,9 @@ class __TwigTemplate_dd60b00ce7c8cf804adc41d6fc4c98f74f11a19e3faa5adca1c7977169e
                             <a href=\"";
             // line 17
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "find", [0 => "/contact"], "method"), "url", []), "html", null, true);
-            echo "#services\" class=\"cta-btn\">Liên hệ ngay</a><br>
+            echo "\" class=\"cta-btn\">";
+            echo ((($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguage", []) == "en")) ? ("Contact US") : ("Liên hệ ngay"));
+            echo "</a><br>
                             <ul>
                                 ";
             // line 19
@@ -134,7 +136,7 @@ class __TwigTemplate_dd60b00ce7c8cf804adc41d6fc4c98f74f11a19e3faa5adca1c7977169e
 
     public function getDebugInfo()
     {
-        return array (  115 => 29,  106 => 25,  97 => 22,  89 => 21,  86 => 20,  82 => 19,  77 => 17,  73 => 16,  69 => 15,  63 => 14,  59 => 13,  55 => 11,  51 => 10,  44 => 5,  42 => 4,  39 => 3,  29 => 1,);
+        return array (  117 => 29,  108 => 25,  99 => 22,  91 => 21,  88 => 20,  84 => 19,  77 => 17,  73 => 16,  69 => 15,  63 => 14,  59 => 13,  55 => 11,  51 => 10,  44 => 5,  42 => 4,  39 => 3,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -163,7 +165,7 @@ class __TwigTemplate_dd60b00ce7c8cf804adc41d6fc4c98f74f11a19e3faa5adca1c7977169e
                             <h4><sup>{{plan.currency_unit}}</sup>{{ plan.price }}</h4>
                             <p style=\"color: #858585; margin: 1rem 0;\">{{ plan.duration }}</p>
                             <h5 style=\"font-size: 20px; font-weight: 600;\">{{ plan.features_title }}</h5>
-                            <a href=\"{{ page.find('/contact').url }}#services\" class=\"cta-btn\">Liên hệ ngay</a><br>
+                            <a href=\"{{ page.find('/contact').url }}\" class=\"cta-btn\">{{ grav.language.getLanguage == 'en' ? 'Contact US' : 'Liên hệ ngay' }}</a><br>
                             <ul>
                                 {% for feature in plan.features %}
                                     <li>
