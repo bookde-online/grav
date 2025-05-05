@@ -27,8 +27,11 @@ class __TwigTemplate_500d173b0e3fe5d79a6f022eca26efae03dab0cdffabd17cd60dc4759e4
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "
-<section id=\"services\" class=\"services section light-background\">
+        $context["lang"] = $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguage", []);
+        // line 2
+        echo "<section id=\"";
+        echo (((($context["lang"] ?? null) == "vi")) ? ("dich-vu") : ("service"));
+        echo "\" class=\"services section light-background\">
     <div class=\"container\">
         <div class=\"row gy-4\">
             ";
@@ -97,7 +100,7 @@ class __TwigTemplate_500d173b0e3fe5d79a6f022eca26efae03dab0cdffabd17cd60dc4759e4
                     echo "                            ";
                 }
                 // line 27
-                echo "                                <a href=\"";
+                echo "                            <a href=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute($context["child"], "url", []), "html", null, true);
                 echo "\"><h3>";
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["child"], "header", []), "title", []), "html", null, true);
@@ -138,8 +141,8 @@ class __TwigTemplate_500d173b0e3fe5d79a6f022eca26efae03dab0cdffabd17cd60dc4759e4
         }
         // line 42
         echo "    </div>
-</section><!-- /Services Section -->
-<!-- /Services Section -->
+
+
 ";
     }
 
@@ -155,7 +158,7 @@ class __TwigTemplate_500d173b0e3fe5d79a6f022eca26efae03dab0cdffabd17cd60dc4759e4
 
     public function getDebugInfo()
     {
-        return array (  140 => 42,  134 => 39,  131 => 38,  129 => 37,  125 => 35,  115 => 31,  109 => 29,  107 => 28,  100 => 27,  97 => 26,  93 => 24,  85 => 22,  82 => 21,  79 => 20,  76 => 19,  73 => 18,  70 => 17,  68 => 16,  65 => 15,  62 => 14,  60 => 13,  56 => 12,  52 => 10,  47 => 9,  44 => 8,  38 => 6,  36 => 5,  30 => 1,);
+        return array (  143 => 42,  137 => 39,  134 => 38,  132 => 37,  128 => 35,  118 => 31,  112 => 29,  110 => 28,  103 => 27,  100 => 26,  96 => 24,  88 => 22,  85 => 21,  82 => 20,  79 => 19,  76 => 18,  73 => 17,  71 => 16,  68 => 15,  65 => 14,  63 => 13,  59 => 12,  55 => 10,  50 => 9,  47 => 8,  41 => 6,  39 => 5,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -168,8 +171,8 @@ class __TwigTemplate_500d173b0e3fe5d79a6f022eca26efae03dab0cdffabd17cd60dc4759e4
 
     public function getSourceContext()
     {
-        return new Source("
-<section id=\"services\" class=\"services section light-background\">
+        return new Source("{% set lang = grav.language.getLanguage %}
+<section id=\"{{ lang == 'vi' ? 'dich-vu' : 'service' }}\" class=\"services section light-background\">
     <div class=\"container\">
         <div class=\"row gy-4\">
             {% if page.header.title %}
@@ -194,7 +197,7 @@ class __TwigTemplate_500d173b0e3fe5d79a6f022eca26efae03dab0cdffabd17cd60dc4759e4
                                     </div>
                                 {% endif %}
                             {% endif %}
-                                <a href=\"{{ child.url }}\"><h3>{{ child.header.title }}</h3></a>
+                            <a href=\"{{ child.url }}\"><h3>{{ child.header.title }}</h3></a>
                             {% if child.header.subtitle %}
                                 <p>{{ child.header.subtitle }}</p>
                             {% endif %}
@@ -210,8 +213,8 @@ class __TwigTemplate_500d173b0e3fe5d79a6f022eca26efae03dab0cdffabd17cd60dc4759e4
             </div>
         {% endif %}
     </div>
-</section><!-- /Services Section -->
-<!-- /Services Section -->
+
+
 ", "modular/services.html.twig", "C:\\xampp\\htdocs\\grav\\user\\themes\\quark\\templates\\modular\\services.html.twig");
     }
 }

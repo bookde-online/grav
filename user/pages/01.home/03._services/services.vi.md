@@ -8,7 +8,7 @@ services:
         subtitle: 'Tạo một nhận diện trực tuyến độc đáo với trang web tùy chỉnh.'
         short_description: null
         description: 'Tạo một nhận diện trực tuyến độc đáo với trang web tùy chỉnh.'
-        link: null
+        link: http://localhost/grav/home/dich-vu/tuy-chinh-trang-khach-san
         image:
             ser1.webp:
                 name: ser1.webp
