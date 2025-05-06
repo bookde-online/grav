@@ -1,5 +1,8 @@
 ---
 title: 'Giải pháp tối ưu hóa đặt phòng'
+metadata:
+        description: Nâng cao khách sạn của bạn trực tuyến
+        keywords:  tạo trang web, đặt phòng khách sạn, tạo trang đặt phòng khách sạn, khách sạn
 slug: giai-phap-toi-uu-hoa-dat-phong
 media_order: ser3.webp
 menu: 'Giải pháp tối ưu hóa đặt phòng'

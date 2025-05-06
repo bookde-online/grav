@@ -56,8 +56,8 @@ try {
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Your Website Name",
-  "url": "http://localhost/",
+  "name": "BookDe",
+  "url": "http://localhost/grav",
   "potentialAction": {
     "@type": "SearchAction",
     "target": "http://localhost/?s={search_term_string}",
@@ -70,9 +70,9 @@ try {
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Your Organization Name",
-  "url": "http://localhost/",
-  "logo": "http://localhost/images/logo.png",
+  "name": "ALLXONE",
+  "url": "http://localhost/grav",
+  "logo": "http://localhost//grav/user/pages/07._config/logo.webp">
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+1-800-555-5555",
@@ -90,32 +90,41 @@ try {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "http://localhost/"
+      "item": "http://localhost/grav"
     },
     {
       "@type": "ListItem",
       "position": 2,
+      "name": "Services",
+      "item": "http://localhost/grav/en#services"
+    }
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pricing",
+      "item": "http://localhost/grav/price"
+    }
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "How it work",
+      "item": "http://localhost/grav/how-it-work"
+    }
+    {
+      "@type": "ListItem",
+      "position": 5,
       "name": "Blog",
-      "item": "http://localhost/blog"
+      "item": "http://localhost/grav/blog"
+    }
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Contact",
+      "item": "http://localhost/grav/contact"
     }
   ]
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Your Article Title",
-  "author": {
-    "@type": "Person",
-    "name": "Author Name"
-  },
-  "datePublished": "2025-05-05",
-  "dateModified": "2025-05-05",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "http://localhost/article"
-  }
-}
-</script>
+
+

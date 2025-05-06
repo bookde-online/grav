@@ -1,6 +1,8 @@
 ---
 title: Contact form
-
+metadata :
+        description: Customer Information 
+        keywords: contact information , contact 
 form:
     name: contact
 

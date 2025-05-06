@@ -1,5 +1,8 @@
 ---
 menu: 'Tùy chỉnh trang web khách sạn'
+metadata:
+        description: Nâng cao khách sạn của bạn trực tuyến
+        keywords:  tạo trang web, đặt phòng khách sạn, tạo trang đặt phòng khách sạn, khách sạn
 slug: tuy-chinh-trang-khach-san
 media_order: ser1.webp
 title: 'Trang web khách sạn tùy chỉnh'

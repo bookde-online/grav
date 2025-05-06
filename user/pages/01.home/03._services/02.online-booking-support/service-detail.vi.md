@@ -1,5 +1,8 @@
 ---
 title: 'Hỗ trợ đặt phòng trực tuyến'
+metadata:
+        description: Nâng cao khách sạn của bạn trực tuyến
+        keywords:  tạo trang web, đặt phòng khách sạn, tạo trang đặt phòng khách sạn, khách sạn
 slug: ho-tro-dat-truc-tuyen
 menu: 'Hỗ trợ đặt chỗ trực tuyến'
 media_order: ser2.webp

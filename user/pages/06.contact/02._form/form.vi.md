@@ -1,6 +1,8 @@
 ---
 title: Contact form
-
+metadata :
+        description: Thông tin khách hàng
+        keywords: liên hệ , thông tin , khách hàng Bookde 
 form:
     name: contact
 

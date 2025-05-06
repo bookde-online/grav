@@ -1,5 +1,8 @@
 ---
 title: 'Nâng cao khách sạn của bạn trực tuyến'
+metadata:
+        description: Nâng cao khách sạn của bạn trực tuyến
+        keywords:  tạo trang web, đặt phòng khách sạn, tạo trang đặt phòng khách sạn, khách sạn
 slug: dich-vu
 template: modular/services
 services:

@@ -1,34 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
     <url>
-        <loc>http://localhost/</loc>
+        <loc>/</loc>
+        <xhtml:link rel="alternate" hreflang="vi" href="/" />
+        <xhtml:link rel="alternate" hreflang="en" href="/en" />
         <lastmod>2025-05-05</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+
     <url>
-        <loc>http://localhost/pricing</loc>
+        <loc>/pricing</loc>
+        <xhtml:link rel="alternate" hreflang="vi" href="/gia-ca" />
+        <xhtml:link rel="alternate" hreflang="en" href="/price" />
         <lastmod>2025-05-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
-        <loc>http://localhost/contact</loc>
+        <loc>/contact</loc>
+        <xhtml:link rel="alternate" hreflang="vi" href="/lien-he" />
+        <xhtml:link rel="alternate" hreflang="en" href="/contact" />
         <lastmod>2025-05-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
     <url>
-        <loc>http://localhost/how-it-work</loc>
+        <loc>/how-it-work</loc>
+        <xhtml:link rel="alternate" hreflang="vi" href="/cach-hoat-dong" />
+        <xhtml:link rel="alternate" hreflang="en" href="/how-it-work" />
         <lastmod>2025-05-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
-        <loc>http://localhost/blog</loc>
+        <loc>/blog</loc>
+        <xhtml:link rel="alternate" hreflang="vi" href="/blog" />
+        <xhtml:link rel="alternate" hreflang="en" href="/en/blog" />
         <lastmod>2025-05-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
-    <!-- Add more URLs as needed -->
+
 </urlset>
