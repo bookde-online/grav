@@ -10,6 +10,9 @@
         {% else %}
             <meta name="description" content="{{ site.description }}">
         {% endif %}
+        {% if header.keywords %}
+        <meta name="keywords" content="{{ header.keywords }}">
+        {% endif %}
         {% if header.robots %}
             <meta name="robots" content="{{ header.robots }}">
         {% else %}

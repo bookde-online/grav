@@ -1,5 +1,9 @@
 ---
 title: Price
+metadata :
+        description: Enhance your hotel's booking efficiency and guest satisfaction with custom online solutions. Streamline reservations and increase direct bookings effortlessly.
+        keywords: Create a website, hotel reservation, hotel reservation pages, hotels
+
 slug: price
 pricing_plans:
     -

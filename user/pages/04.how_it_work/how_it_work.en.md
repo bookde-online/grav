@@ -1,5 +1,9 @@
 ---
 title: 'How it work'
+metadata :
+        description: Learn how to easily set up your hotel’s custom website for direct bookings. Connect directly with guests, increase visibility, and boost your revenue.
+        keywords: how to create hotel booking website, booking website, connect with guests
+
 subtitle: 'Simple steps to launch your hotel website'
 items:
     -

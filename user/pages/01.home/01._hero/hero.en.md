@@ -4,9 +4,12 @@ template: modular/hero
 banners:
     -
         title: 'Your Brand'
+        metadata:
+            description: Create Your Own Hotel Booking Website
+            keywords: create website , hotel booking , create hotel website
         subtitle: 'Create Your Own Hotel Booking Website'
         button_text: Contact
-        button_link: 'http://localhost/grav/contact'
+        button_link: 'en/contact'
         image:
             banner1.webp:
                 name: banner1.webp

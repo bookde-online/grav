@@ -1,5 +1,9 @@
 ---
 title: Blog
+metadata :
+        description: Bookde Blog - Lastest News from BookDe
+        keywords: Bookde, Booking hotel, Bookde Blog , BookDe News
+
 content:
     items:
         - '@self.children'

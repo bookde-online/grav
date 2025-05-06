@@ -1,5 +1,9 @@
 ---
 title: 'Cách hoạt động'
+metadata :
+        description:  Bạn sẽ biết được cách đơn giản hóa đặt phòng trực tuyến cho khách sạn của bạn
+        keywords: đơn giản hóa đặt phòng , tạo website , thu hút khách hàng , khách sạn
+
 slug: cach-hoat-dong
 items:
     -

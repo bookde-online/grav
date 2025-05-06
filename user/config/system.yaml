@@ -30,7 +30,7 @@ languages:
   debug: true
 home:
   alias: /home
-  hide_in_urls: false
+  hide_in_urls: true
 pages:
   type: regular
   dirs:
@@ -238,3 +238,7 @@ strict_mode:
   yaml_compat: false
   twig_compat: false
   blueprint_compat: false
+slugify:
+  enabled: true
+  lowercase: true
+  delimiter: '-'

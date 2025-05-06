@@ -4,14 +4,17 @@ template: modular/hero
 banners:
     -
         title: 'Thương hiệu của bạn'
+        metadata:
+            description: Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn
+            keywords: tạo trang web, đặt phòng khách sạn, tạo trang đặt phòng khách sạn, khách sạn
         subtitle: 'Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn'
         button_text: 'Liên hệ'
-        button_link: 'http://localhost/grav/lien-he'
+        button_link: 'vi/contact'
         image:
             banner1.webp:
                 name: banner1.webp
                 type: image/webp
-                size: 189152
+                size: 189152    
                 path: banner1.webp
     -
         title: 'Tên Miền Của Bạn'
