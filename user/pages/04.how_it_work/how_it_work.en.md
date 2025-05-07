@@ -15,6 +15,7 @@ items:
                 type: image/webp
                 size: 827004
                 path: work1.webp
+                alt: 'how to create booking hotel website'
     -
         title: 'Optimize direct bookings'
         subtitle: 'Optimize your website to increase direct bookings and reduce commission fees.'
@@ -24,6 +25,7 @@ items:
                 type: image/webp
                 size: 1787420
                 path: work2.webp
+                alt: 'how to create booking hotel website'
     -
         title: 'Maximize Online Visibility & Revenue'
         subtitle: 'Increase visibility and maximize bookings with smart analytics.'
@@ -33,5 +35,6 @@ items:
                 type: image/jpeg
                 size: 1793059
                 path: work3.jpg
+                alt: 'how to create booking hotel website'
 ---
 

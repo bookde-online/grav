@@ -51,16 +51,16 @@ try {
     throw $e;
 }
 //SCHEMA for SEO
-?>
+/*?>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "BookDe",
-  "url": "http://localhost/grav",
+  "url": "/",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "http://localhost/?s={search_term_string}",
+    "target": "/?s={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
@@ -71,8 +71,8 @@ try {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "ALLXONE",
-  "url": "http://localhost/grav",
-  "logo": "http://localhost//grav/user/pages/07._config/logo.webp">
+  "url": "/",
+  "logo": "/user/pages/07._config/logo.webp">
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+1-800-555-5555",
@@ -90,41 +90,41 @@ try {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "http://localhost/grav"
+      "item": "/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Services",
-      "item": "http://localhost/grav/en#services"
+      "item": "/en#services"
     }
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Pricing",
-      "item": "http://localhost/grav/price"
+      "item": "/price"
     }
     {
       "@type": "ListItem",
       "position": 4,
       "name": "How it work",
-      "item": "http://localhost/grav/how-it-work"
+      "item": "/how-it-work"
     }
     {
       "@type": "ListItem",
       "position": 5,
       "name": "Blog",
-      "item": "http://localhost/grav/blog"
+      "item": "/blog"
     }
     {
       "@type": "ListItem",
       "position": 6,
       "name": "Contact",
-      "item": "http://localhost/grav/contact"
+      "item": "/contact"
     }
   ]
 }
-</script>
+</script>*/
 
 
 

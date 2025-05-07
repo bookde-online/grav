@@ -12,11 +12,11 @@
       </li>
 
       {# Insert "Services" item right after "home" or "trang-chu" #}
-      {% if p.slug == 'home' or p.slug == 'trang-chu' %}
+      {% if p.slug == 'home'%}
           {% if service_page.children.visible.count > 0 %}
           <li class="dropdown">
             {% set is_service_active = page.activeChildOf('/home/_services') ? 'active' : '' %}
-            <a href="{{ base_url_absolute }}{{ p.slug == 'home' ? 'home#services' : 'trang-chu#dich-vu' }}" class="{{ is_service_active }}">
+            <a href="{{ base_url_absolute }}{{ grav.language.getLanguage == 'en' ? '#services' : '#dich-vu' }}" class="{{ is_service_active }}">
               <span>{{ service_page.menu }}</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i>
             </a>

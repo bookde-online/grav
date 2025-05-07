@@ -67,23 +67,10 @@
             {% if config.plugins.login.enabled and grav.user.username %}
                 <span class="login-status-wrapper"><i class="fa fa-user"></i> {% include 'partials/login-status.html.twig' %}</span>
             {% endif %}
-
-            {# <div class="header-social-links">
-            {% set page_con = page.find('/_config') %}
-               {% for social in page_con.header.social %}
-                  <a href="{{ social.link }}" title="{{ social.title }}">
-                      {% if social.image %}
-                          {% set image = social.image|first %}
-                          {% set page_url = page_con.url %}
-                          {% set full_url = page_url ~ '/' ~ image.name %}
-
-                          <img src="{{ full_url }}" alt="{{ social.title|e }}" style="height: 24px; width: auto; ">
-                      {% endif %}
-                  </a>
-              {% endfor %}
-            </div>     #}
         </div>
     </header>
+
+
   <main class="main">
     {% block content %}{% endblock %}
      {# {% block hero %}{% endblock %}
@@ -142,4 +129,4 @@
   <!-- Main JS File -->
   <script src="{{ theme_url }}/assets/js/main.js"></script>
 </body>
-</html> 
+</html>

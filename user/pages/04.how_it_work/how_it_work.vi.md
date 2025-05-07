@@ -33,6 +33,6 @@ items:
                 type: image/jpeg
                 size: 1793059
                 path: work3.jpg
-subtitle: 'Các bước đơn giản để khởi chạy trang web của khách sạn bạn'
+subtitle: 'Các bước đơn giản để khởi chạy trang web cho khách sạn của bạn'
 ---
 

@@ -6,7 +6,7 @@ image:
         type: image/webp
         size: 34330
         path: demo.webp
-link: 'http://localhost:8080/grav/contact'
+link: 'vi/lien-he'
 menu: Demo
 button_name: 'Thử demo của chúng tôi!'
 ---

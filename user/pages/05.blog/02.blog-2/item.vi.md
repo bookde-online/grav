@@ -1,5 +1,5 @@
 ---
-title: blog-2
+title: Bài viết thứ hai
 slug: bai-viet-thu-hai
 media_order: banner3.webp
 ---

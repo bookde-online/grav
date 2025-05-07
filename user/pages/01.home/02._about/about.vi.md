@@ -1,10 +1,8 @@
 ---
 title: 'Về chúng tôi!'
-slug: ve-chung-toi
 template: modular/about
 media_order: about.webp
 ---
-
 #####**Tăng lượng đặt phòng với trang web khách sạn của riêng bạn**
 
 Tại BookDe.vn, chúng tôi trao quyền cho các khách sạn tại Việt Nam để kiểm soát hoàn toàn sự hiện diện trực tuyến của họ. Dịch vụ của chúng tôi cho phép bạn tạo một trang web tùy chỉnh với tên miền của riêng bạn, cho phép bạn tương tác trực tiếp với khách hàng.

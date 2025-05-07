@@ -1,5 +1,6 @@
 ---
-title: blog-3
+title: Bài viết thứ ba
+slug: bai-viet-thu-ba
 media_order: banner3.webp
 ---
 
