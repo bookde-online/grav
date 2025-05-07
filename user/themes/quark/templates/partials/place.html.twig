@@ -1,30 +1,31 @@
 <!-- Page Title -->
 <div class="page-title accent-background">
   <div class="container d-lg-flex justify-content-between align-items-center">
-    <!-- Tiêu đề của trang hiện tại -->
-    <h1 class="mb-2 mb-lg-0">{{ page.title }}</h1>
-    <nav class="breadcrumbs">
-      <ol>
-        <!-- Link và tiêu đề của trang cha (hoặc trang chủ nếu không có cha) -->
-        <li>
-        {# <a href="{% if page.parent and page.parent.menu == 'Pages' %}{{ page.find('/home').url }}{% else %}{{ page.parent.url}}{% endif %}">
-            {% if page.parent and page.parent.menu == 'Pages' %}Trang chủ{% else %}{{ page.parent.menu }}{% endif %}
-          </a> #}
-          {% if page.parent and page.parent.menu != 'Pages' %}
-              <a href="{{ page.parent.url }}">
-                  {{ page.parent.menu }}
-              </a>
-          {% else %}
-              {% set home_page = page.find('/home') %}
-              {% if home_page and home_page.menu %}
-                  <a href="{{ home_page.url }}">{{ home_page.menu }}</a>
-              {% endif %}
-          {% endif %}
-        </li>
-        <!-- Tiêu đề của trang hiện tại -->
-        <li class="current">{{ page.title }}</li>
-      </ol>
-    </nav>
+    {% if page.route == '/' %}
+      <!-- Chỉ hiển thị H1 nếu là trang chủ -->
+      <h1 class="mb-2 mb-lg-0">{{ page.title }}</h1>
+    {% else %}
+      <!-- Tiêu đề của trang hiện tại -->
+      <h1 class="mb-2 mb-lg-0">{{ page.title }}</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <!-- Link và tiêu đề của trang cha (hoặc trang chủ nếu không có cha) -->
+          <li>
+            {% if page.parent and page.parent.menu != 'Pages' %}
+                <a href="{{ page.parent.url }}">
+                    {{ page.parent.menu }}
+                </a>
+            {% else %}
+                {% set home_page = page.find('/home') %}
+                {% if home_page and home_page.menu %}
+                    <a href="{{ home_page.url }}">{{ home_page.menu }}</a>
+                {% endif %}
+            {% endif %}
+          </li>
+          <!-- Tiêu đề của trang hiện tại -->
+          <li class="current">{{ page.title }}</li>
+        </ol>
+      </nav>
+    {% endif %}
   </div>
 </div><!-- End Page Title -->
-{# {% else %}{{ page.parent.url ?: page.parent.url  }} #}

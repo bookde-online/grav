@@ -9,7 +9,7 @@ banners:
             keywords: tạo trang web, đặt phòng khách sạn, tạo trang đặt phòng khách sạn, khách sạn
         subtitle: 'Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn'
         button_text: 'Liên hệ'
-        button_link: 'vi/contact'
+        button_link: 'vi/lien-he'
         image:
             banner1.webp:
                 name: banner1.webp
