@@ -14,6 +14,7 @@
   "dependencies": {
     "dropzone": "getgrav/dropzone#master",
     "exif-js": "^2.3.0",
+    "grav-plugin-form": "file:",
     "sortablejs": "^1.10.2"
   },
   "devDependencies": {

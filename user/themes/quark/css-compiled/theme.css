@@ -239,8 +239,6 @@ form .form-group:not(.form-field-toggleable) .checkboxes label:before { display:
 
 #header { width: 100%; height: 4rem; border-bottom: 1px solid rgba(172, 179, 194, 0.2); font-size: 0.7rem; font-weight: 700; background: #fff; color: #454d5d; }
 
-#header a { color: #454d5d; }
-
 #header .logo svg path { fill: #222; }
 
 .header-dark #header:not(.scrolled) { background: #222; color: #fff; }

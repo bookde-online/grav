@@ -1,7 +1,3 @@
-title: Grav
-author:
-  name: Joe Bloggs
-  email: 'joe@example.com'
-metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+# Removed invalid properties based on schema validation
+# title, author, and metadata were removed as they are not allowed in the current schema.
 

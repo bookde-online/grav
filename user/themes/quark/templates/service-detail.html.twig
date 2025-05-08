@@ -1,0 +1,48 @@
+
+{% extends 'partials/base-home.html.twig' %}
+
+{% block content %}
+{% include 'partials/place.html.twig' %}
+
+<section id="service-details" class="service-details section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      {# Lấy danh sách các trang con thuộc module "service" #}
+      {% set service_pages = page.parent.children.visible %}
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="services-list">
+          {% for service in service_pages %}
+            <a href="{{ service.url }}" class="{{ service.active ? 'active' : '' }}">
+              {{ service.header.title }}
+            </a>
+          {% endfor %}
+        </div>
+
+        <h4>{{ page.header.subtitle }}</h4>
+        <p>{{ page.header.short_description|markdown }}</p>
+      </div>
+
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        {% if page.header.image %}
+          <img src="{{ page.media.images|first.url }}" alt="{{ page.header.title }}" class="img-fluid services-img" loading="lazy">
+          {# <img src="{{ page.media[page.header.image].url }}" alt="{{ page.header.title }}" class="img-fluid services-img"> #}
+        {% endif %}
+        
+        <h3 style="display: flex; justify-content: center; text-align: center; margin: 10px;">
+          {{ page.header.title }}
+        </h3>
+        <p>{{ page.header.description|markdown }}</p>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Service Details Section -->
+{% endblock %}
+

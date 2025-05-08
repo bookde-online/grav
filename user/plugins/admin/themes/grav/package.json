@@ -21,6 +21,7 @@
     "eventemitter3": "^4.0.7",
     "events": "^3.3.0",
     "exif-js": "^2.3.0",
+    "grav-admin": "file:",
     "immutable": "^4.0.0",
     "immutablediff": "^0.4.4",
     "js-yaml": "^4.1.0",

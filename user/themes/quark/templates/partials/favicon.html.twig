@@ -1,0 +1,6 @@
+{# <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" /> #}
+{% set fa_page = page.find('/_config') %}
+{% set image = fa_page.header.favicon|first %}
+    {% if image %}
+        <link rel="icon" type="image/png" href="{{ fa_page.media[image.name].url }}" />
+    {% endif %}

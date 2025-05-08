@@ -1,0 +1,16 @@
+<div class="col-lg-8">
+    
+    {% include ('forms/form.html.twig') %}
+    <div class="my-3">
+        {% if form.message %}
+            <div class="sent-message" style="color: green">{{ form.message }}</div>
+        {% endif %}
+        {% if form.messages.error %}
+        <div class="error-message" style="color: red">{{ form.messages.error|default('Có lỗi xảy ra!') }}</div>
+        {% endif %}
+    </div>
+</div
+
+</div><!-- End Row -->
+  </div><!-- End Container -->
+</section><!-- End Contact Section -->

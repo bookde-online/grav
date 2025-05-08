@@ -1,0 +1,19 @@
+enabled: true
+from: dungnguyen19724@gmail.com
+to: 22520288@gm.uit.edu.vn
+mailer:
+  engine: smtp
+  smtp:
+    server: smtp.gmail.com
+    port: 587
+    encryption: tls
+    user: dungnguyen19724@gmail.com
+    password: fqmzbchibszzugvx
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: true
+cc: null
+bcc: null
+reply_to: null
+body: helo

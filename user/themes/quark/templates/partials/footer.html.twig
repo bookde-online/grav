@@ -1,5 +1,97 @@
-<section id="footer" class="section bg-gray">
-    <section class="container {{ grid_size }}">
-        <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
-    </section>
+{% set page_con = page.find('/_config') %}
+{% set page_ser = page.find('/home/_services') %}
+{% import 'macros/macros_foot.html.twig' as macros %}
+
+
+<footer id="footer" class="footer dark-background">
+<section id="footer_section" class="section bg-gray">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 footer-about">
+          {% include 'partials/logo.html.twig' %}
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          {% if page_ser %}
+            {# <h4>Dịch vụ</h4> #}
+            <ul>
+              {% for service in page_ser.children %}
+                <li>
+                  <a href="{{ service.url }}">{{ service.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <ul>
+                  {{ macros.nav_loop(pages) }}
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+        
+          <a href="{{ page.find('/home').url }}" class="logo d-flex align-items-center">
+            {% if page_con.header.name %}
+              <span class="sitename">{{ page_con.header.name }}</span>
+            {% endif %}
+          </a>
+          <div class="footer-contact pt-3">
+            {% if page_con.header.address %}
+              <p>{{ page_con.header.address }}</p>
+            {% endif %}
+
+            {% if page_con.header.phone %}
+              <p class="mt-3">
+              <strong>
+                {% if grav.language.getActive == 'vi' %}
+                   Điện thoại:
+                {% else %}
+                    Phone:
+                {% endif %}
+              </strong> <span>{{ page_con.header.phone }}</span></p>
+            {% endif %}
+
+            {% if page_con.header.email %}
+              <p><strong>Email:</strong> <span>{{ page_con.header.email }}</span></p>
+            {% endif %}
+          </div>
+
+
+          {% if page_con.header.social %}
+            <div class="social-links d-flex mt-4">
+            {# {% if page_con.media %}
+                {% for media_item in page_con.media %}
+        <img src="{{ media_item.url }}" alt="{{ media_item.name }}">
+                {% endfor %}
+            {% else %}
+                <p>No media found.</p> #}
+
+              {% for social in page_con.header.social %}
+                  <a href="{{ social.link }}" title="{{ social.title }}">
+                      {% if social.image %}
+                          {% set image = social.image|first %}
+                          {% set page_url = page_con.url %}
+                          {% set full_url = page_url ~ '/' ~ image.name %}
+
+                          <img src="{{ full_url }}" alt="{{ social.title|e }}" style=" width: 24px; height: auto;">
+                      {% endif %}
+                  </a>
+              {% endfor %}
+
+            </div>
+            {% endif %}
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      {% if page_con.header.foot %}
+      <p>{{ page_con.header.foot|markdown }}</p>
+      {% endif %}
+    </div>
 </section>
+</footer>
+
+

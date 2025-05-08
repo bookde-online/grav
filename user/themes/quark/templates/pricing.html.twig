@@ -1,0 +1,36 @@
+{% extends 'partials/base-home.html.twig' %}
+
+{% block content %}
+{% include 'partials/place.html.twig' %}
+
+<section id="pricing" class="pricing section">
+      <div class="container">
+
+        <div class="row gy-4">
+                    {% for plan in page.header.pricing_plans %}
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="pricing-item">
+                            <h3 style="font-size: 25px;">{{ plan.name }}</h3>
+                            <h4><sup>{{plan.currency_unit}}</sup>{{ plan.price }}</h4>
+                            <p style="color: #858585; margin: 1rem 0;">{{ plan.duration }}</p>
+                            <h5 style="font-size: 20px; font-weight: 600;">{{ plan.features_title }}</h5>
+                            <a href="{{ page.find('/contact').url }}" class="cta-btn">{{ grav.language.getLanguage == 'en' ? 'Contact US' : 'Liên hệ ngay' }}</a><br>
+                            <ul>
+                                {% for feature in plan.features %}
+                                    <li>
+                                        <i class="{{ feature.icon }}" {% if feature.icon == 'bi bi-x' %}style="color: red;"{% endif %}></i>
+                                        <span>{{ feature.text|markdown }}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+        <!-- End Pricing Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+{% endblock %}

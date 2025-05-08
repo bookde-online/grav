@@ -12,6 +12,7 @@ namespace Grav;
 \define('GRAV_REQUEST_TIME', microtime(true));
 \define('GRAV_PHP_MIN', '7.3.6');
 
+
 if (PHP_SAPI === 'cli-server') {
     $symfony_server = stripos(getenv('_'), 'symfony') !== false || stripos($_SERVER['SERVER_SOFTWARE'] ?? '', 'symfony') !== false || stripos($_ENV['SERVER_SOFTWARE'] ?? '', 'symfony') !== false;
 
@@ -49,3 +50,81 @@ try {
     $grav->fireEvent('onFatalException', new Event(array('exception' => $e)));
     throw $e;
 }
+//SCHEMA for SEO
+/*?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BookDe",
+  "url": "/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ALLXONE",
+  "url": "/",
+  "logo": "/user/pages/07._config/logo.webp">
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-800-555-5555",
+    "contactType": "Customer Service"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "/en#services"
+    }
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pricing",
+      "item": "/price"
+    }
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "How it work",
+      "item": "/how-it-work"
+    }
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Blog",
+      "item": "/blog"
+    }
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Contact",
+      "item": "/contact"
+    }
+  ]
+}
+</script>*/
+
+
+

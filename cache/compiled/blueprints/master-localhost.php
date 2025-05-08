@@ -1,83 +1,95 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1742373297,
-    'checksum' => '3f6b83a1912af233d4f26d2106be7c9e',
+    'timestamp' => 1746610473,
+    'checksum' => '550d11c6268173eae32ff6cf3303be31',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
                 'file' => 'user/plugins/admin/blueprints/config/media.yaml',
-                'modified' => 1742373050
+                'modified' => 1743158561
             ]
         ],
         'system/blueprints/config' => [
             'backups' => [
                 'file' => 'system/blueprints/config/backups.yaml',
-                'modified' => 1742373027
+                'modified' => 1743158561
             ],
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1742373027
+                'modified' => 1743158561
             ],
             'scheduler' => [
                 'file' => 'system/blueprints/config/scheduler.yaml',
-                'modified' => 1742373027
+                'modified' => 1743158561
             ],
             'security' => [
                 'file' => 'system/blueprints/config/security.yaml',
-                'modified' => 1742373027
+                'modified' => 1743158561
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1742373027
+                'modified' => 1743158561
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1742373027
+                'modified' => 1743158561
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1742373027
+                'modified' => 1743158561
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1742373049
+                'modified' => 1743158561
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1742373078
+                'modified' => 1746498567
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1742373104
+                'modified' => 1743158563
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/blueprints.yaml',
-                'modified' => 1742373105
+                'modified' => 1743158564
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1742373092
+                'modified' => 1743158564
+            ],
+            'plugins/google-analytics' => [
+                'file' => 'user/plugins/google-analytics/blueprints.yaml',
+                'modified' => 1647312584
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/blueprints.yaml',
+                'modified' => 1683678796
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/blueprints.yaml',
-                'modified' => 1742373096
+                'modified' => 1743158564
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1742373075
+                'modified' => 1743158564
+            ],
+            'plugins/sitemap' => [
+                'file' => 'user/plugins/sitemap/blueprints.yaml',
+                'modified' => 1718596324
             ]
         ],
         'user/themes' => [
             'themes/quark' => [
                 'file' => 'user/themes/quark/blueprints.yaml',
-                'modified' => 1742373045
+                'modified' => 1743158565
             ]
         ]
     ],
@@ -4603,6 +4615,230 @@ return [
                 'name' => 'plugins.form.basic_captcha.type',
                 'validation' => 'strict'
             ],
+            'plugins.google-analytics' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.google-analytics.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.google-analytics.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.tracking_id' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.TACKING_ID',
+                'validate' => [
+                    'required' => true
+                ],
+                'name' => 'plugins.google-analytics.tracking_id',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.object_name' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.OBJECT_NAME',
+                'size' => 'small',
+                'name' => 'plugins.google-analytics.object_name',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.advertising_features' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.ADVERTISING_FEATURES',
+                'hightlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.google-analytics.advertising_features',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.blocked_ips' => [
+                'type' => 'array',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.BLOCKED_IPS',
+                'value_only' => true,
+                'name' => 'plugins.google-analytics.blocked_ips',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.anonymize_ip' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.ANONYMIZE_IP',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.google-analytics.anonymize_ip',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.do_not_track' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.DO_NOT_TRACK',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.google-analytics.do_not_track',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.opt_out' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.OPT_OUT',
+                'description' => 'PLUGIN_GOOGLE_ANALYTICS.OPT_OUT_DESCRIPTION',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.google-analytics.opt_out',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.cookie_domain' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.COOKIE_DOMAIN',
+                'size' => 'small',
+                'name' => 'plugins.google-analytics.cookie_domain',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.cookie_expires' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.COOKIE_EXPIRATION',
+                'append' => 'PLUGIN_GOOGLE_ANALYTICS.SECONDS',
+                'validate' => [
+                    'type' => 'number'
+                ],
+                'name' => 'plugins.google-analytics.cookie_expires',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.cookie_prefix' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.COOKIE_PREFIX',
+                'size' => 'small',
+                'name' => 'plugins.google-analytics.cookie_prefix',
+                'validation' => 'strict'
+            ],
+            'plugins.google-analytics.cookie_update' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GOOGLE_ANALYTICS.COOKIE_UPDATE',
+                'hightlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.google-analytics.cookie_update',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.langswitcher.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.langswitcher.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_LANGSWITCHER.BUILTIN_CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.langswitcher.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher.translated_urls' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_LANGSWITCHER.TRANSLATED_URLS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.langswitcher.translated_urls',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher.language_display' => [
+                'type' => 'select',
+                'size' => 'small',
+                'label' => 'PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY',
+                'default' => 'long',
+                'options' => [
+                    'long' => 'PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY_LONG',
+                    'short' => 'PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY_SHORT'
+                ],
+                'name' => 'plugins.langswitcher.language_display',
+                'validation' => 'strict'
+            ],
+            'plugins.langswitcher.untranslated_pages_behavior' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR',
+                'default' => 'none',
+                'options' => [
+                    'none' => 'PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR_OPTION_NONE',
+                    'redirect' => 'PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR_OPTION_REDIRECT',
+                    'hide' => 'PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR_OPTION_HIDE'
+                ],
+                'name' => 'plugins.langswitcher.untranslated_pages_behavior',
+                'validation' => 'strict'
+            ],
             'plugins.login' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5194,6 +5430,360 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.problems.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.sitemap.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.route' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'PLUGIN_SITEMAP.ROUTE',
+                'validate' => [
+                    'pattern' => '/([a-z-_]+/?)+'
+                ],
+                'name' => 'plugins.sitemap.route',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.multilang_enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.MULTILANG_ENABLED',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.multilang_enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.ignore_external' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.IGNORE_EXTERNAL',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.ignore_external',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.ignore_protected' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.IGNORE_PROTECTED',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.ignore_protected',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.ignore_redirect' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.IGNORE_REDIRECT',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.ignore_redirect',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.xsl_transform' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.XSL_TRANSFORM',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.xsl_transform',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.html_support' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.HTML_SUPPORT',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.html_support',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.ignores' => [
+                'type' => 'array',
+                'label' => 'PLUGIN_SITEMAP.IGNORES',
+                'value_only' => true,
+                'name' => 'plugins.sitemap.ignores',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.include_news_tags' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.INCLUDE_NEWS_TAGS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.include_news_tags',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.standalone_sitemap_news' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.STANDALONE_SITEMAP_NEWS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.standalone_sitemap_news',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.sitemap_news_path' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'PLUGIN_SITEMAP.SITEMAP_NEWS_PATH',
+                'name' => 'plugins.sitemap.sitemap_news_path',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.news_max_age_days' => [
+                'type' => 'number',
+                'default' => 2,
+                'size' => 'x-small',
+                'label' => 'PLUGIN_SITEMAP.NEWS_MAX_AGE_DAYS',
+                'append' => 'Days',
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.sitemap.news_max_age_days',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.news_enabled_paths' => [
+                'type' => 'array',
+                'label' => 'PLUGIN_SITEMAP.NEWS_TAG_PATHS',
+                'value_only' => true,
+                'name' => 'plugins.sitemap.news_enabled_paths',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.date_type' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_SITEMAP.DATE_TYPE',
+                'default' => 'page_date',
+                'size' => 'medium',
+                'options' => [
+                    'page_date' => 'PLUGIN_SITEMAP.DATE_TYPE_PAGE_DATE',
+                    'last_modified' => 'PLUGIN_SITEMAP.DATE_TYPE_LAST_MODIFIED'
+                ],
+                'name' => 'plugins.sitemap.date_type',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.include_changefreq' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.INCLUDE_CHANGEFREQ',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.include_changefreq',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.changefreq' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'PLUGIN_SITEMAP.CHANGEFREQ',
+                'default' => '',
+                'options' => [
+                    '' => 'PLUGIN_SITEMAP.CHANGEFREQ_DEFAULT',
+                    'always' => 'PLUGIN_SITEMAP.CHANGEFREQ_ALWAYS',
+                    'hourly' => 'PLUGIN_SITEMAP.CHANGEFREQ_HOURLY',
+                    'daily' => 'PLUGIN_SITEMAP.CHANGEFREQ_DAILY',
+                    'weekly' => 'PLUGIN_SITEMAP.CHANGEFREQ_WEEKLY',
+                    'monthly' => 'PLUGIN_SITEMAP.CHANGEFREQ_MONTHLY',
+                    'yearly' => 'PLUGIN_SITEMAP.CHANGEFREQ_YEARLY',
+                    'never' => 'PLUGIN_SITEMAP.CHANGEFREQ_NEVER'
+                ],
+                'name' => 'plugins.sitemap.changefreq',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.include_priority' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SITEMAP.INCLUDE_PRIORITY',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.sitemap.include_priority',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.priority' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_SITEMAP.PRIORITY',
+                'size' => 'small',
+                'default' => '',
+                'options' => [
+                    '' => 'PLUGIN_SITEMAP.PRIORITY_USE_GLOBAL',
+                    '0.1' => 0.1,
+                    '0.2' => 0.2,
+                    '0.3' => 0.3,
+                    '0.4' => 0.4,
+                    '0.5' => 0.5,
+                    '0.6' => 0.6,
+                    '0.7' => 0.7,
+                    '0.8' => 0.8,
+                    '0.9' => 0.9,
+                    '1.0' => 1.0
+                ],
+                'validate' => [
+                    'type' => 'float'
+                ],
+                'name' => 'plugins.sitemap.priority',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.additions' => [
+                'array' => true,
+                'type' => 'list',
+                'label' => 'PLUGIN_SITEMAP.ADDITIONS',
+                'name' => 'plugins.sitemap.additions',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.additions.*' => [
+                'type' => '_parent',
+                'name' => 'plugins.sitemap.additions.*',
+                'form_field' => false
+            ],
+            'plugins.sitemap.additions.*.location' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_SITEMAP.LOCATION',
+                'name' => 'plugins.sitemap.additions.*.location',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.additions.*.lastmod' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_SITEMAP.LASTMOD',
+                'name' => 'plugins.sitemap.additions.*.lastmod',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.additions.*.changefreq' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_SITEMAP.CHANGEFREQ',
+                'default' => '',
+                'options' => [
+                    '' => 'PLUGIN_SITEMAP.CHANGEFREQ_DEFAULT',
+                    'always' => 'PLUGIN_SITEMAP.CHANGEFREQ_ALWAYS',
+                    'hourly' => 'PLUGIN_SITEMAP.CHANGEFREQ_HOURLY',
+                    'daily' => 'PLUGIN_SITEMAP.CHANGEFREQ_DAILY',
+                    'weekly' => 'PLUGIN_SITEMAP.CHANGEFREQ_WEEKLY',
+                    'monthly' => 'PLUGIN_SITEMAP.CHANGEFREQ_MONTHLY',
+                    'yearly' => 'PLUGIN_SITEMAP.CHANGEFREQ_YEARLY',
+                    'never' => 'PLUGIN_SITEMAP.CHANGEFREQ_NEVER'
+                ],
+                'name' => 'plugins.sitemap.additions.*.changefreq',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.additions.*.priority' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_SITEMAP.PRIORITY',
+                'default' => '',
+                'options' => [
+                    '' => 'PLUGIN_SITEMAP.PRIORITY_USE_GLOBAL',
+                    '0.1' => 0.1,
+                    '0.2' => 0.2,
+                    '0.3' => 0.3,
+                    '0.4' => 0.4,
+                    '0.5' => 0.5,
+                    '0.6' => 0.6,
+                    '0.7' => 0.7,
+                    '0.8' => 0.8,
+                    '0.9' => 0.9,
+                    '1.0' => 1.0
+                ],
+                'validate' => [
+                    'type' => 'float'
+                ],
+                'name' => 'plugins.sitemap.additions.*.priority',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.urlset' => [
+                'type' => 'text',
+                'default' => 'http://www.sitemaps.org/schemas/sitemap/0.9',
+                'label' => 'PLUGIN_SITEMAP.URLSET',
+                'name' => 'plugins.sitemap.urlset',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.urlimageset' => [
+                'type' => 'text',
+                'default' => 'http://www.google.com/schemas/sitemap-image/1.1',
+                'label' => 'PLUGIN_SITEMAP.URLIMAGESET',
+                'name' => 'plugins.sitemap.urlimageset',
+                'validation' => 'strict'
+            ],
+            'plugins.sitemap.urlnewsset' => [
+                'type' => 'text',
+                'default' => 'http://www.google.com/schemas/sitemap-news/0.9',
+                'label' => 'PLUGIN_SITEMAP.URLNEWSSET',
+                'name' => 'plugins.sitemap.urlnewsset',
                 'validation' => 'strict'
             ],
             'themes.quark' => [
@@ -5907,6 +6497,27 @@ return [
                         ]
                     ]
                 ],
+                'google-analytics' => [
+                    'enabled' => 'plugins.google-analytics.enabled',
+                    'tracking_id' => 'plugins.google-analytics.tracking_id',
+                    'object_name' => 'plugins.google-analytics.object_name',
+                    'advertising_features' => 'plugins.google-analytics.advertising_features',
+                    'blocked_ips' => 'plugins.google-analytics.blocked_ips',
+                    'anonymize_ip' => 'plugins.google-analytics.anonymize_ip',
+                    'do_not_track' => 'plugins.google-analytics.do_not_track',
+                    'opt_out' => 'plugins.google-analytics.opt_out',
+                    'cookie_domain' => 'plugins.google-analytics.cookie_domain',
+                    'cookie_expires' => 'plugins.google-analytics.cookie_expires',
+                    'cookie_prefix' => 'plugins.google-analytics.cookie_prefix',
+                    'cookie_update' => 'plugins.google-analytics.cookie_update'
+                ],
+                'langswitcher' => [
+                    'enabled' => 'plugins.langswitcher.enabled',
+                    'built_in_css' => 'plugins.langswitcher.built_in_css',
+                    'translated_urls' => 'plugins.langswitcher.translated_urls',
+                    'language_display' => 'plugins.langswitcher.language_display',
+                    'untranslated_pages_behavior' => 'plugins.langswitcher.untranslated_pages_behavior'
+                ],
                 'login' => [
                     'enabled' => 'plugins.login.enabled',
                     'built_in_css' => 'plugins.login.built_in_css',
@@ -5967,6 +6578,38 @@ return [
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
+                ],
+                'sitemap' => [
+                    'enabled' => 'plugins.sitemap.enabled',
+                    'route' => 'plugins.sitemap.route',
+                    'multilang_enabled' => 'plugins.sitemap.multilang_enabled',
+                    'ignore_external' => 'plugins.sitemap.ignore_external',
+                    'ignore_protected' => 'plugins.sitemap.ignore_protected',
+                    'ignore_redirect' => 'plugins.sitemap.ignore_redirect',
+                    'xsl_transform' => 'plugins.sitemap.xsl_transform',
+                    'html_support' => 'plugins.sitemap.html_support',
+                    'ignores' => 'plugins.sitemap.ignores',
+                    'include_news_tags' => 'plugins.sitemap.include_news_tags',
+                    'standalone_sitemap_news' => 'plugins.sitemap.standalone_sitemap_news',
+                    'sitemap_news_path' => 'plugins.sitemap.sitemap_news_path',
+                    'news_max_age_days' => 'plugins.sitemap.news_max_age_days',
+                    'news_enabled_paths' => 'plugins.sitemap.news_enabled_paths',
+                    'date_type' => 'plugins.sitemap.date_type',
+                    'include_changefreq' => 'plugins.sitemap.include_changefreq',
+                    'changefreq' => 'plugins.sitemap.changefreq',
+                    'include_priority' => 'plugins.sitemap.include_priority',
+                    'priority' => 'plugins.sitemap.priority',
+                    'additions' => [
+                        '*' => [
+                            'location' => 'plugins.sitemap.additions.*.location',
+                            'lastmod' => 'plugins.sitemap.additions.*.lastmod',
+                            'changefreq' => 'plugins.sitemap.additions.*.changefreq',
+                            'priority' => 'plugins.sitemap.additions.*.priority'
+                        ]
+                    ],
+                    'urlset' => 'plugins.sitemap.urlset',
+                    'urlimageset' => 'plugins.sitemap.urlimageset',
+                    'urlnewsset' => 'plugins.sitemap.urlnewsset'
                 ]
             ],
             'themes' => [

@@ -1,513 +1,531 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1742373214,
-    'checksum' => 'df94b64065fd9e0107b6669759cfeefd',
+    'timestamp' => 1746610468,
+    'checksum' => '75f5b821640675a3560cec92c9068477',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'bg' => [
                 'file' => 'system/languages/bg.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'eo' => [
                 'file' => 'system/languages/eo.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'et' => [
                 'file' => 'system/languages/et.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'eu' => [
                 'file' => 'system/languages/eu.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'fa' => [
                 'file' => 'system/languages/fa.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'gl' => [
                 'file' => 'system/languages/gl.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'he' => [
                 'file' => 'system/languages/he.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'id' => [
                 'file' => 'system/languages/id.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'is' => [
                 'file' => 'system/languages/is.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'ko' => [
                 'file' => 'system/languages/ko.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'lv' => [
                 'file' => 'system/languages/lv.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'mn' => [
                 'file' => 'system/languages/mn.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'my' => [
                 'file' => 'system/languages/my.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'si' => [
                 'file' => 'system/languages/si.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'sl' => [
                 'file' => 'system/languages/sl.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'sr' => [
                 'file' => 'system/languages/sr.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'sw' => [
                 'file' => 'system/languages/sw.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'zh' => [
                 'file' => 'system/languages/zh.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'zh-cn' => [
                 'file' => 'system/languages/zh-cn.yaml',
-                'modified' => 1742373030
+                'modified' => 1743158561
             ],
             'zh-tw' => [
                 'file' => 'system/languages/zh-tw.yaml',
-                'modified' => 1742373031
+                'modified' => 1743158561
             ]
         ],
         'user/plugins' => [
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
-                'modified' => 1742373078
+                'modified' => 1746498567
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1742373104
+                'modified' => 1743158563
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1742373092
+                'modified' => 1743158564
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/languages.yaml',
+                'modified' => 1683678796
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/languages.yaml',
-                'modified' => 1742373096
+                'modified' => 1743158564
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/languages.yaml',
-                'modified' => 1742373075
+                'modified' => 1743158564
+            ],
+            'plugins/sitemap' => [
+                'file' => 'user/plugins/sitemap/languages.yaml',
+                'modified' => 1718596324
             ]
         ],
         'user/plugins/admin/languages' => [
             'ar' => [
                 'file' => 'user/plugins/admin/languages/ar.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'bg' => [
                 'file' => 'user/plugins/admin/languages/bg.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'bn' => [
                 'file' => 'user/plugins/admin/languages/bn.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'br' => [
                 'file' => 'user/plugins/admin/languages/br.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'ca' => [
                 'file' => 'user/plugins/admin/languages/ca.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'cs' => [
                 'file' => 'user/plugins/admin/languages/cs.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'cy' => [
                 'file' => 'user/plugins/admin/languages/cy.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'da' => [
                 'file' => 'user/plugins/admin/languages/da.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'de' => [
                 'file' => 'user/plugins/admin/languages/de.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'el' => [
                 'file' => 'user/plugins/admin/languages/el.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'en' => [
                 'file' => 'user/plugins/admin/languages/en.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'eo' => [
                 'file' => 'user/plugins/admin/languages/eo.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'es' => [
                 'file' => 'user/plugins/admin/languages/es.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'et' => [
                 'file' => 'user/plugins/admin/languages/et.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'eu' => [
                 'file' => 'user/plugins/admin/languages/eu.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'fa' => [
                 'file' => 'user/plugins/admin/languages/fa.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'fi' => [
                 'file' => 'user/plugins/admin/languages/fi.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'fr' => [
                 'file' => 'user/plugins/admin/languages/fr.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'gl' => [
                 'file' => 'user/plugins/admin/languages/gl.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'he' => [
                 'file' => 'user/plugins/admin/languages/he.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'hr' => [
                 'file' => 'user/plugins/admin/languages/hr.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'hu' => [
                 'file' => 'user/plugins/admin/languages/hu.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'id' => [
                 'file' => 'user/plugins/admin/languages/id.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'it' => [
                 'file' => 'user/plugins/admin/languages/it.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'ja' => [
                 'file' => 'user/plugins/admin/languages/ja.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'km' => [
                 'file' => 'user/plugins/admin/languages/km.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'ko' => [
                 'file' => 'user/plugins/admin/languages/ko.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'ku' => [
                 'file' => 'user/plugins/admin/languages/ku.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'lt' => [
                 'file' => 'user/plugins/admin/languages/lt.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'lv' => [
                 'file' => 'user/plugins/admin/languages/lv.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'mn' => [
                 'file' => 'user/plugins/admin/languages/mn.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'my' => [
                 'file' => 'user/plugins/admin/languages/my.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'nl' => [
                 'file' => 'user/plugins/admin/languages/nl.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'no' => [
                 'file' => 'user/plugins/admin/languages/no.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'pl' => [
                 'file' => 'user/plugins/admin/languages/pl.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'pt' => [
                 'file' => 'user/plugins/admin/languages/pt.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'ro' => [
                 'file' => 'user/plugins/admin/languages/ro.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'ru' => [
                 'file' => 'user/plugins/admin/languages/ru.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'si' => [
                 'file' => 'user/plugins/admin/languages/si.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'sk' => [
                 'file' => 'user/plugins/admin/languages/sk.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'sl' => [
                 'file' => 'user/plugins/admin/languages/sl.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158561
             ],
             'sr' => [
                 'file' => 'user/plugins/admin/languages/sr.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'sv' => [
                 'file' => 'user/plugins/admin/languages/sv.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158561
             ],
             'sw' => [
                 'file' => 'user/plugins/admin/languages/sw.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158562
             ],
             'th' => [
                 'file' => 'user/plugins/admin/languages/th.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158562
             ],
             'tlh' => [
                 'file' => 'user/plugins/admin/languages/tlh.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158562
             ],
             'tr' => [
                 'file' => 'user/plugins/admin/languages/tr.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158562
             ],
             'uk' => [
                 'file' => 'user/plugins/admin/languages/uk.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158562
             ],
             'vi' => [
                 'file' => 'user/plugins/admin/languages/vi.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158562
             ],
             'zh' => [
                 'file' => 'user/plugins/admin/languages/zh.yaml',
-                'modified' => 1742373061
+                'modified' => 1743158562
             ],
             'zh-cn' => [
                 'file' => 'user/plugins/admin/languages/zh-cn.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158562
             ],
             'zh-tw' => [
                 'file' => 'user/plugins/admin/languages/zh-tw.yaml',
-                'modified' => 1742373062
+                'modified' => 1743158562
             ]
         ],
         'user/plugins/flex-objects/languages' => [
             'de' => [
                 'file' => 'user/plugins/flex-objects/languages/de.yaml',
-                'modified' => 1742373106
+                'modified' => 1743158564
             ],
             'en' => [
                 'file' => 'user/plugins/flex-objects/languages/en.yaml',
-                'modified' => 1742373106
+                'modified' => 1743158564
             ],
             'es' => [
                 'file' => 'user/plugins/flex-objects/languages/es.yaml',
-                'modified' => 1742373106
+                'modified' => 1743158564
             ],
             'ja' => [
                 'file' => 'user/plugins/flex-objects/languages/ja.yaml',
-                'modified' => 1742373106
+                'modified' => 1743158564
             ],
             'nl' => [
                 'file' => 'user/plugins/flex-objects/languages/nl.yaml',
-                'modified' => 1742373106
+                'modified' => 1743158564
             ],
             'ru' => [
                 'file' => 'user/plugins/flex-objects/languages/ru.yaml',
-                'modified' => 1742373106
+                'modified' => 1743158564
+            ]
+        ],
+        'user/plugins/google-analytics/languages' => [
+            'de' => [
+                'file' => 'user/plugins/google-analytics/languages/de.yaml',
+                'modified' => 1647312584
+            ],
+            'en' => [
+                'file' => 'user/plugins/google-analytics/languages/en.yaml',
+                'modified' => 1647312584
             ]
         ],
         'user/plugins/login/languages' => [
             'de' => [
                 'file' => 'user/plugins/login/languages/de.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'en' => [
                 'file' => 'user/plugins/login/languages/en.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'es' => [
                 'file' => 'user/plugins/login/languages/es.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'fr' => [
                 'file' => 'user/plugins/login/languages/fr.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'hr' => [
                 'file' => 'user/plugins/login/languages/hr.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'hu' => [
                 'file' => 'user/plugins/login/languages/hu.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'lt' => [
                 'file' => 'user/plugins/login/languages/lt.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'no' => [
                 'file' => 'user/plugins/login/languages/no.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'pt-BR' => [
                 'file' => 'user/plugins/login/languages/pt-BR.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'ro' => [
                 'file' => 'user/plugins/login/languages/ro.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'ru' => [
                 'file' => 'user/plugins/login/languages/ru.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'uk' => [
                 'file' => 'user/plugins/login/languages/uk.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ],
             'zh' => [
                 'file' => 'user/plugins/login/languages/zh.yaml',
-                'modified' => 1742373097
+                'modified' => 1743158564
             ]
         ]
     ],
@@ -649,6 +667,35 @@ return [
                 'ENTER_PASSWORD_AGAIN' => 'Enter the password again',
                 'REGISTRATION_THANK_YOU' => 'Thank you for registering.',
                 'USER_ACCOUNT_DISABLED' => 'Your user account is disabled or it has not yet been activated.'
+            ],
+            'PLUGIN_GOOGLE_ANALYTICS' => [
+                'ADVERTISING_FEATURES' => 'Werbefunktionen',
+                'ADVERTISING_FEATURES_HELP' => 'Da die Webefunktionen im Google Analytics Adminbereich aktiviert werden, können Sie hier programmatisch deaktiviert werden',
+                'ANONYMIZE_IP' => 'IP-Anonymisierung',
+                'ANONYMIZE_IP_HELP' => 'Anonymisierung der IP-Adressen welche an Google Analytics gesendet werden',
+                'BLOCKED_IPS' => 'Blockierte IP-Adressen',
+                'BLOCKED_IPS_HELP' => 'Für die angegebenen IP-Adressen wird der Google Analytics Code nicht eingebunden',
+                'COOKIE_DOMAIN' => 'Domain',
+                'COOKIE_DOMAIN_HELP' => 'Überschreiben der autom. Domain-Konfiguration des Cookies',
+                'COOKIE_EXPIRATION' => 'Haltbarkeitszeit',
+                'COOKIE_EXPIRATION_HELP' => 'Haltbarkeitszeit des Cookies in Sekunden. Standard sind 28 Tage',
+                'COOKIE_PREFIX' => 'Präfix',
+                'COOKIE_PREFIX_HELP' => 'Um Namenskonflikte zu vermeiden, kann der Präfix des Cookies umbenannt werden',
+                'COOKIE_UPDATE' => 'Aktualisierung',
+                'COOKIE_UPDATE_HELP' => 'Im Falle von "Deaktiviert", wird das Cookie nicht bei jedem Seitenaufruf aktualisiert',
+                'DO_NOT_TRACK' => 'Do Not Track (DNT)',
+                'DO_NOT_TRACK_HELP' => 'Google Analytics wird nicht eingebunden, wenn der Browser den DNT Parameter sendet',
+                'OBJECT_NAME' => 'Globales gtag() Objekt',
+                'OBJECT_NAME_HELP' => 'Um Namenskonflikte zu vermeiden, kann das globale gtag() Objekt umbenannt werden',
+                'OPT_OUT' => 'Unterstützung für Opt-Out Nutzer',
+                'OPT_OUT_HELP' => 'Bei der Möglichkeit, sich von Google Analytics abzumelden, kann Google Analytics temporär deaktiviert werden ohne es zu entfernen',
+                'OPT_OUT_DESCRIPTION' => 'Um Google Analytics zu aktivieren, muss im Code folgende Fenstereigenschaft auf <b>false</b> gesetzt werden:<br><code>window[\'ga-disable-<b>UA-00000000-1</b>\'] = <b>false</b>;</code> <a href="https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out">&rarr; Mehr Info</a>',
+                'PRIVACY' => 'Privatsphäre',
+                'SECONDS' => 'Sekunden',
+                'SECTION_ADVANCED' => 'Erweiterte Einstellungen',
+                'SECTION_COOKIE' => 'Cookie',
+                'TACKING_ID' => 'Tracking-ID',
+                'TACKING_ID_HELP' => 'Google Analytics Tracking-ID'
             ],
             'PLUGIN_FLEX_OBJECTS' => [
                 'PLUGIN_NAME' => 'Flex Objects',
@@ -1934,6 +1981,31 @@ Sie haben **2FA** für dieses Konto aktiviert. Bitte benutzen Sie Ihre **2FA** A
                 'INVALID_MIME_TYPE' => 'Der MIME-Typ %s für die Datei %s ist nicht erlaubt.',
                 'INVALID_FILE_EXTENSION' => 'Die Dateiendung %s ist nicht erlaubt.'
             ],
+            'PLUGIN_SITEMAP' => [
+                'SITEMAP' => 'Sitemap',
+                'HEADER_CHANGEFREQ' => 'Sitemap Änderungsfrequenz',
+                'HEADER_PRIORITY' => 'Sitemap Priorität',
+                'CHANGEFREQ' => 'Global - Sitemap Änderungsfrequenz',
+                'CHANGEFREQ_DEFAULT' => 'Benutze Global (Täglich)',
+                'CHANGEFREQ_ALWAYS' => 'Immer',
+                'CHANGEFREQ_HOURLY' => 'Stündlich',
+                'CHANGEFREQ_DAILY' => 'Täglich',
+                'CHANGEFREQ_WEEKLY' => 'Wöchentlich',
+                'CHANGEFREQ_MONTHLY' => 'Monatlich',
+                'CHANGEFREQ_YEARLY' => 'Jährlich',
+                'CHANGEFREQ_NEVER' => 'Nie',
+                'PRIORITY' => 'Global - Sitemap Priorität',
+                'PRIORITY_USE_GLOBAL' => 'Benutze Global (1)',
+                'ROUTE' => 'Pfad zur Sitemap',
+                'IGNORES' => 'Ignorieren',
+                'IGNORES_HELP' => 'Zu ignorierende URLs (Um alle Unterseiten einer URL zu ignorieren, können Sie Regex nutzen und ".*" an die zu ignorierende URL anhängen)',
+                'ADDITIONS' => 'Zusätzliche URLs',
+                'ADDITIONS_HELP' => 'Füge externe URLs zur Sitemap hinzu',
+                'LOCATION' => 'Seiten Pfad',
+                'LASTMOD' => 'Letzte Änderung e.g. 2017-04-06',
+                'MULTILANG_ENABLED' => 'Mehrsprachigkeit',
+                'MULTILANG_ENABLED_HELP' => 'Aktiviert Funktionen zur Mehrsprachigkeit'
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -2267,6 +2339,34 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'HOST_WARNING' => '<div style="background-color: #FFEDAD; color: #725F1C; border: 1px solid #FFD74E; padding: 10px; margin: 10px 0; border-radius: 5px;">NOTE: If you did not initiate this email or you don\'t recognize the originating site: <strong>"%s"</strong> please ignore or delete this email.</div>',
                 'SITE_HOST' => 'Site Host',
                 'SITE_HOST_HELP' => 'For extra security, force this URL to be used in all password reset and activation emails. Leave empty to use the default site URL'
+            ],
+            'PLUGIN_GOOGLE_ANALYTICS' => [
+                'ADVERTISING_FEATURES' => 'Disable advertising features',
+                'ADVERTISING_FEATURES_HELP' => 'Because advertising features can be enabled through your Google Analytics admin settings, you can disable them programmatically',
+                'ANONYMIZE_IP' => 'IP Anonymization',
+                'ANONYMIZE_IP_HELP' => 'Anonymize the IP addresses of hits sent to Google Analytics',
+                'BLOCKED_IPS' => 'Blocked IP addresses',
+                'BLOCKED_IPS_HELP' => 'For the given IP addresses the Google Analytics code will not be embedded',
+                'COOKIE_DOMAIN' => 'Domain',
+                'COOKIE_DOMAIN_HELP' => 'Override the automatic cookie domain configuration',
+                'COOKIE_EXPIRATION' => 'Expiration',
+                'COOKIE_EXPIRATION_HELP' => 'Cookie expiration time in seconds. Default is 28 days',
+                'COOKIE_PREFIX' => 'Prefix',
+                'COOKIE_PREFIX_HELP' => 'Rename the cookie prefix to avoid name conflicts',
+                'COOKIE_UPDATE' => 'Update',
+                'COOKIE_UPDATE_HELP' => 'When set to false, cookies are not updated on each page load',
+                'DO_NOT_TRACK' => 'Do Not Track (DNT)',
+                'DO_NOT_TRACK_HELP' => 'Google Analytics will not be embedded if the Browser sends the DNT parameter',
+                'OBJECT_NAME' => 'Global gtag() Object',
+                'OBJECT_NAME_HELP' => 'Rename the global gtag() object to avoid name conflicts',
+                'OPT_OUT' => 'Support for opted-out users',
+                'OPT_OUT_HELP' => 'Disable Google Analytics without removing the gtag.js tag. For example if your site has an option for the user to opt-out of Google Analytics',
+                'OPT_OUT_DESCRIPTION' => 'To enable Google Analytics programmatically, set the following window property to <b>false</b>:<br><code>window[\'ga-disable-<b>UA-00000000-1</b>\'] = <b>false</b>;</code> <a href="https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out">&rarr; More info</a>',
+                'PRIVACY' => 'Privacy',
+                'SECTION_ADVANCED' => 'Advanced',
+                'SECTION_COOKIE' => 'Cookie',
+                'TACKING_ID' => 'Tracking ID',
+                'TACKING_ID_HELP' => 'Google Analytics Tracking ID'
             ],
             'PLUGIN_FLEX_OBJECTS' => [
                 'PLUGIN_NAME' => 'Flex Objects',
@@ -3651,6 +3751,21 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'MODULAR_FORM_FIX' => 'Modular Form Fix',
                 'MODULAR_FORM_FIX_HELP' => 'Fixes the issue with modular forms not finding the correct form automatically'
             ],
+            'PLUGIN_LANGSWITCHER' => [
+                'BUILTIN_CSS' => 'Use built in CSS',
+                'BUILTIN_CSS_HELP' => 'Include the CSS provided by the LangSwitcher plugin.',
+                'UNTRANSLATED_PAGES_BEHAVIOR' => 'Untranslated pages behavior',
+                'UNTRANSLATED_PAGES_BEHAVIOR_HELP' => 'Determine what to do with a language link when the current page doesn\'t exist in that language or it exists but it\'s not published.',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_NONE' => 'Show language (default)',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_REDIRECT' => 'Show language, link to home route',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_HIDE' => 'Hide language',
+                'LANGUAGE_DISPLAY' => 'Language Display',
+                'LANGUAGE_DISPLAY_HELP' => 'The format of the language display, either "long" (e.g. English), or "short" (e.g. EN)',
+                'LANGUAGE_DISPLAY_LONG' => 'Long',
+                'LANGUAGE_DISPLAY_SHORT' => 'Short',
+                'TRANSLATED_URLS' => 'Translated URLs',
+                'TRANSLATED_URLS_HELP' => 'Use the actual translated page URL rather then the raw-route'
+            ],
             'PLUGIN_MARKDOWN_NOTICES' => [
                 'USE_BUILT_IN_CSS' => 'Use built-in CSS',
                 'BASE_CLASSES' => 'Base classes',
@@ -3663,6 +3778,67 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Use built in CSS',
                 'BUILTIN_CSS_HELP' => 'Include the CSS provided by the Problems plugin'
+            ],
+            'PLUGIN_SITEMAP' => [
+                'SITEMAP' => 'Sitemap',
+                'HEADER_IGNORE' => 'Sitemap ignore page',
+                'HEADER_LASTMOD' => 'Sitemap Last Modified',
+                'HEADER_CHANGEFREQ' => 'Sitemap Change Frequency',
+                'HEADER_PRIORITY' => 'Sitemap priority',
+                'CHANGEFREQ' => 'Global - Sitemap Change Frequency',
+                'CHANGEFREQ_DEFAULT' => 'Use Global (daily)',
+                'CHANGEFREQ_ALWAYS' => 'Always',
+                'CHANGEFREQ_HOURLY' => 'Hourly',
+                'CHANGEFREQ_DAILY' => 'Daily',
+                'CHANGEFREQ_WEEKLY' => 'Weekly',
+                'CHANGEFREQ_MONTHLY' => 'Monthly',
+                'CHANGEFREQ_YEARLY' => 'Yearly',
+                'CHANGEFREQ_NEVER' => 'Never',
+                'PRIORITY' => 'Global - Sitemap Priority',
+                'PRIORITY_USE_GLOBAL' => 'Use Global (1)',
+                'ROUTE' => 'Route to Sitemap',
+                'IGNORES' => 'Ignore URLs',
+                'IGNORES_HELP' => 'URLs to ignore (You can ignore all children of a path by using regex and appending ".*" to the ignore path)',
+                'ADDITIONS' => 'Additional URLs',
+                'ADDITIONS_HELP' => 'Add external URLs to the sitemap',
+                'LOCATION' => 'The URL location',
+                'LASTMOD' => 'Last modification e.g. 2017-04-06',
+                'IGNORE_EXTERNAL' => 'Ignore External URLs',
+                'IGNORE_EXTERNAL_HELP' => 'By default Sitemap hides pages that have an `external` URL',
+                'IGNORE_PROTECTED' => 'Ignore Protected Pages',
+                'IGNORE_PROTECTED_HELP' => 'Ignore pages that custom "access" set to protect them via a login',
+                'IGNORE_REDIRECT' => 'Ignore Redirect Pages',
+                'IGNORE_REDIRECT_HELP' => 'Ignores pages that have a custom "redirect" entry in the header',
+                'URLSET' => 'URLSet',
+                'URLSET_HELP' => 'The URLSet XML Namespace',
+                'URLIMAGESET' => 'URLImageSet',
+                'URLIMAGESET_HELP' => 'The URLImageSet XML Namespace,',
+                'URLNEWSSET' => 'URLNewsSet',
+                'URLNEWSSET_HELP' => 'The URLNewsSet XML Namespace',
+                'INCLUDE_NEWS_TAGS' => 'Include News Tags',
+                'NEWS_MAX_AGE_DAYS' => 'News Max Age (Days)',
+                'NEWS_TAG_PATHS' => 'News Enabled Paths',
+                'MULTILANG_ENABLED' => 'Multi-Lang Features',
+                'MULTILANG_ENABLED_HELP' => 'Enables support for multilanguage features',
+                'INCLUDE_CHANGEFREQ' => 'Include Change Frequency',
+                'INCLUDE_PRIORITY' => 'Include Priority',
+                'SHORT_DATE_FORMAT' => 'Short Date Format',
+                'SHORT_DATE_FORMAT_HELP' => 'Use Short or Long Date format',
+                'HTML_SUPPORT' => 'HTML Support',
+                'HTML_SUPPORT_HELP' => 'Use "sitemap.html.twig" if no extension or ".html" passed in the URL',
+                'TITLE_LOCATION' => 'Location',
+                'TITLE_TITLE' => 'Title',
+                'TITLE_LASTMOD' => 'Last Modified',
+                'UNTITLED' => 'Untitled',
+                'XSL_TRANSFORM' => 'XSL Transform',
+                'XSL_TRANSFORM_HELP' => 'Use XSL stylesheets to transform the XML output when viewing in a browser',
+                'DATE_TYPE' => 'Date Type',
+                'DATE_TYPE_PAGE_DATE' => 'Page Date',
+                'DATE_TYPE_LAST_MODIFIED' => 'Last Modified',
+                'STANDALONE_SITEMAP_NEWS' => 'Standalone News URLs',
+                'STANDALONE_SITEMAP_NEWS_HELP' => 'Create a standalone sitemap-news.xml file for each news-enabled path',
+                'SITEMAP_NEWS_PATH' => 'Sitemap News Path',
+                'SITEMAP_NEWS_PATH_HELP' => 'The path to the Sitemap News file'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -13384,6 +13560,15 @@ Calea: `%2$s`
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не принимается.',
                 'INVALID_FILE_EXTENSION' => 'Расширение файла %s не является допустимым для файла.'
             ],
+            'PLUGIN_LANGSWITCHER' => [
+                'BUILTIN_CSS' => 'Использовать встроенный CSS',
+                'BUILTIN_CSS_HELP' => 'Использовать CSS, предоставленный плагином LangSwitcher.',
+                'UNTRANSLATED_PAGES_BEHAVIOR' => 'Поведение непереведенных страниц',
+                'UNTRANSLATED_PAGES_BEHAVIOR_HELP' => 'Определяет что делать с языковой ссылкой, если текущая страница не существует на этом языке или существует, но не опубликована.',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_NONE' => 'Показать язык (по умолчанию)',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_REDIRECT' => 'Показать язык, ссылка на домашнюю страницу',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_HIDE' => 'Скрыть язык'
+            ],
             'PLUGIN_MARKDOWN_NOTICES' => [
                 'USE_BUILT_IN_CSS' => 'Использовать встроенный CSS',
                 'BASE_CLASSES' => 'Базовые классы',
@@ -13396,6 +13581,29 @@ Calea: `%2$s`
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Использовать встроенный CSS',
                 'BUILTIN_CSS_HELP' => 'Использовать CSS, предоставленный плагином Problems'
+            ],
+            'PLUGIN_SITEMAP' => [
+                'SITEMAP' => 'Карта сайта',
+                'HEADER_CHANGEFREQ' => 'Частота обновления карты сайта',
+                'HEADER_PRIORITY' => 'Приоритет карты сайта',
+                'CHANGEFREQ' => 'Глобальное - частота обновления карты сайта',
+                'CHANGEFREQ_DEFAULT' => 'Использовать глобальное (ежедневно)',
+                'CHANGEFREQ_ALWAYS' => 'Всегда',
+                'CHANGEFREQ_HOURLY' => 'Ежечасно',
+                'CHANGEFREQ_DAILY' => 'Ежедневно',
+                'CHANGEFREQ_WEEKLY' => 'Еженедельно',
+                'CHANGEFREQ_MONTHLY' => 'Ежемесячно',
+                'CHANGEFREQ_YEARLY' => 'Ежегодно',
+                'CHANGEFREQ_NEVER' => 'Никогда',
+                'PRIORITY' => 'Глобальное - приоритет карты сайта',
+                'PRIORITY_USE_GLOBAL' => 'Использовать глобальное (1)',
+                'ROUTE' => 'Маршрут к карте сайта',
+                'IGNORES' => 'Игнорировать',
+                'IGNORES_HELP' => 'URL-адреса для игнорирования (Вы можете игнорировать всех дочерних элементов пути, используя регекс и добавляя ".*" к игнорируемому пути).',
+                'ADDITIONS' => 'Дополнительные URL',
+                'ADDITIONS_HELP' => 'Добавить внешние URL в карту сайта',
+                'LOCATION' => 'Расположение URL',
+                'LASTMOD' => 'Последнее изменение, например 2017-04-06'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -14406,6 +14614,15 @@ title: %1$s
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не приймається.',
                 'INVALID_FILE_EXTENSION' => 'Розширення файлу %s не є допустимим для файлу.'
             ],
+            'PLUGIN_LANGSWITCHER' => [
+                'BUILTIN_CSS' => 'Використовувати вбудований CSS',
+                'BUILTIN_CSS_HELP' => 'Використовувати CSS, наданий плагіном LangSwitcher.',
+                'UNTRANSLATED_PAGES_BEHAVIOR' => 'Поведінка неперекладених сторінок',
+                'UNTRANSLATED_PAGES_BEHAVIOR_HELP' => 'Визначає що робити з посиланням на мову, якщо поточна сторінка не існує на цій мові або існує, але не опублікована.',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_NONE' => 'Показати мову (за умовчанням)',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_REDIRECT' => 'Показати мову, посилання на домашню сторінку',
+                'UNTRANSLATED_PAGES_BEHAVIOR_OPTION_HIDE' => 'Приховати мову'
+            ],
             'PLUGIN_MARKDOWN_NOTICES' => [
                 'USE_BUILT_IN_CSS' => 'Використовувати вбудований CSS',
                 'BASE_CLASSES' => 'Базові класи',
@@ -14418,6 +14635,29 @@ title: %1$s
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Використовувати вбудований CSS',
                 'BUILTIN_CSS_HELP' => 'Використовувати CSS, наданий плагіном Problems'
+            ],
+            'PLUGIN_SITEMAP' => [
+                'SITEMAP' => 'Карта сайту',
+                'HEADER_CHANGEFREQ' => 'Частота оновлення карти сайту',
+                'HEADER_PRIORITY' => 'Пріоритет карти сайту',
+                'CHANGEFREQ' => 'Глобальне - частота оновлення карти сайту',
+                'CHANGEFREQ_DEFAULT' => 'Використовувати глобальне (щодня)',
+                'CHANGEFREQ_ALWAYS' => 'Завжди',
+                'CHANGEFREQ_HOURLY' => 'Погодинно',
+                'CHANGEFREQ_DAILY' => 'Щодня',
+                'CHANGEFREQ_WEEKLY' => 'Щотижня',
+                'CHANGEFREQ_MONTHLY' => 'Щомісячно',
+                'CHANGEFREQ_YEARLY' => 'Щорічно',
+                'CHANGEFREQ_NEVER' => 'Ніколи',
+                'PRIORITY' => 'Глобальне - пріоритет карта сайту',
+                'PRIORITY_USE_GLOBAL' => 'Використовувати глобальний (1)',
+                'ROUTE' => 'Маршрут до карти сайту',
+                'IGNORES' => 'Ігнорувати',
+                'IGNORES_HELP' => 'URL-адреси для ігнорування',
+                'ADDITIONS' => 'Додаткові URL-адреси',
+                'ADDITIONS_HELP' => 'Додати зовнішні URL-адреси до карти сайту',
+                'LOCATION' => 'Розташування URL-адреси',
+                'LASTMOD' => 'Остання модифікація, напр. 2017-04-06'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -15791,6 +16031,29 @@ Path: `%2$s`
             'PLUGIN_ERROR' => [
                 'ERROR' => '错误',
                 'ERROR_MESSAGE' => '呃，似乎这个页面不存在。'
+            ],
+            'PLUGIN_SITEMAP' => [
+                'SITEMAP' => '网站地图',
+                'HEADER_CHANGEFREQ' => '网站地图变更频率',
+                'HEADER_PRIORITY' => '网站地图优先级',
+                'CHANGEFREQ' => '全局 - 网站地图变更频率',
+                'CHANGEFREQ_DEFAULT' => '使用全局 (每日)',
+                'CHANGEFREQ_ALWAYS' => '总是',
+                'CHANGEFREQ_HOURLY' => '每小时',
+                'CHANGEFREQ_DAILY' => '每天',
+                'CHANGEFREQ_WEEKLY' => '每周',
+                'CHANGEFREQ_MONTHLY' => '每月',
+                'CHANGEFREQ_YEARLY' => '每年',
+                'CHANGEFREQ_NEVER' => '永不',
+                'PRIORITY' => '全局 - 网站地图优先级',
+                'PRIORITY_USE_GLOBAL' => '使用全局 (1)',
+                'ROUTE' => '网站地图路径',
+                'IGNORES' => '忽略',
+                'IGNORES_HELP' => '忽略的 URL (你可以通过使用regex并在忽略路径后添加".*"来忽略一个路径的所有子节点)',
+                'ADDITIONS' => '附加 URL',
+                'ADDITIONS_HELP' => '添加外部 URL 到网站地图',
+                'LOCATION' => 'URL 地址',
+                'LASTMOD' => '上次修改 例如 2017-04-06'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---

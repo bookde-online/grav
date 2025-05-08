@@ -1,0 +1,71 @@
+
+{% set page_con = page.find('/_config') %}
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+    {% if page.header.iframe %}
+      <div class="mb-5">
+      {{ page.header.iframe|raw }}
+      </div><!-- End Google Maps -->
+    {% endif %}
+
+
+  <div class="container" data-aos="fade">
+
+    <div class="row gy-5 gx-lg-5">
+
+      <div class="col-lg-4">
+
+        <div class="info">
+          {% if page.header.title %}
+            <h3>{{ page.header.title }}</h3>
+          {% endif %}
+
+          {% if page.header.text %}
+            <p>{{ page.header.text }}</p>
+          {% endif %}
+
+          {% if page_con.header.address %}
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                {% if grav.language.getActive == 'vi' %}
+                    <h4>Địa chỉ:</h4>
+                {% else %}
+                    <h4>Address:</h4>
+                {% endif %}
+                <p>{{ page_con.header.address }}</p>
+              </div>
+            </div><!-- End Info Item -->
+          {% endif %}
+
+          {% if page_con.header.email %}
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>{{ page_con.header.email }}</p>
+              </div>
+            </div><!-- End Info Item -->
+          {% endif %}
+
+          {% if page_con.header.phone %}
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                {% if grav.language.getActive == 'vi' %}
+                    <h4>Điện thoại:</h4>
+                {% else %}
+                    <h4>Phone:</h4>
+                {% endif %}
+                <p>{{ page_con.header.phone }}</p>
+              </div>
+            </div><!-- End Info Item -->
+          {% endif %}
+
+        </div>
+
+      </div><!-- End Contact Info Column -->
+
+    

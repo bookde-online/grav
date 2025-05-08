@@ -1,0 +1,42 @@
+1747215399
+a:2:{s:7:"content";s:2815:"
+
+<section id="hero" class="hero section dark-background">
+        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                            <div class="carousel-item active">
+                                                                    <img src="/grav/user/pages/01.home/01._hero/banner1.webp" alt="Thương hiệu của bạn">
+                                                                <div class="container">
+                            <h2>Thương hiệu của bạn</h2>
+                            <p>Tạo Trang Web Đặt Phòng Riêng Cho Khách Sạn Của Bạn</p>                                                            <a href="vi/lien-he" class="btn-get-started">Liên hệ</a>
+                                                    </div>
+                                    </div>  
+                            <div class="carousel-item">
+                                                                    <img src="/grav/user/pages/01.home/01._hero/banner2.webp" alt="Tên Miền Của Bạn">
+                                                                <div class="container">
+                            <h2>Tên Miền Của Bạn</h2>
+                            <p>Kiểm Soát Hoàn Toàn Với Trang Web Tùy Chỉnh – Không Chia Sẻ Hệ Thống</p>                                                            <a href="vi#dich-vu" class="btn-get-started">Dịch vụ</a>
+                                                    </div>
+                                    </div>  
+                            <div class="carousel-item">
+                                                                    <img src="/grav/user/pages/01.home/01._hero/banner3.webp" alt="Cách hoạt động">
+                                                                <div class="container">
+                            <h2>Cách hoạt động</h2>
+                            <p>Triển khai trang web của bạn một cách dễ dàng</p>                                                            <a href="vi/cach-hoat-dong" class="btn-get-started">Thử ngay</a>
+                                                    </div>
+                                    </div>  
+            
+            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+                    <ol class="carousel-indicators"></ol>
+        </div>
+</section>
+
+
+
+";s:12:"content_meta";N;}

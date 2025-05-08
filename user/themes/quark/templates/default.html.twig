@@ -1,5 +1,13 @@
 {% extends 'partials/base.html.twig' %}
 
-{% block content %}
+{% block hero %}
+{% include 'partials/place.html.twig' %}
+{% endblock %}
+
+
+{% block body %}
     {{ page.content|raw }}
+    {% for module in page.collection() %}
+        {{ module.content|raw }}
+    {% endfor %}
 {% endblock %}

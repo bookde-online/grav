@@ -1,0 +1,44 @@
+{% set lang = grav.language.getLanguage %}
+<section id="{{ lang == 'vi' ? 'dich-vu' : 'services' }}" class="services section light-background">
+    <div class="container">
+        <div class="row gy-4">
+            {% if page.header.title %}
+                <h2 class="inner-title"><b>{{ page.header.title }}</b></h2>
+            {% endif %}
+
+            {% for child in page.children() if not child.header.hidden %}
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item item-orange position-relative" style="text-align: center;">
+                        <a href="{{ child.url }}">
+                            {% if child.header.image %}
+                                {% if child.header.image is defined and child.header.image %}
+                                    <div class="icon">
+                                        {% set image_name = child.header.image %}
+                                        {% if image_name is iterable %}
+                                            {% set image_name = image_name|keys|first %}
+                                        {% endif %}
+                                        {% set image = child.media[image_name] ?? null %}
+                                        {% if image %}
+                                            <img src="{{ image.url }}" alt="{{ child.header.title }}" style="width: 100%; height: 140px; border-radius: 50%;" loading="lazy">
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                            <a href="{{ child.url }}"><h3>{{ child.header.title }}</h3></a>
+                            {% if child.header.subtitle %}
+                                <p>{{ child.header.subtitle }}</p>
+                            {% endif %}
+                        </a>
+                    </div>
+                </div><!-- End Service Item -->
+            {% endfor %}
+        </div>
+        <hr>
+        {% if page.content %}
+            <div style="display: flex; justify-content: center; margin-top: 50px; text-align: center; font-size: larger;">
+                {{ page.content|raw }}
+            </div>
+        {% endif %}
+    </div>
+
+
