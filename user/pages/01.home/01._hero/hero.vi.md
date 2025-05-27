@@ -30,10 +30,10 @@ banners:
                 path: banner2.webp
                 alt: 'Tạo trang web đặt phòng khách sạn'
     -
-        title: 'Cách hoạt động'
+        title: 'Lên lịch ngay'
         subtitle: 'Triển khai trang web của bạn một cách dễ dàng'
         button_text: Thử ngay
-        button_link: 'vi/cach-hoat-dong'
+        button_link: 'vi/#demo'
         image:
             banner3.webp:
                 name: banner3.webp

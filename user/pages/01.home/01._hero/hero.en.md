@@ -30,10 +30,10 @@ banners:
                 path: banner2.webp
                 alt: 'Create hotel website'
     -
-        title: 'How it work'
+        title: 'Schedule Now'
         subtitle: 'Easy to lauch your hotel website'
         button_text: Try
-        button_link: 'en/how_it_work'
+        button_link: 'en/#demo'
         image:
             banner3.webp:
                 name: banner3.webp

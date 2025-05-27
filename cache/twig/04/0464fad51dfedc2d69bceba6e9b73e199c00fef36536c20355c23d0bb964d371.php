@@ -125,7 +125,7 @@ class __TwigTemplate_dd60b00ce7c8cf804adc41d6fc4c98f74f11a19e3faa5adca1c7977169e
                          <a href=\"";
             // line 43
             echo twig_escape_filter($this->env, $this->getAttribute($context["plan"], "link", []), "html", null, true);
-            echo " class=\"mt-5\">
+            echo "\" class=\"mt-5\">
 \t\t\t\t\t\t\t\t\t";
             // line 44
             echo ((($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguage", []) == "en")) ? ("Show more") : ("Xem thêm"));
@@ -215,7 +215,7 @@ class __TwigTemplate_dd60b00ce7c8cf804adc41d6fc4c98f74f11a19e3faa5adca1c7977169e
 \t\t\t\t\t\t\t\t
 \t\t\t\t\t\t\t{% endfor %}
                         </div>
-                         <a href=\"{{ plan.link }} class=\"mt-5\">
+                         <a href=\"{{ plan.link }}\" class=\"mt-5\">
 \t\t\t\t\t\t\t\t\t{{ grav.language.getLanguage == 'en' ? 'Show more' : 'Xem thêm' }}
 \t\t\t\t\t\t\t\t</a>   
 \t\t\t\t\t\t</div>
