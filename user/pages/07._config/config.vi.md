@@ -1,7 +1,7 @@
 ---
 title: BOOKDE
 name: ALLXONE
-phone: '+1 5589 55488 55'
+phone: '+84 523-734-193'
 email: infor@bookde.vn
 address: 'F1, QCoop Building, 150 Nguyen Xi, Ward 26, Binh Thanh District, Ho Chi Minh City, Vietnam'
 image:
