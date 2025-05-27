@@ -1,0 +1,42 @@
+1748873990
+a:2:{s:7:"content";s:3457:"
+<section id="team" class="team-section py-5" ">
+    <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+                            <h2 class="inner-title" style="color: #333; font-weight: bold;">Ai sử dụng dịch vụ của chúng tôi?</h2>
+                <hr class="mx-auto" style="border-top: 2px solid #A93226; width: 80px;">
+                    </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 d-flex justify-content-center">
+                                        <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                        <div class="member-img" style="position: relative;">
+                                                                                        <img src="/bookdevn/user/pages/01.home/05._who-use-service/hotel.webp" class="img-fluid" alt="Image KHÁCH SẠN" style="width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover;">
+                                                    </div>
+                        <div class="member-info text-center p-3">
+                            <h5 style="color: black; margin-bottom: 5px; font-weight:bold">KHÁCH SẠN</h5>
+                                                                                </div>
+                    </div>
+                </div>
+                            <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                        <div class="member-img" style="position: relative;">
+                                                                                        <img src="/bookdevn/user/pages/01.home/05._who-use-service/spa.webp" class="img-fluid" alt="Image SPA" style="width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover;">
+                                                    </div>
+                        <div class="member-info text-center p-3">
+                            <h5 style="color: black; margin-bottom: 5px; font-weight:bold">SPA</h5>
+                                                                                </div>
+                    </div>
+                </div>
+                            <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-member" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                        <div class="member-img" style="position: relative;">
+                                                                                        <img src="/bookdevn/user/pages/01.home/05._who-use-service/tours.webp" class="img-fluid" alt="Image DU LỊCH" style="width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover;">
+                                                    </div>
+                        <div class="member-info text-center p-3">
+                            <h5 style="color: black; margin-bottom: 5px; font-weight:bold">DU LỊCH</h5>
+                                                                                </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>";s:12:"content_meta";N;}

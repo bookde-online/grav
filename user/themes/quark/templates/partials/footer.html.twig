@@ -1,0 +1,99 @@
+{% set page_con = page.find('/_config') %}
+{% set page_ser = page.find('/home/_services') %}
+{% import 'macros/macros_foot.html.twig' as macros %}
+
+
+<footer id="footer" class="footer" style="background-color:#FFF5E1">
+<section id="footer_section" class="section bg-gray">
+    <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-3 col-md-6 footer-about">
+                <img src="{{ url('theme://images/logo.svg') }}" style="width:200px;height:auto" alt="Logo" class="logo">
+            
+            </div>
+          
+          
+            <div class="col-lg-5   col-md-4 footer-links">
+                {% if page_ser %}
+                  <h4 class="mb-2" style="color: #A93226;">
+                        {% set language = grav.language.getActive %}
+                        {% if language == 'en' %}
+                            Quick link
+                        {% elseif language == 'vi' %}
+                            Truy cập nhanh
+                        {% else %}
+                            Quick link
+                        {% endif %}
+                    </h4>
+                  <div class="d-flex justify-content-around">
+                    <ul style="font-weight:bold">
+                    {{ macros.nav_loop(pages) }}
+                  </ul>
+                    <ul>
+                        {% for service in page_ser.children %}
+                            <li>
+                                <a href="{{ service.url }}" style="font-weight:bold">{{ service.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>       
+                  </div>  
+                {% endif %}
+            </div>
+
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+
+                <a href="{{ page.find('/home').url }}" class="logo d-flex align-items-center">
+                    {% if page_con.header.name %}
+                        <span class="sitename" style="font-weight:bold;">{{ page_con.header.name }}</span>
+                    {% endif %}
+                </a>
+                <div class="footer-contact pt-3">
+                    {% if page_con.header.address %}
+                        <p>{{ page_con.header.address }}</p>
+                    {% endif %}
+
+                    {% if page_con.header.phone %}
+                        <p class="mt-3">
+                            <strong>
+                                {% if grav.language.getActive == 'vi' %}
+                                    Điện thoại:
+                                {% else %}
+                                    Phone:
+                                {% endif %}
+                            </strong> <span>{{ page_con.header.phone }}</span></p>
+                    {% endif %}
+
+                    {% if page_con.header.email %}
+                        <p><strong>Email:</strong> <span>{{ page_con.header.email }}</span></p>
+                    {% endif %}
+                </div> 
+
+
+                {% if page_con.header.social %}
+                    <div class="social-links d-flex mt-4">
+                        {% for social in page_con.header.social %}
+                            <a href="{{ social.link }}" title="{{ social.title }}" target="_blank">
+                                {% if social.image %}
+                                    {% set image = social.image|first %}
+                                    {% set page_url = page_con.url %}
+                                    {% set full_url = page_url ~ '/' ~ image.name %}
+
+                                    <img src="{{ full_url }}" alt="{{ social.title|e }}" style=" width: 41px; height: 42px; border-radius: 50%; ">
+                                {% endif %}
+                            </a>
+                        {% endfor %}
+
+                    </div>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+        {% if page_con.header.foot %}
+            <p>{{ page_con.header.foot|markdown }}</p>
+        {% endif %}
+    </div>
+</section>
+</footer>

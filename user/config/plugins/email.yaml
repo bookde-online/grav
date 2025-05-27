@@ -1,0 +1,18 @@
+enabled: true
+from: hungpq1309developer@gmail.com
+to: hungpq1309developer@gmail.com
+mailer:
+  engine: smtp
+  smtp:
+    server: smtp.gmail.com
+    port: 587
+    encryption: tls
+    user: hungpq1309developer@gmail.com
+    password: higlwhanglymmfuw
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: true
+cc: null
+bcc: null
+reply_to: null
+body: helo

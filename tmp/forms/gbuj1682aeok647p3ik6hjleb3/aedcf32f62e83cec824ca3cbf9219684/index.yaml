@@ -1,0 +1,132 @@
+form: flex-pages
+id: 'tmp://forms/session/aedcf32f62e83cec824ca3cbf9219684'
+unique_id: aedcf32f62e83cec824ca3cbf9219684
+url: 'https://localhost/bookdevn/admin/pages/home/_demo'
+user:
+  username: dungnguyen
+  email: dungnguyen19724@gmail.com
+timestamps:
+  created: 1747907191
+  updated: 1747907328
+data:
+  header:
+    title: 'Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?'
+    media_order: null
+    sitemap:
+      lastmod: '22-05-2025 11:45'
+      changefreq: null
+      priority: null
+      ignore: null
+    body_classes: null
+    menu: Demo
+    slug: demo
+    process:
+      twig: true
+      markdown: false
+    order_by: null
+    order_manual: null
+    hero_classes: null
+    hero_image: null
+    content:
+      items:
+        - '@self.children'
+      limit: 5
+      order:
+        by: date
+        dir: desc
+      pagination: true
+      url_taxonomy_filters: true
+    image:
+      demo.webp:
+        name: demo.webp
+        type: image/webp
+        size: 34330
+        path: demo.webp
+    button_name: 'Thử demo của chúng tôi!'
+    published: null
+    date: null
+    publish_date: null
+    unpublish_date: null
+    metadata: null
+    taxonomy: null
+    dateformat: null
+    redirect: null
+    twig_first: null
+    never_cache_twig: null
+    child_type: null
+    routable: null
+    cache_enable: null
+    visible: null
+    debugger: null
+    template: null
+    append_url_extension: null
+    redirect_default_route: null
+    routes:
+      default: null
+      canonical: null
+      aliases: null
+    admin:
+      children_display_order: null
+    blog_url: null
+    show_sidebar: null
+    show_breadcrumbs: null
+    show_pagination: null
+    login:
+      visibility_requires_access: null
+    access: null
+    permissions:
+      inherit: null
+      authors: null
+      groups: null
+  content: null
+  folder: _demo
+  route: /home
+  name: item
+  ordering: true
+  order: null
+  blueprint: null
+  lang: vi
+  xss_check: null
+  _post_entries_save: null
+files: {  }
+object:
+  type: pages
+  key: home/_demo
+  storage_key: 01.home/06._demo|blog.vi
+  timestamp: 1747907170
+  serialized:
+    __META:
+      key: home/_demo
+      storage_key: 01.home/06._demo|blog.vi
+      template: blog
+      storage_timestamp: 1747907170
+      markdown:
+        en: { demo: 1747906919 }
+        vi: { blog: 1747907170 }
+      checksum: 7637ccf4a15a23a79a2257662de31f3e
+      exists: true
+      lang: vi
+    storage_key: 01.home/06._demo|blog.vi
+    parent_key: 01.home
+    order: '06.'
+    folder: _demo
+    template: blog
+    lang: vi
+    header:
+      title: 'Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?'
+      slug: demo
+      image:
+        demo.webp: { name: demo.webp, type: image/webp, size: 34330, path: demo.webp }
+      menu: Demo
+      button_name: 'Thử demo của chúng tôi!'
+      process:
+        markdown: true
+        twig: true
+      sitemap:
+        lastmod: '22-05-2025 11:45'
+    root: false
+    frontmatter: "title: 'Bạn đã sẵn sàng đưa khách sạn của mình lên web chưa?'\nslug: demo \nimage:\n    demo.webp:\n        name: demo.webp\n        type: image/webp\n        size: 34330\n        path: demo.webp\nmenu: Demo\nbutton_name: 'Thử demo của chúng tôi!'\nprocess:\n    twig: true\n    markdown: false"
+    slug: demo
+    name: blog.vi.md
+    route: /home
+    ordering: true

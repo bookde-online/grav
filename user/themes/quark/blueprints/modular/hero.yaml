@@ -1,0 +1,62 @@
+title: Hero Section
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1  
+
+      fields:
+        content:
+          type: tab
+          title: Nội dung chính
+          fields:
+            header.banners:
+              type: list
+              label: Danh sách Banner
+              style: vertical
+              validate:
+                required: false
+
+              fields:
+                .title:
+                  type: text
+                  label: Tiêu đề
+                  validate:
+                    required: false
+
+                .subtitle:
+                  type: text
+                  label: Phụ đề
+                  validate:
+                    required: false
+
+                .button_text:
+                  type: text
+                  label: Văn bản nút
+                  placeholder: 'Xem thêm'
+                  validate:
+                    required: false
+
+                .button_link:
+                  type: text
+                  label: Liên kết nút
+                  placeholder: '#'
+                  validate:
+                    required: false
+
+                .image:
+                  type: file
+                  label: Hình ảnh
+                  multiple: false
+                  destination: 'self@'
+                  validate:
+                    required: false
+                  accept:
+                    - image/jpeg
+                    - image/png
+                    - image/webp
+                    - image/avif
+                    - image/gif
+                    - image/svg+xml

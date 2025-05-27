@@ -1,0 +1,41 @@
+title: Try demo
+'@extends':
+    type: default
+    context: blueprints://pages
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Content
+
+          fields:
+
+            header.button_name:
+              type: text
+              label: "Tên nút"
+
+            header.link:
+              type: text
+              label: "Link demo"
+
+            header.image:
+                  type: file
+                  label: Hình ảnh
+                  multiple: false
+                  destination: 'self@'
+                  validate:
+                    required: false
+                  accept:
+                    - image/jpeg
+                    - image/png
+                    - image/webp
+                    - image/avif
+                    - image/gif
+                    - image/svg+xml
+
+            

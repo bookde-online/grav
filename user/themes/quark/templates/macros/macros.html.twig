@@ -1,0 +1,46 @@
+{% macro nav_loop(page) %}
+    {% import _self as macros %}
+
+    {% set service_page = page.find('/home/_services') %}
+    {% set demo_page = page.find('/home/_demo') %} {# Đường dẫn demo, bạn thay đúng path nhé #}
+
+    {% for p in page.children.visible %}
+      {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+      <li>
+        <a href="{{ p.url }}" class="{{ active_page }}">
+          {{ p.menu }}
+        </a>
+      </li>
+
+      {# Insert "Services" item right after "home" #}
+      {% if p.slug == 'home' %}
+          {# Services menu #}
+          {% if service_page and service_page.children.visible.count > 0 %}
+          <li class="dropdown">
+            {% set is_service_active = page.activeChildOf('/home/_services') ? 'active' : '' %}
+            <a href="{{ base_url_absolute }}{{ grav.language.getLanguage == 'en' ? './#services' : './#dich-vu' }}" class="{{ is_service_active }}">
+              <span>{{ service_page.menu }}</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              {{ macros.nav_loop(service_page) }}
+            </ul>
+          </li>
+          {% endif %}
+
+          {# Demo menu #}
+          {% if demo_page and demo_page.children.visible.count > 0 %}
+          <li class="dropdown">
+            {% set is_demo_active = page.activeChildOf('/home/_demo') ? 'active' : '' %}
+            <a href="{{ base_url_absolute }}'./#demo' }}" class="{{ is_demo_active }}">
+              <span>{{ demo_page.menu }}</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              {{ macros.nav_loop(demo_page) }}
+            </ul>
+          </li>
+          {% endif %}
+      {% endif %}
+    {% endfor %}
+{% endmacro %}

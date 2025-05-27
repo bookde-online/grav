@@ -1,0 +1,16 @@
+1748311618
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"blog";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:4:"Blog";s:8:"metadata";a:2:{s:11:"description";s:48:"Bookde Blog - Tin tức mới nhất về Bookde";s:8:"keywords";s:66:"Bookde, Đặt phòng khách sạn, Bookde Blog , BookDe Tin tức";}s:7:"content";a:5:{s:5:"items";a:1:{i:0;s:14:"@self.children";}s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}s:5:"limit";i:10;s:10:"pagination";b:1;s:20:"url_taxonomy_filters";b:1;}s:7:"sitemap";a:1:{s:7:"lastmod";s:16:"12-05-2025 15:21";}}s:11:"frontmatter";s:372:"title: Blog
+metadata:
+    description: 'Bookde Blog - Tin tức mới nhất về Bookde'
+    keywords: 'Bookde, Đặt phòng khách sạn, Bookde Blog , BookDe Tin tức'
+content:
+    items:
+        - '@self.children'
+    order:
+        by: date
+        dir: desc
+    limit: 10
+    pagination: true
+    url_taxonomy_filters: true
+sitemap:
+    lastmod: '12-05-2025 15:21'";s:8:"markdown";s:0:"";}s:7:"storage";a:9:{s:3:"key";s:4:"blog";s:11:"storage_key";s:15:"04.blog|blog.vi";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1747727214;s:8:"markdown";a:2:{s:2:"en";a:1:{s:4:"blog";i:1747038018;}s:2:"vi";a:1:{s:4:"blog";i:1747038094;}}s:8:"children";a:8:{s:55:"01.xay-dung-trang-web-dat-phong-khach-san-chuyen-nghiep";b:0;s:29:"02.bao-mat-du-lieu-khach-hang";b:0;s:83:"03.5-ly-do-tai-sao-thue-website-dat-phong-la-giai-phap-thong-minh-cho-khach-san-nho";b:0;s:71:"04.ota-la-gi-loi-ich-cua-ota-trong-viec-dat-phong-khach-san-qua-website";b:0;s:70:"05.bookde-giai-phap-thiet-ke-website-dat-phong-khach-san-chuyen-nghiep";b:0;s:68:"06.thiet-ke-website-thue-khach-san-chia-khoa-vang-thu-hut-khach-hang";b:0;s:59:"07.10-xu-huong-thiet-ke-website-khach-san-hot-hit-nhat-2025";b:0;s:82:"08.chatbot-tro-ly-ao-cho-website-khach-san-giai-phap-tang-tuong-tac-va-ho-tro-24-7";b:0;}s:8:"checksum";s:32:"a7d042aac473703d639a2712ed7773d3";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

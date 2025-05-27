@@ -1,0 +1,25 @@
+<p>Thông tin về khách hàng đang quan tâm gói dịch vụ:</p>
+<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+    <tbody>
+        <tr>
+            <td style="width: 30%; background-color: #f0f0f0;"><strong>Tên:</strong></td>
+            <td>{{ form.value.name|default('Chưa cung cấp') }}</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f0f0f0;"><strong>Số điện thoại:</strong></td>
+            <td>{{ form.value.phone|default('Chưa cung cấp') }}</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f0f0f0;"><strong>Email:</strong></td>
+            <td>{{ form.value.email|default('Chưa cung cấp') }}</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f0f0f0;"><strong>Gói đã chọn:</strong></td>
+            <td>{{ form.value.plan|default('Chưa cung cấp') }}</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f0f0f0;"><strong>Lời nhắn:</strong></td>
+            <td>{{ form.value.message|nl2br|default('Không có lời nhắn.') }}</td>
+        </tr>
+    </tbody>
+</table>

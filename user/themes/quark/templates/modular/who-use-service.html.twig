@@ -1,0 +1,46 @@
+
+<section id="team" class="team-section py-5" ">
+    <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            {% if page.header.title %}
+                <h2 class="inner-title" style="color: #333; font-weight: bold;">{{ page.header.title }}</h2>
+                <hr class="mx-auto" style="border-top: 2px solid #A93226; width: 80px;">
+            {% endif %}
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 d-flex justify-content-center">
+            {% if page.header.subtitle %}
+                <p class="text-center" style="color: #555; font-size: 1.1em; line-height: 1.6;">{{ page.header.subtitle }}</p>
+            {% endif %}
+            {% for item in page.header.items %}
+                <div class="col" data-aos="fade-up" data-aos-delay="{{ loop.index * 100 }}">
+                    <div class="team-member" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                        <div class="member-img" style="position: relative;">
+                            {% set image = item.image|keys|first %}
+                            {% if page.media[image] %}
+                                <img src="{{ page.media[image].url }}" class="img-fluid" alt="Image {{ item.title|e }}" style="width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover;">
+                            {% else %}
+                                <img src="{{ theme_url }}/assets/img/default.jpg" class="img-fluid" alt="Default Image" style="width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover;">
+                            {% endif %}
+                        </div>
+                        <div class="member-info text-center p-3">
+                            <h5 style="color: black; margin-bottom: 5px; font-weight:bold">{{ item.title|upper }}</h5>
+                            {% if item.subtitle %}
+                                <p class="small text-muted mb-0">{{ item.subtitle }}</p>
+                            {% endif %}
+                            {% if item.social %}
+                                <div class="mt-2">
+                                    {% for social_item in item.social %}
+                                        {% set social_icon = social_item|keys|first %}
+                                        <a href="{{ social_item[social_icon] }}" class="btn btn-outline-secondary btn-sm rounded-circle me-2" title="{{ social_icon|capitalize }}" target="_blank">
+                                            <i class="bi bi-{{ social_icon }}"></i>
+                                        </a>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

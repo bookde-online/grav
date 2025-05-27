@@ -1,0 +1,83 @@
+form: flex-pages
+id: 'tmp://forms/session/eb901e7dad29f2e890d8e3f84b8b7322'
+unique_id: eb901e7dad29f2e890d8e3f84b8b7322
+url: 'https://localhost/bookdevn/admin/pages/pricing/_form'
+user:
+  username: dungnguyen
+  email: dungnguyen19724@gmail.com
+timestamps:
+  created: 1747723736
+  updated: 1747724005
+data:
+  header:
+    title: 'Biểu mẫu Liên hệ'
+    slug: null
+    template: forms\contact-form.html.twig
+    metadata:
+      description: 'Thông tin khách hàng'
+      keywords: 'liên hệ , thông tin , khách hàng Bookde'
+    form:
+      name: contactForm
+      fields:
+        name: { label: 'Tên của bạn', placeholder: 'Tên của bạn', autocomplete: 'on', type: text, validate: { required: true } }
+        phone: { label: 'Số điện thoại của bạn', placeholder: 'Số điện thoại của bạn', type: tel, validate: { required: true } }
+        email: { label: 'Email của bạn', placeholder: 'Email của bạn', type: email, validate: { required: true } }
+        plan: { label: 'Chọn gói', type: select, options: { 'Dùng Thử': 'Dùng Thử', 'Gói Cơ Bản': 'Gói Cơ Bản', 'Gói Cao Cấp': 'Gói Cao Cấp' }, validate: { required: false } }
+        message: { label: 'Lời nhắn', placeholder: 'Để lại lời nhắn của bạn', type: textarea, validate: { required: true } }
+        g-recaptcha-response: { label: Captcha, type: captcha, recaptcha_not_validated: 'Captcha không hợp lệ!' }
+      buttons:
+        submit: { type: submit, label: Gửi, classes: 'btn btn-primary' }
+      process:
+        save: false
+        email: { to: your-actual-email-address@example.com, reply_to: '{{ form.value.email|e }}', subject: '[Liên hệ Website Bookde] - {{ form.value.name|e }}', body: '{% include ''forms/email/custom-contact-email.html.twig'' %}' }
+        message: 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.'
+        reset: true
+    sitemap:
+      lastmod: '20-05-2025 05:28'
+    process:
+      markdown: true
+      twig: true
+files: {  }
+object:
+  type: pages
+  key: pricing/_form
+  storage_key: 03.pricing/01._form|form.vi
+  timestamp: 1747723996
+  serialized:
+    __META:
+      key: pricing/_form
+      storage_key: 03.pricing/01._form|form.vi
+      template: form
+      storage_timestamp: 1747723996
+      markdown:
+        en: { form: 1747723163 }
+        vi: { form: 1747723996 }
+      checksum: 6c783d57eeb5cb4dd2acb65ecf509397
+      exists: true
+      lang: vi
+    storage_key: 03.pricing/01._form|form.vi
+    parent_key: 03.pricing
+    order: '01.'
+    folder: _form
+    template: forms\contact-form.html.twig
+    lang: vi
+    header:
+      title: 'Biểu mẫu Liên hệ'
+      slug: null
+      template: forms\contact-form.html.twig
+      metadata:
+        description: 'Thông tin khách hàng'
+        keywords: 'liên hệ , thông tin , khách hàng Bookde'
+      form:
+        name: contactForm
+        fields: { name: { label: 'Tên của bạn', placeholder: 'Tên của bạn', autocomplete: 'on', type: text, validate: { required: true } }, phone: { label: 'Số điện thoại của bạn', placeholder: 'Số điện thoại của bạn', type: tel, validate: { required: true } }, email: { label: 'Email của bạn', placeholder: 'Email của bạn', type: email, validate: { required: true } }, plan: { label: 'Chọn gói', type: select, options: { 'Dùng Thử': 'Dùng Thử', 'Gói Cơ Bản': 'Gói Cơ Bản', 'Gói Cao Cấp': 'Gói Cao Cấp' }, validate: { required: false } }, message: { label: 'Lời nhắn', placeholder: 'Để lại lời nhắn của bạn', type: textarea, validate: { required: true } }, g-recaptcha-response: { label: Captcha, type: captcha, recaptcha_not_validated: 'Captcha không hợp lệ!' } }
+        buttons: { submit: { type: submit, label: Gửi, classes: 'btn btn-primary' } }
+        process: { save: false, email: { to: your-actual-email-address@example.com, reply_to: '{{ form.value.email|e }}', subject: '[Liên hệ Website Bookde] - {{ form.value.name|e }}', body: '{% include ''forms/email/custom-contact-email.html.twig'' %}' }, message: 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.', reset: true }
+      sitemap:
+        lastmod: '20-05-2025 05:28'
+      process:
+        markdown: true
+        twig: true
+    root: false
+    frontmatter: "title: 'Biểu mẫu Liên hệ'\nslug: \ntemplate: forms\\contact-form.html.twig\nmetadata:\n    description: 'Thông tin khách hàng'\n    keywords: 'liên hệ , thông tin , khách hàng Bookde'\nform:\n    name: contactForm\n    fields:\n        name:\n            label: 'Tên của bạn'\n            placeholder: 'Tên của bạn'\n            autocomplete: 'on'\n            type: text\n            validate:\n                required: true\n        phone:\n            label: 'Số điện thoại của bạn'\n            placeholder: 'Số điện thoại của bạn'\n            type: tel\n            validate:\n                required: true\n        email:\n            label: 'Email của bạn'\n            placeholder: 'Email của bạn'\n            type: email\n            validate:\n                required: true\n        plan:\n            label: 'Chọn gói'\n            type: select\n            options:\n                'Dùng Thử': 'Dùng Thử'\n                'Gói Cơ Bản': 'Gói Cơ Bản'\n                'Gói Cao Cấp': 'Gói Cao Cấp'\n            validate:\n                required: false\n        message:\n            label: 'Lời nhắn'\n            placeholder: 'Để lại lời nhắn của bạn'\n            type: textarea\n            validate:\n                required: true\n        g-recaptcha-response:\n            label: Captcha\n            type: captcha\n            recaptcha_not_validated: 'Captcha không hợp lệ!'\n    buttons:\n        submit:\n            type: submit\n            label: Gửi\n            classes: 'btn btn-primary'\n    process:\n        save: false\n        email:\n            to: your-actual-email-address@example.com\n            reply_to: '{{ form.value.email|e }}'\n            subject: '[Liên hệ Website Bookde] - {{ form.value.name|e }}'\n            body: '{% include ''forms/email/custom-contact-email.html.twig'' %}'\n        message: 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.'\n        reset: true\nsitemap:\n    lastmod: '20-05-2025 05:28'\nprocess:\n    markdown: true\n    twig: true"
+    markdown: ''

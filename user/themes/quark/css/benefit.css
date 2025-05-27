@@ -1,0 +1,27 @@
+/* Benefit */  
+  /* Dàn layout của card */
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  
+  /* Thiết kế card */
+  .card {
+    width: 100%; /* Phóng to card để lấp đầy */
+    height: 100%;
+    position: relative;
+    overflow: hidden; /* Ẩn phần thừa */
+    /* transform: skewX(-10deg); */
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px; /* Bo góc mềm mại */
+  }
+  
+  .card img:hover {
+    transform: scale(1.1);
+  }
+  
+  

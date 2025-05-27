@@ -1,0 +1,60 @@
+title: Logo
+'@extends':
+    type: default
+    context: blueprints://pages
+    
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Content
+
+          fields:
+            header.title:
+              type: text
+              label: "Tên website"
+          
+            header.image:
+                  type: file
+                  label: Logo
+                  multiple: false
+                  destination: 'self@'
+                  validate:
+                    required: false
+                  accept:
+                    - image/jpeg
+                    - image/png
+                    - image/webp
+                    - image/avif
+                    - image/gif
+                    - image/svg+xml
+
+            header.name:
+              type: text
+              label: "Tên công ty"
+
+            header.phone:
+              type: text
+              label: "Số điện thoại"
+
+            header.email:
+              type: email
+              label: "Email"
+
+            header.address:
+              type: text
+              label: "Địa chỉ"
+
+            header.iframe:
+              type: textarea
+              label: "Google Maps Iframe"
+              validate:
+                type: textarea
+
+
+            

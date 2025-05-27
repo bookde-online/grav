@@ -1,0 +1,98 @@
+{# contact-form.twig - Dành cho việc xử lý bằng file PHP riêng #}
+
+<form id="contactForm" method="POST" action="https://localhost/bookdevn/custom-controller/submit_form.php">
+	<div class="mb-3">
+		<label for="name" class="form-label">{{ grav.language.getLanguage == 'en' ? 'Your Name' : 'Tên của bạn' }}</label>
+		<input type="text" placeholder="Nguyen Van A" class="form-control" id="name" name="name" required>
+	</div>
+	<div class="mb-3">
+		<label for="phone" class="form-label">{{ grav.language.getLanguage == 'en' ? 'Your Phone Number ' : 'Số điện thoại của bạn ' }}
+		</label>
+		<input type="text" placeholder="123xxxxxxx" class="form-control" id="phone" name="phone" required minlength="10" inputmode="numeric" pattern="[0-9]{10,}">
+	</div>
+	<div class="mb-3">
+		<label for="email" class="form-label">{{ grav.language.getLanguage == 'en' ? 'Your Email' : 'Email của bạn' }}</label>
+		<input type="email" placeholder="example@email.com" class="form-control" id="email" name="email" required>
+	</div>
+	<div class="mb-3">
+		<label for="plan" class="form-label">
+			{{ grav.language.getLanguage == 'en' ? 'Select Services :' : 'Chọn dịch vụ :' }}
+		</label>
+
+		<label class="container">
+			<input type="checkbox" name="services[]" value="Custom hotel websites">
+			<span class="checkmark"></span>
+			{{ grav.language.getLanguage == 'en' ? 'Custom hotel websites' : 'Trang Web khách sạn tùy chỉnh' }}
+		</label>
+
+		<label class="container">
+			<input type="checkbox" name="services[]" value="Online booking support">
+			<span class="checkmark"></span>
+			{{ grav.language.getLanguage == 'en' ? 'Online booking support' : 'Hỗ trợ đặt phòng trực tuyến' }}
+		</label>
+
+		<label class="container">
+			<input type="checkbox" name="services[]" value="Booking optimization solutions">
+			<span class="checkmark"></span>
+			{{ grav.language.getLanguage == 'en' ? 'Booking optimization solutions' : 'Giải pháp tối ưu hóa đặt phòng' }}
+		</label>
+	</div>
+	<div class="mb-3">
+		<label for="timezone" class="form-label">
+			{{ current_language == 'en' ? 'Select Date & Time:' : 'Chọn ngày và giờ :' }}
+		</label>
+		<div class="row g-1 ">
+			<div class="col-md-4">
+				<select id="timezone" name="timezone" class="form-select" required>
+					{% for tz, label in timezones %}
+						<option value="{{ tz }}">{{ label }}</option>
+					{% endfor %}
+				</select>
+			</div>
+			<div class="col-md-6">
+				<input type="datetime-local" id="datetime" name="datetime" class="form-control"  min="{{ "now"|date_modify("+1 day")|date("Y-m-d\\TH:i") }}" required/>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="mb-3">
+		<label for="message" class="form-label">{{ grav.language.getLanguage == 'en' ? 'Message' : 'Tin nhắn' }}</label>
+		<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+	</div>
+	<button type="submit" class="btn btn-primary">
+		{{ grav.language.getLanguage == 'en' ? 'Send Message' : 'Gửi tin nhắn' }}
+	</button>
+</form>
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tzSelect = document.getElementById('timezone');
+    if (!tzSelect) return;
+
+    let userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    // 🎯 Map các alias về đúng timezone bạn có trong danh sách
+    const aliases = {
+      'Asia/Saigon': 'Asia/Ho_Chi_Minh',
+      'Asia/Phnom_Penh': 'Asia/Bangkok',
+      'Asia/Vientiane': 'Asia/Bangkok',
+      'Etc/GMT+7': 'Asia/Ho_Chi_Minh'
+    };
+
+    if (aliases[userTimeZone]) {
+      userTimeZone = aliases[userTimeZone];
+    }
+
+    // ✅ Duyệt và chọn đúng option
+    for (let i = 0; i < tzSelect.options.length; i++) {
+      if (tzSelect.options[i].value === userTimeZone) {
+        tzSelect.selectedIndex = i;
+        break;
+      }
+    }
+
+    console.log('Selected Timezone:', userTimeZone);
+  });
+</script>

@@ -1,0 +1,54 @@
+{% extends 'partials/base-home.html.twig' %}
+
+{% block content %}
+
+
+	{% include 'partials/place.html.twig' %}
+
+	<section id="pricing" class="pricing section">
+		<div class="container">
+			<div class="row gy d-flex justify-content-center"> 
+				{% for plan in page.header.pricing_plans %}
+					<div class="col-lg-4 col-md-7 mt-3" data-aos="zoom-in" data-aos-delay="100">
+						<div class="pricing-item">
+							<h3 style="font-size: 25px; color: #A93226;">{{ plan.name }}</h3>
+							<h5 style="font-size: 20px; font-weight: 600;">{{ plan.features_title }}</h5>
+							<p style="  text-decoration:line-through ; font-size:12px ;">{{ plan.orginal_price }}{{ plan.currency_unit }}</p>
+							<div class=" d-flex justify-content-around">
+								<p style="font-size: 20px; font-weight: 600;">
+
+									<b style="color:#32aa27 ">{{ plan.price }}{{ plan.currency_unit }}
+									</b>
+									<span> / {{ plan.duration_unit }}</span>
+									</span>
+								</p>
+                                <div style="padding: 5px 10px ; background-color:#A93226;; font-weight:bold ; color:black ; border-radius:16px ; text-align:center; display:flex ; justify-content:center;  ">-{{ plan.discount_tag }}</div>
+
+							</div>
+							<div style="display: flex; justify-content: center; align-items: center;">
+								<a class="cta-btn mb-3" href="./#demo">
+									{{ grav.language.getLanguage == 'en' ? 'Booking now !' : 'Đăng ký ngay' }}</a>
+							</div>
+                        <div style="height: 340px">
+							{% for feature in plan.features %}
+
+								<a style="d-flex justify-content-center">{{ feature.text }}
+								</a>
+								<br>
+
+								
+							{% endfor %}
+                        </div>
+                         <a href="{{ plan.link }}">
+									{{ grav.language.getLanguage == 'en' ? 'Show more' : 'Xem thêm' }}
+								</a>   
+						</div>
+                        
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+
+
+{% endblock %}

@@ -1,0 +1,195 @@
+{# Sử dụng set để tìm trang cấu hình, ví dụ: /_config.md hoặc tương tự #}
+{% set page_con = page.find('/_config') %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Thông tin liên hệ mới từ Website</title>
+    <style>
+        /* CSS cơ bản cho email template Grav */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333; /* Màu chữ mặc định */
+            background-color: #ffffff; /* Nền trắng cho toàn bộ body */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px; /* Giới hạn chiều rộng nội dung */
+            margin: 20px auto; /* Căn giữa */
+            padding: 30px;
+            background-color: #FFF5E1; /* Nền kem/vàng nhạt cho khối nội dung chính */
+            border-radius: 10px; /* Bo tròn góc khối nội dung */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Đổ bóng nhẹ */
+            -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Cho clients cũ */
+        }
+        h2 {
+            color: #A93226; /* Màu đỏ sẫm cho tiêu đề chính */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+            color: #555; /* Màu chữ xám đậm cho đoạn văn bản */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate; /* Quan trọng để border-radius hoạt động */
+            border-spacing: 0; /* Để loại bỏ khoảng cách giữa các ô */
+            margin-top: 20px;
+            border: 1px solid #ddd; /* Viền bảng tổng thể */
+            border-radius: 8px; /* Bo tròn góc bảng */
+            overflow: hidden; /* Quan trọng để border-radius hiển thị đúng trên một số client */
+        }
+        th, td {
+            padding: 12px 15px; /* Tăng padding để thoáng hơn */
+            text-align: left;
+            border-bottom: 1px solid #eee; /* Viền dưới nhẹ nhàng cho các hàng */
+            border-right: 1px solid #eee; /* Viền phải nhẹ nhàng cho các cột */
+        }
+        tr:last-child th,
+        tr:last-child td {
+            border-bottom: none; /* Bỏ viền dưới cho hàng cuối cùng */
+        }
+        th:last-child,
+        td:last-child {
+            border-right: none; /* Bỏ viền phải cho cột cuối cùng */
+        }
+        th {
+            background-color: #FFF5E1; /* Màu nền kem/vàng nhạt cho tiêu đề cột */
+            color: #A93226; /* Màu đỏ sẫm cho chữ tiêu đề cột */
+            font-weight: bold;
+            vertical-align: top;
+        }
+        td {
+            background-color:  #FFF5E1; /* Nền trắng cho ô dữ liệu */
+            color: #555; /* Màu chữ xám đậm cho dữ liệu */
+            font-weight: bold; /* Bold lên như yêu cầu */
+            vertical-align: top;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 0; /* Loại bỏ margin mặc định của ul */
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        /* Border-radius cho các góc của bảng */
+        table tr:first-child th:first-child {
+            border-top-left-radius: 8px;
+        }
+        table tr:first-child td:last-child {
+            border-top-right-radius: 8px;
+        }
+        table tr:last-child th:first-child {
+            border-bottom-left-radius: 8px;
+        }
+        table tr:last-child td:last-child {
+            border-bottom-right-radius: 8px;
+        }
+         p.footer-text { /* Đảm bảo style footer-text được áp dụng */
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row align-items-center">
+            {# <div class="col-md-3 text-center">
+                {% include 'partials/logo.html.twig' %}
+            </div> #}
+            <div class="col-md-12"> {# Đổi thành col-md-12 nếu không dùng logo #}
+                <h2>Thông tin liên hệ mới</h2>
+            </div>
+        </div>
+
+        {% macro render_field(form, fields, scope) %}
+            {% import _self as self %}
+
+            <table>
+                <tbody> {# Thêm tbody để đảm bảo cấu trúc bảng hợp lệ và border-radius hoạt động tốt hơn #}
+                {% for index, field in fields %}
+                    {%- set show_field = attribute(field, "input@") ?? field.store ?? true %}
+                    {% if field.fields %}
+                        {%- set new_scope = field.nest_id ? scope ~ field.name ~ '.' : scope -%}
+                        {{- self.render_field(form, field.fields, new_scope) }}
+                    {% else %}
+                        {% if show_field %}
+                            {%- set value = form.value(scope ~ (field.name ?? index)) -%}
+                            {% if value is not empty %} {# Kiểm tra nếu giá trị không rỗng #}
+                                <tr>
+                                    <th>{{ field.label|t|e }}</th>
+                                    <td>
+                                        {% if field.type == 'checkboxes' %}
+                                            <ul>
+                                                {% set use_keys = field.use is defined and field.use == 'keys' %}
+                                                {% for key,val in form.value(scope ~ field.name) %}
+                                                    {% set item_index = (use_keys ? key : val) %}
+                                                    <li>{{ field.options[item_index]|t|e }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% elseif field.type == 'radio' %}
+                                            {% set radio_value = form.value(scope ~ field.name) %}
+                                            {{ field.options[radio_value]|t|e }}
+                                        {% elseif field.type == 'checkbox' %}
+                                            {{ (form.value(scope ~ field.name) == 1) ? "Có" : "Không" }}
+                                        {% elseif field.type == 'select' %}
+                                            {% set select_value = form.value(scope ~ field.name) %}
+                                            {% if select_value is iterable %}
+                                                <ul>
+                                                    {% set use_keys = field.use is defined and field.use == 'keys' %}
+                                                    {% for key, val in select_value %}
+                                                        {% set item_index = (use_keys ? key : val) %}
+                                                        <li>{{ field.options[item_index]|t|e }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% else %}
+                                                {{ field.options[select_value]|t|e }}
+                                            {% endif %}
+                                        {% else %}
+                                            {% set display_value = form.value(scope ~ field.name) %}
+                                            {% if display_value is iterable %}
+                                                <ul>
+                                                    {% for val in display_value %}
+                                                        {% if val is iterable %}
+                                                            {# Xử lý trường hợp lồng nhau, nếu có #}
+                                                            <ul>
+                                                                {% for v in val %}
+                                                                    <li>{{ string(v)|e }}</li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        {% else %}
+                                                            <li>{{ string(val)|e }}</li>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </ul>
+                                            {% else %}
+                                                {{ string(display_value)|e|nl2br }}
+                                            {% endif %}
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                </tbody>
+            </table>
+        {% endmacro %}
+
+        {% import _self as macro %}
+
+        {{ macro.render_field(form, form.fields, '') }}
+
+        <p class="footer-text">Thông tin được gửi từ biểu mẫu liên hệ trên Website BookDe.</p>
+    </div>
+</body>
+</html>

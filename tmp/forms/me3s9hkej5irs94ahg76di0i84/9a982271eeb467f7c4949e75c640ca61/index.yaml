@@ -1,0 +1,32 @@
+form: flex-pages
+id: 'tmp://forms/session/9a982271eeb467f7c4949e75c640ca61'
+unique_id: 9a982271eeb467f7c4949e75c640ca61
+url: '/pages/pricing/form/:add'
+user:
+  username: dungnguyen
+  email: dungnguyen19724@gmail.com
+timestamps:
+  created: 1747724217
+  updated: 1747724217
+data: null
+files: {  }
+object:
+  type: pages
+  key: pricing/form
+  storage_key: ''
+  timestamp: 0
+  serialized:
+    __META:
+      clone: true
+    storage_key: ''
+    parent_key: 03.pricing
+    order: false
+    folder: form
+    template: form
+    lang: vi
+    root: false
+    route: /pricing
+    name: form
+    header:
+      title: _form
+    frontmatter: "title: _form\n"

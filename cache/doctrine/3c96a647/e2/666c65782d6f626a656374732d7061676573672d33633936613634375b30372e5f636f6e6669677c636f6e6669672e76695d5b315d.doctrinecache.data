@@ -1,0 +1,42 @@
+1748311877
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:7:"_config";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:11:{s:5:"title";s:6:"BOOKDE";s:4:"name";s:7:"ALLXONE";s:5:"phone";s:16:"+1 5589 55488 55";s:5:"email";s:15:"infor@bookde.vn";s:7:"address";s:90:"F1, QCoop Building, 150 Nguyen Xi, Ward 26, Binh Thanh District, Ho Chi Minh City, Vietnam";s:5:"image";a:1:{s:9:"logo.webp";a:4:{s:4:"name";s:8:"logo.svg";s:4:"type";s:9:"image/svg";s:4:"size";i:11650;s:4:"path";s:8:"logo.svg";}}s:4:"menu";s:17:"Cấu hình chung";s:6:"social";a:2:{i:0;a:3:{s:5:"title";s:8:"Facebook";s:4:"link";s:35:"https://www.facebook.com/AllXOne.vn";s:5:"image";a:1:{s:12:"facebook.png";a:4:{s:4:"name";s:12:"facebook.png";s:4:"type";s:9:"image/png";s:4:"size";i:117729;s:4:"path";s:12:"facebook.png";}}}i:1;a:3:{s:5:"title";s:8:"Linkedin";s:4:"link";s:41:"https://www.linkedin.com/company/allxone/";s:5:"image";a:1:{s:11:"linkdin.png";a:4:{s:4:"name";s:12:"linkedin.png";s:4:"type";s:9:"image/png";s:4:"size";i:53522;s:4:"path";s:11:"linkdin.png";}}}}s:4:"foot";s:83:"© Bản quyền **BookDe.vn** Bảo lưu mọi quyền
+
+Thiết kế bởi AllXone";s:11:"media_order";s:9:"logo.webp";s:7:"favicon";a:1:{s:12:"favicon.webp";a:4:{s:4:"name";s:8:"logo.svg";s:4:"type";s:9:"image/svg";s:4:"size";i:586;s:4:"path";s:8:"logo.svg";}}}s:11:"frontmatter";s:1067:"title: BOOKDE
+name: ALLXONE
+phone: '+1 5589 55488 55'
+email: infor@bookde.vn
+address: 'F1, QCoop Building, 150 Nguyen Xi, Ward 26, Binh Thanh District, Ho Chi Minh City, Vietnam'
+image:
+    logo.webp:
+        name: logo.svg
+        type: image/svg
+        size: 11650
+        path: logo.svg
+menu: 'Cấu hình chung'
+social:
+    -
+        title: Facebook
+        link: 'https://www.facebook.com/AllXOne.vn'
+        image:
+            facebook.png:
+                name: facebook.png
+                type: image/png
+                size: 117729
+                path: facebook.png
+    -
+        title: Linkedin
+        link: 'https://www.linkedin.com/company/allxone/'
+        image:
+            linkdin.png:
+                name: linkedin.png
+                type: image/png
+                size: 53522
+                path: linkdin.png
+foot: "© Bản quyền **BookDe.vn** Bảo lưu mọi quyền\n\nThiết kế bởi AllXone"
+media_order: logo.webp
+favicon:
+    favicon.webp:
+        name: logo.svg
+        type: image/svg
+        size: 586
+        path: logo.svg";s:8:"markdown";s:0:"";}s:7:"storage";a:8:{s:3:"key";s:7:"_config";s:11:"storage_key";s:20:"07._config|config.vi";s:8:"template";s:6:"config";s:17:"storage_timestamp";i:1747895983;s:8:"markdown";a:2:{s:2:"en";a:1:{s:6:"config";i:1747895983;}s:2:"vi";a:1:{s:6:"config";i:1747895959;}}s:8:"checksum";s:32:"1e1a6209bb1f0fd32ae8ee9b13802a66";s:6:"exists";b:1;s:4:"lang";s:2:"vi";}}

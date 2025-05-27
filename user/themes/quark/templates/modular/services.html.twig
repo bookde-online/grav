@@ -1,0 +1,62 @@
+{% set lang = grav.language.getLanguage %}
+<section id="{{ lang == 'vi' ? 'dich-vu' : 'services' }}" class="services section light-background">
+	<div class="container">
+		<div class="row gy-4  text-center d-flex justify-content-center">
+            {% if page.header.image %}
+                {% set image_name = page.header.image is iterable ? (page.header.image|keys|first) : page.header.image %}
+                {% set image = page.media[image_name] ?? null %}
+                {% if image %}
+                    <img src="{{ image.url }}" alt="{{ page.header.title }}" class="img-fluid" style="width: 100%; max-width: 600px; height: auto;">
+                {% endif %}
+            {% endif %}
+
+            {# Tiêu đề #}
+			{% if page.header.title %}
+				<h2 class="inner-title" style="color: #A93226;">
+					<b>{{ page.header.title }}</b>
+				</h2>
+				<p>Khởi chạy trang web đặt phòng của riêng bạn hôm nay!</p>
+			{% endif %}
+          
+			{% for child in page.children() if not child.header.hidden %}
+				<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
+                    <div class="card service-card h-100 shadow-sm border-0 ">
+						<a
+							href="{{ child.url }}" target="_blank" class="stretched-link text-decoration-none">
+							{# Hình ảnh #}
+							{% if child.header.image %}
+								{% set image_name = child.header.image is iterable ? (child.header.image|keys|first) : child.header.image %}
+								{% set image = child.media[image_name] ?? null %}
+								{% if image %}
+									<img src="{{ image.url }}" alt="{{ child.header.title }}" class="card-img-top" style="height:200px; object-fit:cover;">
+								{% endif %}
+							{% endif %}
+
+							{# Nội dung #}
+							<div class="card-body text-center">
+								<h5 class="card-title fw-bold">
+									{{ child.header.title }}
+									<span class="ms-1">&rsaquo;</span>
+								</h5>
+								{% if child.header.subtitle %}
+									<p class="card-text text-muted">
+										{{ child.header.subtitle }}
+									</p>
+								{% endif %}
+							</div>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+           
+
+		</div>
+		<hr>
+		{% if page.content %}
+			<div style="display: flex; justify-content: center; margin-top: 50px; text-align: center; font-size: larger;">
+				{{ page.content|raw }}
+			</div>
+		{% endif %}
+	</div>
+</section>
+<!-- End Services Section -->

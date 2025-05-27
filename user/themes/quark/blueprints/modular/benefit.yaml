@@ -1,0 +1,58 @@
+Titlte: Chi tiết dịch vụ
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Content
+
+          fields:
+            header.title:
+              type: text
+              label: "Tên dịch vụ"
+              validate:
+                required: true
+
+            header.subtitle:
+              type: text
+              label: Tiêu đề phụ
+              validate:
+                required: false
+            header.items:
+              type: list
+              label: Danh sách hình ảnh
+              style: vertical
+              validate:
+                required: false
+
+              fields:
+                .image:
+                  type: file
+                  label: Hình ảnh
+                  multiple: false
+                  destination: 'self@'
+                  validate:
+                    required: false
+                  accept:
+                    - image/jpeg
+                    - image/png
+                    - image/webp
+                    - image/avif
+                    - image/gif
+                    - image/svg+xml
+                .title:
+                  type: text
+                  label: Tiêu đề
+                  validate:
+                    required: false
+
+            
+# form:

@@ -1,0 +1,91 @@
+
+<section id="demo" class="py-5 mt-5" style="background-color: #f9f9f9">
+   <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-md-6 mb-5 mb-md-0">
+        <h1 class="display-5 fw-bold">
+            {{ grav.language.getLanguage == 'en' ? 
+            'Schedule a meeting with us today!' : 
+            'Lên lịch cuộc họp với chúng tôi trong hôm nay !' }}
+        </h1>
+        <p class="text-muted">
+            {{ grav.language.getLanguage == 'en' ?
+             'We are excited to meet you and share great ideas during our upcoming meeting. Feel free to reach out if you have any questions before then!' : 
+             'Chúng tôi rất mong đợi để được gặp bạn và cùng nhau trao đổi những ý tưởng tuyệt vời trong buổi hẹn sắp tới. Nếu bạn có bất kỳ câu hỏi nào trước đó, đừng ngần ngại liên hệ với chúng tôi!' }}
+        </p>
+
+        <!-- Email Form Box -->
+        <div class="form-box mt-4 d-flex align-items-center">
+        
+           <button  class="btn btn-primary btn-lg cta-button open-contact-modal">
+                         {{ grav.language.getLanguage == 'en' ? 'Booking service' : 'Đăng ký dịch vụ' }}
+                    </button>
+        </div>
+
+        <div class="mt-3 text-success">
+          <i class="bi bi-info-circle"></i>
+          {{ grav.language.getLanguage == 'en' ? 'We’ll come back within 24 hours respectively 😇' : 'Chúng tôi sẽ trả lời bạn sớm nhất trong vòng 24 giờ 😇' }} 
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-md-6 text-center">
+        {% if page.header.image %}
+                    {% set image = page.header.image|first.name %}
+                    {% if page.media[image] %}
+                        <img src="{{ page.media[image].url }}" alt="{{ page.header.title|e }}" class="img-fluid rounded shadow-sm">
+                    {% endif %}
+                {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+                 
+ 
+   
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">
+                    {{ grav.language.getLanguage == 'en' ? 'Meeting request form' : 'Biểu mẫu yêu cầu cuộc họp' }}
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {% include 'forms/contact-form.twig' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const contactButtons = document.querySelectorAll('.open-contact-modal');
+    const contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+ 
+
+    contactButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            contactModal.show();
+        });
+    });
+
+});
+</script>
+
+<script>
+
+window.addEventListener('DOMContentLoaded', () => {
+    const tzSelect = document.getElementById('timezone');
+    const browserTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    if (browserTz && tzSelect) {
+        const option = Array.from(tzSelect.options).find(opt => opt.value === browserTz);
+        if (option) option.selected = true;
+    }
+});
+</script>
+
+</section>

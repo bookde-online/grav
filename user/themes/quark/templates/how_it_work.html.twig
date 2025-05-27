@@ -1,0 +1,36 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block hero %}
+    {% include 'partials/place.html.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    {% if page.header.title %}
+        <h1 class="text-center fw-bold">{{ page.header.subtitle }}</h1>
+    {% endif %}
+
+    <div class="timeline-modern">
+        {% for step in page.header.items %}
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h2 class="mb-2 timeline-title"><b>{{ step.title }}</b></h2>
+                    </div>
+                    <p class="text-muted mb-3 s-20">{{ step.subtitle }}</p>
+                    {% if step.image %}
+                        {% set image = step.image|first %}
+                        <img src="{{ page.media[image.name].url }}" alt="{{ step.title|e }}" class="img-fluid rounded shadow-sm">
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+

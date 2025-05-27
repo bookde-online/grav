@@ -1,0 +1,41 @@
+title: Who use service Section
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1  
+
+      fields:
+        content:
+          type: tab
+          title: Content
+          fields:
+            header.items:
+              type: list
+              label: Danh sách loại khách hàng
+              style: vertical
+              validate:
+                required: false
+
+              fields:
+                .title:
+                  type: text
+                  label: Tiêu đề
+                  
+
+                .image:
+                  type: file
+                  label: Hình ảnh
+                  multiple: false
+                  destination: 'self@'
+                  validate:
+                    required: false
+                  accept:
+                    - image/jpeg
+                    - image/png
+                    - image/webp
+                    - image/avif
+                    - image/gif
+                    - image/svg+xml
