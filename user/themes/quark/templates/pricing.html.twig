@@ -9,7 +9,8 @@
 		<div class="container">
 			<div class="row gy d-flex justify-content-center"> 
 				{% for plan in page.header.pricing_plans %}
-					<div class="col-lg-4 col-md-7 mt-3" data-aos="zoom-in" data-aos-delay="100">
+					<div class="col-lg-4 col-md-7  mt-3 col-nexthub" data-aos="zoom-in" data-aos-delay="100">
+
 						<div class="pricing-item">
 							<h3 style="font-size: 25px; color: #A93226;">{{ plan.name }}</h3>
 							<h5 style="font-size: 20px; font-weight: 600;">{{ plan.features_title }}</h5>
@@ -29,7 +30,7 @@
 								<a class="cta-btn mb-3" href="./#demo">
 									{{ grav.language.getLanguage == 'en' ? 'Booking now !' : 'Đăng ký ngay' }}</a>
 							</div>
-                        <div style="height: 340px">
+                        <div style="height: 340px; overflow-y: hidden; padding: 10px;">	
 							{% for feature in plan.features %}
 
 								<a style="d-flex justify-content-center">{{ feature.text }}
@@ -39,7 +40,7 @@
 								
 							{% endfor %}
                         </div>
-                         <a href="{{ plan.link }}">
+                         <a href="{{ plan.link }} class="mt-5">
 									{{ grav.language.getLanguage == 'en' ? 'Show more' : 'Xem thêm' }}
 								</a>   
 						</div>
