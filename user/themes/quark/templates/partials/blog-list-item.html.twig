@@ -1,29 +1,26 @@
-<div class="card">
+<div class="bg-white shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300 mb-5" style="height:550px; border-radius: 10px;">
     {% set image = page.media.images|first %}
     {% if image %}
-    <div class="card-image">
-        <a href="{{ page.url }}">
-            <img src="{{ image.cropZoom(800,400).url }}" alt="BookDe Blog" loading="lazy">
-        </a>
-    </div>
+    <a href="{{ page.url }}">
+        <img src="{{ image.cropZoom(700,400).url }}" alt="BookDe Blog" loading="lazy" class="w-full h-30">
+    </a>
     {% endif %}
-    <div class="card-header">
-        <div class="card-subtitle text-gray">
+
+    <div class="p-4 space-y-3">
+        <div class="text-sm text-gray-500">
             {% include 'partials/blog/date.html.twig' %}
         </div>
-        <div class="card-title"    ">
-            {% include 'partials/blog/title.html.twig' with {title_level: 'h5'} %}
-        </div>
+
+        <h5 class="text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors mb-5">
+            <a href="{{ page.url }}">
+                {% include 'partials/blog/title.html.twig' with {title_level: 'span'} %}
+            </a>
+        </h5>
+
+       
     </div>
-    <div class="card-body">
-        {% if page.summary != page.content %}
-            {{ page.summary|raw }}
-        {% else %}
-            {{ page.content|raw }}
-        {% endif %}
-    </div>
-    <div class="card-footer">
+
+    <div class="px-4 pb-4">
         {% include 'partials/blog/taxonomy.html.twig' %}
     </div>
 </div>
-

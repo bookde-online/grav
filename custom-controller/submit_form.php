@@ -24,18 +24,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     error_reporting(E_ALL);
 
     // Lấy dữ liệu từ form
-    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
-    $phone = isset($_POST['phone']) ? htmlspecialchars($_POST['phone']) : '';
-    $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
-    $services = isset($_POST['services']) && is_array($_POST['services']) 
-        ? array_map('htmlspecialchars', $_POST['services']) 
+    $name           = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
+    $phone          = isset($_POST['phone']) ? htmlspecialchars($_POST['phone']) : '';
+    $email          = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
+    $services       = isset($_POST['services']) && is_array($_POST['services'])
+        ? array_map('htmlspecialchars', $_POST['services'])
         : [];
-
-    $plan = implode(', ', $services);
-    $timezone = ($_POST['timezone']) ? htmlspecialchars($_POST['timezone']) : '';
-    $datetime = ($_POST['datetime']) ? htmlspecialchars($_POST['datetime']) : '';
+    $plan           = implode(', ', $services);
+    $timezone          = isset($_POST['timezone']) ? htmlspecialchars($_POST['timezone']) : '';
+    $datetime       = isset($_POST['datetime']) ? htmlspecialchars($_POST['datetime']) : '';
     $messageContent = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
 
+    // --- CHUYỂN timezone ID thành label (GMT±hh:mm) Region - City ---
+    try {
+        $tzObj = new DateTimeZone($timezone);
+        $utcNow = new DateTime('now', new DateTimeZone('UTC'));
+        $offset = $tzObj->getOffset($utcNow);
+        $hours = floor($offset / 3600);
+        $minutes = abs(($offset % 3600) / 60);
+        $formattedOffset = sprintf("GMT%+03d:%02d", $hours, $minutes);
+        // Ví dụ: "(GMT+07:00) Asia - Ho Chi Minh"
+        $timezoneLabel = "($formattedOffset) " . str_replace('_', ' ', str_replace('/', ' - ', $timezone));
+    } catch (Exception $e) {
+        // Nếu ID không hợp lệ, fallback dùng nguyên ID
+        $timezoneLabel = $timezone;
+    }
     // --- Đọc cấu hình email từ file YAML ---
     $emailConfig = [];
     $emailConfigFile = __DIR__ . '/../user/config/plugins/email.yaml'; // Đảm bảo đường dẫn này chính xác
@@ -101,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->setFrom($mail->Username, $senderName);
         $mail->addAddress($emailConfig['to'] ?? 'hungpq1309developer@gmail.com');
         $mail->addReplyTo($email, $name);
-        
+
         // Email Content
         $mail->isHTML(true);
         $mail->Subject = 'Quan tâm về gói dịch vụ - ' . $name;
@@ -150,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </tr>
                              <tr>
                                 <td class=\"header-cell\">Thời gian:</td>
-                                <td class=\"data-cell\">{$timezone} - {$datetime} </td>
+                                <td class=\"data-cell\">{$timezoneLabel} - {$datetime} </td>
                             </tr>
                             <tr>
                                 <td class=\"header-cell\">Lời nhắn:</td>
@@ -163,21 +176,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </body>
             </html>
         ";
-        $mail->AltBody = "Name: {$name}\nPhone: {$phone}\nEmail: {$email}\nSelected Plan: {$plan}\nMessage:\n{$messageContent}";
+        $mail->AltBody = "Name: {$name}\nPhone: {$phone}\nEmail: {$email}\nSelected Plan: {$plan}\nTime: {$timezoneLabel} - {$datetime}\nMessage:\n{$messageContent}";
         $mail->send();
 
-        
+
 
         // --- Update status to success ---
         $status = 'success';
-      
-
     } catch (Exception $e) {
         // --- Update status to error ---
         $status = 'error';
         error_log("Email sending error: " . $e->getMessage() . " - Mailer Error: " . $mail->ErrorInfo);
     }
-
 } else {
     // If not a POST request, or accessed directly
     $status = 'info'; // Set status to info for direct access

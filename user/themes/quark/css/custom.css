@@ -2903,7 +2903,7 @@ body {
 
   /* Chỉ áp dụng cho mobile */
   .row {
-    flex-direction: column-reverse;
+    flex-direction: column;
     /* Đảo ngược thứ tự ảnh và chữ */
   }
 
@@ -3096,3 +3096,10 @@ hr {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+/*scroll mobile -> minimize nav*/
+
+.scrolled .logo
+{
+  width: 20px;
+  height: 20px;
+}

@@ -95,29 +95,51 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
 \t\t</label>
 \t\t<div class=\"row g-1 \">
 \t\t\t<div class=\"col-md-4\">
-\t\t\t\t<select id=\"timezone\" name=\"timezone\" class=\"form-select\" required>
+\t\t\t\t<select
+\t\t\t\t\tid=\"timezone\" name=\"timezone\" class=\"form-select\" required>
 \t\t\t\t\t";
-        // line 47
+        // line 49
+        echo "\t\t\t\t\t";
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["timezones"] ?? null));
-        foreach ($context['_seq'] as $context["tz"] => $context["label"]) {
-            // line 48
-            echo "\t\t\t\t\t\t<option value=\"";
-            echo twig_escape_filter($this->env, $context["tz"], "html", null, true);
-            echo "\">";
-            echo twig_escape_filter($this->env, $context["label"], "html", null, true);
-            echo "</option>
+        $context['_seq'] = twig_ensure_traversable(($context["grouped_timezones"] ?? null));
+        foreach ($context['_seq'] as $context["group_label"] => $context["tz_group"]) {
+            // line 50
+            echo "\t\t\t\t\t\t<optgroup
+\t\t\t\t\t\t\tlabel=\"";
+            // line 51
+            echo twig_escape_filter($this->env, $context["group_label"], "html", null, true);
+            echo "\">
+\t\t\t\t\t\t\t";
+            // line 53
+            echo "\t\t\t\t\t\t\t";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($context["tz_group"]);
+            foreach ($context['_seq'] as $context["tz"] => $context["label"]) {
+                // line 54
+                echo "\t\t\t\t\t\t\t\t<option value=\"";
+                echo twig_escape_filter($this->env, $context["tz"], "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, $context["label"], "html", null, true);
+                echo "</option>
+\t\t\t\t\t\t\t";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['tz'], $context['label'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 56
+            echo "\t\t\t\t\t\t</optgroup>
 \t\t\t\t\t";
         }
         $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['tz'], $context['label'], $context['_parent'], $context['loop']);
+        unset($context['_seq'], $context['_iterated'], $context['group_label'], $context['tz_group'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 50
+        // line 58
         echo "\t\t\t\t</select>
 \t\t\t</div>
+
 \t\t\t<div class=\"col-md-6\">
-\t\t\t\t<input type=\"datetime-local\" id=\"datetime\" name=\"datetime\" class=\"form-control\"  min=\"";
-        // line 53
+\t\t\t\t<input type=\"datetime-local\" id=\"datetime\" name=\"datetime\" class=\"form-control\" min=\"";
+        // line 62
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_date_modify_filter($this->env, "now", "+1 day"), "Y-m-d\\TH:i"), "html", null, true);
         echo "\" required/>
 
@@ -128,14 +150,14 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
 
 \t<div class=\"mb-3\">
 \t\t<label for=\"message\" class=\"form-label\">";
-        // line 61
+        // line 70
         echo ((($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguage", []) == "en")) ? ("Message") : ("Tin nhắn"));
         echo "</label>
 \t\t<textarea class=\"form-control\" id=\"message\" name=\"message\" rows=\"5\" required></textarea>
 \t</div>
 \t<button type=\"submit\" class=\"btn btn-primary\">
 \t\t";
-        // line 65
+        // line 74
         echo ((($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguage", []) == "en")) ? ("Send Message") : ("Gửi tin nhắn"));
         echo "
 \t</button>
@@ -148,7 +170,6 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
 
     let userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-    // 🎯 Map các alias về đúng timezone bạn có trong danh sách
     const aliases = {
       'Asia/Saigon': 'Asia/Ho_Chi_Minh',
       'Asia/Phnom_Penh': 'Asia/Bangkok',
@@ -160,7 +181,6 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
       userTimeZone = aliases[userTimeZone];
     }
 
-    // ✅ Duyệt và chọn đúng option
     for (let i = 0; i < tzSelect.options.length; i++) {
       if (tzSelect.options[i].value === userTimeZone) {
         tzSelect.selectedIndex = i;
@@ -171,6 +191,7 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
     console.log('Selected Timezone:', userTimeZone);
   });
 </script>
+
 ";
     }
 
@@ -186,7 +207,7 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
 
     public function getDebugInfo()
     {
-        return array (  139 => 65,  132 => 61,  121 => 53,  116 => 50,  105 => 48,  101 => 47,  93 => 42,  85 => 37,  76 => 31,  67 => 25,  58 => 19,  50 => 14,  42 => 9,  35 => 5,  30 => 2,);
+        return array (  161 => 74,  154 => 70,  143 => 62,  137 => 58,  130 => 56,  119 => 54,  114 => 53,  110 => 51,  107 => 50,  102 => 49,  93 => 42,  85 => 37,  76 => 31,  67 => 25,  58 => 19,  50 => 14,  42 => 9,  35 => 5,  30 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -244,14 +265,23 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
 \t\t</label>
 \t\t<div class=\"row g-1 \">
 \t\t\t<div class=\"col-md-4\">
-\t\t\t\t<select id=\"timezone\" name=\"timezone\" class=\"form-select\" required>
-\t\t\t\t\t{% for tz, label in timezones %}
-\t\t\t\t\t\t<option value=\"{{ tz }}\">{{ label }}</option>
+\t\t\t\t<select
+\t\t\t\t\tid=\"timezone\" name=\"timezone\" class=\"form-select\" required>
+\t\t\t\t\t{# Duyệt từng nhóm theo label: (GMT+07:00), (GMT+08:00),... #}
+\t\t\t\t\t{% for group_label, tz_group in grouped_timezones %}
+\t\t\t\t\t\t<optgroup
+\t\t\t\t\t\t\tlabel=\"{{ group_label }}\">
+\t\t\t\t\t\t\t{# Duyệt từng timezone trong nhóm đó #}
+\t\t\t\t\t\t\t{% for tz, label in tz_group %}
+\t\t\t\t\t\t\t\t<option value=\"{{ tz }}\">{{ label }}</option>
+\t\t\t\t\t\t\t{% endfor %}
+\t\t\t\t\t\t</optgroup>
 \t\t\t\t\t{% endfor %}
 \t\t\t\t</select>
 \t\t\t</div>
+
 \t\t\t<div class=\"col-md-6\">
-\t\t\t\t<input type=\"datetime-local\" id=\"datetime\" name=\"datetime\" class=\"form-control\"  min=\"{{ \"now\"|date_modify(\"+1 day\")|date(\"Y-m-d\\\\TH:i\") }}\" required/>
+\t\t\t\t<input type=\"datetime-local\" id=\"datetime\" name=\"datetime\" class=\"form-control\" min=\"{{ \"now\"|date_modify(\"+1 day\")|date(\"Y-m-d\\\\TH:i\") }}\" required/>
 
 \t\t\t</div>
 \t\t</div>
@@ -274,7 +304,6 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
 
     let userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-    // 🎯 Map các alias về đúng timezone bạn có trong danh sách
     const aliases = {
       'Asia/Saigon': 'Asia/Ho_Chi_Minh',
       'Asia/Phnom_Penh': 'Asia/Bangkok',
@@ -286,7 +315,6 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
       userTimeZone = aliases[userTimeZone];
     }
 
-    // ✅ Duyệt và chọn đúng option
     for (let i = 0; i < tzSelect.options.length; i++) {
       if (tzSelect.options[i].value === userTimeZone) {
         tzSelect.selectedIndex = i;
@@ -297,6 +325,7 @@ class __TwigTemplate_96c67648158e9948a0e7104815c14cd85747a4d8e0e8eb83498dbc16506
     console.log('Selected Timezone:', userTimeZone);
   });
 </script>
+
 ", "forms/contact-form.twig", "C:\\xampp\\htdocs\\bookdevn\\user\\themes\\quark\\templates\\forms\\contact-form.twig");
     }
 }

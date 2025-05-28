@@ -34,5 +34,8 @@ items:
                 size: 1793059
                 path: work3.jpg
 subtitle: 'Các bước đơn giản để khởi chạy trang web cho khách sạn'
+process:
+    markdown: true
+    twig: true
 ---
 

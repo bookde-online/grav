@@ -48,58 +48,7 @@ class __TwigTemplate_9dea01cd559c8fb557884c4dfc8e562d4e658af31dde1599ace9ad4c1be
         echo "    ";
         $context["lang_url"] = twig_replace_filter(($context["base_url_absolute"] ?? null), [($context["current_lang"] ?? null) => ""]);
         // line 9
-        echo "
-    <div class=\"language-dropdown\">
-        <button class=\"dropdown-btn\" id=\"lang-toggle\">
-            <img src=\"";
-        // line 12
-        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
-        echo "/assets/img/";
-        echo twig_escape_filter($this->env, ($context["current_lang"] ?? null), "html", null, true);
-        echo ".webp\" alt=\"";
-        echo twig_escape_filter($this->env, ($context["current_lang"] ?? null), "html", null, true);
-        echo "\">
-            <span>";
-        // line 13
-        echo twig_escape_filter($this->env, twig_upper_filter($this->env, $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [], "method")), "html", null, true);
-        echo "</span>
-            <i class=\"bi bi-chevron-down toggle-dropdown\"></i>
-        </button>
-        <div class=\"dropdown-content\">
-            ";
-        // line 17
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguages", [], "method"));
-        foreach ($context['_seq'] as $context["_key"] => $context["language"]) {
-            if (($context["language"] != $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [], "method"))) {
-                // line 18
-                echo "                <a href=\"";
-                echo twig_escape_filter($this->env, ((($context["lang_url"] ?? null) . "/") . $context["language"]), "html", null, true);
-                echo "\">
-                    <img src=\"";
-                // line 19
-                echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
-                echo "/assets/img/";
-                echo twig_escape_filter($this->env, $context["language"], "html", null, true);
-                echo ".webp\" alt=\"";
-                echo twig_escape_filter($this->env, $context["language"], "html", null, true);
-                echo "\">
-                    <span>";
-                // line 20
-                echo twig_escape_filter($this->env, twig_upper_filter($this->env, $context["language"]), "html", null, true);
-                echo "</span>
-                </a>
-            ";
-            }
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['language'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 23
-        echo "        </div>
-    </div>
-</ul>
-
+        echo "</ul>
 
 
 ";
@@ -117,7 +66,7 @@ class __TwigTemplate_9dea01cd559c8fb557884c4dfc8e562d4e658af31dde1599ace9ad4c1be
 
     public function getDebugInfo()
     {
-        return array (  99 => 23,  89 => 20,  81 => 19,  76 => 18,  71 => 17,  64 => 13,  56 => 12,  51 => 9,  48 => 8,  46 => 7,  41 => 5,  37 => 4,  34 => 3,  32 => 2,  30 => 1,);
+        return array (  51 => 9,  48 => 8,  46 => 7,  41 => 5,  37 => 4,  34 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -138,24 +87,7 @@ class __TwigTemplate_9dea01cd559c8fb557884c4dfc8e562d4e658af31dde1599ace9ad4c1be
 
     {% set current_lang = '/' ~ grav.language.getActive() %}
     {% set lang_url = base_url_absolute|replace({(current_lang): ''}) %}
-
-    <div class=\"language-dropdown\">
-        <button class=\"dropdown-btn\" id=\"lang-toggle\">
-            <img src=\"{{ theme_url }}/assets/img/{{ current_lang }}.webp\" alt=\"{{ current_lang }}\">
-            <span>{{ grav.language.getActive()|upper }}</span>
-            <i class=\"bi bi-chevron-down toggle-dropdown\"></i>
-        </button>
-        <div class=\"dropdown-content\">
-            {% for language in grav.language.getLanguages() if language != grav.language.getActive() %}
-                <a href=\"{{ lang_url ~ '/' ~ language }}\">
-                    <img src=\"{{ theme_url }}/assets/img/{{ language }}.webp\" alt=\"{{ language }}\">
-                    <span>{{ language|upper }}</span>
-                </a>
-            {% endfor %}
-        </div>
-    </div>
 </ul>
-
 
 
 ", "partials/navigation.html.twig", "C:\\xampp\\htdocs\\bookdevn\\user\\themes\\quark\\templates\\partials\\navigation.html.twig");

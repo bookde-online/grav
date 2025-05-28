@@ -5,7 +5,7 @@ function scrollHeader() {
     var zvalue = $(document).scrollTop();
     if ( zvalue > 75 )
         $("#header").addClass("scrolled");
-    else
+    else 
         $("#header").removeClass("scrolled");
 }
 
@@ -53,8 +53,8 @@ jQuery(document).ready(function($){
         $('body').toggleClass('mobile-nav-open');
     });
 
-    // Tree Menu
-    $(".tree").treemenu({delay:300});
+    // // Tree Menu
+    // $(".tree").treemenu({delay:300});
 
 });
 

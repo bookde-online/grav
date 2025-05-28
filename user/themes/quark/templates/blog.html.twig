@@ -17,47 +17,49 @@
     {% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
 {% endblock %}
 
-
 {% block hero %}
     {% include 'partials/place.html.twig' %}
-    {# {% include 'partials/hero.html.twig' with {id: 'blog-hero', content: page.content, hero_image: blog_image} %} #}
 {% endblock %}
 
 {% block body %}
-    <section id="body-wrapper" class="section blog-listing">
-        <section class="container {{ grid_size }}">
-
+<section id="body-wrapper" class="section blog-listing">
+    <div class="container {{ grid_size }}">
         {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
-            {% include 'partials/breadcrumbs.html.twig' %}
+            <div class="row mb-3">
+                <div class="col-12">
+                    {% include 'partials/breadcrumbs.html.twig' %}
+                </div>
+            </div>
         {% endif %}
 
-        {% embed 'partials/layout.html.twig' with {blog: page} %}
-            {% block item %}
-
-                <div class="bricklayer">
-                {% for child in collection %}
-                    {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
-                {% endfor %}
+        <div class="row gy-4">
+           
+                <div class="row gy-4">
+                    {% for child in collection %}
+                        <div class="col-lg-6 col-md-12 col-12 justify-content-center align-items-center">
+                            {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
+                        </div>
+                    {% endfor %}
                 </div>
 
                 {% if show_pagination and config.plugins.pagination.enabled and collection.params.pagination %}
-                    <div id="listing-footer">
+                    <div id="listing-footer" class="mt-4">
                         {% include 'partials/pagination.html.twig' with {base_url: page.url, pagination: collection.params.pagination} %}
                     </div>
                 {% endif %}
-
-            {% endblock %}
-
-            {% block sidebar %}
+            </div>
+            {% if show_sidebar %}
+            <div class="col-lg-4 col-md-12">
                 {% include 'partials/sidebar.html.twig' %}
-            {% endblock %}
-        {% endembed %}
-        </section>
-    </section>
+            </div>
+            {% endif %}
+        </div>
+    </div>
     <script>
         //Bricklayer
         var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
     </script>
+</section>
 {% endblock %}
 
 

@@ -36,5 +36,8 @@ items:
                 size: 1793059
                 path: work3.jpg
                 alt: 'how to create booking hotel website'
+process:
+    markdown: true
+    twig: true
 ---
 

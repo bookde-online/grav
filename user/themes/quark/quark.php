@@ -55,7 +55,7 @@ class Quark extends Theme
         $twig->twig_vars = array_merge($twig->twig_vars, $form_class_variables);
 
         // Generate timezones dropdown options
-        $twig->twig_vars['timezones'] = $this->generate_timezones();
+        $twig->twig_vars['grouped_timezones'] = $this->generate_grouped_timezones();
     }
 
     /**
@@ -63,26 +63,36 @@ class Quark extends Theme
      *
      * @return array of ['id' => timezone identifier, 'label' => formatted label]
      */
-    protected function generate_timezones()
-    {
-        $timezones = DateTimeZone::listIdentifiers();
-        $list = [];
+   protected function generate_grouped_timezones()
+{
+    $timezones = DateTimeZone::listIdentifiers();
+    $grouped = [];
 
-        // Lấy thời điểm UTC làm chuẩn để tính offset
-        $utcNow = new DateTime('now', new DateTimeZone('UTC'));
+    $utcNow = new DateTime('now', new DateTimeZone('UTC'));
 
-        foreach ($timezones as $tz) {
-            $timezone = new DateTimeZone($tz);
-            $offset = $timezone->getOffset($utcNow);
+    foreach ($timezones as $tz) {
+        $timezone = new DateTimeZone($tz);
+        $offset = $timezone->getOffset($utcNow);
 
-            $hours = floor($offset / 3600);
-            $minutes = abs(($offset % 3600) / 60);
-            $formattedOffset = sprintf("GMT%+03d:%02d", $hours, $minutes);
-            $label = "({$formattedOffset}) " . str_replace("_", " ", str_replace("/", " - ", $tz));
+        $hours = floor($offset / 3600);
+        $minutes = abs(($offset % 3600) / 60);
+        $formattedOffset = sprintf("GMT%+03d:%02d", $hours, $minutes);
+        $groupLabel = "({$formattedOffset})";
 
-            $list[$tz] = $label;
+        // Label hiển thị: (GMT+07:00) Asia - Ho Chi Minh
+        $label = "({$formattedOffset}) " . str_replace("_", " ", str_replace("/", " - ", $tz));
+
+        // Gom nhóm
+        if (!isset($grouped[$groupLabel])) {
+            $grouped[$groupLabel] = [];
         }
 
-        return $list;
+        $grouped[$groupLabel][$tz] = $label;
     }
+
+    // Sắp xếp theo offset
+    ksort($grouped);
+    return $grouped;
+}
+
 }
