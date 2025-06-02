@@ -1,0 +1,26 @@
+1749457423
+a:2:{s:7:"content";s:1577:"<section id="about" class="about-section" style="padding: 60px 0; background-color: #f9f9f9;">
+	<div class="container" style="max-width: 1200px; margin: 0 auto;">
+		<div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
+
+			<div class="col-lg-6" style="flex: 1 1 50%; padding: 20px; text-align: center;">
+				<img src="/bookdevn/user/pages/01.home/02._about/about.webp" alt="BookDe" class="img-fluid rounded" loading="lazy">
+			</div>
+
+			<div class="col-lg-6" style="flex: 1 1 50%; padding: 20px;">
+				<h2 style="color: #A93226; font-size: 2.5em; margin-bottom: 20px;">About Us</h2>
+				<p style="font-size: 1.1em; line-height: 1.6; color: #555;"><h5><strong>Increase bookings with your own hotel website</strong></h5>
+<p>At BookDe.vn, we empower hotels in Vietnam to take full control of their online presence. Our service allows you to create a custom website with your own domain name, allowing you to interact directly with your customers.</p>
+<h5><strong>One platform to manage all your hotels, customers and transactions</strong></h5>
+<p>Control all your hotels and data with just one website. Manage customer data, reservations, rooms, hotels, ... Create events, coupons on the web.</p>
+<p>Having your own hotel website not only makes it easier for customers to find you on the internet, but also optimizes the online booking experience, making management simpler, more efficient, saving time and optimizing revenue in the best way.</p></p>
+				<a href="/bookdevn/en/contact">
+					Get in touch
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+";s:12:"content_meta";N;}

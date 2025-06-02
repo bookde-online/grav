@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/bookdevn/user/config/system.yaml',
-    'modified' => 1748408041,
+    'modified' => 1748852366,
     'size' => 4649,
     'data' => [
         'absolute_urls' => false,

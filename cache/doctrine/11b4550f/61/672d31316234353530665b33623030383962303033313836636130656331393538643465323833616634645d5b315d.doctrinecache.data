@@ -1,0 +1,72 @@
+1749457423
+a:2:{s:7:"content";s:3173:"<section id="services" class="services section light-background">
+	<div class="container">
+		<div class="row gy-4  text-center d-flex justify-content-center">
+            
+            							<h2 class="inner-title" style="color: #A93226;">
+					<b>Enhance your hotel online</b>
+				</h2>
+				<p>Khởi chạy trang web đặt phòng của riêng bạn hôm nay!</p>
+			          
+							<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card service-card h-100 shadow-sm border-0 ">
+						<a
+							href="/bookdevn/en/_services/custom-hotel-website" target="_blank" class="stretched-link text-decoration-none">
+																																															<img src="/bookdevn/user/pages/01.home/03._services/01.custom-hotel-website/ser1.webp" alt="Custom hotel website" class="card-img-top" style="height:200px; object-fit:cover;">
+															
+														<div class="card-body text-center">
+								<h5 class="card-title fw-bold">
+									Custom hotel website
+									<span class="ms-1">&rsaquo;</span>
+								</h5>
+																	<p class="card-text text-muted">
+										Create a unique online identity with a custom website.
+									</p>
+															</div>
+						</a>
+					</div>
+				</div>
+							<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card h-100 shadow-sm border-0 ">
+						<a
+							href="/bookdevn/en/_services/online-booking-support" target="_blank" class="stretched-link text-decoration-none">
+																																															<img src="/bookdevn/user/pages/01.home/03._services/02.online-booking-support/ser2.webp" alt="Online booking support" class="card-img-top" style="height:200px; object-fit:cover;">
+															
+														<div class="card-body text-center">
+								<h5 class="card-title fw-bold">
+									Online booking support
+									<span class="ms-1">&rsaquo;</span>
+								</h5>
+																	<p class="card-text text-muted">
+										Simplify your hotel&#039;s online booking process with ease.
+									</p>
+															</div>
+						</a>
+					</div>
+				</div>
+							<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card h-100 shadow-sm border-0 ">
+						<a
+							href="/bookdevn/en/_services/booking-optimization-solutions" target="_blank" class="stretched-link text-decoration-none">
+																																															<img src="/bookdevn/user/pages/01.home/03._services/03.booking-optimization-solutions/ser3.webp" alt="Booking optimization solutions" class="card-img-top" style="height:200px; object-fit:cover;">
+															
+														<div class="card-body text-center">
+								<h5 class="card-title fw-bold">
+									Booking optimization solutions
+									<span class="ms-1">&rsaquo;</span>
+								</h5>
+																	<p class="card-text text-muted">
+										Maximize your bookings with our optimization tools.
+									</p>
+															</div>
+						</a>
+					</div>
+				</div>
+			           
+
+		</div>
+		<hr>
+			</div>
+</section>
+<!-- End Services Section -->
+";s:12:"content_meta";N;}

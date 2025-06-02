@@ -88,11 +88,13 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
         // line 66
         $this->displayBlock('header_navigation', $context, $blocks);
         // line 69
-        echo "\t\t\t\t\t<i class=\"mobile-nav-toggle d-xl-none bi bi-list\"></i>
+        echo "
+\t\t\t\t\t<i class=\"mobile-nav-toggle d-xl-none bi bi-list\"></i>
+
 \t\t\t\t\t<div class=\"language-dropdown\">
 \t\t\t\t\t\t<button class=\"dropdown-btn\" id=\"lang-toggle\">
-\t\t\t\t\t\t\t  <img src=\"";
-        // line 72
+\t\t\t\t\t\t\t<img src=\"";
+        // line 74
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/img/";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [], "method"), "html", null, true);
@@ -100,24 +102,42 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [], "method"), "html", null, true);
         echo "\">
 \t\t\t\t\t\t\t<span>";
-        // line 73
+        // line 75
         echo twig_escape_filter($this->env, twig_upper_filter($this->env, $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [], "method")), "html", null, true);
         echo "</span>
 \t\t\t\t\t\t\t<i class=\"bi bi-chevron-down toggle-dropdown\"></i>
 \t\t\t\t\t\t</button>
+
 \t\t\t\t\t\t<div class=\"dropdown-content\">
+\t\t\t\t\t\t\t<div class=\"dropdown-content\">
 \t\t\t\t\t\t\t";
-        // line 77
+        // line 81
+        $context["language_map"] = ["vi" => ["/gia-ca" => "../en/pricing", "/dich-vu/tuy-chinh-trang-khach-san" => "../../en/_services/custom-hotel-website", "/dich-vu/ho-tro-dat-truc-tuyen" => "../../en/_services/online-booking-support", "/dich-vu/giai-phap-toi-uu-hoa-dat-phong" => "../../en/_services/booking-optimization-solutions", "/lien-he" => "../en/contact", "/cach-hoat-dong" => "../en/how_it_work", "/blog" => "../en/blog", " " => "../en"], "en" => ["/pricing" => "../vi/gia-ca", "/_services/custom-hotel-website" => "../../vi/dich-vu/tuy-chinh-trang-khach-san", "/_services/online-booking-support" => "../../vi/dich-vu/ho-tro-dat-truc-tuyen", "/_services/booking-optimization-solutions" => "../../vi/dich-vu/giai-phap-toi-uu-hoa-dat-phong", "/contact" => "../vi/lien-he", "/how_it_work" => "../vi/cach-hoat-dong", "/blog" => "../vi/blog", " " => "../vi"]];
+        // line 104
+        echo "
+\t\t\t\t\t\t\t";
+        // line 105
+        $context["current_route"] = $this->getAttribute(($context["page"] ?? null), "route", []);
+        // line 106
+        echo "\t\t\t\t\t\t\t";
+        $context["current_lang"] = $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [], "method");
+        // line 107
+        echo "
+\t\t\t\t\t\t\t";
+        // line 108
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getLanguages", [], "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["language"]) {
-            if (($context["language"] != $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "language", []), "getActive", [], "method"))) {
-                // line 78
+            if (($context["language"] != ($context["current_lang"] ?? null))) {
+                // line 109
+                echo "\t\t\t\t\t\t\t\t";
+                $context["mapped_url"] = ((($this->getAttribute($this->getAttribute(($context["language_map"] ?? null), ($context["current_lang"] ?? null), [], "array", false, true), ($context["current_route"] ?? null), [], "array", true, true) &&  !(null === $this->getAttribute($this->getAttribute(($context["language_map"] ?? null), ($context["current_lang"] ?? null), [], "array", false, true), ($context["current_route"] ?? null), [], "array")))) ? ($this->getAttribute($this->getAttribute(($context["language_map"] ?? null), ($context["current_lang"] ?? null), [], "array", false, true), ($context["current_route"] ?? null), [], "array")) : ("/"));
+                // line 110
                 echo "\t\t\t\t\t\t\t\t<a href=\"";
-                echo twig_escape_filter($this->env, ((($context["lang_url"] ?? null) . "/") . $context["language"]), "html", null, true);
+                echo twig_escape_filter($this->env, ($context["mapped_url"] ?? null), "html", null, true);
                 echo "\">
 \t\t\t\t\t\t\t\t\t<img src=\"";
-                // line 79
+                // line 111
                 echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
                 echo "/assets/img/";
                 echo twig_escape_filter($this->env, $context["language"], "html", null, true);
@@ -125,7 +145,7 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
                 echo twig_escape_filter($this->env, $context["language"], "html", null, true);
                 echo "\">
 \t\t\t\t\t\t\t\t\t<span>";
-                // line 80
+                // line 112
                 echo twig_escape_filter($this->env, twig_upper_filter($this->env, $context["language"]), "html", null, true);
                 echo "</span>
 \t\t\t\t\t\t\t\t</a>
@@ -135,48 +155,47 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['language'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 83
+        // line 115
         echo "\t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</nav>
-
 \t\t\t\t";
-        // line 87
+        // line 118
         if (($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "login", []), "enabled", []) && $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "user", []), "username", []))) {
-            // line 88
+            // line 119
             echo "\t\t\t\t\t<span class=\"login-status-wrapper\">
 \t\t\t\t\t\t<i class=\"fa fa-user\"></i>
 \t\t\t\t\t\t";
-            // line 90
-            $this->loadTemplate("partials/login-status.html.twig", "partials/base-home.html.twig", 90)->display($context);
+            // line 121
+            $this->loadTemplate("partials/login-status.html.twig", "partials/base-home.html.twig", 121)->display($context);
             echo "</span>
 \t\t\t\t";
         }
-        // line 92
+        // line 123
         echo "\t\t\t</div>
 \t\t</header>
 
 
 \t\t<main class=\"main\"> ";
-        // line 96
+        // line 127
         $this->displayBlock('content', $context, $blocks);
-        // line 97
+        // line 128
         echo "\t\t\t";
-        // line 111
+        // line 142
         echo "
 
 \t\t\t";
-        // line 125
+        // line 156
         echo "
 \t\t\t";
-        // line 126
+        // line 157
         $this->displayBlock('bottom', $context, $blocks);
-        // line 129
+        // line 160
         echo "
 \t\t\t";
-        // line 130
+        // line 161
         $this->displayBlock('footer', $context, $blocks);
-        // line 133
+        // line 164
         echo "\t\t</main>
 
 \t\t<a href=\"#\" id=\"scroll-top\" class=\"scroll-top d-flex align-items-center justify-content-center\">
@@ -188,41 +207,41 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
 
 \t\t<!-- Vendor JS Files -->
 \t <script src=\"";
-        // line 143
+        // line 174
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>
 \t\t <script src=\"";
-        // line 144
+        // line 175
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/vendor/php-email-form/validate.js\"></script>
 \t\t <script src=\"";
-        // line 145
+        // line 176
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/vendor/aos/aos.js\"></script>
 \t\t <script src=\"";
-        // line 146
+        // line 177
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/vendor/glightbox/js/glightbox.min.js\"></script>
 \t\t <script src=\"";
-        // line 147
+        // line 178
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js\"></script>
 \t\t <script src=\"";
-        // line 148
+        // line 179
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/vendor/isotope-layout/isotope.pkgd.min.js\"></script>
 \t\t <script src=\"";
-        // line 149
+        // line 180
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/vendor/waypoints/noframework.waypoints.js\"></script>
 \t\t <script src=\"";
-        // line 150
+        // line 181
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/vendor/swiper/swiper-bundle.min.js\"></script>
 
 \t\t<!-- Main JS File -->
 \t\t <script src=\"";
-        // line 153
+        // line 184
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/assets/js/main.js\"></script>
 \t</body>
@@ -362,28 +381,28 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
         echo "\t\t\t\t\t";
     }
 
-    // line 96
+    // line 127
     public function block_content($context, array $blocks = [])
     {
     }
 
-    // line 126
+    // line 157
     public function block_bottom($context, array $blocks = [])
     {
-        // line 127
+        // line 158
         echo "\t\t\t\t";
         echo $this->getAttribute(($context["assets"] ?? null), "js", [0 => "bottom"], "method");
         echo "
 \t\t\t";
     }
 
-    // line 130
+    // line 161
     public function block_footer($context, array $blocks = [])
     {
-        // line 131
+        // line 162
         echo "\t\t\t\t";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base-home.html.twig", 131)->display($context);
-        // line 132
+        $this->loadTemplate("partials/footer.html.twig", "partials/base-home.html.twig", 162)->display($context);
+        // line 163
         echo "\t\t\t";
     }
 
@@ -399,7 +418,7 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
 
     public function getDebugInfo()
     {
-        return array (  387 => 132,  384 => 131,  381 => 130,  374 => 127,  371 => 126,  366 => 96,  362 => 68,  359 => 67,  356 => 66,  349 => 56,  344 => 55,  341 => 54,  332 => 52,  329 => 51,  326 => 50,  323 => 49,  320 => 48,  316 => 46,  313 => 45,  310 => 44,  307 => 38,  304 => 37,  297 => 34,  293 => 33,  289 => 32,  285 => 31,  281 => 30,  268 => 21,  266 => 20,  263 => 19,  261 => 18,  255 => 14,  249 => 12,  247 => 11,  243 => 9,  240 => 8,  226 => 153,  220 => 150,  216 => 149,  212 => 148,  208 => 147,  204 => 146,  200 => 145,  196 => 144,  192 => 143,  180 => 133,  178 => 130,  175 => 129,  173 => 126,  170 => 125,  166 => 111,  164 => 97,  162 => 96,  156 => 92,  151 => 90,  147 => 88,  145 => 87,  139 => 83,  129 => 80,  121 => 79,  116 => 78,  111 => 77,  104 => 73,  96 => 72,  91 => 69,  89 => 66,  85 => 64,  83 => 63,  76 => 58,  74 => 54,  71 => 53,  69 => 48,  66 => 47,  64 => 37,  61 => 36,  59 => 8,  54 => 6,  51 => 5,  25 => 4,);
+        return array (  406 => 163,  403 => 162,  400 => 161,  393 => 158,  390 => 157,  385 => 127,  381 => 68,  378 => 67,  375 => 66,  368 => 56,  363 => 55,  360 => 54,  351 => 52,  348 => 51,  345 => 50,  342 => 49,  339 => 48,  335 => 46,  332 => 45,  329 => 44,  326 => 38,  323 => 37,  316 => 34,  312 => 33,  308 => 32,  304 => 31,  300 => 30,  287 => 21,  285 => 20,  282 => 19,  280 => 18,  274 => 14,  268 => 12,  266 => 11,  262 => 9,  259 => 8,  245 => 184,  239 => 181,  235 => 180,  231 => 179,  227 => 178,  223 => 177,  219 => 176,  215 => 175,  211 => 174,  199 => 164,  197 => 161,  194 => 160,  192 => 157,  189 => 156,  185 => 142,  183 => 128,  181 => 127,  175 => 123,  170 => 121,  166 => 119,  164 => 118,  159 => 115,  149 => 112,  141 => 111,  136 => 110,  133 => 109,  128 => 108,  125 => 107,  122 => 106,  120 => 105,  117 => 104,  115 => 81,  106 => 75,  98 => 74,  91 => 69,  89 => 66,  85 => 64,  83 => 63,  76 => 58,  74 => 54,  71 => 53,  69 => 48,  66 => 47,  64 => 37,  61 => 36,  59 => 8,  54 => 6,  51 => 5,  25 => 4,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -451,10 +470,10 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
 \t\t{% block stylesheets %}
 
 \t\t\t{# {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
-\t\t\t    {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
-\t\t\t    {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
-\t\t\t    {% do assets.addCss('theme://css-compiled/theme'~compress) %}
-\t\t\t    {% do assets.addCss('theme://css/line-awesome.min.css') %}  #}
+\t\t\t\t\t\t\t\t\t    {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
+\t\t\t\t\t\t\t\t\t    {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
+\t\t\t\t\t\t\t\t\t    {% do assets.addCss('theme://css-compiled/theme'~compress) %}
+\t\t\t\t\t\t\t\t\t    {% do assets.addCss('theme://css/line-awesome.min.css') %}  #}
 \t\t\t{% do assets.addCss('theme://css/custom.css') %}
 \t\t\t{% do assets.addCss('theme://css/benefit.css') %}
 \t\t{% endblock %}
@@ -480,16 +499,48 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
 \t\t\t\t\t{% block header_navigation %}
 \t\t\t\t\t\t{% include 'partials/navigation.html.twig' %}
 \t\t\t\t\t{% endblock %}
+
 \t\t\t\t\t<i class=\"mobile-nav-toggle d-xl-none bi bi-list\"></i>
+
 \t\t\t\t\t<div class=\"language-dropdown\">
 \t\t\t\t\t\t<button class=\"dropdown-btn\" id=\"lang-toggle\">
-\t\t\t\t\t\t\t  <img src=\"{{ theme_url }}/assets/img/{{ grav.language.getActive() }}.webp\" alt=\"{{ grav.language.getActive() }}\">
+\t\t\t\t\t\t\t<img src=\"{{ theme_url }}/assets/img/{{ grav.language.getActive() }}.webp\" alt=\"{{ grav.language.getActive() }}\">
 \t\t\t\t\t\t\t<span>{{ grav.language.getActive()|upper }}</span>
 \t\t\t\t\t\t\t<i class=\"bi bi-chevron-down toggle-dropdown\"></i>
 \t\t\t\t\t\t</button>
+
 \t\t\t\t\t\t<div class=\"dropdown-content\">
-\t\t\t\t\t\t\t{% for language in grav.language.getLanguages() if language != grav.language.getActive() %}
-\t\t\t\t\t\t\t\t<a href=\"{{ lang_url ~ '/' ~ language }}\">
+\t\t\t\t\t\t\t<div class=\"dropdown-content\">
+\t\t\t\t\t\t\t{% set language_map = {
+\t\t\t\t\t\t\t'vi': {
+\t\t\t\t\t\t\t'/gia-ca': '../en/pricing',
+\t\t\t\t\t\t\t'/dich-vu/tuy-chinh-trang-khach-san': '../../en/_services/custom-hotel-website',
+\t\t\t\t\t\t\t'/dich-vu/ho-tro-dat-truc-tuyen': '../../en/_services/online-booking-support',
+\t\t\t\t\t\t\t'/dich-vu/giai-phap-toi-uu-hoa-dat-phong': '../../en/_services/booking-optimization-solutions',
+\t\t\t\t\t\t\t'/lien-he': '../en/contact',
+\t\t\t\t\t\t\t'/cach-hoat-dong': '../en/how_it_work',
+\t\t\t\t\t\t\t'/blog' : '../en/blog',
+\t\t\t\t\t\t\t' ' : '../en'
+\t\t\t\t\t\t\t},
+\t\t\t\t\t\t\t'en': {
+\t\t\t\t\t\t\t'/pricing': '../vi/gia-ca',
+\t\t\t\t\t\t\t'/_services/custom-hotel-website': '../../vi/dich-vu/tuy-chinh-trang-khach-san',
+\t\t\t\t\t\t\t'/_services/online-booking-support': '../../vi/dich-vu/ho-tro-dat-truc-tuyen',
+\t\t\t\t\t\t\t'/_services/booking-optimization-solutions': '../../vi/dich-vu/giai-phap-toi-uu-hoa-dat-phong',
+\t\t\t\t\t\t\t'/contact': '../vi/lien-he',
+\t\t\t\t\t\t\t'/how_it_work': '../vi/cach-hoat-dong',
+\t\t\t\t\t\t\t'/blog' : '../vi/blog',
+\t\t\t\t\t\t\t' ' : '../vi'
+
+\t\t\t\t\t\t\t}
+\t\t\t\t\t\t} %}
+
+\t\t\t\t\t\t\t{% set current_route = page.route %}
+\t\t\t\t\t\t\t{% set current_lang = grav.language.getActive() %}
+
+\t\t\t\t\t\t\t{% for language in grav.language.getLanguages() if language != current_lang %}
+\t\t\t\t\t\t\t\t{% set mapped_url = language_map[current_lang][current_route] ?? '/'  %}
+\t\t\t\t\t\t\t\t<a href=\"{{ mapped_url }}\">
 \t\t\t\t\t\t\t\t\t<img src=\"{{ theme_url }}/assets/img/{{ language }}.webp\" alt=\"{{ language }}\">
 \t\t\t\t\t\t\t\t\t<span>{{ language|upper }}</span>
 \t\t\t\t\t\t\t\t</a>
@@ -497,7 +548,6 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</nav>
-
 \t\t\t\t{% if config.plugins.login.enabled and grav.user.username %}
 \t\t\t\t\t<span class=\"login-status-wrapper\">
 \t\t\t\t\t\t<i class=\"fa fa-user\"></i>
@@ -509,33 +559,33 @@ class __TwigTemplate_e1b3110be0d917f390b0f2491d068f31aaeb6d77a287449350505d424de
 
 \t\t<main class=\"main\"> {% block content %}{% endblock %}
 \t\t\t{# {% block hero %}{% endblock %}
-\t\t\t
-\t\t\t        <section id=\"start\">
-\t\t\t        {% block body %}
-\t\t\t            <section id=\"body-wrapper\" class=\"section\">
-\t\t\t                <section class=\"container {{ grid_size }}\">
-\t\t\t                    {% block messages %}
-\t\t\t                        {% include 'partials/messages.html.twig' ignore missing %}
-\t\t\t                    {% endblock %}
-\t\t\t                    {{ block('content_surround') }}
-\t\t\t                </section>
-\t\t\t            </section>
-\t\t\t        {% endblock %}
-\t\t\t        </section> #}
+\t\t\t\t\t\t\t\t\t
+\t\t\t\t\t\t\t\t\t        <section id=\"start\">
+\t\t\t\t\t\t\t\t\t        {% block body %}
+\t\t\t\t\t\t\t\t\t            <section id=\"body-wrapper\" class=\"section\">
+\t\t\t\t\t\t\t\t\t                <section class=\"container {{ grid_size }}\">
+\t\t\t\t\t\t\t\t\t                    {% block messages %}
+\t\t\t\t\t\t\t\t\t                        {% include 'partials/messages.html.twig' ignore missing %}
+\t\t\t\t\t\t\t\t\t                    {% endblock %}
+\t\t\t\t\t\t\t\t\t                    {{ block('content_surround') }}
+\t\t\t\t\t\t\t\t\t                </section>
+\t\t\t\t\t\t\t\t\t            </section>
+\t\t\t\t\t\t\t\t\t        {% endblock %}
+\t\t\t\t\t\t\t\t\t        </section> #}
 
 
 \t\t\t{# {% block mobile %}
-\t\t\t    <div class=\"mobile-container\">
-\t\t\t        <div class=\"overlay\" id=\"overlay\">
-\t\t\t            <div class=\"mobile-logo\">
-\t\t\t                {% include 'partials/logo.html.twig' with {mobile: true} %}
-\t\t\t            </div>
-\t\t\t            <nav class=\"overlay-menu\">
-\t\t\t                {% include 'partials/navigation.html.twig' with {tree: true} %}
-\t\t\t            </nav>
-\t\t\t        </div>
-\t\t\t    </div>
-\t\t\t    {% endblock %} #}
+\t\t\t\t\t\t\t\t\t    <div class=\"mobile-container\">
+\t\t\t\t\t\t\t\t\t        <div class=\"overlay\" id=\"overlay\">
+\t\t\t\t\t\t\t\t\t            <div class=\"mobile-logo\">
+\t\t\t\t\t\t\t\t\t                {% include 'partials/logo.html.twig' with {mobile: true} %}
+\t\t\t\t\t\t\t\t\t            </div>
+\t\t\t\t\t\t\t\t\t            <nav class=\"overlay-menu\">
+\t\t\t\t\t\t\t\t\t                {% include 'partials/navigation.html.twig' with {tree: true} %}
+\t\t\t\t\t\t\t\t\t            </nav>
+\t\t\t\t\t\t\t\t\t        </div>
+\t\t\t\t\t\t\t\t\t    </div>
+\t\t\t\t\t\t\t\t\t    {% endblock %} #}
 
 \t\t\t{% block bottom %}
 \t\t\t\t{{ assets.js('bottom')|raw }}
